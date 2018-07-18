@@ -1,0 +1,2115 @@
+.slow {
+  animation-duration: 3s;
+  animation-delay: 1s;
+}
+.reallyslow {
+  animation-duration: 6s;
+  animation-delay: 3s;
+}
+#owl-example{
+  display: block;
+  width: 100%;
+  height: 100vh;   
+  
+}
+.owl-carousel{
+  text-align: center;
+  background: linear-gradient(rgba($dark, 0.94),rgba($dark, 0.94));
+}
+#owl-carousel div h2{
+  text-align: center;  
+}
+.owl-carousel div h2{
+  text-align: center;
+  padding-left: 320px;
+}
+.owl-carousel div h2, .owl-carousel div .textoverlay{
+  position: absolute;
+  color:$light;
+  font-size:45px;
+  display:block;
+  text-align: center; 
+  padding-top: 250px;
+}
+.linear1{
+  background: Linear-gradient(rgba($dark, 0.9),rgba($dark, 0.9));
+}
+// For the images in the ATM section 
+.image-container {
+  position: absolute;
+  width: 200px;
+  height: 300px;
+  background: rgba($dark, .6);
+  z-index: 9999;
+}
+.image-container .after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  color: $light;
+}
+.image-container:hover .after {
+  display: block;
+  background: rgba($dark, .6);
+}
+// End for the images in the ATM section 
+.learnMore{
+  background-color: transparent;
+  border: 2px solid $light;
+  padding: 13px;
+  color: $light;
+  margin-top: 30px;
+}
+
+.section {
+  clear: both;
+  padding: 0;
+  margin: 0;
+}
+#section1{
+  background-color: #263238;
+}
+.grey{
+  color: $light;
+}
+.space{
+  padding-bottom: 50px;
+}
+h1 {
+  position: relative;
+}
+.owl-pagination {
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: 20px;
+}
+
+.black-header{
+  color: $light;
+  background-color: $dark;
+  text-align: center;
+  padding: 3px;
+  font-size: 25px;
+}
+
+// Particles for the not homepage 
+#particles-js {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+}
+
+// For justifying the text 
+.text-justify{
+  text-align: justify;
+  //     color: $dark; 
+  color:#333;
+}
+#box-centre{
+  margin-left: 130px;
+}
+.right-side{
+  float: right;
+  clear: both;
+}
+.box-1{
+  background: Linear-gradient(rgba($dark, 0.3),rgba($dark, 0.3)), url(/assets/images/rsz_bank.jpg);
+}
+.box-2{
+  display: inline-block;
+  transition: all 1s ease;
+  background: Linear-gradient(rgba($dark, 0.3), rgba($dark, 0.3)),url(/assets/images/enterprise.jpg);
+}
+[class*=box-]{
+  height: 210px;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+[class*=box-] h4{
+  color: $light;
+  font-size: 20px;
+  text-align: center;
+  vertical-align: middle;
+  padding: 25%;
+}
+#SME-text{  
+  height: 100%;
+  width: 100%;
+  padding: 20px;
+  display: none;
+  border: 2px solid #f8f8f8;
+  margin: 10px; 
+}
+#ENT-text{
+  height: 150vh;
+  width: 100%;
+  padding: 20px;
+  display: none;    
+  border: 2px solid #f8f8f8;
+  margin: 10px;
+}
+
+// index page 
+
+#trailer{
+  margin-top: 30px;
+}
+#trailer-row2{   
+  margin-top: 10px;
+  margin-bottom: 70px;
+}
+#trailer-infrastructure{
+  margin-top: 65px;  
+  margin-bottom: 65px; 
+}
+
+#awards{
+  margin-top: 60px;  
+  margin-bottom: 60px;
+}
+.awards2{
+  padding-top: 20px;    
+}
+.awards3{
+  padding-top: 20px;
+}
+.box-round1{
+  padding: 10px;
+  margin-bottom: 30px;
+  border: 1px solid #f8f8f8;
+}
+.card-img-top{
+  height: 228px;
+  width: 100%;
+}
+.read-more{
+  float: right;
+  color: $dark;
+}
+.read-more:hover{
+  text-decoration: none;
+}
+.card-shadow{
+  box-shadow: 0 15px 60px 0 rgba(158, 174, 221, 0.3);
+}
+.effect1{
+  box-shadow: 0 10px 6px -6px #777;
+}
+
+#locations{
+  height: auto;
+  width: 100%;
+  padding: 20px;
+  color: $light;
+}
+.card-cust{
+  padding: 20px;
+  background: linear-gradient(rgba($dark, 0.6), rgba($dark, 0.6));
+}
+.img-flag{
+  height: 60px;
+  width: 100%;
+  margin-bottom: 15px;
+  margin-left: 25px;
+  
+}
+#locations h2{
+  font-size: 27px;
+  padding-bottom: 20px;
+}
+
+// About us page 
+#about-parts{
+  padding-top: 70px;
+  padding-bottom: 70px;  
+}
+#services-parts{
+  margin-top: 55px; 
+  margin-bottom: 55px;
+}
+
+// Profile page 
+
+#about-page{
+  height: auto;   
+  margin-top: 20px;
+  padding-bottom: 20px;
+}
+.img-flag{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.bright-text{
+  color: #F68E35;
+}
+
+//  CSS used here will be applied after bootstrap.css  
+
+#myarea{
+  position:absolute;
+  left:374px;
+  width:250px;
+  top:414px;
+}
+.vm{
+  font-size: 15px;
+  color: $dark;
+  letter-spacing: 1.5px; 
+}
+#laptop-table td{
+  padding: 15px;
+  vertical-align:middle;
+}
+
+table{
+  vertical-align: top;
+  border-collapse: collapse;
+  height: 100%;
+  width: 100%;
+}
+
+.text-colour{  
+  color: $dark;
+}
+.image-shadow{
+  box-shadow: 0 4px 8px 0 rgba($dark, 0.2), 0 6px 20px 0 rgba($dark, 0.19);
+}
+.profile-text{
+  color: $dark;
+  font-size: 15px;
+  letter-spacing: 1.5px;  
+  text-align: justify;      
+}
+table{
+  text-align: justify;
+}
+.td-auto{
+  display: block;
+  margin-right: auto;
+  margin-left: auto; 
+}
+// Atm Page 
+.auto-center{
+  display: block;
+  margin-right: auto;
+  margin-left: auto;   
+  z-index: 99;
+  left: 0;
+  position:absolute;
+  text-align:center;
+  top: 80px;
+  width: 100%;
+  color: $light;
+  font-size: 23px;
+}
+
+// End of Atm page 
+
+.img-front{
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+.partner-rows1{
+  border:1px solid #f8f8f8;
+  padding: 30px;
+}
+
+.partner-rows1 img{
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  height: 67px;
+  line-height: 67px;
+}
+.virus img{
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  vertical-align: middle;
+  line-height: 100px;
+  height: 100px;
+  padding: 20px;
+}
+// Physical security 
+.contain-cctv{
+  padding: 5px;
+  height: 250px;
+  width: 280px;
+  background-size: cover;
+  background-position: center;  
+  background: linear-gradient(rgba($dark, 0.64),rgba($dark, 0.64)), url(/assets/images/CCTV.jpg);
+}
+.contain-fire{
+  padding: 5px;
+  height: 250px;
+  width: 280px;
+  background-size: cover;
+  background-position: center;  
+  background: linear-gradient(rgba($dark, 0.64),rgba($dark, 0.64)), url(/assets/images/ALARM.jpg);
+}
+.img-workshop{
+  height: 300px;
+}
+.contain-public{
+  padding: 5px;
+  height: 250px;
+  width: 280px;
+  background: linear-gradient(rgba($dark, 0.64),rgba($dark, 0.64)), url(/assets/images/public-address-system-speakers.jpg);
+  background-size: cover;
+  background-position: center;    
+}
+
+// End of physical sec 
+
+.country-links{
+  margin: 0;
+  padding: 3.1px;
+  display: inline-block;
+  font-size: 15px;
+  letter-spacing: 1.5px;  
+  text-align: center; 
+}
+.country-title{
+ padding-left: 0;
+}
+.all-text{
+  color: $dark;
+  font-size: 15px;
+  letter-spacing: 1.5px; 
+}
+#new-strengths{
+  width: auto;
+  height: 250px;
+  color: #757575;  
+}
+
+// Start of view and download button 
+
+.view-btn{
+  margin-right: 30px;
+  background-color: #004D40;
+  padding: 17px;
+  color: $light;
+  margin-bottom: 25px;
+  letter-spacing: 1px;
+  font-size: 21px;
+}
+.view-btn:hover{
+  color: $light;
+  text-decoration: none;
+}
+.download-btn{
+  margin-bottom: 25px;
+  background-color: #006064;
+  padding: 17px;
+  color: $light;
+  letter-spacing: 1px;
+  font-size: 21px;    
+}
+.download-btn:hover{
+  color: $light;
+  text-decoration: none;
+}
+
+// End of view and downlaod button 
+
+.sections{
+	padding-top: 28px;
+}
+.line {
+  border-bottom: 4px solid $orange;
+  height: 10px;
+  width: 60px;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 15px;  
+}
+#slide-section{
+  height: auto;
+  width: 100%;
+}
+
+#loc{
+  padding-left: 1115px;
+  padding-top: 216px;
+}
+.fa-dot-circle-o{
+  color: $dark;
+}
+.move{
+  margin-left: 100px;
+}
+.im{
+  padding-right: 50px;
+}
+#image{
+  padding-right: 50px;
+}
+.men-btn{
+  background-color: transparent;
+  border: 0;
+}
+.header-image h5{
+  color: $dark; 
+  text-align: left;
+  margin-top: 150px;
+  
+  font-size: 3em;
+  padding-left: 50px;
+}
+.orange{
+  color: $orange;  
+}
+a:visited{
+  text-decoration: none;
+}
+
+.b-active{
+  color: $light;
+  background-color: $orange;
+}
+.b-active:hover{
+  color: $light;
+  background-color: $orange;
+}
+.list-group-item{
+  text-align: center;
+}
+
+#new-regions{
+  height: auto;
+  background-color: $dark;
+  background-image: url(/assets/flags/always.png);
+}
+.flag-image{
+  padding: 20px;
+  border-radius: 5px;
+}
+
+// The About section 
+#section2{
+  height: auto;
+  width: 100%;
+  background-image:  url(/new-bg/645305_seryiy_fon.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 100px;
+  padding-bottom: 90px;
+}
+.boold{
+  font-weight: 900;
+}
+
+#section2 h2{    
+  color: $dark; 
+}
+#paragraph{
+  background-color: $light;
+  width: auto;
+  border-radius: 5px;
+  margin: 10px;
+  padding: 20px;
+  margin-top: 50px;
+}
+#section2 h4{
+  letter-spacing: 2px;
+  color:$orange; 
+}
+#section2 p{
+  font-size: 1.2em;
+  color: #999;
+}
+
+// About Full page 
+#About-full{
+  color: $dark;
+  height: 100vh;
+  padding-top:150px;
+}
+#office{
+  background-image: url(/assets/office.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 100vh;
+}
+
+.custom-list{
+  list-style-image: url(/assets/arrow.png);
+}
+
+// products & services section 
+
+#section3{
+  height: auto;
+  background-color: $light;
+  padding-bottom: 50px;
+}
+
+#section3 i.fa {
+  font-size: 40px;
+  border: 4px solid $orange;
+  width: 100px;
+  height: 100px;
+  padding: 27px 25px;
+  margin-bottom: 10px;
+  border-radius: 50%;
+  transition: all 0.5s;
+}
+
+#section3 i.fa:hover {
+  background-color: $orange;  
+  transition: .2s ease;
+}
+
+// Best client page styling 
+.client-image{
+  height: 300px;
+  width: 150px;
+  padding-left: 35px;
+}
+.cust-h2{
+  text-transform: capitalize;
+  font-size: 18px;
+  padding-bottom: 10px;  
+}
+
+// Partners section 
+#section5{  
+  margin-top: 100px;
+  padding-top: 80px;
+  height: auto;
+  padding-bottom: 70px;
+  margin-top: 0px; 
+}
+#sect-partners{
+  height: auto;
+  padding-bottom: 20px; 
+  margin-top: 20px;
+}
+#sect-partners img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.row-space{
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+// --toogle button icon styling-- 
+
+button.btn.collapsed:before{
+  content: 'VIEW MORE PARTNERS' ;  
+  display:block;
+  width:auto;
+  transition: 1s ease;
+}
+.cust-btn{
+  background-color: transparent; 
+  border: 0;
+}
+
+.btn { 
+  color: $light;
+  display: inline-block;
+  border-radius: 2px;
+  border: none;
+  height: 45px;
+  z-index: 999;
+}
+.btn-primary{
+  color: $light;
+}
+.map-right{
+  float: right;
+}
+.healthcare-options{
+  margin-top: -30px;
+}
+
+.collapsepadding{
+  padding-top: 50px;
+}
+
+.btn:hover {
+  color: $light;  
+}
+.underline{
+  text-decoration: underline;
+}
+
+#new_soft{
+  height: auto;
+  padding-top: 60px;    
+  background-image: url(/new-bg/645305_seryiy_fon.jpg);
+  background-size: cover
+  
+}
+#new_soft h3{
+  color: $light;
+}
+#new_soft ol li{
+  color: $light;
+}
+.under {
+  background-color: $dark;
+  height: 40px;
+  width: 60px;
+  border: 1px solid $dark;
+  margin-right: 100px;
+  border-radius: 5px;
+  padding: 15px;  
+}
+.card{   
+  background-color: $light;
+  border-radius: 4px;
+  a{
+    &,
+    &:hover,
+    &:active{
+      text-decoration: none;
+    }
+  }
+  &-custom{
+    padding: 20px;
+    background-color: $light;
+    padding-top: 50px;  
+    opacity: 0.9;
+    li{
+      list-style:square;  
+      font-size: 14.6px;
+      line-height: 26px;    
+    }   
+  } 
+  &-title{
+    color: $dark;
+  }
+  &s{
+    img{
+      max-width: 64px;
+      margin: 0 auto 15px;
+    }
+  }
+}
+#new-compute ul li{
+  color: $dark;
+}
+
+// Footer section 
+.footer{
+  padding-top: 15px;
+  padding-bottom: 20px;    
+  height: auto;
+  background-color: $dark;
+  color: $light;      
+}
+.follow{    
+  padding-top: 15px;
+  float: right;
+}
+.space1{
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.foot-down{
+  padding-top: 15px;
+}
+
+.lgrey{
+  padding-top: 15px;
+  color: #9E9E9E;
+}
+
+.rights{
+  width: 100%;
+  background-color: #263238;
+  margin: 0;
+  padding: 0;
+}
+.titl{
+  color: $orange; 
+}
+.center{
+  text-align: center;
+}
+.off {
+  color: #263238;
+}
+.off:hover{
+  color: $light;
+  transition:  2s;
+}
+
+// service section styling
+
+.module {
+  padding: 140px 0;
+}
+
+.module-title {
+  font-size: 20px;
+  letter-spacing: 10px;
+  text-align: center; 
+}
+
+.font-alt { 
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.font-inc {
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.content-box {
+  margin: 25px auto;
+}
+
+.content-box-icon {
+  font-size: 4rem;
+  text-align: left;
+}
+
+.content-box-title {
+  font-size: 1.5rem;
+  letter-spacing: 5px;
+  color: $dark;
+}
+
+.content-box-text {
+  color: #777;
+}
+
+.writting{
+  color: $dark;
+  font-size: 14.6px;
+  letter-spacing: 1.3px;
+}
+
+// ....button styling........ 
+
+.button {
+  display: inline-block;
+  border-radius: 2px;
+  border: none;
+  height: 45px;
+  z-index: 999;  
+}
+
+// Modal contect styling in the homepage 
+// Changing the position 
+#memberModal{
+  padding-top: 10%; 
+}
+// Changing the size 
+#memberModal .modal-dialog  {width:75%;}
+.modal-header{
+  background-color: $orange;
+  color: $light;
+}
+.modal-footer{
+  background-color: $orange;
+}
+.modal-image{
+  display: inline-block;
+}
+.modal-p{
+  padding-top: 20px; 
+}
+
+
+.black{
+  color: $dark;
+}
+
+// Client testimonial section 
+#section4{
+  background-image: url(/new-bg/645305_seryiy_fon.jpg);
+  padding-top: 90px;
+  margin-top: 0px;
+  background-size: cover;
+  height: auto;
+}
+
+.centered-text {
+  text-align: center;
+}
+
+.quote {
+  background: $light;
+  padding: 5px;
+  border-radius: 5px;
+  margin-bottom: 30px;
+}
+.quote:after {
+  content: '';
+  width: 0px;
+  height: auto;
+  border-style: solid;
+  border-color: $light transparent transparent transparent;
+  position: relative;  
+  left: 20px;
+}
+.student {
+  margin-left: 25px;
+  margin-bottom: 80px;
+}
+.student .photo {
+  background-color: #ccc;
+  border-radius: 100px;
+  width: 60px;
+  height: 60px;
+  float: left;
+  margin-right: 10px;
+}
+.student p {
+  position: relative;
+  top: 5px;
+  text-transform: uppercase;
+}
+.student p:nth-child(2) {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+.student p:nth-child(3) {
+  font-size: 14px;
+  color: $light;
+}
+
+// -----------------TEAM PAGE STYLING------------------------ 
+
+#the-team{
+  padding-top: 15px;
+  padding-bottom: 20px;
+  letter-spacing: 1.5px;
+  text-align: center;
+}
+#the-team img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.left{
+  float: left;
+  color: $orange;
+  letter-spacing: 1.5px;
+  font-weight: 1000px;
+  font-size:4em;
+}
+
+.topteam{
+  padding-bottom: 30px;
+  padding-top: 0px;
+  
+}
+.team{
+  padding-bottom: 50px;
+}
+.arrow-down{
+  color: $orange;
+}
+
+.container{
+  width: 100%;
+  max-width: 1250px;
+  margin: 0 auto;
+}
+#SMT{
+  
+  padding-top: 210px;
+}
+#cent{
+  text-align: center;
+}
+.SMH1{
+  color: $orange; 
+  font-family: serif;
+  text-align: center;
+  margin-top: 300px;
+  
+}
+.fa-angle-down{
+  text-align: center;
+  color: $orange; 
+}
+.arrow-dowm{
+  text-align: center;
+}
+.box-shadow--8dp {
+  box-shadow: 0 8px 10px 1px rgba($dark, .14), 0 3px 14px 2px rgba($dark, .12), 0 5px 5px -3px rgba($dark, .2)
+}
+.card-img-top{
+  margin-top: -70px;
+}
+.row-team2{
+  margin-top: 100px;
+}
+.row-team3{
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+
+// Contact page 
+#Contact{
+  height: auto;
+  background-color: $light;
+  padding-top: 15px;
+  margin-right: 15px;
+  padding-bottom: 35px;  
+}
+.contact-send{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+form{
+  padding: 30px;
+}
+.forms{
+  border: 1px solid #E0E0E0;
+  padding-right: 10px;
+}
+textarea.form-control {
+  height: 100%;
+}
+// Form styling 
+.input[type="text"], textarea {
+  outline: none;
+  box-shadow:none !important;
+  border:1px solid #9E9E9E !important;
+}
+.input[type="text"], input {
+  outline: none;
+  box-shadow:none !important;
+  border:1px solid #9E9E9E !important;
+}
+input{
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+label {
+  font-weight: normal !important;
+}
+
+// Accordion Showing different office locations 
+#offices-side{
+  margin-top: 21px
+  
+}
+
+// Styling solutions  
+#solutions{
+  width: 100%;
+  height: 100vh;
+  margin-top: 50px;
+  background-color: $light;
+}
+#solutions ul li a:link{
+  color:$orange; 
+}
+.center{
+  text-align: center;
+}
+.pad-sol{
+  padding-top: 40px;
+}
+.border-right{
+  height: auto;
+  border-right: 1px solid $orange;
+  
+}
+#part1{
+  height: auto;
+  width: 100%;
+  
+}
+.loyalty{
+  padding-top: 50px;
+}
+.bond{
+  font-weight: 500;
+}
+.quote{
+  padding-top: 100px;
+}
+#MiPricing-modal{
+  overflow-x: hidden;
+}
+
+// Software page 
+#IT{
+  height: 100vh;
+  width: 100%;
+  padding-top: 70px;
+  background-image: url(/new-bg/645305_seryiy_fon.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-bottom: 50px;
+}
+.software-image{
+  padding-top: 70px;
+}
+#nsoft-series{
+  padding-top: 50px;
+  background-image: url(/assets/rvp.jpg);
+  background-size: cover;
+}
+#new-microsoft{
+  height: 100vh;
+}
+#nservices{
+  height: 100vh;
+  padding-top: 100px;
+  padding-left: 100px;  
+  background: linear-gradient(rgba($dark, 0.64), rgba($dark, 0.64)),url(/assets/marble.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+// Current software section 
+
+#software-section{
+  padding-top: 60px;
+  background-image: url(/new-bg/645305_seryiy_fon.jpg);
+}
+#software-section h2{
+  color: $light;
+}
+.soft-left{
+  border-right: 3px solid $light;  
+}
+
+// For the new software page 
+
+.newsoft{
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+#new-soft{
+  background-image: url(/assets/rvp.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+// Microsoft page 
+
+#microsoft-section{
+  padding-top: 60px;
+  background-image: url(/new-bg/645305_seryiy_fon.jpg);
+}
+#microsoft-section2{
+  padding-top: 60px;
+  background-image: url(/new-bg/645305_seryiy_fon.jpg);
+}
+#microsoft-section h2{
+  color: $light;
+}
+.micro-left{
+  border-right: 3px solid $light;
+}
+.micro-up{
+  margin-top: -30px;
+  padding-left: 70px;
+}
+
+// Styling for the offerings page 
+
+#Offerings{
+  height: auto;
+  width: 100%;
+}
+.IT{
+  height: 450px;
+  width: 450px;
+  background-image: url(/assets/abd.jpg);
+  border-radius: 100%;
+  display: inline-block;
+  margin-left: 200px;
+}
+.circles{
+  margin-left: 50px; 
+}
+.IT-link{
+  position: relative;
+}
+.offer-left,
+.offer-right {
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.offer-left{
+  background-image: url(/new-bg/645305_seryiy_fon.jpg);
+  height: 60vh;
+}
+.offer-right{
+  background-image: url(/assets/kill/dna.jpg);    
+  height: 35vh;
+}
+.white{
+  color: $light;
+}
+.wow {
+  visibility: hidden;
+}
+
+.view-button{
+  background-color: transparent;
+  padding: 15px;
+  width: 100px;
+  border: 3px solid $light;
+  border-radius: 5px;
+  color: $light;   
+  font-size: 25px;
+}
+.view-button a{
+  color: $light;
+  text-decoration: none;
+}
+
+.offer-item{
+  padding-top: 30vh;
+  text-align: center;
+  
+}
+.offer-item-right{ 
+  
+  text-align: center;
+  padding-top: 20vh;
+  
+}
+.offer-item a{
+  color: $light;
+  font-size: 45px;
+  margin-bottom: 40px;
+}
+.offer-item a:hover{
+  text-decoration: none;
+}
+.offer-item-right a{
+  color: $light;
+  font-size: 45px;
+  margin-bottom: 40px;
+}
+.offer-item-right a:hover{
+  text-decoration: none;
+}
+
+img.map, map area{
+  outline: none;
+}
+
+// End of offerings page 
+
+#soft{
+  padding-top: 60px;
+  padding-left: 350px
+}
+.one{
+  padding-top: 40px;
+  margin-left: 33%;
+  color: #D63344;
+  padding-bottom: 10px;
+}
+.ion-laptop  {
+  font-size: 37px;
+}
+.ion-stats-bars{
+  font-size: 37px;
+}
+.ion-medkit{
+  font-size: 37px;
+}
+.two{
+  color: #F58C30;
+  margin-left: 50%;
+  margin-top: -40px
+}
+.three{
+  color: #89173B;    
+  margin-top: -100px;
+  margin-left: 17%;
+}
+.four{
+  color: #8F63B0;
+  margin-top: 16px;
+  margin-left: 90px
+}
+.five{
+  color: #699F41;
+  margin-left: -180px;
+  margin-top: 30px;
+}
+.ion-ios-cog-outline{
+  font-size: 37px;
+}
+.ion-cash{
+  font-size: 37px;
+  
+}
+.six{
+  color: #053A5C;
+  margin-left: 140px;
+  margin-top: 25px;
+}
+.seven{
+  color: #022E4B;
+  margin-left: -279px;
+  margin-top: 28px;
+}
+.ion-lock-combination{
+  font-size: 37px;
+}
+.ion-radio-waves{
+  font-size: 37px;
+}
+.eight{
+  color: #138698;    
+}
+.ion-ios-printer{
+  font-size: 37px;
+}
+
+#compute{
+  height: 100vh;
+  padding-top: 100px;
+}
+
+// Ripple 
+
+.circle {
+  height:100px;
+  width:100px;
+  border-radius:50%;
+  background-color:red;  
+  position:relative;
+  top:100px;
+  left:300px;
+  transition:height .25s ease, width .25s ease;
+  transform:translate(-50%,-50%);
+}
+.circle:hover{
+  height:150px;
+  width:150px;
+}
+.circle:before,
+.circle:after {
+  content:'';
+  display:block;
+  position:absolute;
+  top:0; right:0; bottom:0; left:0;
+  border-radius:50%;
+  border:1px solid red;
+}
+
+.circle:before {
+  animation: ripple 2s linear infinite;
+}
+.circle:after {
+  animation: ripple 2s linear 1s infinite;
+}
+.circle:hover:before,
+.circle:hover:after {
+  animation: none;
+}
+@keyframes ripple{
+  0% {transform:scale(1); }
+  75% {transform:scale(1.75); opacity:1;}
+  100% {transform:scale(2); opacity:0;}
+}
+
+// Software page 
+
+.split_title{
+  font-weight:900;
+  border-bottom: 2px solid $light;    
+}
+.left{
+  height: auto;
+  border-right: 6px solid $light;
+}
+.right{
+  height: auto;
+}
+.item-left p{
+  color: $light;
+  font-size: 25px;
+}
+
+.item-left a{
+  color:$orange; 
+}
+.item-right p{
+  color: $light;
+  font-size: 25px;
+}
+.item-right a{
+  color:$orange; 
+}
+#Map{
+  outline: none;
+}
+
+// Infra page 
+.down-space{
+  margin-top: 20px;
+}
+
+#Services{   
+  height: auto;
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 20px; 
+}
+.column-1{
+  border-right: 3px solid $light;
+}
+.column-2{
+  border-right: 3px solid $light;
+}
+.column-3{
+  border-right: 3px solid $light;
+}
+
+// Countries 
+// Uganda 
+
+.flag-map{
+  float: right;
+  position: relative;
+  top: -400px;
+}
+
+.Healthcare-left{
+  border-right: 3px solid $light; 
+}
+.Health-item p{
+  font-size: 28px;
+  color:$orange; 
+}
+.Health-item ul li{
+  list-style: none;
+  text-align: center;
+  color: $light;
+  font-size: 22px;  
+}
+
+// For the Services page 
+.active-1{
+  color: $orange;
+}
+.imageleft{
+  float: left;
+  padding-right: 10px;
+}
+textright{
+  float: right;
+  padding-left: 10px;
+}
+.background{
+  background-color: #EFEFEF;
+}
+
+//  Infrastructure design  
+//  Compute  
+
+#new-compute{
+  height: auto;
+  padding-top: 10px;  
+  padding-bottom: 30px;    
+}
+
+//  Servers in compute deco  
+
+.text-pimp{
+  background-color: $dark;
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+  color: $orange;
+  width: 100%;
+  box-shadow: 4px 4px 2px #888888;     
+}
+.server-list{
+  margin-top: 65px;
+}
+#new-testimonial-section{
+  padding-top: 90px;
+}
+.agreement{
+  background-color: #607D8B;
+}
+
+// End server 
+// Storage page 
+
+#new-storage{
+  height: auto;
+  padding-top: 10px;  
+  padding-bottom: 20px;   
+}
+.storage-list{
+  margin-top: 65px;  
+}
+
+//  End of storage page 
+//  Start of security  
+
+.zoomIn{
+  animation-duration: 0.6s;
+  animation-duration: 0.6s;  
+}
+#security-page{
+  padding-top: 10px;
+  padding-bottom: 20px;
+  height: 350px;
+  animation-duration: 0.6s;
+}
+.Assetprotection-page{
+  width: auto;
+  height: auto;
+  padding-bottom: 50px;
+}
+.center-contents img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.center-contents h4{
+  text-align: center;
+  color: $dark;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+// End of Security 
+
+.download-card{  
+  padding: 10px;
+}
+.solid-box{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 200px;
+  width: 200px;
+  background-color: #EF762D;
+  
+}
+.solidtext{
+  color: $light;
+  font-weight: 500;
+  font-size: 20px;
+  text-align: center;
+  position: relative;
+  font-weight: 500;
+  top: 80px;
+  z-index: 999;
+}
+.solid-box1{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 150px;
+  width: 150px;
+  background-color: #EF762D; 
+}
+.solidtext1{
+  color: $light;
+  font-weight: 500;
+  font-size: 20px;
+  text-align: center;
+  position: relative;
+  font-weight: 500;
+  top: 60px;
+  z-index: 999;
+}
+.p-image{
+  color: $light;
+  font-weight: 500;
+  font-size: 20px;
+  text-align: center;
+  position: relative;
+  font-weight: 500;
+  top: 100px;
+  z-index: 999;
+}
+
+// Start fo networks 
+
+.network-list{
+  margin-top: 65px;
+}
+#new-network{
+  height: auto;  
+  padding-bottom: 20px;
+}
+
+// End for networks 
+// Start of client page 
+
+#success-stories{
+  height: auto;
+  padding-top: 10px; 
+  padding-bottom: 20px;   
+}
+
+// End of client page 
+// Start for Security 
+
+#new-security{
+  height: auto;
+  padding-top: 120px; 
+  background-color: $light;
+  padding-bottom: 50px;        
+}
+.card-security2 ul{
+  list-style: none;
+}
+.security-banner{
+  height: 200px;
+  width: 1500px;
+}
+.card-custom-security{
+  background-color: $dark;  
+}
+.security-card{
+  padding-top: 40px;
+}
+
+// End for Security 
+// New endpoint 
+
+#new-endpoint{
+  height: auto;
+  padding-top: 10px;   
+  padding-bottom: 20px;  
+}
+.img-security{
+  height: 200px;
+}
+
+// For the team page  
+.img-team-size{
+  padding: 10px;
+}
+
+// End of team page 
+
+.item-point{
+  background-color: $dark;
+  margin: 20px;
+  text-align: center;
+  padding: 15px;
+  color: $light;
+}
+.img-team{
+  object-fit: cover;
+}
+.img-teamh{
+  height: 200px;
+}
+.img-size{
+  text-align: center;
+  height: 200px;
+}
+.img-item{
+  height: 120px;
+  width: 120px;
+}
+// End of End point 
+
+// Internet section 
+#new-internet-security{
+  height: auto;
+  width: 100%;
+  padding-top: 90px;
+  padding-bottom: 157px;
+  background-color: $light;
+  background-image: url(http://www.transparenttextures.com/patterns/cubes.png);
+	font-size: 16px;
+	line-height: 26px;
+}
+#new-internet-security p {
+  font-size: 16px;
+	line-height: 26px;
+}
+.cloud-text{
+  line-height: 24px;
+  margin-left: -70px; 
+}
+.Azure-text{
+  margin-left: -70px;
+  line-height: 20px;
+}
+.CRM-text{
+  margin-left: -70px;
+  line-height: 20px;
+}
+.windows7{
+  margin-left: -30px;
+  line-height: 23px;
+}
+.email7{
+  margin-left: -30px;
+  line-height: 25px; 
+}
+.exchange-details{
+  padding-top: 25px;
+}
+.sharepoint7{
+  margin-left: -30px;
+  line-height: 23px;
+}
+
+// Microsoft licensing section 
+
+#new-microsoft-licensing{
+  height: auto;
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 20px;
+}
+.new-body{
+  height: auto;
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 20px;
+}
+#new-microsoft-cloud{
+  height: auto;
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 65px;
+}
+#new-microsoft-onprem{
+  height: auto;
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 50px;
+}
+.region-title{
+  text-decoration: underline;
+}
+#microsoft-infrastructure,
+#new-microsoft-managed{
+  height: auto;
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+
+// End of the microsoft section 
+#new-banking-lending{
+  margin-top: -10px;
+  height: auto;
+  width: 100%;
+  padding-top: 15px;
+  padding-bottom: 43px;      
+}
+.float-left{
+  float: left;
+}
+.float-right{
+  float: right;
+}
+.ref-logo{
+  padding: 20px;
+}
+hr{
+  margin-top: 30px;
+  height: 12px;
+  height: 12px;
+  border: 7;
+  box-shadow: inset 0 12px 12px -12px rgba($dark, 0.5);
+}
+
+// Download page 
+
+#downloads{
+  padding-top: 15px;
+  padding-bottom: 125px;
+  background-color: $light;
+}
+
+// End of downloads check tabs on tabsdownload.css 
+
+.border-btm{
+  border-bottom: 1px solid $light;
+}
+.mui-tabs__bar{
+  color: $orange;
+}
+#new-banking-loyalty,
+#new-banking-pricing,
+#new-banking-POD,
+#new-client-tabview{
+  height: auto;
+  width: 100%;   
+  padding-top: 15px;
+  padding-bottom: 43px;
+}
+#new-banking-pricing{
+  padding-bottom: 27px;
+}
+#new-banking-POD{
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+
+// Start of client section 
+#new-client-tabview{
+  padding-top: 50px;
+  padding-bottom: 30px;
+  padding-left: 130px;
+  background-color: $light;
+}
+
+// End of client section 
+[class*=banner-] {
+  width: 100%;       
+  height: 225px;  
+  background-color:rgba($dark, 0.09);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(/assets/images/keyboards.jpg);
+}
+.banner,
+.banner1{
+  width: 100%;
+  height: 170px;
+}
+
+.custom-header{ 
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 100px;   
+  font-size: 34px;
+}
+.banner h2{
+  padding-top: 40px;
+  color: $light;
+}
+
+[id*=new-service-] {
+  height: auto;
+  width: 100%;
+  background-color: $light;      
+  padding-top: 90px;
+  padding-bottom: 30px;
+}
+#new-service-project{
+  padding-bottom: 207px;
+}
+#new-service-outsourcing{
+  padding-bottom: 207px;
+}
+#new-service-datacenter{
+  padding-bottom: 207px;
+}
+
+// End of Services 
+#new-healthcare-profile{  
+  height: auto;
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+#new-healthcare-products{
+  height: auto;
+  width: 100%;
+  padding-top: 90px;
+  padding-bottom: 25px;
+  background-color: $light;
+}
+#new-healthcare-contact{
+  height: auto;
+  width: 100%;
+  padding-top: 90px;
+  padding-bottom: 227px;
+  background-color: $light;
+}
+
+.healthcare-contacts{
+  padding-top: 70px;
+}
+.contact-img{
+  text-align: center;
+  align-content: center;
+}
+.mui-tabs__pane{
+  padding-top: 15px;
+}
+.robot{
+  padding-top: 40px;
+  padding-bottom: 30px;
+}
+// PWC page 
+#pwc{
+  padding-top: 30px;
+  padding-bottom: 180px;
+  background-color: $light;
+}
+#dtb{
+  padding-top: 30px;
+  padding-bottom: 250px;
+  background-color: $light;
+}
+#kq{
+  padding-top: 30px;
+  padding-bottom: 250px;
+  background-color: $light;
+}
+
+// pdf buttons 
+.snip {
+  background-color: #EF762D;
+  border: none;
+  color: $light !important;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 1rem;
+  font-size: 22px;
+  line-height: 1rem;
+  margin: 15px 20px;
+  outline: none;
+  padding: 15px;
+  position: relative;
+  text-transform: uppercase;
+  font-weight: 700;
+  &:hover {
+    background-color: #EF762D;
+    color: $light;
+    text-decoration: none;
+  }
+  &:before,
+  &:after {
+    border-color: transparent;
+    transition: all 0.25s;
+    border-style: solid;
+    border-width: 0;
+    content: "";
+    height: 24px;
+    position: absolute;
+    width: 24px;
+  }
+  &:before {
+    border-color: #EF762D;
+    border-right-width: 2px;
+    border-top-width: 2px;
+    right: -5px;
+    top: -5px;
+  }
+  &:after {
+    border-bottom-width: 2px;
+    border-color: #EF762D;
+    border-left-width: 2px;
+    bottom: -5px;
+    left: -5px;
+  }
+}
+
+// pdf buttons 
+.td-down h3{
+  padding-top: 10px;
+}
+
+//  Center responsive images  
+.img-responsive.img-center {
+  margin: 0 auto;
+}
+
+#section1{
+  height: 60vh;
+  background-image: url(../assets/tz.jpg);
+  background-size: cover;  
+}
+.introduction {
+  color: #11AD9E;
+  position: relative;
+  width: 100%;
+  padding-top: 200px; 
+  font-weight: 700;
+  text-align: left;
+  font-size: 5em;
+  padding-left: 50px;
+  color: #000; 
+}
+.intro-txt {
+  position: relative;
+  line-height: 50px;
+  font-size: 5em;
+  color: #11AD9E;
+  font-weight: 700;
+  padding-left: 50px;
+  color: #000;
+  font-size: 100px;
+}
+.showcase {
+  padding-top: 100px;
+  height: auto;
+  padding-bottom: 50px;
+  overflow: hidden;
+}
+.showcase .tabs {
+  width: 100%;
+}
+.showcase .tab-nav ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  width: 100%;
+  border-bottom: 1px solid rgba($dark, 0.1);
+}
+.showcase .tab-nav li {
+  display: block;
+}
+.showcase .tab-nav a {
+  display: block;
+  border-bottom: 2px solid transparent;
+  color: #666;
+  text-decoration: none;
+  text-transform: uppercase;
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+}
+.showcase .tab-nav a.active {
+  border-color: #f77070;
+  color: #f77070;
+  font-weight: 700;
+}
+
+.tab-content {
+  padding: 48px 0;
+}
+.tab-content h3 {
+  margin: 0 0 12px;
+  color: #333;
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.tab-content p {
+  color: #999;
+  text-align: left;
+}
+.tab-content img {
+  display: block;
+  width: 100%;
+}
+.tab-content .row {
+  display: table;
+}
+.tab-content .row .column {
+  display: table-cell;
+  width: 60%;
+  padding: 0 0 0 24px;
+  vertical-align: middle;
+}
+.tab-content .row .column:first-child {
+  width: 40%;
+  padding: 0;
+}
+.column {
+  width: 100%;
+}
+.services {
+  padding: 60px;  
+}
+.services .pad-top{
+  padding-top: 60px;
+}
+.services img{
+  margin: 0 auto;
+}
+.service-box{
+  margin-bottom: 40px;
+  cursor: pointer;
+}
+.service-box:hover .service-icon{
+  color: #f9f9f9;
+  background: $orange;
+  transition: all 1s;
+}
+.service-box.side-left{
+  text-align: right;
+}
+.service-box.side-right{
+  text-align: left;
+}
+.service-box h3{
+  color: $orange;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.service-box p{
+  line-height: 26px;
+  color: #000;
+}
+
+.service-box h5{
+  color: grey;
+}
+
+.service-icon{
+  display: inline-block;
+  font-size: 30px;
+  color: $orange;
+  line-height: 73px;
+  background: #f9f9f9;
+  width: 80px;
+  text-align: center;
+  border: solid 4px $light;
+  outline: 1px solid #dddddd;
+  margin-top: 10px;
+}
+.service-box.side-left .service-icon{
+  float: right;
+  margin-left: 20px;
+}
+.service-box.side-right .service-icon{
+  float: left;
+  margin-right: 20px;
+}
+.flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 360px;
+}
+.banner-about h1{    
+  color: $light;
+  padding-top: 100px;
+  text-transform: uppercase;
+  text-align: center;
+}
+@media (max-width: 575px) { 
+  .img-brand{
+    display: block;
+  }
+}
+
+@media (max-width: 767px) { 
+  .img-brand{
+    display: block;
+  }
+}

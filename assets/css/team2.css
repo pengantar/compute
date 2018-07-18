@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+ font-family: 'Raleway', sans-serif;
+
+-close{
+    color: white;
+}
+
+.topteam{
+    margin-top: 40px;
+}
+.heading-title {
+    margin-bottom: 100px;
+    color: black;
+}
+.text-center {
+    text-align: center;
+}
+.heading-title h3 {
+    margin-bottom: 0;
+    letter-spacing: 2px;
+    font-weight: normal;
+    color: black;
+}
+.p-top-30 {
+    padding-top: 30px;
+}
+.half-txt {
+    width: 60%;
+    margin: 0 auto;
+    display: inline-block;
+    line-height: 25px;
+    color: #7e7e7e;
+}
+.text-uppercase {
+    text-transform: uppercase;
+}
+
+.team-member, .team-member .team-img {
+    position: relative;
+}
+
+.team-img{
+  height: 300px;
+  width: 350px;
+}
+.team-member {
+    overflow: hidden;
+}
+.team-member, .team-member .team-img {
+    position: relative;
+}
+
+.team-title {
+    position: static;
+    padding: 20px 0;
+    display: inline-block;
+    letter-spacing: 2px;
+    width: 100%;
+}
+.team-title h5 {
+    margin-bottom: 0px;
+    display: block;
+    text-transform: uppercase;
+}
+.team-title span {
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #a5a5a5;
+   
+}
+.imran{
+    display: inline-block;
+}
+.imran-p{
+    display: inline-block;
+}
+
+.light-txt {
+    color: #fff !important;
+}
+.team-member .team-intro.light-txt h5 {
+    color: #fff;
+}
+.team-member, .team-member .team-img {
+    position: relative;
+}
+.team-member .team-intro.light-txt span {
+    color: rgba(255, 255, 255, .5);
+    font-size: 12px;
+}
+.team-member .team-intro h5, .team-member .team-intro.light-txt span {
+    margin-bottom: 0px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.team-member .team-intro {
+    position: absolute;
+    right: 0;
+    bottom: 30px;
+    background: rgba(0, 0, 0, .7);
+    padding: 10px 20px;
+    width: 70%;
+    text-align: right;
+}
+.module-title {
+    font-size: 20px;
+    letter-spacing: 10px;
+    text-align: center;
+ 
+}
+
+.font-alt {
+    color: black;
+    font-family: "Dosis", sans-serif;    
+    text-align: center;
+    text-transform: uppercase;
+     
+}
+
+
+
+.veiwbtn{
+  background: #333;
+  color: white;
+  margin-top: 10px;
+  border: none;
+  position: relative;
+  
+ padding: 5px;
+  font-weight: 900;
+  letter-spacing: 2px;
+  
+  font-weight: 300;
+  -webkit-transition: all 333ms ease-in-out;
+  -moz-transition: all 333ms ease-in-out;
+  -o-transition: all 333ms ease-in-out;
+  -ms-transition: all 333ms ease-in-out;
+  transition: all 333ms ease-in-out;
+}
+.veiwbtn:hover {
+  background: #313A3D;
+  color: #369;
+}
+.veiwbtn:focus {
+  outline: none;
+  background: #cd6302;
+}

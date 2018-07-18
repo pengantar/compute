@@ -1,0 +1,23 @@
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="East & Central Africa's Leading Technology System Provider">
+<meta name="description" content="internet solution">
+<meta name="description" content="Endpoint devices">
+<meta name="description" content="Tech kenya">
+<title> {% if page.title %} {{ page.title }} |{% endif %} {{ site.title }}</title>
+<link rel="icon" href="/assets/images/fav.ico">
+<link rel="stylesheet" href="/assets/css/animate.min.css">
+<link href="/assets/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+<link href="/assets/css/jquery.smartmenus.bootstrap.css" rel="stylesheet">
+<link rel="stylesheet" href="/assets/style.css">
+<link rel="stylesheet" href="/assets/css/dropdowns-enhancement.css">
+<link rel="stylesheet" href="/assets/css/animate.min.css">
+{% assign styles = page.dependencies.styles %}
+{%- if styles -%}
+  {%- for style in styles -%}
+    <link rel = 'stylesheet' href = "/assets/css/{{style}}.css">
+  {%- endfor -%}
+{%- endif -%}
+{% include analytics.html %}

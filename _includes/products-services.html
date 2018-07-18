@@ -1,0 +1,24 @@
+<div id="trailer">
+  <div class="container">
+    <div class="row">
+      {% for service in site.data.products-services %}
+      <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 space-bound aniview slow" data-av-animation="fadeIn" >
+        <div class="hovereffect card-shadow">
+          <img class="img-responsive" src="/assets/products/{{ service | slugify }}.jpg" alt="{{ service }}">
+          <div class="overlay linear">                           
+            <a class="hover-links" href="/products-services/{{ service | slugify }}/">{{ service | upcase }}</a>
+          </div>
+        </div>
+      </div>
+      {%- if forloop.index == 4 -%}
+    </div>            
+  </div> 
+</div>
+<div id="trailer-row2">
+  <div class="container">
+    <div class="row">
+      {%- endif -%}
+      {% endfor %}
+    </div>            
+  </div> 
+</div>

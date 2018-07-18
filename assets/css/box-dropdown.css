@@ -1,0 +1,537 @@
+/*For the boxes in Access control*/
+/*For row 1*/
+
+/*End of row 1*/
+.flip{             
+    height: 100%;
+    width: 100%;
+    color: white;
+    background-color:  #F68E35;   
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 3px;
+    margin-bottom: 20px;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.flip1{             
+    height: 100%;
+    width: 100%;
+    color: white;
+    background-color:  #F68E35;
+    vertical-align: middle;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 3px;
+}
+.middle{
+    vertical-align: middle;
+}
+.flip2{             
+    height: 55px;
+    width: 100%;
+    color: white;
+    background-color:  #F68E35;
+    vertical-align: middle;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 3px;
+}
+.flip3{             
+    height: 55px;
+    width: 100%;
+    color: white;
+    background-color:  #F68E35;
+    vertical-align: middle;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 3px;
+}    
+
+
+.panel{
+    padding: 5px;
+    display: none;
+    text-align: justify;
+    color: #141313;
+    background-color: #ffffff;
+    border-radius: 3px;
+    padding: 10px;
+    border: solid 1px #F68E35;
+    
+}
+.panel1{
+    padding: 5px;
+    display: none;
+    text-align: justify;
+    color: #141313;
+    background-color: #ffffff;
+    border-radius: 3px;
+    padding: 10px;
+    border: solid 1px #F68E35;
+   
+}
+.panel2{
+    padding: 5px;
+    display: none;
+    text-align: justify;
+    color: #141313;
+    background-color: #ffffff;
+    border-radius: 3px;
+    padding: 10px;
+    border: solid 1px #F68E35;
+   
+}
+.panel3{
+    padding: 5px;
+    display: none;
+    text-align: justify;
+     color: #141313;
+     background-color: #ffffff;
+     border-radius: 3px;
+     padding: 10px;
+     border: solid 1px #F68E35;
+}
+/*End of row 1*/
+
+/*start of row 2*/
+.flip4{             
+    height: 100%;
+    width: 100%;
+    color: white;
+    background-color:  #F68E35;   
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 3px;
+    margin-bottom: 20px;
+      vertical-align: middle;
+    text-align: center;
+}
+
+.flip5{             
+    height: 100%;
+    width: 100%;
+    color: white;
+    background-color:  #F68E35;
+    vertical-align: middle;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 3px;
+}
+.middle{
+    vertical-align: middle;
+}
+.flip6{             
+    height: 55px;
+    width: 100%;
+    color: white;
+    background-color:  #F68E35;
+    vertical-align: middle;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 3px;
+}
+.flip7{             
+    height: 55px;
+    width: 100%;
+    color: white;
+    background-color:  #F68E35;
+    vertical-align: middle;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 3px;
+}    
+
+
+.panel4{
+    padding: 5px;
+    display: none;
+    text-align: justify;
+    color: #141313;
+    background-color: #ffffff;
+    border-radius: 3px;
+    padding: 10px;
+    border: solid 1px #F68E35;
+    
+    
+}
+.panel5{
+    padding: 5px;
+    display: none;
+    text-align: justify;
+    color: #141313;
+    background-color: #ffffff;
+    border-radius: 3px;
+    padding: 10px;
+    border: solid 1px #F68E35;
+    
+}
+.panel6{
+    padding: 5px;
+    display: none;
+    text-align: justify;
+    color: #141313;
+    background-color: #ffffff;
+    border-radius: 3px;
+    padding: 10px;
+    border: solid 1px #F68E35;
+   
+}
+.panel7{
+    padding: 5px;
+    display: none;
+    text-align: justify;
+     color: #141313;
+     background-color: #ffffff;
+     border-radius: 3px;
+     padding: 10px;
+     border: solid 1px #F68E35;
+     position: absolute;
+    z-index: 999;
+}
+/*End of row 1*/
+
+/*Start of row 3*/
+.flip8{             
+    height: 100%;
+    width: 100%;
+    color: white;
+    background-color:  #F68E35;   
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 3px;
+    margin-bottom: 20px;
+      vertical-align: middle;
+    text-align: center;
+}
+
+.flip9{             
+    height: 100%;
+    width: 100%;
+    color: white;
+    background-color:  #F68E35;
+    vertical-align: middle;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 3px;
+}
+.middle{
+    vertical-align: middle;
+}
+.flip10{             
+    height: 55px;
+    width: 100%;
+    color: white;
+    background-color:  #F68E35;
+    vertical-align: middle;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 3px;
+}
+.flip11{             
+    height: 55px;
+    width: 100%;
+    color: white;
+    background-color:  #F68E35;
+    vertical-align: middle;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 3px;
+}    
+
+
+.panel8{
+    padding: 5px;
+    display: none;
+    text-align: justify;
+    color: #141313;
+    background-color: #ffffff;
+    border-radius: 3px;
+    padding: 10px;
+    border: solid 1px #F68E35;
+    position: absolute;
+    z-index: 999;
+     position: absolute;
+    z-index: 999;
+}
+.panel9{
+    padding: 5px;
+    display: none;
+    text-align: justify;
+    color: #141313;
+    background-color: #ffffff;
+    border-radius: 3px;
+    padding: 10px;
+    border: solid 1px #F68E35;
+     position: absolute;
+    z-index: 999;
+}
+.panel10{
+    padding: 5px;
+    display: none;
+    text-align: justify;
+    color: #141313;
+    background-color: #ffffff;
+    border-radius: 3px;
+    padding: 10px;
+    border: solid 1px #F68E35;
+     position: absolute;
+    z-index: 999;
+}
+.panel11{
+    padding: 5px;
+    display: none;
+    text-align: justify;
+     color: #141313;
+     background-color: #ffffff;
+     border-radius: 3px;
+     padding: 10px;
+     border: solid 1px #F68E35;
+     position: absolute;
+    z-index: 999;
+}
+
+/*End of row 3*/
+
+/*Start of row 4*/
+.flip12{             
+    height: 100%;
+    width: 100%;
+    color: white;
+    background-color:  #F68E35;   
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 3px;
+    margin-bottom: 20px;
+      vertical-align: middle;
+    text-align: center;
+}
+
+.flip13{             
+    height: 100%;
+    width: 100%;
+    color: white;
+    background-color:  #F68E35;
+    vertical-align: middle;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 3px;
+}
+.middle{
+    vertical-align: middle;
+}
+.flip14{             
+    height: 55px;
+    width: 100%;
+    color: white;
+    background-color:  #F68E35;
+    vertical-align: middle;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 3px;
+}
+.flip15{             
+    height: 100%;
+    width: 100%;
+    color: white;
+    background-color:  #F68E35;
+    vertical-align: middle;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 3px;
+}    
+
+
+.panel12{
+    padding: 5px;
+    display: none;
+    text-align: justify;
+    color: #141313;
+    background-color: #ffffff;
+    border-radius: 3px;
+    padding: 10px;
+    border: solid 1px #F68E35;
+    position: absolute;
+    z-index: 999;
+     position: absolute;
+    z-index: 999;
+}
+.panel13{
+    padding: 5px;
+    display: none;
+    text-align: justify;
+    color: #141313;
+    background-color: #ffffff;
+    border-radius: 3px;
+    padding: 10px;
+    border: solid 1px #F68E35;
+     position: absolute;
+    z-index: 999;
+}
+.panel14{
+    padding: 5px;
+    display: none;
+    text-align: justify;
+    color: #141313;
+    background-color: #ffffff;
+    border-radius: 3px;
+    padding: 10px;
+    border: solid 1px #F68E35;
+     position: absolute;
+    z-index: 999;
+}
+.panel15{
+    padding: 5px;
+    display: none;
+    text-align: justify;
+     color: #141313;
+     background-color: #ffffff;
+     border-radius: 3px;
+     padding: 10px;
+     border: solid 1px #F68E35;
+     position: absolute;
+    z-index: 999;
+}
+/*End of row 4*/
+/*Start of row 5*/
+.flip16{             
+    height: 100%;
+    width: 100%;
+    color: white;
+    background-color:  #F68E35;   
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 3px;
+    margin-bottom: 20px;
+      vertical-align: middle;
+    text-align: center;
+}
+
+.flip17{             
+    height: 100%;
+    width: 100%;
+    color: white;
+    background-color:  #F68E35;
+    vertical-align: middle;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 3px;
+}
+.middle{
+    vertical-align: middle;
+}
+.flip18{             
+    height: 55px;
+    width: 100%;
+    color: white;
+    background-color:  #F68E35;
+    vertical-align: middle;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 3px;
+}
+.flip19{             
+    height: 55px;
+    width: 100%;
+    color: white;
+    background-color:  #F68E35;
+    vertical-align: middle;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 3px;
+}    
+
+
+.panel16{
+    padding: 5px;
+    display: none;
+    text-align: justify;
+    color: #141313;
+    background-color: #ffffff;
+    border-radius: 3px;
+    padding: 10px;
+    border: solid 1px #F68E35;
+    position: absolute;
+    z-index: 999;
+     position: absolute;
+    z-index: 999;
+}
+.panel17{
+    padding: 5px;
+    display: none;
+    text-align: justify;
+    color: #141313;
+    background-color: #ffffff;
+    border-radius: 3px;
+    padding: 10px;
+    border: solid 1px #F68E35;
+     position: absolute;
+    z-index: 999;
+}
+.panel18{
+    padding: 5px;
+    display: none;
+    text-align: justify;
+    color: #141313;
+    background-color: #ffffff;
+    border-radius: 3px;
+    padding: 10px;
+    border: solid 1px #F68E35;
+     position: absolute;
+    z-index: 999;
+}
+.panel19{
+    padding: 5px;
+    display: none;
+    text-align: justify;
+     color: #141313;
+     background-color: #ffffff;
+     border-radius: 3px;
+     padding: 10px;
+     border: solid 1px #F68E35;
+     position: absolute;
+    z-index: 999;
+}
+/*End of row 5*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*End for boxes in access control*/

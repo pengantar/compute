@@ -1,0 +1,38 @@
+.im-modal {
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 30px 30px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 200ms, opacity 200ms; }
+
+.im-active {
+  visibility: visible;
+  opacity: 1; }
+
+.im-active > .im-inner-panel {
+  animation: scale 200ms; }
+
+.im-inner-panel {
+  overflow-y: auto;
+  background-color: #fff;
+  padding: 20px;
+  margin: 0 auto;
+  width: 640px;
+  max-width: 100%;
+  max-height: 100%; }
+
+@keyframes scale {
+  0% {
+    transform: scale(0.97); }
+  100% {
+    transform: scale(1); } }

@@ -1,0 +1,33 @@
+---
+layout: default
+permalink: '/'
+dependencies:
+  styles:
+    - slider
+  scripts:
+    - slider
+---
+<div class = 'jumbotron'>
+  <div id = 'slides' class = 'carousel fade' data-ride = 'carousel'>
+    {%- assign slides = site.data.slides -%}
+    <ol class = 'carousel-indicators'>
+    {%- for slide in slides -%}
+      {% assign index = forloop.index | minus: 1 %}
+      <li data-target = '#slides' data-slide-to = '{{ index }}' {% if forloop.first %} class = 'active' {% endif %} contenteditable = 'false'></li>
+    {%- endfor -%}>
+    </ol>
+    <div class = 'carousel-inner' role = 'listbox'>
+    {%- for slide in slides -%}
+      <figure class = 'item {% if forloop.first %}active{% endif %}'>
+        <img src = '/assets/images/{{ slide.image }}' class = 'img-responsive' alt = 'slide'>
+        <figcaption class = 'carousel-caption'>
+          <div class = 'caption'>
+            <h1>{{ slide.description | markdownify }}</h1>
+          </div>
+        </figcaption>
+      </figure>
+    {%- endfor -%}
+    </div> 
+  </div>
+</div>
+{%- include products-services.html -%}

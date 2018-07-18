@@ -1,0 +1,84 @@
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus{
+  background-color: transparent;
+}
+.navbar-default .navbar-nav > .dropdown > a .caret {
+  background-color: transparent;
+}
+#mynav{
+  background-color: white; 
+}
+.men-link:hover,
+.men-link:focus,
+.men-link:visited,
+.men-link:active {
+  background-color: #141313 !important;
+}
+.navbar-header a img{
+  padding-top: 25px;
+  padding-bottom: 30px;
+}
+#mynav ul {
+  margin-top: 18px;  
+}
+#mynav ul li a{
+  letter-spacing: 1.6px;
+  font-family: $body-font;
+  font-size: 15px;  
+  border: 2px solid transparent;
+}
+#mynav ul li a:hover{
+  color:#EA783A;
+  text-decoration: none;
+}
+.dropdown-menu{
+  background-color: #141313;
+}
+.dropdown-menu li a{
+  color: white;
+}
+.navbar-default .navbar-nav > .active{
+  color: #000;
+  background: #EA783A;
+}
+.navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+   background-color: transparent !important;
+  }
+.navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+   background-color: transparent !important;
+  }
+.cust-back{
+  background-color: #EEEEEE;
+}
+.custom-links{
+  font-size: 13px;
+}
+
+// Cleanup the grey effect
+
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+  background-color: transparent;
+  color:  #EA783A;
+  border: 2px solid  #EA783A !important;
+}
+.navbar-default .navbar-nav > li > a:active ,
+.navbar-default .navbar-nav > li > a:focus{
+  color: #EA783A;
+}
+.dropdown-menu.animated {
+//  Speed up animations 
+animation-duration: 0.55s;
+animation-timing-function: ease;
+}
+
+.dropdown-menu li{
+  border-bottom: 1px solid #fff;
+}
+.dropdown-menu li a{   
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+.dropdown-menu li:last-child{
+  border-bottom: none;
+}

@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+*{
+     font-family: 'Raleway', sans-serif;
+      letter-spacing: 1.5px;
+}
+
+.nav.nav-justified > li > a{
+     color: #141313;
+    
+}
+
+
+.nav.nav-justified > li.active > a > .quote { opacity: 1; }
+.nav.nav-justified > li > a > img { box-shadow: 0 0 0 5px #13c0ba; }
+.nav.nav-justified > li > a { 
+    max-width: 100%; 
+     -webkit-transform: scale(.8,.8);
+            transform: scale(.8,.8);
+    -webkit-transition: all 0.3s 0s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            transition: all 0.3s 0s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.nav.nav-justified > li.active > a ,
+.nav.nav-justified > li:hover > a ,
+.nav.nav-justified > li:focus > a { 
+    background-color: #F68E35;
+    opacity: 1; 
+    -webkit-transform: none;
+            transform: none;
+    -webkit-transition: all 0.3s 0s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            transition: all 0.3s 0s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.tab-pane .tab-inner { padding: 30px 0 20px; }
+
+@media (min-width: 768px) {
+    .nav.nav-justified > li > a  {
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }  
+}

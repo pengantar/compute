@@ -1,0 +1,63 @@
+- link: about us
+  sublinks:
+    - sublink: awards 
+    - sublink: careers
+    - sublink: downloads 
+    - sublink: profile
+    - sublink: team 
+
+- link: products & services
+  sublinks: 
+    - sublink: atms & banking
+    - sublink: cyber security 
+      children: 
+        - access control
+        # - asset protection     
+        # - improve revenue & reduce costs    
+        # - reaction & recovery 
+        # - visibility           
+
+    - sublink: endpoint devices 
+      children:
+        - accessories   
+        - desktops   
+        - laptops
+        - printers
+        - projectors & screens 
+        - tablets
+
+    - sublink: healthcare
+      children:
+        - diagnostc imaging
+        - ultrasound  
+
+    - sublink: infrastructure 
+      children:
+        - backup & replication
+        - compute
+        - data centres
+        - active networks
+        - passive networks                  
+        - physical security solutions
+        - storage
+
+    - sublink: internet & cloud solutions
+    - sublink: services 
+      children:
+        - leasing 
+        - maintenance 
+        - outsourcing   
+        - service centre
+
+    - sublink: software solutions
+      children:
+        - anti-virus
+        - custom software solutions
+        - microsoft portfolio
+        - cloud services 
+        - licensing
+        - managed services
+
+- link: partners
+- link: blog 
+- link: contact us 

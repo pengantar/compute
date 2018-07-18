@@ -1,0 +1,34 @@
+<form role = 'form' id = 'ATMForm' class = 'ATMform card-shadow shake' data-toggle = 'validator'>
+  {%- assign title = page.title | downcase -%}
+  <h4 class = 'center'><strong>{% if title != 'contact us' %}Contact us for more details on {{ page.title }} {% else %} Please contact us using the form below {% endif %}</strong></h4>
+  <fieldset class = 'form-group'>
+    <label for = 'exampleInputEmail1'>Full Name</label>
+    <input type = 'text' class = 'col-sm-3 form-control form-fixer'  id = 'name' name = 'name' value = '' data-error = 'Please enter your name' placeholder = 'Name' required>
+  </fieldset>
+
+  <fieldset class = 'form-group'>
+    <label for = 'email'>Email</label>
+    <input type = 'email' class = 'form-control form-fixer' id = 'email' data-error = 'Please enter your email' name = 'email' value = '' placeholder = 'you@awesome.com' required>   
+  </fieldset>
+
+  <fieldset class = 'form-group'>
+    <label for = 'msg_subject'>Phone number</label>
+    <input type = 'text' name = 'tel' data-error = 'Please enter your phone number' class = 'form-control form-fixer' id = 'msg_subject' value = '' placeholder = '' required>
+  </fieldset>
+
+  <fieldset class = 'form-group'>
+    <label for = 'message'>Message</label>
+    <textarea  type = 'text' name = 'message' data-error = 'Please enter your message' class = 'form-control form-fixer' id = 'message' rows = '3' value = '' placeholder = 'Please enter your message' required></textarea>
+  </fieldset>
+  
+  <br>
+  
+  <div class = 'g-recaptcha' data-callback = 'recaptchaCallback' data-sitekey = '6LdOxwoUAAAAACdtGAhPXI4eUVqkJyAyydr7tq2H' data-them = 'dark' required></div>
+  <div style = 'float:right'>
+    <button  class = 'btn btn-success snip' type = 'submit' id = 'submit'> SUBMIT</button>
+  </div>
+  
+  <div id = 'msgSubmit' class = 'orange h4 text-center hidden'></div> 
+  <div class = 'clearfix'></div> 
+</form>
+{% include autoresize.html %}

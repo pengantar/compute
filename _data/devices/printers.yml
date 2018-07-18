@@ -1,0 +1,288 @@
+--- 
+- 
+  description: "HP DESKJET INK ADVANTAGE 2135 AIO PRNTR"
+  image: F5S29C.jpg
+  model: F5S29C
+  price: "KES  6,264"
+  purpose: "INKJET PRINTER"
+  status: Available
+- 
+  description: "HP DESKJET IA 3635 AIO PRINTER"
+  image: F5S44C.jpg
+  model: F5S44C
+  price: "KES 9,466"
+  purpose: "INKJET PRINTER"
+  status: Available
+- 
+  description: "HP Deskjet IA 3785 - Sea Grass Green with Wireless"
+  image: T8W46C.jpg
+  model: T8W46C
+  price: "KES  9,744"
+  purpose: "INKJET PRINTER"
+  status: Available
+- 
+  description: "HP Deskjet IA 3775 - Stone with Wireless"
+  image: T8W42C.png
+  model: T8W42C
+  price: "KES  9,744"
+  purpose: "INKJET PRINTER"
+  status: Available
+- 
+  description: "HP Deskjet Ink Advantage 4535 Web Connected Products / Photo Printers"
+  image: F0V64C.png
+  model: F0V64C
+  price: "KES 12,110"
+  purpose: "INKJET PRINTER"
+  status: Available
+- 
+  description: "HP DeskJet Ink Advantage 3835 All-in-One"
+  image: F5R96C.png
+  model: F5R96C
+  price: "KES  12,528"
+  purpose: "INKJET PRINTER"
+  status: Available
+- 
+  description: "HP DeskJet IA 4675 AiO Printer:AFR/ME-en"
+  image: F1H97C.png
+  model: F1H97C
+  price: "KES  13,781"
+  purpose: "INKJET PRINTER"
+  status: Available
+- 
+  description: "Deskjet GT 5820 ( wifi)"
+  image: X3B09A.jpg
+  model: X3B09A
+  price: "KES 26,030"
+  purpose: "New CISS PRINTER (INK TANK)"
+  status: Available
+- 
+  description: "HP Page Wide Pro 452dw Printer"
+  image: D3Q16B.png
+  model: D3Q16B
+  price: "KES  48,998"
+  purpose: "PAGEWIDE PRINTER"
+  status: Available
+- 
+  description: "HP PageWide Pro 477dw Printer"
+  image: D3Q20B.png
+  model: D3Q20B
+  price: "KES  63,754"
+  purpose: "PAGEWIDE PRINTER"
+  status: Available
+- 
+  description: "HP OFFICEJET 7110 WF EPRINTER"
+  image: CR768A.png
+  model: CR768A
+  price: "KES 16,982"
+  purpose: "OFFICEJET PRINTER"
+  status: Available
+- 
+  description: "HP Officejet 7510 Wide format e-AIO Wireless"
+  image: G3J47A.png
+  model: G3J47A
+  price: "KES 21,576"
+  purpose: "OFFICEJET PRINTER"
+  status: Expected
+- 
+  description: "HP Officejet 7612 Wide format e-AIO"
+  image: G1X85A.png
+  model: G1X85A
+  price: "KES  21,854"
+  purpose: "OFFICEJET PRINTER"
+  status: Expected
+- 
+  description: "HP OfficeJet PRO 8710 ALL-IN-ONE PRINTER"
+  image: D9L18A.png
+  model: D9L18A
+  price: "KES  22,968"
+  purpose: "OFFICEJET PRINTER"
+  status: Available
+- 
+  description: "HP OFFICEJET PRO 8720 ALL-IN-ONE PRINTER"
+  image: D9L19A.png
+  model: D9L19A
+  price: "KES  31,320"
+  purpose: "OFFICEJET PRINTER"
+  status: Available
+- 
+  description: "HP OfficeJet Pro 8730 All-in-One Printer"
+  image: D9L20A.png
+  model: D9L20A
+  price: "KES  45,240"
+  purpose: "OFFICEJET PRINTER"
+  status: Available
+- 
+  description: "HP Officejet Pro 7740 Wide Format AiO"
+  image: G5J38A.png
+  model: G5J38A
+  price: "KES  28,675"
+  purpose: "OFFICEJET PRINTER"
+  status: Available
+- 
+  description: "HP LaserJet P102w (Replacement for 1102w)"
+  image: G3Q35A.png
+  model: G3Q35A
+  price: "KES  16,704"
+  purpose: "MONO LASERJET PRINTER SINGLE FUNCTION"
+  status: Available
+- 
+  description: "HP LaserJet Pro M203dw"
+  image: G3Q47A.jpg
+  model: G3Q47A
+  price: "KES  26,448"
+  purpose: "MONO LASERJET PRINTER SINGLE FUNCTION"
+  status: Available
+- 
+  description: "HP LaserJet Pro M402dne"
+  image: C5J91A.jpg
+  model: C5J91A
+  price: "KES  27,562"
+  purpose: "MONO LASERJET PRINTER SINGLE FUNCTION"
+  status: Expected
+- 
+  description: "HP LaserJet Pro M402dw"
+  image: C5F95A.jpg
+  model: C5F95A
+  price: "KES 33,826"
+  purpose: "MONO LASERJET PRINTER SINGLE FUNCTION"
+  status: Available
+- 
+  description: "HP LaserJet Pro MFP M130a (Replacement for 125a)"
+  image: G3Q57A.jpg
+  model: G3Q57A
+  price: "KES  19,349"
+  purpose: "MONO LASERJET PRINTER MULTI FUNCTION"
+  status: Available
+- 
+  description: "HP LaserJet Pro MFP M130nw (Replacement for 125nw)"
+  image: G3Q58A.jpg
+  model: G3Q58A
+  price: "KES  23,107"
+  purpose: "MONO LASERJET PRINTER MULTI FUNCTION"
+  status: Available
+- 
+  description: "HP LaserJet Pro MFP M227sdn"
+  image: G3Q74A.jpg
+  model: G3Q74A
+  price: "KES  33,130"
+  purpose: "MONO LASERJET PRINTER MULTI FUNCTION"
+  status: Expected
+- 
+  description: "HP LaserJet Pro MFP M227fdw"
+  image: G3Q75A.png
+  model: G3Q75A
+  price: "KES  46,632"
+  purpose: "MONO LASERJET PRINTER MULTI FUNCTION"
+  status: Available
+- 
+  description: "HP LaserJet Pro MFP M426fdw"
+  image: F6W15A.jpg
+  model: F6W15A
+  price: "KES  60,552"
+  purpose: "MONO LASERJET PRINTER MULTI FUNCTION"
+  status: Available
+- 
+  description: "HP Color LaserJet Pro M452nw 27ppm, eprint, Network, Wireless"
+  image: CF388A.jpg
+  model: CF388A
+  price: "KES  40,368"
+  purpose: "COLOR LASERJET PRINTER MULTI FUNCTION"
+  status: Available
+- 
+  description: "HP Color LaserJet Pro M452dn 27ppm, eprint, Duplex, Network"
+  image: CF389A.jpg
+  model: CF389A
+  price: "KES 46,214"
+  purpose: "COLOR LASERJET PRINTER MULTI FUNCTION"
+  status: Available
+- 
+  description: "HP LaserJet Enterprise M604dn"
+  image: E6B68A.png
+  model: E6B68A
+  price: "KES 91,176"
+  purpose: "ENTERPRISE PRINTER"
+  status: Available
+- 
+  description: "HP LaserJet Enterprise M605dn"
+  image: E6B70A.png
+  model: E6B70A
+  price: "KES  121,104"
+  purpose: "ENTERPRISE PRINTER"
+  status: Expected
+- 
+  description: "HP LaserJet Enterprise M609dn"
+  image: E6B68A.png
+  model: K0Q21A
+  price: "KES 137,808"
+  purpose: "ENTERPRISE PRINTER"
+  status: Expected
+- 
+  description: "HP LaserJet Enterprise M606dn"
+  image: E6B72A.png
+  model: E6B72A
+  price: "KES 148,944"
+  purpose: "ENTERPRISE PRINTER"
+  status: Expected
+- 
+  description: "HP LaserJet Pro 500 Color MFP M570DN"
+  image: CZ271A.png
+  model: CZ271A
+  price: "KES 140,592"
+  purpose: "ENTERPRISE PRINTER"
+  status: Available
+- 
+  description: "HP LaserJet Pro MFP M435NW"
+  image: A3E42A.png
+  model: A3E42A
+  price: "KES  143,376"
+  purpose: "ENTERPRISE PRINTER"
+  status: Available
+- 
+  description: "HP LaserJet ENTERPRISE 700 M712DN"
+  image: CF236A.png
+  model: CF236A
+  price: "KES 264,480"
+  purpose: "ENTERPRISE PRINTER"
+  status: Available
+- 
+  description: "Zebra GC420d Direct thermal desktop labelling printer DT, GC420d; 203DPI, EU and UK Cords, EPL and ZPL, USB, Serial and Parallel (Centronics), 8MB Std Flash, 8MB SDRAM"
+  image: GC420-200520-000.jpg
+  model: GC420-200520-000
+  price: "KES 39,390"
+  purpose: PRINTER
+  status: Expected
+- 
+  description: "Zebra GC420t Compact Desktop Barcode Label Printer TT , GC420t; 203DPI, EU and UK Cords, EPL and ZPL, USB, Serial and Parallel (Centronics), 8MB Std Flash, 8MB SDRAM"
+  image: GC420-100520-000.jpg
+  model: GC420-100520-000
+  price: "KES 46,893"
+  purpose: PRINTER
+  status: Expected
+- 
+  description: "Zebra GK420d - Compact Direct Thermal Desktop Label Printer, GK420d; 203 dpi, EU and UK Cords, EPL, ZPLII, USB, Serial, Centronics Parallel"
+  image: GK42-202520-000.jpg
+  model: GK42-202520-000
+  price: "KES 51,020"
+  purpose: PRINTER
+  status: Expected
+- 
+  description: "Zebra GK420t - Compact Thermal Transfer Desktop Label Printer, GK420t; 203 dpi, EU and UK Cords, EPL, ZPLII, USB, Serial, Centronics Parallel"
+  image: GK42-102520-000.jpg
+  model: GK42-102520-000
+  price: "KES 59,594"
+  purpose: PRINTER
+  status: Expected
+- 
+  description: "Zebra ZT220 affordable label printer with simple three button interface , ZT220; 203 dpi, Euro and UK cord, Serial, USB"
+  image: ZT22042-T0E000FZ.jpg
+  model: ZT22042-T0E000FZ
+  price: "KES 88,414"
+  purpose: PRINTER
+  status: Expected
+- 
+  description: "Zebra ZT410 Industrial Label Printer with 4-inch Print Width Printer ZT410; 4\", 203 dpi, Euro and UK cord, Serial, USB, 10/100 Ethernet, Bluetooth 2.1/MFi, USB Host, EZPL"
+  image: ZT41042-T0E0000Z.jpg
+  model: ZT41042-T0E0000Z
+  price: "KES 155,220"
+  purpose: PRINTER
+  status: Expected

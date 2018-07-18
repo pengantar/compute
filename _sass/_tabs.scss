@@ -1,0 +1,392 @@
+//----- Tabs -----
+.tabs {
+  width:100;
+  display:inline-block;
+}
+
+//----- Tab Links -----
+// Clearfix 
+.tab-links:after{
+  display:block;
+  clear:both;
+  content:'';
+}
+
+.tab-links li {
+  margin:0px 1px;
+  float:left;
+  list-style:none;
+}
+
+.tab-links a {
+  padding:3px 2px;
+  display:inline-block;
+  border-radius:3px 3px 0px 0px;
+  background: #FFFFFF;
+  text-align: center;
+  font-size:16px;
+  font-weight:600;
+  color: #141313;;
+  transition:all linear 0.15s;
+  //  background-color: #E8E8E8;
+  //  background-color: #F8F8F8 ;
+}
+
+.tab-links a:hover {
+  color: #EA783A;
+  text-decoration:none;
+}
+
+li.active a, li.active a:hover {
+  background:#fff;
+  color:#4c4c4c;
+}
+
+//----- Content of Tabs -----
+.tab-content {
+  color: #14131c;
+  font-size: 15px;
+  letter-spacing: 1.5px;  
+  text-align: justify;  
+  border-radius:3px;
+  background:#fff;
+  margin: 10px;
+  padding: 20px;
+  box-shadow: 0 0 130px rgba(0,0,0,0.17);
+  a{
+    color: #EA783A;
+    font-weight:600;
+    &:hover{
+      color: #EA783A;
+      text-decoration: none;
+    }
+  }
+}
+
+.tab {
+  display:none;
+}
+
+.tab.active {
+  display:block;
+  border: 1px solid black;
+}
+
+.seaTabs_switch { 
+  width: 100%;
+  display: flex;
+  img{
+    width: 100%;
+  }
+}
+
+.seaTabs_tab {
+  float: left;
+  cursor: pointer;
+}
+
+.seaTabs_switch_active { cursor: default; }
+
+.seaTabs_item { display: none; }
+
+.seaTabs_content_active { display: block; }
+.seaTabs_tab {
+  padding: 8.3px;
+  border-width: 1px 1px 1px 0;
+  border-style: solid;
+  border-color: #ccc;
+  background: #f8f8f8;
+  justify-content: space-between;
+  
+}
+
+.seaTabs_tab:first-child {
+  border-left: 1px solid #ccc;
+  border-top-left-radius: 5px;
+}
+
+.seaTabs_tab:last-child { border-top-right-radius: 5px; }
+
+.seaTabs_content { margin-top: -1px; }
+
+.seaTabs_item {
+  padding: 20px;
+  border-radius: 0 0 5px 5px;
+}
+
+.seaTabs_switch_active {
+  border-bottom: 1px solid #fff;
+  background: #fff;
+}
+.seaTabs_tab {
+  padding: 8.3px;
+}
+.nav-tabs{
+  border-bottom: none;
+  margin-bottom: 0;
+}
+.nav-tabs > li > a{
+  padding: 3px;
+  margin: 1px;
+  text-align: center;
+  cursor: pointer;
+}
+.nav-tabs > li:hover,
+.nav-tabs > li:active,
+.nav-tabs > li:visited,
+.nav-tabs > li:focus {
+  background-color: transparent;
+}
+
+.country-title{
+  color: dimgrey;
+  margin: auto;
+  padding: inherit;
+  display: block;
+}
+// End of download page
+.nav-tabs li a{
+  font-size: 17px;
+  color: black;
+}
+
+.nav-tabs > li > a:hover{
+  background-color: #303136 !important;
+  border: medium none;
+  border-radius: 0;
+  color:#fff;
+}
+
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:hover,
+.nav-tabs > li.active > a:focus {
+  color: white;
+  background-color: #EA783A;
+  
+}
+
+.nav-tabs > li, .nav-pills > li {
+  float:none;
+  display:inline-block;
+}
+.nav-tabs .active li a{
+  color: #EA783A;  
+}
+// target
+.targetDiv {
+  display: none
+}
+.targetDiv1 {
+  display: none
+}
+
+.showSingle{             
+  height: 100%;
+  width: 100%;
+  color: white;
+  background-color:  #F68E35;   
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 3px;
+  margin-bottom: 20px;
+  vertical-align: middle;
+  text-align: center;
+  line-height: 40px;
+}
+.targetDiv{
+  margin-top: 10px;
+  padding: 5px;
+  display: none;
+  text-align: justify;
+  color: #141313;
+  background-color: #ffffff;
+  border-radius: 3px;
+  padding: 10px;
+  border: solid 1px #F68E35;
+  
+}
+
+// Second row
+.showSingle1{             
+  height: 100%;
+  width: 100%;
+  color: white;
+  background-color:  #F68E35;   
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 3px;
+  margin-bottom: 20px;
+  vertical-align: middle;
+  text-align: center;
+  line-height: 40px;
+}
+.targetDiv1{
+  margin-top: 10px;
+  padding: 5px;
+  display: none;
+  text-align: justify;
+  color: #141313;
+  background-color: #ffffff;
+  border-radius: 3px;
+  padding: 10px;
+  border: solid 1px #F68E35;
+  
+}
+// End of row
+
+// Start of row 3
+.showSingle2{             
+  height: 100%;
+  width: 100%;
+  color: white;
+  background-color:  #F68E35;   
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 3px;
+  margin-bottom: 20px;
+  vertical-align: middle;
+  text-align: center;
+  line-height: 40px;
+}
+.targetDiv2{
+  margin-top: 10px;
+  padding: 5px;
+  display: none;
+  text-align: justify;
+  color: #141313;
+  background-color: #ffffff;
+  border-radius: 3px;
+  padding: 10px;
+  border: solid 1px #F68E35;
+  
+}
+// End of row 3
+// Start of row 4
+.showSingle3{             
+  height: 100%;
+  width: 100%;
+  color: white;
+  background-color:  #F68E35;   
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 3px;
+  margin-bottom: 20px;
+  vertical-align: middle;
+  text-align: center;
+  line-height: 40px;
+}
+.targetDiv3{
+  margin-top: 10px;
+  padding: 5px;
+  display: none;
+  text-align: justify;
+  color: #141313;
+  background-color: #ffffff;
+  border-radius: 3px;
+  padding: 10px;
+  border: solid 1px #F68E35;
+  
+}
+// End of row 4
+// Start of row 5
+.showSingle4{             
+  height: 100%;
+  width: 100%;
+  color: white;
+  background-color:  #F68E35;   
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 3px;
+  margin-bottom: 20px;
+  vertical-align: middle;
+  text-align: center;
+  line-height: 40px;
+}
+.targetDiv4{
+  margin-top: 10px;
+  padding: 5px;
+  display: none;
+  text-align: justify;
+  color: #141313;
+  background-color: #ffffff;
+  border-radius: 3px;
+  padding: 10px;
+  border: solid 1px #F68E35;
+  
+}
+// End of row 5
+
+.seaTabs * { 
+    padding: 2.71px;
+}
+
+.seaTabs_switch { 
+    width: 100%;
+   }
+
+.seaTabs_tab {
+  float: left;
+  cursor: pointer;
+}
+
+.seaTabs_switch_active {
+   cursor: default;
+}
+
+.seaTabs_item { 
+  display: none;
+}
+
+.seaTabs_content_active {
+   display: block;
+}
+
+.seaTabs_tab {
+  padding: 6.3px;
+  border-width: 1px 1px 1px 0;
+  border-style: solid;
+  border-color: #ccc;
+  background: #f8f8f8;
+  
+}
+
+.seaTabs_tab:first-child {
+  border-left: 1px solid #ccc;
+  border-top-left-radius: 5px;
+}
+
+.seaTabs_tab:last-child {
+   border-top-right-radius: 5px;
+}
+
+.seaTabs_content *{
+    line-height: 30px;
+}
+.seaTabs_content a{
+  color: #F68E35;
+}
+.seaTabs_item {
+  padding: 20px;
+  border-radius: 0 0 5px 5px;
+}
+
+.seaTabs_switch_active {
+  border-bottom: 1px solid #fff;
+  background: #fff;
+}
+
+#new-banking-lending td{
+  padding: 15px;
+  vertical-align:middle;
+  
+}
+td {
+ text-align: center;
+}
+
+table{
+  vertical-align: top;
+  border-collapse: collapse;
+  height: 100%;
+  width: 100%;
+}

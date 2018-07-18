@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+/*----- Tabs -----*/
+.tabs {
+    width:100%;
+    display:inline-block;
+}
+ 
+    /*----- Tab Links -----*/
+    /* Clearfix */
+    .tab-links:after {
+        display:block;
+        clear:both;
+        content:'';
+    }
+ 
+    .tab-links li {
+        margin:0px 1px;
+        float:left;
+        list-style:none;
+    }
+ 
+        .tab-links a {
+            padding:3px 2px;
+            display:inline-block;
+            border-radius:3px 3px 0px 0px;
+            background: #FFFFFF;
+            font-family: 'Raleway', sans-serif;
+            text-align: center;
+            font-size:16px;
+            font-weight:600;
+            color: #141313;;
+            transition:all linear 0.15s;
+/*            background-color: #E8E8E8;*/
+/*           background-color: #F8F8F8 ;*/
+            
+             
+        }
+ 
+        .tab-links a:hover {
+            color: #EA783A;
+            text-decoration:none;
+        }
+ 
+    li.active a, li.active a:hover {
+        background:#fff;
+        color:#4c4c4c;
+    }
+ 
+    /*----- Content of Tabs -----*/
+    .tab-content {
+        font-family: 'Raleway', sans-serif;
+        letter-spacing: 1.5px;
+        line-height: 35px;
+        padding:15px;
+        border-radius:3px;
+        box-shadow:-1px 1px 1px rgba(0,0,0,0.15);
+        background:#fff;
+        margin: 10px;
+        
+    }
+.tab-content a{
+    color: #EA783A;
+    font-weight:600;
+}
+.tab-content a:hover{
+        color: #EA783A;
+    text-decoration: none;
+}
+
+        .tab {
+            display:none;
+        }
+ 
+        .tab.active {
+            display:block;
+            border: 1px solid black;
+        }

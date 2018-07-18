@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,400i,700|Raleway:400,400i,500,600,700');
+*,
+*:before,
+*:after{
+  letter-spacing: 1.5px;
+  box-sizing: border-box;
+}
+body {
+  padding-top:50px;
+  overflow-x: hidden;  
+  margin: 0; 
+  font-family: $body-font;
+  font-size: 16px;
+  letter-spacing: 1.5px;
+  background-color: #F8F8F8 ;
+  transition: all .5s ease;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content: space-between;
+}
+h1,h2,h3,h4,h5,h6{
+  font-family: $heading-font;
+}
+img{
+  max-width: 100%;
+}
+// label{
+//   display: none;
+// }
+input{
+  padding: 15px;
+}
+textarea{
+  resize: none;
+}

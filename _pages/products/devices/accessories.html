@@ -1,0 +1,140 @@
+---
+layout: page
+permalink: '/products-services/endpoint-devices/accessories/'
+dependencies:
+  styles:
+    - jquery.dataTables
+    - laptop-tabz
+  scripts:
+    - jquery.dataTables
+title: Accessories
+---
+<div id = 'new-banking-lending' class = 'writting animated zoomIn'>
+  <div class = 'container-fluid'>
+    <div class = 'row'>      
+      
+      <div class = 'col-sm-12 col-md-12 col-lg-12'>           
+        <div class = 'row'>
+          <div class = 'col-sm-12'>  
+            <div class = 'card card-block card-custom'>
+              <div id = 'laptop-table' class = '[ container text-center ]'>
+                <div class = 'border-section' style = 'border: 1px solid #F8F8F8'>
+                  <h4 style = 'color: #F8F8F8;  float: left;'>Select Accessory</h4>
+                  <div class = '[ row ]'>
+                  {% assign accessories = site.data.devices.accessories %}               
+                    <div class = 'col-lg-12 col-md-12' role = 'tabpanel'>
+                      <div class = '[ col-xs-12 col-sm-12 ]'> 
+                        <!-- Nav tabs -->
+                        <ul class = '[ nav nav-justified ]' id = 'nav-tabs' role = 'tablist'>
+                          <li role = 'presentation' class = 'active' style = 'padding-right:10px;'>
+                            <a href = '#dustin' aria-controls = 'dustin' role = 'tab' data-toggle = 'tab'>
+                              <h3 style = 'color: #141313; font-size:25px'>Hp Accessories</h3>                         
+                            </a>
+                          </li>
+                          <li role = 'presentation' class = '>
+                            <a href = '#daksh' aria-controls = 'daksh' role = 'tab' data-toggle = 'tab'>
+                              <h3 style = 'color: #141313; font-size:25px'>Lenovo Access</h3>
+                            </a>
+                          </li>
+                          <li role = 'presentation' class = '>
+                            <a href = '#anna' aria-controls = 'anna' role = 'tab' data-toggle = 'tab'>
+                              <h3 style = 'color: #141313; font-size:25px'>Microsoft OEM</h3>
+                            </a>
+                          </li>                  
+                        </ul>
+                      </div>
+                    </div>
+                  </div>  
+                </div>
+                <div class = '[ col-xs-12 col-sm-12 ]'>
+                  <!-- Tab panes -->
+                  <div class = 'tab-content' id = 'tabs-collapse'>   
+                  {% for brand in accessories.brands %}
+                    <div role = 'tabpanel' class = 'tab-pane fade {% if forloop.first %}in active {% endif %}' id = 'anna'>
+                      <div class = 'tab-inner'>
+                        <div class = 'table-responive'>
+                          <table  class = 'table_id1 table'>
+                            <thead>
+                              <tr>
+                              {% for tab in accessories.tabs %}
+                                <th style = 'text-align:center'>{{ tab }}</th>
+                              {% endfor %}  
+                              </tr>
+                            </thead>
+                            <tbody>
+                              {% for item in brand.items %}     
+                              <tr>
+                                <td>
+                                  <img class = 'img-item' src = '/assets/devices/accessories/{{ brand.id }}/{{ item.image }}'>
+                                </td>
+                                <td>{{ item.model }}</td>
+                                <td>{{ item.description }}</td>
+                                <td>{{ item.price }}</td>
+                                <td>{{ item.status }}</td>
+                              </tr>
+                              {% endfor %}
+                            </tbody>
+                          </table>
+                        </div>            
+                      </div> 
+                    </div>  
+                  {% endfor %}
+                  </div>
+                </div>        
+              </div>
+            </div> 
+          </div>                    
+        </div>                  
+      </div>
+    </div>
+  </div>
+</div>
+<style>
+  
+  .product{
+    width: 300px;
+    min-height: 360px;
+    border-radius: 6px;
+    box-shadow: 0 0 60px rgba(0,0,0,0.17);
+    margin: 120px auto;
+    overflow: hidden;
+  }
+  .product_image{
+    background-color: #eee; 
+    background-image: url(/assets/devices/accessories/hp/E5C13AA.png);
+    background-size:contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 120px;
+  }
+  .product_footer{
+    background: #eee;
+    height: 120px;
+  }
+  .product_body{
+    min-height: 120px;
+    padding: 25px 10px;
+  }
+  .product_price{
+    color: #000;
+    font-size: 3rem;
+    font-weight: 700;
+    padding: 10px 0;
+  }
+  .product_description{
+    color: #222;
+    font-weight: 600;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+  }
+</style>
+<div class = 'product'>
+  <div class = 'product_image'></div>
+  <div class = 'product_body'>
+    <div class = 'product_description'>HP Z5000 Bluetooth Mouse</div>
+    <div class = 'product_price'>KES  3,898</div>
+    <div class = 'product_model'>E5C13AA</div>
+    <div class = 'product_status'>Expected</div>
+  </div>
+  <div class = 'product_footer'></div>
+</div>
