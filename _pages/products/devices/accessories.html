@@ -4,11 +4,89 @@ permalink: '/products-services/endpoint-devices/accessories/'
 dependencies:
   styles:
     - jquery.dataTables
-    - laptop-tabz
   scripts:
     - jquery.dataTables
 title: Accessories
 ---
+<style>
+  .product{
+    width: 300px;
+    min-height: 360px;
+    border-radius: 6px;
+    box-shadow: 0 0 60px rgba(0,0,0,0.17);
+    margin: 120px auto;
+    overflow: hidden;
+    display: inline-block;
+  }
+  .product_container{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+  }
+  .product_image{
+    background-color: #eee; 
+    background-image: url(/assets/devices/accessories/hp/E5C13AA.png);
+    background-size:contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 120px;
+  }
+  .product_footer{
+    background: #eee;
+    height: 120px;
+  }
+  .product_body{
+    min-height: 120px;
+    padding: 25px 10px;
+  }
+  .product_price{
+    color: #000;
+    font-size: 3rem;
+    font-weight: 700;
+    padding: 10px 0;
+  }
+  .product_description{
+    color: #222;
+    font-weight: 600;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+  }
+</style>
+<div class = 'product_container'>
+  <div class = 'product'>
+    <div class = 'product_image'></div>
+    <div class = 'product_body'>
+      <div class = 'product_description'>HP Z5000 Bluetooth Mouse</div>
+      <div class = 'product_price'>KES  3,898</div>
+      <div class = 'product_model'>E5C13AA</div>
+      <div class = 'product_status'>Expected</div>
+    </div>
+    <div class = 'product_footer'></div>
+  </div>
+
+  <div class = 'product'>
+    <div class = 'product_image'></div>
+    <div class = 'product_body'>
+      <div class = 'product_description'>HP X1200 WIRED BLUE MOUSE</div>
+      <div class = 'product_price'>KES 1,114</div>
+      <div class = 'product_model'>H6F00AA</div>
+      <div class = 'product_status'>Available</div>
+    </div>
+    <div class = 'product_footer'></div>
+  </div>
+
+  <div class = 'product'>
+    <div class = 'product_image'></div>
+    <div class = 'product_body'>
+      <div class = 'product_description'>HP Z5000 Bluetooth Mouse</div>
+      <div class = 'product_price'>KES  2,398</div>
+      <div class = 'product_model'>E5C13AA</div>
+      <div class = 'product_status'>Expected</div>
+    </div>
+    <div class = 'product_footer'></div>
+  </div>
+</div>
+
 <div id = 'new-banking-lending' class = 'writting animated zoomIn'>
   <div class = 'container-fluid'>
     <div class = 'row'>      
@@ -31,12 +109,12 @@ title: Accessories
                               <h3 style = 'color: #141313; font-size:25px'>Hp Accessories</h3>                         
                             </a>
                           </li>
-                          <li role = 'presentation' class = '>
+                          <li role = 'presentation'>
                             <a href = '#daksh' aria-controls = 'daksh' role = 'tab' data-toggle = 'tab'>
                               <h3 style = 'color: #141313; font-size:25px'>Lenovo Access</h3>
                             </a>
                           </li>
-                          <li role = 'presentation' class = '>
+                          <li role = 'presentation'>
                             <a href = '#anna' aria-controls = 'anna' role = 'tab' data-toggle = 'tab'>
                               <h3 style = 'color: #141313; font-size:25px'>Microsoft OEM</h3>
                             </a>
@@ -88,53 +166,4 @@ title: Accessories
       </div>
     </div>
   </div>
-</div>
-<style>
-  
-  .product{
-    width: 300px;
-    min-height: 360px;
-    border-radius: 6px;
-    box-shadow: 0 0 60px rgba(0,0,0,0.17);
-    margin: 120px auto;
-    overflow: hidden;
-  }
-  .product_image{
-    background-color: #eee; 
-    background-image: url(/assets/devices/accessories/hp/E5C13AA.png);
-    background-size:contain;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 120px;
-  }
-  .product_footer{
-    background: #eee;
-    height: 120px;
-  }
-  .product_body{
-    min-height: 120px;
-    padding: 25px 10px;
-  }
-  .product_price{
-    color: #000;
-    font-size: 3rem;
-    font-weight: 700;
-    padding: 10px 0;
-  }
-  .product_description{
-    color: #222;
-    font-weight: 600;
-    font-size: 1.5rem;
-    text-transform: uppercase;
-  }
-</style>
-<div class = 'product'>
-  <div class = 'product_image'></div>
-  <div class = 'product_body'>
-    <div class = 'product_description'>HP Z5000 Bluetooth Mouse</div>
-    <div class = 'product_price'>KES  3,898</div>
-    <div class = 'product_model'>E5C13AA</div>
-    <div class = 'product_status'>Expected</div>
-  </div>
-  <div class = 'product_footer'></div>
 </div>
