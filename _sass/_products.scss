@@ -1,0 +1,43 @@
+.product{
+  width: 300px;
+  min-height: 360px;
+  border-radius: 6px;
+  box-shadow: 0 0 60px rgba(0,0,0,0.17);
+  margin: 25px;
+  overflow: hidden;
+  display: inline-block;
+  &_container{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: stretch;
+  }
+  &_image{
+    background-color: #eee; 
+    background-image: url(/assets/devices/accessories/hp/E5C13AA.png);
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 120px;
+  }
+  &_footer{
+    background: #eee;
+    height: 120px;
+  }
+  &_body{
+    min-height: 120px;
+    padding: 25px 10px;
+  }
+  &_price{
+    color: #000;
+    font-size: 3rem;
+    font-weight: 700;
+    padding: 10px 0;
+  }
+  &_description{
+    color: #222;
+    font-weight: 600;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+  }
+}
