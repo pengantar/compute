@@ -46,27 +46,10 @@ title: Laptops
                         </ul>
                       </div>
                     </div>
-                  </div>  
-                  <div class = 'product_container'>
-                  {%- for item in site.data.devices.laptops -%}
-                    <div class = 'product'>
-                      <div class = 'product_image' style = 'background-image: url(/assets/devices/laptops/{{ item.brand }}/{{ item.image }})'></div>
-                      <div class = 'product_body'>
-                        <div class = 'product_description'>{{ item.name }}</div>
-                        <div class = 'product_price'>{{ item.price }}</div>
-                        <div class = 'product_status'>{{ item.status }}</div>
-                      </div>
-                      <div class = 'product_footer'>
-                        {% for detail in item.description %}
-                        <div class = 'product_spec'>
-                          <span class = 'decorate'>&#x2714;</span>
-                          <div>{{ detail }}</div>
-                        </div>
-                        {% endfor %}
-                      </div>
-                    </div>
-                  {%- endfor -%}
-                </div>
+                  </div> 
+                  {%- assign category = 'laptops' -%} 
+                  {%- assign devices = site.data.devices.laptops -%}
+                  {%- include devices.html -%} 
               </div>
             </div>
           </div>

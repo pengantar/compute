@@ -54,6 +54,17 @@
   }
   &_spec{
     display: grid;
-    grid-template-columns: 1fr 9fr;
+    grid-template-columns: 1fr 14fr;
+  }
+  &_status{
+    width: 100px;
+    padding: 7.5px 10px;
+    text-transform: uppercase;
+    margin: 0 auto;
+    text-align: center;
+    color: #fff;
+    font-size: 1rem;
+    border-radius: 2.5px;
+    box-shadow: 0 0 60px rgba(0,0,0,0.17);
   }
 }

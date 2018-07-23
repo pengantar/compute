@@ -1,11 +1,11 @@
 <div class = 'product_container'>
   {%- for item in devices -%}
   <div class = 'product'>
-    <div class = 'product_image' style = 'background-image: url(/assets/devices/desktops/{{item.brand}}/{{ item.image }})'></div>
+    <div class = 'product_image' style = 'background-image: url(/assets/devices/{{ category }}/{% if item.brand %}{{item.brand}}/{% endif %}{{ item.image }})'></div>
     <div class = 'product_body'>
       <div class = 'product_description'>{{ item.name }}</div>
       <div class = 'product_price'>{{ item.price }}</div>
-      <div class = 'product_status'>{{ item.status }}</div>
+      <div class = 'product_status {{ item.status | slugify | downcase }}'>{{ item.status }}</div>
     </div>
     <div class = 'product_footer'>
       {% for detail in item.description %}

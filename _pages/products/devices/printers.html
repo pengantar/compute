@@ -3,43 +3,6 @@ layout: page
 permalink: '/products-services/endpoint-devices/printers/'
 title: Printers
 ---
-
-<div class = 'product_container'>
-  {%- for item in site.data.devices.printers -%}
-  <div class = 'product'>
-    <div class = 'product_image' style = 'background-image: url(/assets/devices/printers/{{ item.image }})'></div>
-    <div class = 'product_body'>
-      <div class = 'product_description'>{{ item.name }}</div>
-      <div class = 'product_price'>{{ item.price }}</div>
-      <div class = 'product_status'>{{ item.status }}</div>
-    </div>
-    <div class = 'product_footer'>
-      {% for detail in item.description %}
-      <div class = 'product_spec'>
-        <span class = 'decorate'>&#x2714;</span>
-        <div>{{ detail }}</div>
-      </div>
-      {% endfor %}
-    </div>
-  </div>
-  {%- endfor -%}
-  {%- for item in site.data.devices.scanners -%}
-  <div class = 'product'>
-    <div class = 'product_image' style = 'background-image: url(/assets/devices/scanners/{{ item.image }})'></div>
-    <div class = 'product_body'>
-      <div class = 'product_description'>{{ item.name }}</div>
-      <div class = 'product_price'>{{ item.price }}</div>
-      <div class = 'product_model'>E5C13AA</div>
-      <div class = 'product_status'>Expected</div>
-    </div>
-    <div class = 'product_footer'>
-      {% for detail in item.description %}
-      <div class = 'product_spec'>
-        <span class = 'decorate'>&#x2714;</span>
-        <div>{{ detail }}</div>
-      </div>
-      {% endfor %}
-    </div>
-  </div>
-  {%- endfor -%}
-</div>        
+{%- assign category = 'printers' -%}
+{%- assign devices = site.data.devices.printers -%}
+{%- include devices.html -%} 

@@ -2,23 +2,6 @@
 layout: page
 permalink: '/products-services/endpoint-devices/accessories/'
 ---
-<div class = 'product_container'>
-  {%- for item in site.data.devices.accessories -%}
-  <div class = 'product'>
-    <div class = 'product_image' style = 'background-image: url(/assets/devices/accessories/{{item.brand}}/{{ item.image }})'></div>
-    <div class = 'product_body'>
-      <div class = 'product_description'>{{ item.name }}</div>
-      <div class = 'product_price'>{{ item.price }}</div>
-      <div class = 'product_status'>{{ item.status }}</div>
-    </div>
-    <div class = 'product_footer'>
-      {% for detail in item.description %}
-      <div class = 'product_spec'>
-        <span class = 'decorate'>&#x2714;</span>
-        <div>{{ detail }}</div>
-      </div>
-      {% endfor %}
-    </div>
-  </div>
-  {%- endfor -%}       
-</div>
+{%- assign category = 'accessories' -%}
+{%- assign devices = site.data.devices.accessories -%}
+{%- include devices.html -%} 
