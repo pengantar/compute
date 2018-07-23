@@ -37,12 +37,14 @@
     font-size: 2.75rem;
     font-weight: 700;
     padding: 10px 0;
+    text-align: center;
   }
   &_description{
     color: #222;
     font-weight: 600;
     font-size: 1.5rem;
     text-transform: uppercase;
+    text-align: center;
   }
   &_spec{
     display: grid;
