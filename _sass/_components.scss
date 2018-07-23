@@ -157,28 +157,30 @@ h1 {
 
 // index page 
 
-#trailer{
-  margin-top: 30px;
-}
-#trailer-row2{   
-  margin-top: 10px;
-  margin-bottom: 70px;
-}
 #trailer-infrastructure{
   margin-top: 65px;  
   margin-bottom: 65px; 
 }
 
-#awards{
-  margin-top: 60px;  
-  margin-bottom: 60px;
+.award{
+  margin: 25px;
+  &s{
+    margin: 60px 0;
+  }
+  p{
+    color: white;
+    text-transform: uppercase;
+  }
 }
-.awards2{
-  padding-top: 20px;    
+.partner{
+  padding: 30px;
+  &s{
+    background: #fff;
+    max-width: 1250px;
+    margin: 0 auto;
+  }
 }
-.awards3{
-  padding-top: 20px;
-}
+
 .box-round1{
   padding: 10px;
   margin-bottom: 30px;

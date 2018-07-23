@@ -12,6 +12,13 @@
 .fit{
   padding: 0;
 }
+// center horizontally and vertically
+.contain{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
 .decorate{
   color: $orange;
 }
@@ -23,4 +30,46 @@
 }
 .expected{
   background: $orange;
+}
+
+
+.mb-2{
+  margin-bottom: 20px;
+}
+.mt-2{
+  margin-top: 20px;
+}
+.ma-2{
+  margin: 20px;
+}
+
+.grid-1{
+  display: grid;
+  grid-template-columns: 1fr;
+  @media screen and (min-width: 768px){
+    grid-template-columns: 1fr 1fr;
+  }
+}
+.grid-2{
+  display: grid;
+  grid-template-columns: 1fr;
+  @media screen and (min-width: 668px){
+    grid-template-columns: 1fr 1fr;
+  }
+  @media screen and (min-width: 992px){
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+.grid-3{
+  display: grid;
+  grid-template-columns: 1fr;
+  @media screen and (min-width: 557px){
+    grid-template-columns: 1fr 1fr;
+  }
+  @media screen and (min-width: 769px){
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  @media screen and (min-width: 1025px) {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
 }

@@ -3,18 +3,12 @@ layout: page
 permalink: '/partners/'
 title: Partners
 ---
-<div id = 'sect-partners' class = 'animated zoomIn'>
-  <div class = 'container'>
-    <div class = 'card card-block card-custom'>
-      <div class = 'row row-space'> 
-      {%- for partner in site.data.partners -%}
-        <div class = 'col-lg-3 col-md-3'>  
-          <a href = '{{ partner.url }}' target = '_blank' rel = 'noopener'>
-            <img  src = '/assets/partners/{{ partner.logo }}' class = 'img-responsive img-front' >
-          </a>
-        </div>
-      {%- endfor -%}
-      </div>
+<div id = 'sect-partners' class = 'grid-3 partners animated zoomIn'> 
+  {%- for partner in site.data.partners -%}
+    <div class = 'partner'>  
+      <a href = '{{ partner.url }}' target = '_blank' rel = 'noopener'>
+        <img  src = '/assets/partners/{{ partner.logo }}' class = 'img-responsive img-front' >
+      </a>
     </div>
-  </div>
+  {%- endfor -%}
 </div>
