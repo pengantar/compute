@@ -1,55 +1,75 @@
 - image: V5J61AS
   model: V5J61AS
-  purpose: Essential Series - Everyday Productivity
-  description: HP V197 18.5 inch LEDBlt
+  purpose: HP V197 18.5 inch LEDBlt
+  description: 
+    - Essential Series 
+    - Everyday Productivity
   price: KES 16,000 
   status: Available
 
 - image: K7X30AS.png
   model: K7X30AS
-  purpose: Value Series - Simple Efficiency Pro Display
-  description: HP ProDisplay P222 21.5 inch LED Backlights LCD Monitor- DisplayPort 1.2, 3 year Warranty
+  purpose: HP ProDisplay P222 21.5 inch
+  description:
+    - Value Series - Simple Efficiency Pro Display 
+    - LED Backlights LCD Monitor
+    - DisplayPort 1.2,
+    - 3 year Warranty
   price: KES 23,900 
   status: Available
 
 - image: K7X31AS.png
   model: K7X31AS
-  purpose: Value Series - Simple Efficiency Pro Display
-  description: HP ProDisplay P232 23 inch LED Backlights LCD Monitor - Display Port (with HDCP Support), 3 year Warranty 
+  purpose: HP ProDisplay P232 23 inch
+  description: 
+    - Value Series - Simple Efficiency Pro Display
+    - LED Backlights LCD Monitor 
+    - Display Port (with HDCP Support) 
+    - 3 year Warranty 
   price: KES 28,300  
   status: Available
 
 - image: M1F41AS.png
   model: M1F41AS
-  purpose: Advantage Series - Mission Critical **Elite Display**
-  description: HP Elite Display E202 20 inch Monitor, 3 year Warranty  
+  purpose: HP Elite Display E202 20 inch Monitor
+  description: 
+    - Advantage Series - Mission Critical **Elite Display**
+    - 3 year Warranty  
   price: KES 27,800 
   status: Available
 
 - image: M1N96AS.png
   model: M1N96AS
-  purpose: Advantage Series - Mission Critical **Elite Display**
-  description: HP EliteDisplay E222 21.5 inch Monitor, 3 year Warranty 
+  purpose: HP EliteDisplay E222 21.5 inch Monitor
+  description: 
+    - Advantage Series - Mission Critical **Elite Display**
+    - 3 year Warranty 
   price: KES 29,000   
   status: Available
 
 - image: M1N98AS.png
   model: M1N98AS
-  purpose: Advantage Series - Mission Critical **Elite Display**
-  description: HP EliteDisplay E232  23 inch Monitor, 3 year Warranty  
+  purpose: HP EliteDisplay E232  23 inch Monitor
+  description: 
+    - Advantage Series - Mission Critical **Elite Display**
+    - 3 year Warranty  
   price: KES 32,900 
   status: Available
 
 - image: M1P02AS.png
   model: M1P02AS
-  purpose: Advantage Series - Mission Critical **Elite Display**
-  description: HP EliteDisplay E242  24 inch Monitor, 3 year Warranty   
+  purpose: HP EliteDisplay E242  24 inch Monitor
+  description: 
+    - Advantage Series - Mission Critical **Elite Display**
+    - 3 year Warranty   
   price: KES 44,800  
   status: Available
 
 - image: M1P04AS.jpg
   model: M1P04AS
-  purpose: Advantage Series - Mission Critical **Elite Display**
-  description: HP EliteDisplay E272q 27 inch Monitor, 3 year Warranty
+  purpose: HP EliteDisplay E272q 27 inch Monitor
+  description: 
+    - Advantage Series - Mission Critical **Elite Display**
+    - 3 year Warranty
   price: KES 64,700   
   status: Available
