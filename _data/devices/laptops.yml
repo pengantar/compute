@@ -111,9 +111,10 @@
 - image: MacBookPro13SpaceGreyMNQF2B.png
   model: MPXW2B/A
   purpose: MacBook Pro 13  SpaceGrey
-  name: 3.1 GHz Intel Core i5 7th Gen (Turbo Boost up to 3.6 GHz) with 4MB 
+  name: MacBook Pro 13  SpaceGrey
   brand: apple
   description:
+    - 3.1 GHz Intel Core i5 7th Gen (Turbo Boost up to 3.6 GHz) with 4MB 
     - Retina display 13.3-inch (diagonal) LED-IPS 2560 x 1600 (WQXGA)
     - 8GB of 2133MHz  LPDDR3 SDRAM 
     - 512 GB PCIe-based flash storage  

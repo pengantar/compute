@@ -12,21 +12,23 @@
     justify-content: space-between;
     align-items: stretch;
   }
-  &_image{
-    background-color: #eee; 
+  &_image{ 
     background-image: url(/assets/devices/accessories/hp/E5C13AA.png);
-    background-size:cover;
+    background-size:contain;
     background-position: center;
     background-repeat: no-repeat;
     height: 120px;
   }
   &_footer{
-    background: #eee;
-    height: 120px;
+    min-height: 120px;
+    text-align: left;
+    line-height: 1.7em;
+    padding: 20px;
   }
   &_body{
     min-height: 120px;
-    padding: 25px 10px;
+    padding: 25px 20px;
+    background-color: #eee;
   }
   &_price{
     color: #000;
@@ -39,5 +41,9 @@
     font-weight: 600;
     font-size: 1.5rem;
     text-transform: uppercase;
+  }
+  &_spec{
+    display: grid;
+    grid-template-columns: 1fr 9fr;
   }
 }

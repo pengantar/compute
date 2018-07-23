@@ -23,24 +23,24 @@ title: Laptops
                               <h3 style = '  color: black; font-size:25px'>Apple</h3>                         
                             </a>
                           </li>
-                          <li role = 'presentation' class = '>
+                          <li role = 'presentation'>
                             <a href = '#daksh' aria-controls = 'daksh' role = 'tab' data-toggle = 'tab'>
-                              <h3 style = '  color:  black; font-size:25px'>Asus</h3>
+                              <h3 style = 'color:  black; font-size:25px'>Asus</h3>
                             </a>
                           </li>
-                          <li role = 'presentation' class = '>
+                          <li role = 'presentation'>
                             <a href = '#anna' aria-controls = 'anna' role = 'tab' data-toggle = 'tab'>
-                              <h3 style = '  color:  black; font-size:25px'>HP</h3>
+                              <h3 style = 'color:  black; font-size:25px'>HP</h3>
                             </a>
                           </li>  
-                          <li role = 'presentation' class = '>
+                          <li role = 'presentation'>
                             <a href = '#lenovo' aria-controls = 'lenovo' role = 'tab' data-toggle = 'tab'>
-                              <h3 style = '  color:  black; font-size:25px'>lenovo</h3>
+                              <h3 style = 'color:  black; font-size:25px'>lenovo</h3>
                             </a>
                           </li>  
-                          <li role = 'presentation' class = '>
+                          <li role = 'presentation'>
                             <a href = '#dell' aria-controls = 'dell' role = 'tab' data-toggle = 'tab'>
-                              <h3 style = '  color:  black; font-size:25px'>Dell</h3>
+                              <h3 style = 'color:  black; font-size:25px'>Dell</h3>
                             </a>
                           </li>  
                         </ul>
@@ -57,9 +57,15 @@ title: Laptops
                         <div class = 'product_model'>E5C13AA</div>
                         <div class = 'product_status'>Expected</div>
                       </div>
-                      <div class = 'product_footer'></div>
+                      <div class = 'product_footer'>
+                        {% for detail in item.description %}
+                        <div class = 'product_spec'>
+                          <span class = 'decorate'>&#x2714;</span>
+                          <div>{{ detail }}</div>
+                        </div>
+                        {% endfor %}
+                      </div>
                     </div>
-                    {{ if forloop.last }} <h1>{{ forloop.index }} Laptops </h1>{% endif %}
                   {%- endfor -%}
                 </div>
               </div>
