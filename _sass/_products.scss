@@ -10,7 +10,7 @@
   &_container{
     display: grid;
     max-width: 1250px;
-    margin: 0 auto;
+    margin: 30px auto;
     grid-template-columns: 1fr;
     @media screen and (min-width: 667px){
       grid-template-columns: 1fr 1fr;
