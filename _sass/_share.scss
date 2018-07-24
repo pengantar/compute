@@ -1,0 +1,55 @@
+.share{
+  display: flex;
+  align-items: center;
+  margin: 0 20px;
+  &_item{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    transform-origin: 50% 50%;
+    margin: 5px;
+    background: $pale;
+    border-radius: 50%;
+    color: $light;
+    font-size: 1.5rem;
+    &:first-child{
+      transform: scale(0,0) translate(120px,0);
+    }
+    &:nth-child(2){
+      transform: scale(0,0) translate(75px,0);
+    }
+    &:nth-child(4){
+      transform: scale(0,0) translate(-75px,0);
+    }
+    &:last-child{
+      transform: scale(0,0) translate(-120px,0);
+    }
+  }
+  &_wobble{
+    &:first-child{
+      animation: wobble_first 1.67s ease-in-out forwards;
+    }
+    &:nth-child(2){
+      animation: wobble_second 2s ease-in-out forwards;
+    }
+    &:nth-child(4){
+      animation: wobble_third 2s ease-in-out forwards;
+    }
+    &:last-child{
+      animation: wobble_last 1.67s ease-in-out forwards;
+    }
+  }
+  &_toggle{
+    cursor: pointer;
+    width: 44px;
+    height: 44px;
+    margin: 7.5px 15px;
+    position: relative;
+    z-index: 1;
+    &d{
+      animation: wobble 1.5s ease-out forwards;
+    }
+  }
+}

@@ -1,6 +1,6 @@
 - image: V5J61AS
   model: V5J61AS
-  purpose: HP V197 18.5 inch LEDBlt
+  name: HP V197 18.5 inch LEDBlt
   description: 
     - Essential Series 
     - Everyday Productivity
@@ -9,7 +9,7 @@
 
 - image: K7X30AS.png
   model: K7X30AS
-  purpose: HP ProDisplay P222 21.5 inch
+  name: HP ProDisplay P222 21.5 inch
   description:
     - Value Series - Simple Efficiency Pro Display 
     - LED Backlights LCD Monitor
@@ -20,7 +20,7 @@
 
 - image: K7X31AS.png
   model: K7X31AS
-  purpose: HP ProDisplay P232 23 inch
+  name: HP ProDisplay P232 23 inch
   description: 
     - Value Series - Simple Efficiency Pro Display
     - LED Backlights LCD Monitor 
@@ -31,7 +31,7 @@
 
 - image: M1F41AS.png
   model: M1F41AS
-  purpose: HP Elite Display E202 20 inch Monitor
+  name: HP Elite Display E202 20 inch Monitor
   description: 
     - Advantage Series - Mission Critical **Elite Display**
     - 3 year Warranty  
@@ -40,7 +40,7 @@
 
 - image: M1N96AS.png
   model: M1N96AS
-  purpose: HP EliteDisplay E222 21.5 inch Monitor
+  name: HP EliteDisplay E222 21.5 inch Monitor
   description: 
     - Advantage Series - Mission Critical **Elite Display**
     - 3 year Warranty 
@@ -49,7 +49,7 @@
 
 - image: M1N98AS.png
   model: M1N98AS
-  purpose: HP EliteDisplay E232  23 inch Monitor
+  name: HP EliteDisplay E232  23 inch Monitor
   description: 
     - Advantage Series - Mission Critical **Elite Display**
     - 3 year Warranty  
@@ -58,7 +58,7 @@
 
 - image: M1P02AS.png
   model: M1P02AS
-  purpose: HP EliteDisplay E242  24 inch Monitor
+  name: HP EliteDisplay E242  24 inch Monitor
   description: 
     - Advantage Series - Mission Critical **Elite Display**
     - 3 year Warranty   
@@ -67,7 +67,7 @@
 
 - image: M1P04AS.jpg
   model: M1P04AS
-  purpose: HP EliteDisplay E272q 27 inch Monitor
+  name: HP EliteDisplay E272q 27 inch Monitor
   description: 
     - Advantage Series - Mission Critical **Elite Display**
     - 3 year Warranty

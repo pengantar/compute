@@ -22,15 +22,105 @@ body {
 h1,h2,h3,h4,h5,h6{
   font-family: $heading-font;
 }
+h1,
+h2,
+h3,
+h4 {
+	line-height: 1.6em;
+}
+ul,
+ol {
+	margin: 0;
+	padding-left: 22px;
+}
+
+a {
+	outline: none;
+	text-decoration: none !important;
+	color: rgba(39,48,57,.85);
+}
+
+a:hover {
+	color: #fa7921;
+}
 img{
   max-width: 100%;
 }
 // label{
 //   display: none;
 // }
+form{
+  margin: 15px 0;
+  max-width: 540px;
+  padding: 15px;
+}
 input{
   padding: 15px;
+  font-size: 1.25rem;
 }
 textarea{
   resize: none;
+}
+
+table{
+  vertical-align: top;
+  border-collapse: collapse;
+  text-align: justify;
+  height: 100%;
+  width: 100%;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: "";
+}
+
+blockquote,
+q {
+	quotes: "" "";
+}
+
+hr {
+	background-color: #ccc;
+	border: 0;
+	height: 1px;
+	margin-bottom: 1.5em;
+}
+
+ul,
+ol {
+	margin: 0 0 1.5em 3em;
+}
+
+ul {
+	list-style: disc;
+}
+
+ol {
+	list-style: decimal;
+}
+
+li > ul,
+li > ol {
+	margin-bottom: 0;
+	margin-left: 1.5em;
+}
+
+dt {
+	font-weight: bold;
+}
+
+dd {
+	margin: 0 1.5em 1.5em;
+}
+
+img {
+	height: auto; // Make sure images are scaled correctly. 
+	max-width: 100%; // Adhere to container width. 
+}
+
+::placeholder{
+  font-size: 1.25rem;
+  color: $pale;
 }

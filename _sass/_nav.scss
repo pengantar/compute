@@ -6,19 +6,23 @@
 }
 #mynav{
   background-color: white; 
+  padding: 0 20px;
+  ul {
+    margin-top: 7.5px;  
+  }
+  img{
+    width: 250px;
+    padding: 17.5px 0;
+  }
+}
+.navbar-toggle{
+  margin-top: 15px;
 }
 .men-link:hover,
 .men-link:focus,
 .men-link:visited,
 .men-link:active {
   background-color: #141313 !important;
-}
-.navbar-header a img{
-  padding-top: 25px;
-  padding-bottom: 30px;
-}
-#mynav ul {
-  margin-top: 18px;  
 }
 #mynav ul li a{
   letter-spacing: 1.6px;
@@ -67,9 +71,8 @@
   color: #EA783A;
 }
 .dropdown-menu.animated {
-//  Speed up animations 
-animation-duration: 0.55s;
-animation-timing-function: ease;
+  animation-duration: 0.55s;
+  animation-timing-function: ease;
 }
 
 .dropdown-menu li{

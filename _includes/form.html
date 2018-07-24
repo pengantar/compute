@@ -1,4 +1,4 @@
-<form role = 'form' id = 'ATMForm' class = 'ATMform card-shadow shake' data-toggle = 'validator'>
+<form role = 'form' class = 'ma card-shadow shake'>
   {%- assign title = page.title | downcase -%}
   <h4 class = 'center'><strong>{% if title != 'contact us' %}Contact us for more details on {{ page.title }} {% else %} Please contact us using the form below {% endif %}</strong></h4>
   <fieldset class = 'form-group'>
@@ -27,8 +27,6 @@
   <div style = 'float:right'>
     <button  class = 'btn btn-success snip' type = 'submit' id = 'submit'> SUBMIT</button>
   </div>
-  
-  <div id = 'msgSubmit' class = 'orange h4 text-center hidden'></div> 
   <div class = 'clearfix'></div> 
 </form>
 {% include autoresize.html %}

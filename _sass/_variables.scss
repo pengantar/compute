@@ -1,5 +1,9 @@
 $light: #fff;
 $dark: #141313;
+$mute: darken($light, 10%);
+$pale: lighten($dark, 10%);
 $orange: #F07444;
+$padding: 15px;
+$margin: 25px;
 $body-font: 'Lato', sans-serif;
 $heading-font: 'Raleway', sans-serif; 

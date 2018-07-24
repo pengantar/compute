@@ -42,6 +42,13 @@
 .ma-2{
   margin: 20px;
 }
+.ma{
+  margin-left: auto;
+  margin-right: auto;
+}
+.shade{
+  box-shadow:  0 0 60px rgba(0,0,0,0.17);
+}
 
 .grid-1{
   display: grid;

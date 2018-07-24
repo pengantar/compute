@@ -107,7 +107,6 @@ h1 {
 // For justifying the text 
 .text-justify{
   text-align: justify;
-  //     color: $dark; 
   color:#333;
 }
 #box-centre{
@@ -204,12 +203,6 @@ h1 {
   box-shadow: 0 10px 6px -6px #777;
 }
 
-#locations{
-  height: auto;
-  width: 100%;
-  padding: 20px;
-  color: $light;
-}
 .card-cust{
   padding: 20px;
   background: linear-gradient(rgba($dark, 0.6), rgba($dark, 0.6));
@@ -270,13 +263,6 @@ h1 {
   vertical-align:middle;
 }
 
-table{
-  vertical-align: top;
-  border-collapse: collapse;
-  height: 100%;
-  width: 100%;
-}
-
 .text-colour{  
   color: $dark;
 }
@@ -288,9 +274,6 @@ table{
   font-size: 15px;
   letter-spacing: 1.5px;  
   text-align: justify;      
-}
-table{
-  text-align: justify;
 }
 .td-auto{
   display: block;
@@ -335,7 +318,6 @@ table{
   display: block;
   margin-right: auto;
   margin-left: auto;
-  vertical-align: middle;
   line-height: 100px;
   height: 100px;
   padding: 20px;
@@ -347,7 +329,7 @@ table{
   width: 280px;
   background-size: cover;
   background-position: center;  
-  background: linear-gradient(rgba($dark, 0.64),rgba($dark, 0.64)), url(/assets/images/CCTV.jpg);
+  background: linear-gradient(rgba($dark, 0.64),rgba($dark, 0.64)), url(/assets/images/cctv.jpg);
 }
 .contain-fire{
   padding: 5px;
@@ -355,7 +337,7 @@ table{
   width: 280px;
   background-size: cover;
   background-position: center;  
-  background: linear-gradient(rgba($dark, 0.64),rgba($dark, 0.64)), url(/assets/images/ALARM.jpg);
+  background: linear-gradient(rgba($dark, 0.64)), url(/assets/images/alarm.jpg);
 }
 .img-workshop{
   height: 300px;
@@ -364,7 +346,7 @@ table{
   padding: 5px;
   height: 250px;
   width: 280px;
-  background: linear-gradient(rgba($dark, 0.64),rgba($dark, 0.64)), url(/assets/images/public-address-system-speakers.jpg);
+  background: linear-gradient(rgba($dark, 0.64)), url(/assets/images/public-address-system-speakers.jpg);
   background-size: cover;
   background-position: center;    
 }
@@ -704,9 +686,6 @@ button.btn.collapsed:before{
     }
   }
 }
-#new-compute ul li{
-  color: $dark;
-}
 
 // Footer section 
 .footer{
@@ -794,12 +773,6 @@ button.btn.collapsed:before{
   color: #777;
 }
 
-.writting{
-  color: $dark;
-  font-size: 14.6px;
-  letter-spacing: 1.3px;
-}
-
 // ....button styling........ 
 
 .button {
@@ -836,14 +809,6 @@ button.btn.collapsed:before{
   color: $dark;
 }
 
-// Client testimonial section 
-#section4{
-  background-image: url(/new-bg/645305_seryiy_fon.jpg);
-  padding-top: 90px;
-  margin-top: 0px;
-  background-size: cover;
-  height: auto;
-}
 
 .centered-text {
   text-align: center;
@@ -893,18 +858,6 @@ button.btn.collapsed:before{
 
 // -----------------TEAM PAGE STYLING------------------------ 
 
-#the-team{
-  padding-top: 15px;
-  padding-bottom: 20px;
-  letter-spacing: 1.5px;
-  text-align: center;
-}
-#the-team img{
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 .left{
   float: left;
   color: $orange;
@@ -913,11 +866,6 @@ button.btn.collapsed:before{
   font-size:4em;
 }
 
-.topteam{
-  padding-bottom: 30px;
-  padding-top: 0px;
-  
-}
 .team{
   padding-bottom: 50px;
 }
@@ -1425,17 +1373,7 @@ textright{
   background-color: #EFEFEF;
 }
 
-//  Infrastructure design  
-//  Compute  
-
-#new-compute{
-  height: auto;
-  padding-top: 10px;  
-  padding-bottom: 30px;    
-}
-
 //  Servers in compute deco  
-
 .text-pimp{
   background-color: $dark;
   border-radius: 10px;
@@ -1443,26 +1381,15 @@ textright{
   text-align: center;
   color: $orange;
   width: 100%;
-  box-shadow: 4px 4px 2px #888888;     
+  box-shadow: 4px 4px 2px #888;     
 }
 .server-list{
   margin-top: 65px;
-}
-#new-testimonial-section{
-  padding-top: 90px;
 }
 .agreement{
   background-color: #607D8B;
 }
 
-// End server 
-// Storage page 
-
-#new-storage{
-  height: auto;
-  padding-top: 10px;  
-  padding-bottom: 20px;   
-}
 .storage-list{
   margin-top: 65px;  
 }
@@ -1556,19 +1483,6 @@ textright{
 .network-list{
   margin-top: 65px;
 }
-#new-network{
-  height: auto;  
-  padding-bottom: 20px;
-}
-
-// End for networks 
-// Start of client page 
-
-#success-stories{
-  height: auto;
-  padding-top: 10px; 
-  padding-bottom: 20px;   
-}
 
 // End of client page 
 // Start for Security 
@@ -1593,21 +1507,18 @@ textright{
   padding-top: 40px;
 }
 
-// End for Security 
-// New endpoint 
-
-#new-endpoint{
-  height: auto;
-  padding-top: 10px;   
-  padding-bottom: 20px;  
-}
 .img-security{
   height: 200px;
 }
 
 // For the team page  
-.img-team-size{
+.member{
+  margin: 20px;
   padding: 10px;
+  cursor: pointer;
+  img{
+    width: 100%;
+  }
 }
 
 // End of team page 
@@ -1644,10 +1555,6 @@ textright{
   background-color: $light;
   background-image: url(http://www.transparenttextures.com/patterns/cubes.png);
 	font-size: 16px;
-	line-height: 26px;
-}
-#new-internet-security p {
-  font-size: 16px;
 	line-height: 26px;
 }
 .cloud-text{
