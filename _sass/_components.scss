@@ -256,7 +256,6 @@ h1 {
 .vm{
   font-size: 15px;
   color: $dark;
-  letter-spacing: 1.5px; 
 }
 #laptop-table td{
   padding: 15px;
@@ -271,8 +270,7 @@ h1 {
 }
 .profile-text{
   color: $dark;
-  font-size: 15px;
-  letter-spacing: 1.5px;  
+  font-size: 15px; 
   text-align: justify;      
 }
 .td-auto{
@@ -357,8 +355,7 @@ h1 {
   margin: 0;
   padding: 3.1px;
   display: inline-block;
-  font-size: 15px;
-  letter-spacing: 1.5px;  
+  font-size: 15px; 
   text-align: center; 
 }
 .country-title{
@@ -367,7 +364,6 @@ h1 {
 .all-text{
   color: $dark;
   font-size: 15px;
-  letter-spacing: 1.5px; 
 }
 #new-strengths{
   width: auto;
@@ -383,7 +379,6 @@ h1 {
   padding: 17px;
   color: $light;
   margin-bottom: 25px;
-  letter-spacing: 1px;
   font-size: 21px;
 }
 .view-btn:hover{
@@ -395,7 +390,6 @@ h1 {
   background-color: #006064;
   padding: 17px;
   color: $light;
-  letter-spacing: 1px;
   font-size: 21px;    
 }
 .download-btn:hover{
@@ -505,7 +499,6 @@ a:visited{
   margin-top: 50px;
 }
 #section2 h4{
-  letter-spacing: 2px;
   color:$orange; 
 }
 #section2 p{
@@ -740,7 +733,6 @@ button.btn.collapsed:before{
 
 .module-title {
   font-size: 20px;
-  letter-spacing: 10px;
   text-align: center; 
 }
 
@@ -765,7 +757,6 @@ button.btn.collapsed:before{
 
 .content-box-title {
   font-size: 1.5rem;
-  letter-spacing: 5px;
   color: $dark;
 }
 
@@ -861,7 +852,6 @@ button.btn.collapsed:before{
 .left{
   float: left;
   color: $orange;
-  letter-spacing: 1.5px;
   font-weight: 1000px;
   font-size:4em;
 }

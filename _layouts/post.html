@@ -2,31 +2,24 @@
 layout: default
 ---
 <div class='container'>
-  <div class='dt-main-cont'>
-    <div class='row'>
-      <div class='col-lg-8 col-md-8'>
-        <div id='primary' class='content-area dt-content-area'>
-          <main id='main' class='site-main' role='main'>   
-            <article id='post-258' class='post-258 post type-post status-publish format-standard hentry category-events-updates'>
-              <header class='entry-header'>
-                <h1 class='entry-title'>{{ page.title }}</h1>		<div class='entry-meta'>
-                  <span class='posted-on'>Posted on <a href='' rel='bookmark'><time class='entry-date published updated' datetime='2017-09-04T11:48:30+00:00'>September 4, 2017</time></a></span><span class='byline'> by <span class='author vcard'><a class='url fn n' href=''>{{ site.title }}</a></span></span>		</div>
-                </header>
-                
-                <div class='entry-content'>
-                  {{ content }}
-                  
-                  {% include share.html %}	
-                </div>
-              </article>
-              {% include comments.html %}
-            </main>
-          </div>
+  <div class='row'>
+    <article class='col-lg-8 col-md-8 mt-4 shade'>
+      <header class='entry-header'>
+        <h1>{{ page.title }}</h1>		
+        <div class='entry-meta'>
+          <span>Posted on <a href='' rel='bookmark'><time datetime='{{ page.date }}'>September 4, 2017</time></a></span><span class='byline'> by <span><a class='url fn n' href=''>{{ site.title }}</a></span></span>	
         </div>
-        <div class='col-lg-4 col-md-4'>
-          {% include sidebar.html %}
-        </div>
+      </header>
+      <div class='entry-content'>
+        {{ content }}  
+        {% include share.html %}	
       </div>
+      {% include comments.html %}
+    </article>
+    <div class='col-lg-4 col-md-4'>
+      {% include sidebar.html %}
     </div>
+  </div>
+</div>
 </div>
 {%- include autoresize.html -%}

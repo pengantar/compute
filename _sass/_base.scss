@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css?family=Lato:400,400i,700|Raleway:400,400i,500,600,700');
 *,
 *:before,
 *:after{
-  letter-spacing: 1.5px;
   box-sizing: border-box;
+  letter-spacing: normal;
+  word-spacing: normal;
 }
 body {
   padding-top:50px;
@@ -11,8 +11,6 @@ body {
   margin: 0; 
   font-family: $body-font;
   font-size: 16px;
-  letter-spacing: 1.5px;
-  background-color: #F8F8F8 ;
   transition: all .5s ease;
   display: flex;
   flex-direction: column;
@@ -123,4 +121,7 @@ img {
 ::placeholder{
   font-size: 1.25rem;
   color: $pale;
+}
+main{
+  padding-bottom: 60px;
 }
