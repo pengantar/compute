@@ -1,12 +1,14 @@
-<div class = 'grid-3'>
-  {% for service in site.data.products-services %}
-  <div class='space-bound aniview slow' data-av-animation='fadeIn' >
-    <div class='hovereffect card-shadow'>
-      <img class='img-responsive' src='/assets/products/{{ service | slugify }}.jpg' alt='{{ service }}'>
-      <div class='overlay shadow contain'>                           
-        <a class='hover-links' href='/products-services/{{ service | slugify }}/'>{{ service | upcase }}</a>
+<div class = 'container'>
+  <div class = 'grid-3'>
+    {% for service in site.data.products-services %}
+    <div class='space-bound aniview slow' data-av-animation='fadeIn' >
+      <div class='hovereffect card-shadow'>
+        <img class='img-responsive' src='/assets/products/{{ service | slugify }}.jpg' alt='{{ service }}'>
+        <div class='overlay shadow contain'>                           
+          <a class='hover-links' href='/products-services/{{ service | slugify }}/'>{{ service | upcase }}</a>
+        </div>
       </div>
     </div>
+    {% endfor %}
   </div>
-  {% endfor %}
 </div>
