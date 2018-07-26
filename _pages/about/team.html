@@ -4,7 +4,7 @@ permalink: '/about-us/team/'
 title: team
 ---    
 <div id = 'the-team' class = 'animated zoomIn'>
-  <div class = 'container text_center'> 
+  <div class = 'wrap text_center'> 
     <div class = 'card-custom grid-2'> 
       {%- for member in site.data.about.team -%}
       <div class = 'md-trigger member' data-modal = 'modal-1'>
@@ -17,7 +17,7 @@ title: team
   </div>
   
   {%- for person in site.data.about.team -%}
-  <div class = 'container'>
+  <div class = 'wrap'>
     <div class = 'md-modal md-effect-1' id = 'modal-{{ forloop.index }}'>
       <div class = 'md-content'>
         <h3>{{ person.name | upcase }}</h3>
@@ -36,5 +36,4 @@ title: team
     </div>
   </div>
   {%- endfor -%}
-  
   <div class = 'md-overlay'></div>

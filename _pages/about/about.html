@@ -4,18 +4,16 @@ permalink: /about-us/
 title: About Us
 ---
 <div id = 'about-parts'>
-  <div class = 'container'>
-    <div class = 'row'>                  
-      {%- for item in site.data.about.home -%}
-      <div class = 'col-lg-3 col-md-6 col-sm-6 col-xs-12'>
-        <div class = 'hovereffect card-shadow'>
+  <div class = 'wrap'>                  
+    {%- for item in site.data.about.home -%}
+    <div class = 'col-lg-3 col-md-6 col-sm-6 col-xs-12'>
+      <div class = 'hovereffect card-shadow'>
         <img class = 'img-responsive' src = '/assets/about/{{ item }}{% if forloop.index == 3 %}.png{% else %}.jpg{% endif %}' alt = '{{item}}'>
-          <div class = 'overlay'>
-            <a href = '/about-us/{{ item }}/'>{{ item | upcase }}</a> 
-          </div>
+        <div class = 'overlay'>
+          <a href = '/about-us/{{ item }}/'>{{ item | upcase }}</a> 
         </div>
       </div>
-      {%- endfor -%}
-    </div>            
+    </div>
+    {%- endfor -%}
   </div>    
 </div>  

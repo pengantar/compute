@@ -659,7 +659,6 @@ button.btn.collapsed:before{
     }
   }
   &-custom{
-    padding: 20px;
     background-color: $light;
     padding-top: 50px;  
     opacity: 0.9;
@@ -862,8 +861,7 @@ button.btn.collapsed:before{
 .arrow-down{
   color: $orange;
 }
-
-.container{
+.wrap{
   width: 100%;
   max-width: 1250px;
   margin: 0 auto;

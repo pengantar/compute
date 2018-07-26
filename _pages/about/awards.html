@@ -3,9 +3,9 @@ layout: page
 permalink: '/about-us/awards/'
 title: Awards
 ---
-<div class = 'container'>
+<div class = 'wrap'>
   <div class = 'awards grid-2'>
-    {%- for award in site.data.about.awards -%}
+    {%- for award in site.data.about.awards reversed -%}
     <div class = 'hovereffect card-shadow award'>
       <img class = 'img-responsive' src = '/assets/images/trophy.jpg'>
       <div class = 'overlay shadow contain'>

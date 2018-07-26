@@ -105,23 +105,19 @@ li > ol {
 	margin-left: 1.5em;
 }
 
-dt {
-	font-weight: bold;
-}
-
-dd {
-	margin: 0 1.5em 1.5em;
-}
-
 img {
 	height: auto; // Make sure images are scaled correctly. 
 	max-width: 100%; // Adhere to container width. 
 }
 
 ::placeholder{
-  font-size: 1.25rem;
+  font-size: 16px;
   color: $pale;
 }
 main{
   padding-bottom: 60px;
+}
+p{
+  padding: 15px 0;
+  color: $pale;
 }
