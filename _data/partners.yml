@@ -23,15 +23,7 @@
 - url: www.lenovo.com
   logo: novo.jpg
 - url: http://www.hp.com/
-  logo: hewlett-packard-enterprise-logo.png
-- url: http://www.cisco.com/
-  logo: cisco.png
-- url: https://f5.com/
-  logo: f5.png
-- url: http://www.apc.com/site/home/index.cfm?
-  logo: apc-logo.jpg
-- url: www.ge.com
-  logo: ge.jpg
+  logo: hp-logo.png
 - url: https://www.fortinet.com/
   logo: fortinet-logo.gif
 - url: http://www.dieboldnixdorf.com
@@ -50,3 +42,11 @@
   logo: symantec.jpg
 - url: https://www.sophos.com
   logo: sophos.jpg
+- url: http://www.cisco.com/
+  logo: cisco.png
+- url: https://f5.com/
+  logo: f5.png
+- url: www.ge.com
+  logo: ge.jpg
+- url: http://www.apc.com/site/home/index.cfm?
+  logo: apc-logo.jpg

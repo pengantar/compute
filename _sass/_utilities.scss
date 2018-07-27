@@ -87,3 +87,19 @@
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 }
+.grid-4{
+  display: grid;
+  grid-template-columns: 1fr;
+  @media screen and (min-width: 480px){
+    grid-template-columns: 1fr 1fr;
+  }
+  @media screen and (min-width: 667px){
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  @media screen and (min-width: 769px){
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  @media screen and (min-width: 1025px) {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  }
+}

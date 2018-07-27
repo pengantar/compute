@@ -175,7 +175,11 @@ h1 {
   }
 }
 .partner{
-  padding: 30px;
+  padding: 30px 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 50px rgba(0,0,0,0.17);
   &s{
     background: #fff;
     max-width: 1250px;
