@@ -60,7 +60,6 @@
   max-width: none;
   width: calc(100% + 60px);
   transition: opacity 0.35s, transform 0.45s;
-  transform: translate3d(-40px,0,0);
 }
 
 .hovereffect a {
@@ -75,8 +74,7 @@
 }
 
 .hovereffect .overlay a{
-  text-align: center;
-  margin-top: 40px;    
+  text-align: center;    
 }
 
 @media screen and (max-width: 800px) {
