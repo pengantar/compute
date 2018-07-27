@@ -7,7 +7,6 @@
 }
 body {
   padding-top:50px;
-  overflow-x: hidden;  
   margin: 0; 
   font-family: $body-font;
   font-size: 16px;
@@ -16,6 +15,8 @@ body {
   flex-direction: column;
   min-height: 100vh;
   justify-content: space-between;
+  overflow-x: hidden;
+  line-height: 1.5;
 }
 h1,h2,h3,h4,h5,h6{
   font-family: $heading-font;

@@ -1,3 +1,6 @@
+.jumbotron p{
+  color: $light;
+}
 .slow {
   animation-duration: 3s;
   animation-delay: 1s;
@@ -865,9 +868,10 @@ button.btn.collapsed:before{
   width: 100%;
   max-width: 1250px;
   margin: 0 auto;
+  padding-left: 25px;
+  padding-right: 25px;
 }
 #SMT{
-  
   padding-top: 210px;
 }
 #cent{

@@ -2,23 +2,9 @@
   min-height: 360px;
   border-radius: 6px;
   box-shadow: 0 0 60px rgba(0,0,0,0.17);
-  margin: 25px;
   overflow: hidden;
-  display: inline-block;
   background: #fff;
   align-self: stretch;
-  &_container{
-    display: grid;
-    max-width: 1250px;
-    margin: 30px auto;
-    grid-template-columns: 1fr;
-    @media screen and (min-width: 667px){
-      grid-template-columns: 1fr 1fr;
-    }
-    @media screen and (min-width: 992px){
-      grid-template-columns: 1fr 1fr 1fr;
-    }
-  }
   &_image{ 
     background-image: url(/assets/devices/accessories/hp/E5C13AA.png);
     background-size:contain;
