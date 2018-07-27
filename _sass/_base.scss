@@ -49,9 +49,20 @@ img{
 //   display: none;
 // }
 form{
-  margin: 15px 0;
   max-width: 540px;
-  padding: 15px;
+  padding: 30px 15px;
+}
+textarea.form-control {
+  height: 100%;
+}
+// Form styling 
+
+input{
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+label {
+  font-weight: normal !important;
 }
 input{
   padding: 15px;
