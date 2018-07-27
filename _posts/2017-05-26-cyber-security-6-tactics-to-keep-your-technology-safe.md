@@ -3,6 +3,7 @@ layout: post
 title: 'Cyber Security: 6 Tactics to keep your technology safe'
 ---
 <img class="aligncenter size-full wp-image-224" src="http://blog.computechlimited.com/wp-content/uploads/2017/05/article-image-fb-twitter-01.png" alt="article image fb twitter-01" width="2536" height="1217" />
+
 The recent WannaCry ransomware attack that affected over 100, 000 computers across the world has shown just how vital an effective cyber security strategy is for any forward thinking organization. It has brought into focus key elements of cyber defense such as **Patch Management**, **Network Filtering**, **Antivirus Protection**, **Backups**, **Staff Security Awareness Training** and a comprehensive **Incident Response Plan**.
 
 Becoming the target of a cyber attack is not a question of if, but when, an organization will be attacked. As such, businesses need to develop and implement effective and continuous incident response strategies. We recommend employing the following tactics:

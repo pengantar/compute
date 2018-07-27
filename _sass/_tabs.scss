@@ -81,25 +81,13 @@ li.active a, li.active a:hover {
 
 .seaTabs_switch_active { cursor: default; }
 
-.seaTabs_item { display: none; }
-
 .seaTabs_content_active { display: block; }
 .seaTabs_tab {
   padding: 8.3px;
-  border-width: 1px 1px 1px 0;
-  border-style: solid;
-  border-color: #ccc;
-  background: #f8f8f8;
+  border: 1px solid transparent;
+  background: $mute;
   justify-content: space-between;
-  float: left;
   cursor: pointer;
-  &:first-child {
-    border-left: 1px solid #ccc;
-    border-top-left-radius: 5px;
-  }
-  &:last-child { 
-    border-top-right-radius: 5px;
-  }
 }
 
 .seaTabs_content { margin-top: -1px; }
@@ -107,6 +95,7 @@ li.active a, li.active a:hover {
 .seaTabs_item {
   padding: 20px;
   border-radius: 0 0 5px 5px;
+  display: none;
 }
 
 .seaTabs_switch_active {
@@ -320,10 +309,6 @@ li.active a, li.active a:hover {
   cursor: default;
 }
 
-.seaTabs_item { 
-  display: none;
-}
-
 .seaTabs_content_active {
   display: block;
 }
@@ -333,10 +318,6 @@ li.active a, li.active a:hover {
 }
 .seaTabs_content a{
   color: #F68E35;
-}
-.seaTabs_item {
-  padding: 20px;
-  border-radius: 0 0 5px 5px;
 }
 
 .seaTabs_switch_active {

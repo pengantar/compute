@@ -60,7 +60,18 @@ input{
 textarea{
   resize: none;
 }
-
+form input[type="text"][disabled], form textarea[disabled] {
+  background:#fff
+}
+form input[type="text"].error, form textarea.error {
+  background:#e6e6e6;
+  border-color:#c0392b
+}
+fieldset {
+  border:0px;
+  margin:0;
+  padding:0
+}
 table{
   vertical-align: top;
   border-collapse: collapse;
@@ -121,4 +132,5 @@ main{
 p{
   padding: 15px 0;
   color: $pale;
+  line-height: 1.7;
 }
