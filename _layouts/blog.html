@@ -2,38 +2,35 @@
 layout: default
 ---
 {{ content }}
-<div class = 'home blog hfeed'>
-  <div class = 'wrap mt-4'>
-    <div class = 'row'>
-      <div class = 'col-lg-8 col-md-8'>
-        <div id = 'primary' class = 'dt-archive-wrap'>
-        {% for post in site.posts %}  
-          <div class = 'post_item text_center'>
-            {% if post.image %}
-            <figure>
-              <a href = '{{ post.url }}' title = '{{ post.title }}'><img width = '600' height = '400' src = '/assets/articles/uploads/{{ post.placeholder }}' class = 'attachment-glow-archive-img size-glow-archive-img wp-post-image' alt = '{{ post.title }}' title = '{{ post.title }}' srcset = '/assets/articles/uploads/{{ post.image }}' /></a>
-            </figure>
-            {% endif %}
-            <article>
-              <header class = 'entry-header'>
-                <h2 class = 'entry-title'>
-                  <a href = '{{ post.url }}' rel = 'bookmark'>{{ post.title }}</a>
-                </h2>                               
-              </header>
-              <div class = 'dt-archive-post-content'>
-                <p>{{ post.content | strip_html | truncate: 80  }}</p>
-              </div>
-              <a class = 'excerpt_more' href = '{{ post.url }}' title = '{{ post.title }}'>Read more</a>
-            </article>
+<div class = 'home blog'>
+  <div class = 'wrap grid-fibonacci mt-4'>
+    <div class = ''>
+    {% for post in site.posts %}  
+      <div class = 'post_item text_center'>
+        {% if post.image %}
+        <figure>
+          <a href = '{{ post.url }}' title = '{{ post.title }}'><img width = '600' height = '400' src = '/assets/articles/uploads/{{ post.placeholder }}' class = 'attachment-glow-archive-img size-glow-archive-img wp-post-image' alt = '{{ post.title }}' title = '{{ post.title }}' srcset = '/assets/articles/uploads/{{ post.image }}' /></a>
+        </figure>
+        {% endif %}
+        <article>
+          <header class = 'entry-header'>
+            <h2 class = 'entry-title'>
+              <a href = '{{ post.url }}' rel = 'bookmark'>{{ post.title }}</a>
+            </h2>                               
+          </header>
+          <div class = 'dt-archive-post-content'>
+            <p>{{ post.content | strip_html | truncate: 80  }}</p>
           </div>
-        {% endfor %}
-        </div>
+          <a class = 'excerpt_more' href = '{{ post.url }}' title = '{{ post.title }}'>Read more</a>
+        </article>
       </div>
-                  
-      <aside class = 'col-lg-4 col-md-4'>
+    {% endfor %}
+    </div>
+    <div>
+      <aside class = 'shade' role = 'complementary'>
         {% include sidebar.html %}
       </aside>
-    </div>
+    </div>        
   </div>
 </div>
                   
