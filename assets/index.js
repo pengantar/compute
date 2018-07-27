@@ -6,8 +6,37 @@
 // 	});
 // })
 
+
+function elem(selector) {
+  let elem = document.querySelector(selector);
+  return elem ? elem : false;
+}
+
+function elems (selector){
+  let elems = document.querySelectorAll(selector);
+  return elems ? elems : false;
+}
+
+function switchToNonWebp () {
+  let images = elems('img');
+  Array.from(images).map(function(image, index) {
+    let src = image.src;
+    let webp = '.webp';
+    let jpg = '.jpg';
+    let new_src = src.replace(webp, jpg);
+    image.src = new_src;
+  });
+}
+
+
+function serveNonWebp() {
+  let non_webp = document.documentElement.classList.contains('no-webp');
+  non_webp ? switchToNonWebp() :  false;
+}
+
 $(document).ready(function() {
   $('.carousel .carousel-caption').css('zoom', $('.carousel').width()/1050);
+  serveNonWebp();
 });
 
 $(window).resize(function() {

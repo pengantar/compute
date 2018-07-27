@@ -2,13 +2,13 @@
 layout: page
 permalink: '/about-us/team/'
 title: team
----    
+--- 
 <div id = 'the-team' class = 'animated zoomIn'>
   <div class = 'wrap text_center'> 
     <div class = 'card-custom grid-2'> 
       {%- for member in site.data.about.team -%}
       <div class = 'md-trigger member' data-modal = 'modal-1'>
-        <img src = '/assets/new-team/{{ member.picture }}.webp' alt = 'team member' class = 'img-responsive img-team img-rounded'>
+        <img src = '/assets/team/{{ member.picture }}.webp' alt = 'team member' class = 'img-responsive img-team img-rounded'>
         <h5>{{ member.name | capitalize }}</h5>
         <span class = 'orange'>{{ member.title | upcase }}</span>   
       </div>
@@ -24,7 +24,7 @@ title: team
         <div>
           <div class = 'row'>
             <div class = 'col-lg-4 col-md-4'>
-              <img src = '/assets/new-team/{{ person.picture }}.webp' alt = 'team member' class = 'img-responsive img-rounded mt-2 shade'>
+              <img src = '/assets/team/{{ person.picture }}.webp' alt = 'team member' class = 'img-responsive img-rounded mt-2 shade'>
             </div>
             <div class = 'col-lg-8 col-md-8'>
               <p class = 'profile-text'>{{ person.description }}</p> 
