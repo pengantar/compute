@@ -17,7 +17,7 @@ function elems (selector){
   return elems ? elems : false;
 }
 
-function switchToNonWebp () {
+(function switchToNonWebp () {
   let images = elems('img');
   Array.from(images).map(function(image, index) {
     let src = image.src;
@@ -26,12 +26,11 @@ function switchToNonWebp () {
     let new_src = src.replace(webp, jpg);
     image.src = new_src;
   });
-}
+})();
 
 
 function serveNonWebp() {
   let non_webp = document.documentElement.classList.contains('no-webp');
-  non_webp ? switchToNonWebp() :  false;
 }
 
 $(document).ready(function() {
