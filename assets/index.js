@@ -82,12 +82,11 @@ function switchToNonWebp () {
   });
 };
 
-(function initWebp() {
-  serveNonWebp() ? switchToNonWebp() : false;
-})();
-
 $(document).ready(function() {
-  $('.carousel .carousel-caption').css('zoom', $('.carousel').width()/1050);
+  $('.carousel .carousel-caption').css('zoom', $('.carousel').width()/1050);  
+  (function initWebp() {
+    serveNonWebp() ? switchToNonWebp() : false;
+  })();
 });
 
 $(window).resize(function() {
