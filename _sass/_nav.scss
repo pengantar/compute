@@ -6,6 +6,8 @@
 }
 .navbar-default{
   background-color: $light;
+  box-shadow: 0 0 50px rgba(0,0,0,0.17);
+  border-color: transparent;
   ul {
     margin-top: 7.5px;  
   }

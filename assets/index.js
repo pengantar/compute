@@ -1,23 +1,77 @@
-// $(document).ready(function(){
-// 	$('.sleekslider').sleekslider({
-// 		thumbs: ['wallhaven-27263-thumbnail.jpg', 'wallhaven-16270-thumbnail.jpg', 'wallhaven-12018-thumbnail.jpg','wallhaven-3178-thumb.jpg','wallhaven-10742-thumb.jpg'],
-// 		labels:['Slide 1', 'Slide 2', 'Slide 3', 'Slide 4', 'Slide 5'],
-// 		speed: 6000
-// 	});
-// })
-
-
-function elem(selector) {
-  let elem = document.querySelector(selector);
-  return elem ? elem : false;
+function elem(selector, parent = document){
+  return parent.querySelector(selector);
 }
 
-function elems (selector){
+function elems(selector) {
   let elems = document.querySelectorAll(selector);
-  return elems ? elems : false;
+  return elems.length ? elems : false; 
 }
 
-(function switchToNonWebp () {
+function findText(parent, child) {
+  return parent.querySelector(child).innerHTML;
+}
+
+function setText(el, text) {
+  el.innerHTML = text;
+}
+
+function fillModal(name, title, description, url) {
+  let modal = elem('.member_modal');
+  let new_name = elem('.modal_name', modal);
+  let new_title = elem('.modal_title', modal);
+  let new_description = elem('.modal_description', modal);
+  let img = elem('img', modal);
+  setText(new_name, name);
+  setText(new_description, description);
+  setText(new_title, title);
+  img.src = url;
+}
+
+function modal() {
+  let modal = elem('.member_modal');
+  let modal_class = modal.classList;
+  let overlay = modal.parentNode;
+  let overlay_class = overlay.classList;
+  return [modal_class, overlay_class];
+}
+
+function toggleModal() {
+  let open = 'member_modal-open';
+  modal()[0].contains(open) ? modal()[0].remove(open) : modal()[0].add(open);
+  let hide = 'hide';
+  modal()[1].contains(hide) ? modal()[1].remove(hide) : modal()[1].add(hide);
+}
+
+(function hideModal() {
+  let triggers = ['.modal_close', '.modal_overlay'];
+  triggers.map(function(trigger) {
+    let button = elem(trigger);
+    button.addEventListener('click', function(e) {
+      button == e.target ? toggleModal() : false;
+    });
+  });
+})();
+
+(function teamModal() {
+  let members = elems('.member');
+  Array.from(members).map(function(member, index) {
+    member.addEventListener('click', function() {
+      let name = findText(member, '.member_name');
+      let title = findText(member, '.member_title');
+      let description = findText(member, '.member_description');
+      let imgUrl = member.querySelector('img').src;
+      fillModal(name, title, description, imgUrl);
+      toggleModal();
+    }); 
+  }); 
+})();
+
+function serveNonWebp() {
+  let non_webp = document.documentElement.classList.contains('no-webp');
+  return non_webp;
+}
+
+function switchToNonWebp () {
   let images = elems('img');
   Array.from(images).map(function(image, index) {
     let src = image.src;
@@ -26,16 +80,14 @@ function elems (selector){
     let new_src = src.replace(webp, jpg);
     image.src = new_src;
   });
+};
+
+(function initWebp() {
+  serveNonWebp() ? switchToNonWebp() : false;
 })();
-
-
-function serveNonWebp() {
-  let non_webp = document.documentElement.classList.contains('no-webp');
-}
 
 $(document).ready(function() {
   $('.carousel .carousel-caption').css('zoom', $('.carousel').width()/1050);
-  serveNonWebp();
 });
 
 $(window).resize(function() {
@@ -208,62 +260,62 @@ jQuery(function () {
 });
 
 /*
- * modalEffects.js v1.0.0
- */
-var ModalEffects = (function() {
+* modalEffects.js v1.0.0
+*/
+// var ModalEffects = (function() {
 
-	function init() {
+// 	function init() {
 
-		var overlay = document.querySelector( '.md-overlay' );
+// 		var overlay = document.querySelector( '.md-overlay' );
 
-		[].slice.call( document.querySelectorAll( '.md-trigger' ) ).forEach( function( el, i ) {
+// 		[].slice.call( document.querySelectorAll( '.md-trigger' ) ).forEach( function( el, i ) {
 
-			var modal = document.querySelector( '#' + el.getAttribute( 'data-modal' ) ),
-				close = modal.querySelector( '.md-close' );
+// 			var modal = document.querySelector( '#' + el.getAttribute( 'data-modal' ) ),
+// 				close = modal.querySelector( '.md-close' );
 
-			function removeModal( hasPerspective ) {
-				classie.remove( modal, 'md-show' );
+// 			function removeModal( hasPerspective ) {
+// 				classie.remove( modal, 'md-show' );
 
-				if( hasPerspective ) {
-					classie.remove( document.documentElement, 'md-perspective' );
-				}
-			}
+// 				if( hasPerspective ) {
+// 					classie.remove( document.documentElement, 'md-perspective' );
+// 				}
+// 			}
 
-			function removeModalHandler() {
-				removeModal( classie.has( el, 'md-setperspective' ) ); 
-			}
+// 			function removeModalHandler() {
+// 				removeModal( classie.has( el, 'md-setperspective' ) ); 
+// 			}
 
-			el.addEventListener( 'click', function( ev ) {
-				classie.add( modal, 'md-show' );
-				overlay.removeEventListener( 'click', removeModalHandler );
-				overlay.addEventListener( 'click', removeModalHandler );
+// 			el.addEventListener( 'click', function( ev ) {
+// 				classie.add( modal, 'md-show' );
+// 				overlay.removeEventListener( 'click', removeModalHandler );
+// 				overlay.addEventListener( 'click', removeModalHandler );
 
-				if( classie.has( el, 'md-setperspective' ) ) {
-					setTimeout( function() {
-						classie.add( document.documentElement, 'md-perspective' );
-					}, 25 );
-				}
-			});
+// 				if( classie.has( el, 'md-setperspective' ) ) {
+// 					setTimeout( function() {
+// 						classie.add( document.documentElement, 'md-perspective' );
+// 					}, 25 );
+// 				}
+// 			});
 
-			close.addEventListener( 'click', function( ev ) {
-				ev.stopPropagation();
-				removeModalHandler();
-			});
+// 			close.addEventListener( 'click', function( ev ) {
+// 				ev.stopPropagation();
+// 				removeModalHandler();
+// 			});
 
-		} );
+// 		} );
 
-	}
+// 	}
 
-	init();
+// 	init();
 
-})();
+// })();
 
 /*!
- * classie v1.0.1
- */
+* classie v1.0.1
+*/
 
 ( function( window ) {
-
+  
   'use strict';
   
   // class helper functions from bonzo https://github.com/ded/bonzo
@@ -331,15 +383,15 @@ var ModalEffects = (function() {
     window.classie = classie;
   }
   
-  })( window );
+})( window );
 
-  (function year(){
-    var date = new Date();
-    var year = date.getFullYear();
-    document.querySelector('.year').innerHTML = year;
-  })();
-  
-  (function autoResizeTextField() {
-    let textarea = document.querySelector('textarea');
-    textarea ? autosize(textarea) : false;
-  })();
+(function year(){
+  var date = new Date();
+  var year = date.getFullYear();
+  document.querySelector('.year').innerHTML = year;
+})();
+
+(function autoResizeTextField() {
+  let textarea = document.querySelector('textarea');
+  textarea ? autosize(textarea) : false;
+})();

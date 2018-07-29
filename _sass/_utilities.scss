@@ -9,6 +9,14 @@
     text-align: center !important;
   }
 }
+.mute{
+  color: $mute;
+}
+.hide{
+  visibility: 0;
+  opacity: 0;
+  transform: scale(0);
+}
 .fit{
   padding: 0;
 }

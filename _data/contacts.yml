@@ -1,0 +1,47 @@
+- country: Kenya
+  regions: 
+    - details: 
+        - "Waiyaki Way, Westlands,"
+        - "P.O.Box 59789-00200, Nairobi, Kenya"
+        - "Email: [sales@computechlimited.com](mailto:sales@computechlimited.com)"
+        - "Tel: [+254 730 141 000](tel:+254 730 141000)"
+      directions: "<a data-popup-open = 'popup-1' href = '#'>View Map</a>"
+      name: "Computech Limited – Nairobi"
+    - details: 
+        - "Nyali Road Opp. Kongowea Main Entrance, Mombasa, Kenya"
+      name: "Computech Limited – Mombasa"
+- country: Tanzania
+  regions: 
+    - details: 
+        - "Diamond Plaza,7th floor"
+        - "Plot No. 168/38, 8 Mirambo street/Samora Avenue"
+        - "P.O.Box 5171, Dar Es Salaam, Tanzania"
+        - "Email: [servicedesk@computech-ics.co.tz](mailto:servicedesk@computech-ics.co.tz)"
+        - "Tel: [+255 222 111 028/22](tel:+255 222 111 028)"
+      name: "Computech ICS (TZ) Limited - Tanzania"
+- country: Uganda
+  regions: 
+    - details: 
+        - "Ntinda Plaza Complex, Block C, 2nd Floor Room 08"
+        - "P.O.Box 34757, Kampala, Uganda"
+        - "Email: [info.uganda@computechlimited.com](mailto: info.uganda@computechlimited.com)"
+        - "Tel: [+256 414 342 910](tel:+256 414 342 910)"
+        - "Mobile: [+256 414 346 547](tel: +256 414 346 547)"
+      directions: "<a data-popup-open = 'popup-2' href = '#'>View Map</a>"
+      name: "Computech Limited - Uganda"
+- country: Rwanda
+  regions: 
+    - details: 
+        - "Plot No. 299 Nobiscum House 1st Floor"
+        - "Stadium Road ,Remera Kisementi, Kigali"
+        - "Email: [info.rwanda@computechlimited.com](mailto:info.rwanda@computechlimited.com)"
+        - "Tel: [+250 781 575 719](tel:+250 781 575 719)"
+      name: "Computech Limited - Rwanda"
+- country: Zambia
+  regions: 
+    - details: 
+        - "Plot 46, Joseph Mwilwa Road"
+        - "Rhodes Park, Lusaka, Zambia"
+        - "Email: [info.zm@computechlimited.com](mailto:info.zm@computechlimited.com)"
+        - "Tel: [+260 211 239 801/2](tel:+260 211 239 801)"
+      name: "Computech Limited - Zambia"

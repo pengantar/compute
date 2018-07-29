@@ -703,18 +703,6 @@ button.btn.collapsed:before{
   padding-top: 15px;
   float: right;
 }
-.space1{
-  padding-right: 15px;
-  padding-left: 15px;
-}
-.foot-down{
-  padding-top: 15px;
-}
-
-.lgrey{
-  padding-top: 15px;
-  color: #9E9E9E;
-}
 
 .rights{
   width: 100%;
@@ -1471,6 +1459,47 @@ textright{
   img{
     width: 100%;
   }
+  &_modal{
+    max-width: 840px;
+    background: $light;
+    padding: 50px 20px 25px;
+    transform: scale(0) translateZ(-600px);
+    opacity: 0;
+    transition: transform 0.3s ease-in-out, opacity 0.25s 0.3s ease-in;
+    &-open{
+      transform: scale(1) translateZ(0);
+      opacity: 1;
+    }
+  }
+}
+.modal {
+  &_overlay{
+    min-height: 100vh;
+    padding: 100px 25px 25px;
+    position: fixed;
+    cursor: pointer;
+    perspective: 600px;
+  }
+  &_body{
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr;
+    grid-gap: 30px;
+    cursor: initial;
+    @media screen and (min-width: 769px){
+      grid-template-columns: 3fr 7fr;
+    }
+  }
+  &_name{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    left: 0;
+    background: $orange;
+    color: $light;
+    text-transform: uppercase;
+    margin: 0;
+  }
 }
 
 // End of team page 
@@ -1652,6 +1681,11 @@ hr{
   background-position: center;
   background-repeat: no-repeat;
   background-image: url(/assets/images/security.png);
+}
+.webp{
+  [class*=banner-] {
+    background-image: url(/assets/images/security.webp);
+  }
 }
 .banner,
 .banner1{
