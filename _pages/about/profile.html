@@ -18,7 +18,7 @@ title: Profile
         </div>
         <div class = 'shade'>
           <h3 class = 'center'>Our Regional Presence</h3>                    
-          <img src = '/assets/images/africa.webp' class = 'img-front img-responsive' alt = '' usemap = '#Map' />
+          <img src = '/assets/images/africa.jpg' class = 'img-front img-responsive' alt = '' usemap = '#Map' />
           {%- include map.html -%}
           <br>
           <div id = 'country'>
@@ -29,7 +29,7 @@ title: Profile
                   <div class = 'seaTabs_switch'>
                     {%- for item in about -%}
                     <div class = 'seaTabs_tab {% if forloop.index == 1 %} seaTabs_switch_active {% endif %}'>
-                      <img src = '/assets/country/{{ item.country | downcase }}.webp'><br>
+                      <img src = '/assets/country/{{ item.country | downcase }}.jpg'><br>
                     </div>
                     {%- endfor -%}
                   </div>

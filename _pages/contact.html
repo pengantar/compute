@@ -16,7 +16,7 @@ title: Contact Us
         <div class = 'seaTabs_switch'>
           {% for contact in contacts %}
           <div class = 'seaTabs_tab {% if forloop.first %}seaTabs_switch_active{% endif %}'>
-            <img src = '/assets/country/{{ contact.country | downcase }}.webp'>
+            <img src = '/assets/country/{{ contact.country | downcase }}.jpg'>
           </div>
           {% endfor %}
         </div>
