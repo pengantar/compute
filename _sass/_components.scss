@@ -1464,11 +1464,9 @@ textright{
     background: $light;
     padding: 67px 20px 25px;
     transform: scale(0) translateZ(-600px);
-    opacity: 0;
-    transition: transform 0.3s ease-in-out, opacity 0.25s 0.3s ease-in;
+    transition: transform 0.3s ease-in-out;
     &-open{
       transform: scale(1) translateZ(0);
-      opacity: 1;
     }
     .modal_close{
       position: absolute;
