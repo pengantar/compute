@@ -1492,6 +1492,7 @@ textright{
 .modal {
   &_overlay{
     height: 100vh !important;
+    bottom: 0;
     padding: 100px 25px 25px;
     position: fixed;
     cursor: pointer;
