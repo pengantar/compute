@@ -1462,13 +1462,32 @@ textright{
   &_modal{
     max-width: 840px;
     background: $light;
-    padding: 50px 20px 25px;
+    padding: 67px 20px 25px;
     transform: scale(0) translateZ(-600px);
     opacity: 0;
     transition: transform 0.3s ease-in-out, opacity 0.25s 0.3s ease-in;
     &-open{
       transform: scale(1) translateZ(0);
       opacity: 1;
+    }
+    .modal_close{
+      position: absolute;
+      top: 0;
+      right: 0;
+      background-color: rgba(0,0,0,0.25);
+      color: #fff;
+      border: 0;
+      font-size: 36px;
+      outline: 0;
+      cursor: pointer;
+      padding: 0;
+      width: 50px;
+      height: 50px;
+      transition: opacity 0.25s ease-out;
+      margin: 0;
+      &:hover{
+        opacity: 0.9;
+      }
     }
   }
 }
@@ -1499,6 +1518,8 @@ textright{
     color: $light;
     text-transform: uppercase;
     margin: 0;
+    line-height: 50px;
+    padding-left: 20px;
   }
 }
 
