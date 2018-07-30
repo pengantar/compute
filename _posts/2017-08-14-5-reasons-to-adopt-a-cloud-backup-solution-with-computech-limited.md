@@ -1,6 +1,9 @@
 ---
 layout: post
 title: '5 Reasons to Adopt a Cloud Backup Solution with Computech Limited'
+tags:
+  - cloud computing
+  - cyber security
 ---
 <img class="aligncenter size-full wp-image-249" src="http://blog.computechlimited.com/wp-content/uploads/2017/08/20170804_BackupSolutions-01.png" alt="20170804_BackupSolutions-01" width="5000" height="2575" />
 

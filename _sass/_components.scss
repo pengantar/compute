@@ -249,8 +249,11 @@ h1 {
   margin-left: auto;
   margin-right: auto;
 }
-.bright-text{
+.cafe{
   color: #F68E35;
+  padding-left: 25px;
+  border-left: 10px double;
+  box-shadow: 0 0 50px rgba(0,0,0,0.17);
 }
 
 //  CSS used here will be applied after bootstrap.css  
@@ -619,9 +622,6 @@ button.btn.collapsed:before{
 .map-right{
   float: right;
 }
-.healthcare-options{
-  margin-top: -30px;
-}
 
 .collapsepadding{
   padding-top: 50px;
@@ -773,17 +773,6 @@ button.btn.collapsed:before{
   z-index: 999;  
 }
 
-// Modal contect styling in the homepage 
-// Changing the position 
-#memberModal{
-  padding-top: 10%; 
-}
-// Changing the size 
-#memberModal .modal-dialog  {width:75%;}
-.modal-header{
-  background-color: $orange;
-  color: $light;
-}
 .modal-footer{
   background-color: $orange;
 }
@@ -794,15 +783,10 @@ button.btn.collapsed:before{
   padding-top: 20px; 
 }
 
-
 .black{
   color: $dark;
 }
 
-
-.centered-text {
-  text-align: center;
-}
 
 .quote {
   background: $light;
@@ -1020,10 +1004,6 @@ button.btn.collapsed:before{
 
 // Styling for the offerings page 
 
-#Offerings{
-  height: auto;
-  width: 100%;
-}
 .IT{
   height: 450px;
   width: 450px;
@@ -1175,11 +1155,6 @@ img.map, map area{
   font-size: 37px;
 }
 
-#compute{
-  height: 100vh;
-  padding-top: 100px;
-}
-
 // Ripple 
 
 .circle {
@@ -1216,11 +1191,6 @@ img.map, map area{
 .circle:hover:before,
 .circle:hover:after {
   animation: none;
-}
-@keyframes ripple{
-  0% {transform:scale(1); }
-  75% {transform:scale(1.75); opacity:1;}
-  100% {transform:scale(2); opacity:0;}
 }
 
 // Software page 
@@ -1260,12 +1230,6 @@ img.map, map area{
   margin-top: 20px;
 }
 
-#Services{   
-  height: auto;
-  width: 100%;
-  padding-top: 10px;
-  padding-bottom: 20px; 
-}
 .column-1{
   border-right: 3px solid $light;
 }
@@ -1285,19 +1249,6 @@ img.map, map area{
   top: -400px;
 }
 
-.Healthcare-left{
-  border-right: 3px solid $light; 
-}
-.Health-item p{
-  font-size: 28px;
-  color:$orange; 
-}
-.Health-item ul li{
-  list-style: none;
-  text-align: center;
-  color: $light;
-  font-size: 22px;  
-}
 
 // For the Services page 
 .active-1{
@@ -1343,17 +1294,7 @@ textright{
   animation-duration: 0.6s;
   animation-duration: 0.6s;  
 }
-#security-page{
-  padding-top: 10px;
-  padding-bottom: 20px;
-  height: 350px;
-  animation-duration: 0.6s;
-}
-.Assetprotection-page{
-  width: auto;
-  height: auto;
-  padding-bottom: 50px;
-}
+
 .center-contents img{
   display: block;
   margin-left: auto;
@@ -1426,15 +1367,6 @@ textright{
   margin-top: 65px;
 }
 
-// End of client page 
-// Start for Security 
-
-#new-security{
-  height: auto;
-  padding-top: 120px; 
-  background-color: $light;
-  padding-bottom: 50px;        
-}
 .card-security2 ul{
   list-style: none;
 }
@@ -1491,7 +1423,7 @@ textright{
 }
 .modal {
   &_overlay{
-    min-height: 100vh;
+    height: 100vh !important;
     padding: 100px 25px 25px;
     position: fixed;
     cursor: pointer;
@@ -1521,8 +1453,18 @@ textright{
   }
 }
 
-// End of team page 
-
+.tag{
+  padding: 10px 15px;
+  margin: 10px 10px 10px 0;
+  border-radius: 20px;
+  box-shadow: 0 0 30px rgba(0,0,0,0.17);
+  text-transform: capitalize;
+  &_container{
+    display: inline-flex;
+    flex-flow: row wrap;
+    padding: 15px 0;
+  }
+}
 .item-point{
   background-color: $dark;
   margin: 20px;
@@ -1546,90 +1488,11 @@ textright{
 }
 // End of End point 
 
-// Internet section 
-#new-internet-security{
-  height: auto;
-  width: 100%;
-  padding-top: 90px;
-  padding-bottom: 157px;
-  background-color: $light;
-  background-image: url(http://www.transparenttextures.com/patterns/cubes.png);
-	font-size: 16px;
-	line-height: 26px;
-}
-.cloud-text{
-  line-height: 24px;
-  margin-left: -70px; 
-}
-.Azure-text{
-  margin-left: -70px;
-  line-height: 20px;
-}
-.CRM-text{
-  margin-left: -70px;
-  line-height: 20px;
-}
-.windows7{
-  margin-left: -30px;
-  line-height: 23px;
-}
-.email7{
-  margin-left: -30px;
-  line-height: 25px; 
-}
-.exchange-details{
-  padding-top: 25px;
-}
-.sharepoint7{
-  margin-left: -30px;
-  line-height: 23px;
-}
 
-// Microsoft licensing section 
-
-#new-microsoft-licensing{
-  height: auto;
-  width: 100%;
-  padding-top: 50px;
-  padding-bottom: 20px;
-}
-.new-body{
-  height: auto;
-  width: 100%;
-  padding-top: 50px;
-  padding-bottom: 20px;
-}
-#new-microsoft-cloud{
-  height: auto;
-  width: 100%;
-  padding-top: 10px;
-  padding-bottom: 65px;
-}
-#new-microsoft-onprem{
-  height: auto;
-  width: 100%;
-  padding-top: 10px;
-  padding-bottom: 50px;
-}
 .region-title{
   text-decoration: underline;
 }
-#microsoft-infrastructure,
-#new-microsoft-managed{
-  height: auto;
-  width: 100%;
-  padding-top: 10px;
-  padding-bottom: 20px;
-}
 
-// End of the microsoft section 
-#new-banking-lending{
-  margin-top: -10px;
-  height: auto;
-  width: 100%;
-  padding-top: 15px;
-  padding-bottom: 43px;      
-}
 .float-left{
   float: left;
 }
@@ -1638,13 +1501,6 @@ textright{
 }
 .ref-logo{
   padding: 20px;
-}
-hr{
-  margin-top: 30px;
-  height: 12px;
-  height: 12px;
-  border: 7;
-  box-shadow: inset 0 12px 12px -12px rgba($dark, 0.5);
 }
 
 // Download page 
@@ -1662,30 +1518,6 @@ hr{
 }
 .mui-tabs__bar{
   color: $orange;
-}
-#new-banking-loyalty,
-#new-banking-pricing,
-#new-banking-POD,
-#new-client-tabview{
-  height: auto;
-  width: 100%;   
-  padding-top: 15px;
-  padding-bottom: 43px;
-}
-#new-banking-pricing{
-  padding-bottom: 27px;
-}
-#new-banking-POD{
-  padding-top: 10px;
-  padding-bottom: 20px;
-}
-
-// Start of client section 
-#new-client-tabview{
-  padding-top: 50px;
-  padding-bottom: 30px;
-  padding-left: 130px;
-  background-color: $light;
 }
 
 // End of client section 
@@ -1724,41 +1556,7 @@ hr{
   padding-top: 90px;
   padding-bottom: 30px;
 }
-#new-service-project{
-  padding-bottom: 207px;
-}
-#new-service-outsourcing{
-  padding-bottom: 207px;
-}
-#new-service-datacenter{
-  padding-bottom: 207px;
-}
 
-// End of Services 
-#new-healthcare-profile{  
-  height: auto;
-  width: 100%;
-  margin-top: 10px;
-  margin-bottom: 20px;
-}
-#new-healthcare-products{
-  height: auto;
-  width: 100%;
-  padding-top: 90px;
-  padding-bottom: 25px;
-  background-color: $light;
-}
-#new-healthcare-contact{
-  height: auto;
-  width: 100%;
-  padding-top: 90px;
-  padding-bottom: 227px;
-  background-color: $light;
-}
-
-.healthcare-contacts{
-  padding-top: 70px;
-}
 .contact-img{
   text-align: center;
   align-content: center;
@@ -1769,22 +1567,6 @@ hr{
 .robot{
   padding-top: 40px;
   padding-bottom: 30px;
-}
-// PWC page 
-#pwc{
-  padding-top: 30px;
-  padding-bottom: 180px;
-  background-color: $light;
-}
-#dtb{
-  padding-top: 30px;
-  padding-bottom: 250px;
-  background-color: $light;
-}
-#kq{
-  padding-top: 30px;
-  padding-bottom: 250px;
-  background-color: $light;
 }
 
 // pdf buttons 

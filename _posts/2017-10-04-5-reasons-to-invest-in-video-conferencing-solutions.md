@@ -1,6 +1,9 @@
 ---
 layout: post
 title: '5 Reasons to Invest in Video Conferencing Solutions'
+tags: 
+  - video conferencing
+  - cisco
 ---
 <a href="http://www.computechlimited.com/cisco.html"><img class="aligncenter wp-image-271" src="http://blog.computechlimited.com/wp-content/uploads/2017/10/WhatsApp-Image-2017-10-02-at-13.49.20.jpeg" alt="" width="802" height="535" /></a>
 

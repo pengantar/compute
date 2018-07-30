@@ -1,6 +1,10 @@
 ---
 layout: post
 title: '5 Reasons to Upgrade to Windows 10 Now'
+tags:
+  - 'windows 10'
+  - microsoft
+  - cyber security
 ---
 <img class="aligncenter size-full wp-image-239" src="http://blog.computechlimited.com/wp-content/uploads/2017/07/windows-10-logo.png" alt="windows-10-logo" width="785" height="231" />
 

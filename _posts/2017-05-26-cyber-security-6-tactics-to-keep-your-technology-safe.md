@@ -1,6 +1,8 @@
 ---
 layout: post
 title: 'Cyber Security: 6 Tactics to keep your technology safe'
+tags:
+  - cyber security
 ---
 <img class="aligncenter size-full wp-image-224" src="http://blog.computechlimited.com/wp-content/uploads/2017/05/article-image-fb-twitter-01.png" alt="article image fb twitter-01" width="2536" height="1217" />
 

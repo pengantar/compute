@@ -1,0 +1,7 @@
+<h2 class = 'underline'>Search by tag<span></span></h2>
+<div class = 'tag_container'>
+{%- for tag in site.tags | unique | sort -%}
+  {% capture tag_name %}{{ tag | first }}{% endcapture %}
+  <a href = '/tag/{{ tag_name | downcase | slugify }}' class = 'tag'>{{ tag_name }}</a>
+{%- endfor -%}
+</div>

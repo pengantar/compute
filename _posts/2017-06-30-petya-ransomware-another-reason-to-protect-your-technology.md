@@ -1,6 +1,9 @@
 ---
 layout: post
 title: 'Petya Ransomware: Another Reason to Protect your Technology'
+tags: 
+  - cyber security
+  - ransomware
 ---
 <img class="aligncenter size-full wp-image-228" src="http://blog.computechlimited.com/wp-content/uploads/2017/06/499979-ransomware-feature.jpg" alt="499979-ransomware-feature" width="740" height="416" />
 
