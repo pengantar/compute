@@ -33,6 +33,9 @@
   font-size: 15.4px;
   &.nav_link{
     color: $dark;
+    &-active{
+      color:  $orange;
+    }
   }
 }
 .navbar-default ul li a:hover{
