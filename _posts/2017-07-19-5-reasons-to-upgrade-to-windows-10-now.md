@@ -6,7 +6,7 @@ tags:
   - microsoft
   - cyber security
 ---
-<img class="aligncenter size-full wp-image-239" src="http://blog.computechlimited.com/wp-content/uploads/2017/07/windows-10-logo.png" alt="windows-10-logo" width="785" height="231" />
+<img class="aligncenter size-full" src="/assets/posts/windows-10.jpg" alt="windows-10-logo"/>
 
 The potential threat posed by cyberattacks is now more vivid than before, given the devastating effects two major recent ransomware attacks, WannaCry and Petya, had on organizations across the world. According to security researchers, roughly 98% of the computers affected by the ransomware were running on versions of Windows 7 and Windows XP.
 

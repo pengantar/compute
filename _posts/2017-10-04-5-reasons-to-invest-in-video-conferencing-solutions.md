@@ -5,7 +5,7 @@ tags:
   - video conferencing
   - cisco
 ---
-<a href="http://www.computechlimited.com/cisco.html"><img class="aligncenter wp-image-271" src="http://blog.computechlimited.com/wp-content/uploads/2017/10/WhatsApp-Image-2017-10-02-at-13.49.20.jpeg" alt="" width="802" height="535" /></a>
+<a href="http://www.computechlimited.com/cisco.html"><img class="aligncenter" src="/assets/posts/whatsapp-image.jpg" alt="" width="802" height="535" /></a>
 
 As the modern workforce becomes more mobile and more people work remotely, business leaders are recognizing the many benefits video conferencing can provide to their businesses. Over the years, [Computech Limited](http://www.computechlimited.com/cisco.html) has been enabling businesses to leverage video conferencing and other collaboration technologies in order to significantly scale productivity and reduce costs.
 

@@ -4,7 +4,7 @@ title: 'Cyber Security: 6 Tactics to keep your technology safe'
 tags:
   - cyber security
 ---
-<img class="aligncenter size-full wp-image-224" src="http://blog.computechlimited.com/wp-content/uploads/2017/05/article-image-fb-twitter-01.png" alt="article image fb twitter-01" width="2536" height="1217" />
+<img class="aligncenter size-full" src="/assets/posts/cyber-secuity.jpg" alt="cyber security" />
 
 The recent WannaCry ransomware attack that affected over 100, 000 computers across the world has shown just how vital an effective cyber security strategy is for any forward thinking organization. It has brought into focus key elements of cyber defense such as **Patch Management**, **Network Filtering**, **Antivirus Protection**, **Backups**, **Staff Security Awareness Training** and a comprehensive **Incident Response Plan**.
 
