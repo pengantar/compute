@@ -28,7 +28,7 @@
 }
 .shadow{
   &:hover{
-    background: rgba(#000, 0.9);
+    background: rgba($dark, 0.9);
     font-size: 2rem;
     mix-blend-mode: multiply;
   }
@@ -43,6 +43,8 @@
   left: 0;
   padding: 3em;
   text-align: center;
+  color: #fff;
+  text-transform: uppercase;
 }
 .hovereffect .overlay a {
   width: 100%;

@@ -15,6 +15,54 @@ function setText(el, text) {
   el.innerHTML = text;
 }
 
+function modal(shell) {
+  let modal = elem(shell);
+  if(modal) {
+    let modal_class = modal.classList;
+    let overlay = modal.parentNode;
+    let overlay_class = overlay.classList;
+    return [modal_class, overlay_class];
+  }
+}
+
+function toggleModal(shell, hide = 'hide') {
+  let open = shell.replace('.','').concat('-open');
+  let attr = modal(shell);
+  attr[0].contains(open) ? attr[0].remove(open) : attr[0].add(open);
+  attr[1].contains(hide) ? attr[1].remove(hide) : attr[1].add(hide);
+}
+
+function hideModal(shell) {
+  let triggers = ['.modal_close','.modal_overlay'];
+  triggers.map(function(trigger) {
+    let button = elem(trigger);
+    if (button) {
+    button.addEventListener('click', function(e) {
+        button == e.target ? toggleModal(shell) : false;
+      });
+    }
+  });
+};
+
+(function definition() {
+  let shell = '.definition_modal';
+  let definitions = elems('.definition');
+  if(definitions) {
+    Array.from(definitions).map(function(definition, index) {
+      definition.addEventListener('click', function() {
+        let term = findText(definition, '.definition_title');
+        let description = findText(definition, '.definition_desc');
+        let new_term = elem('.definition_term');
+        let new_description = elem('.definition_body');
+        setText(new_term, term);
+        setText(new_description, description);
+        toggleModal(shell);
+      }); 
+    });
+    hideModal(shell);
+  }
+})();
+
 function fillModal(name, title, description, url) {
   let modal = elem('.member_modal');
   let new_name = elem('.modal_name', modal);
@@ -27,45 +75,22 @@ function fillModal(name, title, description, url) {
   img.src = url;
 }
 
-function modal() {
-  let modal = elem('.member_modal');
-  let modal_class = modal.classList;
-  let overlay = modal.parentNode;
-  let overlay_class = overlay.classList;
-  return [modal_class, overlay_class];
-}
-
-function toggleModal() {
-  let open = 'member_modal-open';
-  modal()[0].contains(open) ? modal()[0].remove(open) : modal()[0].add(open);
-  let hide = 'hide';
-  modal()[1].contains(hide) ? modal()[1].remove(hide) : modal()[1].add(hide);
-}
-
-(function hideModal() {
-  let triggers = ['.modal_close', '.modal_overlay'];
-  triggers.map(function(trigger) {
-    let button = elem(trigger);
-    if (button) {
-    button.addEventListener('click', function(e) {
-        button == e.target ? toggleModal() : false;
-      });
-    }
-  });
-})();
-
 (function teamModal() {
+  let shell = '.member_modal';
   let members = elems('.member');
-  Array.from(members).map(function(member, index) {
-    member.addEventListener('click', function() {
-      let name = findText(member, '.member_name');
-      let title = findText(member, '.member_title');
-      let description = findText(member, '.member_description');
-      let imgUrl = member.querySelector('img').src;
-      fillModal(name, title, description, imgUrl);
-      toggleModal();
+  if(members) {
+    Array.from(members).map(function(member, index) {
+      member.addEventListener('click', function() {
+        let name = findText(member, '.member_name');
+        let title = findText(member, '.member_title');
+        let description = findText(member, '.member_description');
+        let imgUrl = member.querySelector('img').src;
+        fillModal(name, title, description, imgUrl);
+        toggleModal(shell);
+      }); 
     }); 
-  }); 
+    hideModal(shell);
+  }
 })();
 
 function serveNonWebp() {
@@ -110,66 +135,6 @@ $('.nav-tabs a').click(function(){
   $(this).tab('show');
 })
 
-function testModal(target) {
-  return {
-    modalTarget:target,
-    animatedIn:'fadeIn',
-    animatedOut:'zoomOut',
-    color:'#fff',
-    // Callbacks
-    beforeOpen: function() {
-      console.log("The animation was called");
-    },           
-    afterOpen: function() {
-      console.log("The animation is completed");
-    }, 
-    beforeClose: function() {
-      console.log("The animation was called");
-    }, 
-    afterClose: function() {
-      console.log("The animation is completed");
-    }
-  }
-}
-
-// // $("#demo01").animatedModal(testModal('animatedModal'));
-
-// // //demo 02
-// // $("#demo02").animatedModal(testModal('modal-02'));
-
-// // //demo 03
-// // $("#demo03").animatedModal(testModal('modal-03'));
-
-// // //demo 04
-// // $("#demo04").animatedModal(testModal('modal-04'));
-
-// // //demo 03
-// // $("#demo05").animatedModal(testModal('modal-05'));
-
-// //Modals in the Solutions page
-// //MiRevenue modal
-// $("#MiRevenue-demo").animatedModal(testModal('MiRevenue-modal'));
-
-// //MiPricing modal
-// $("#MiPricing-demo").animatedModal(testModal('MiPricing-modal'));
-
-// //MiEarnings modal
-// $("#MiEarnings-demo").animatedModal(testModal('MiEarnings-modal'));
-
-// //MiBilling modal
-// $("#MiBilling-demo").animatedModal(testModal('MiBilling-modal'));
-
-// //Aria modal
-// $("#Aria-demo").animatedModal(testModal('Aria-modal'));
-
-// //Microsoft Licensing modal
-// $("#MLicensing-demo").animatedModal(testModal('MLicensing-modal'));
-
-// //Microsoft Manages Services modal
-// $("#MManaged-demo").animatedModal(testModal('MManaged-modal'));
-
-// //Microsoft Manages Services modal
-// $("#Security-demo").animatedModal(testModal('Security-modal'));
 
 // $('.tab-content').not('.active').hide();
 
@@ -259,57 +224,6 @@ jQuery(function () {
   })
   //    End of the third row
 });
-
-/*
-* modalEffects.js v1.0.0
-*/
-var ModalEffects = (function() {
-
-	function init() {
-
-		var overlay = document.querySelector( '.md-overlay' );
-
-		[].slice.call( document.querySelectorAll( '.md-trigger' ) ).forEach( function( el, i ) {
-
-			var modal = document.querySelector( '#' + el.getAttribute( 'data-modal' ) ),
-				close = modal.querySelector( '.md-close' );
-
-			function removeModal( hasPerspective ) {
-				classie.remove( modal, 'md-show' );
-
-				if( hasPerspective ) {
-					classie.remove( document.documentElement, 'md-perspective' );
-				}
-			}
-
-			function removeModalHandler() {
-				removeModal( classie.has( el, 'md-setperspective' ) ); 
-			}
-
-			el.addEventListener( 'click', function( ev ) {
-				classie.add( modal, 'md-show' );
-				overlay.removeEventListener( 'click', removeModalHandler );
-				overlay.addEventListener( 'click', removeModalHandler );
-
-				if( classie.has( el, 'md-setperspective' ) ) {
-					setTimeout( function() {
-						classie.add( document.documentElement, 'md-perspective' );
-					}, 25 );
-				}
-			});
-
-			close.addEventListener( 'click', function( ev ) {
-				ev.stopPropagation();
-				removeModalHandler();
-			});
-
-		} );
-
-	}
-
-	init();
-
-})();
 
 /*!
 * classie v1.0.1

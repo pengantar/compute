@@ -334,33 +334,9 @@ h1 {
   height: 100px;
   padding: 20px;
 }
-// Physical security 
-.contain-cctv{
-  padding: 5px;
-  height: 250px;
-  width: 280px;
-  background-size: cover;
-  background-position: center;  
-  background: linear-gradient(rgba($dark, 0.64),rgba($dark, 0.64)), url(/assets/images/cctv.jpg);
-}
-.contain-fire{
-  padding: 5px;
-  height: 250px;
-  width: 280px;
-  background-size: cover;
-  background-position: center;  
-  background: linear-gradient(rgba($dark, 0.64)), url(/assets/images/alarm.jpg);
-}
+
 .img-workshop{
   height: 300px;
-}
-.contain-public{
-  padding: 5px;
-  height: 250px;
-  width: 280px;
-  background: linear-gradient(rgba($dark, 0.64)), url(/assets/images/public-address-system-speakers.jpg);
-  background-size: cover;
-  background-position: center;    
 }
 
 // End of physical sec 
@@ -1353,17 +1329,6 @@ textright{
   top: 60px;
   z-index: 999;
 }
-.p-image{
-  color: $light;
-  font-weight: 500;
-  font-size: 20px;
-  text-align: center;
-  position: relative;
-  font-weight: 500;
-  top: 100px;
-  z-index: 999;
-}
-
 // Start fo networks 
 
 .network-list{
@@ -1395,36 +1360,32 @@ textright{
     width: 100%;
   }
   &_modal{
-    max-width: 840px;
-    background: $light;
-    padding: 67px 20px 25px;
-    transform: scale(0) translateZ(-600px);
-    transition: transform 0.3s ease-in-out;
+    @extend %modal;
     &-open{
       transform: scale(1) translateZ(0);
-    }
-    .modal_close{
-      position: absolute;
-      top: 0;
-      right: 0;
-      background-color: rgba(0,0,0,0.25);
-      color: #fff;
-      border: 0;
-      font-size: 36px;
-      outline: 0;
-      cursor: pointer;
-      padding: 0;
-      width: 50px;
-      height: 50px;
-      transition: opacity 0.25s ease-out;
-      margin: 0;
-      &:hover{
-        opacity: 0.9;
-      }
     }
   }
 }
 .modal {
+  &_close{
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: rgba(0,0,0,0.25);
+    color: #fff;
+    border: 0;
+    font-size: 36px;
+    outline: 0;
+    cursor: pointer;
+    padding: 0;
+    width: 50px;
+    height: 50px;
+    transition: opacity 0.25s ease-out;
+    margin: 0;
+    &:hover{
+      opacity: 0.9;
+    }
+  }
   &_overlay{
     height: 100vh !important;
     bottom: 0;
@@ -1455,6 +1416,32 @@ textright{
     margin: 0;
     line-height: 50px;
     padding-left: 20px;
+  }
+}
+.definition{
+  background-color: $orange;
+  padding: 0;
+  border-radius: 5px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: opacity 0.3s ease-in;
+  &:hover{
+    opacity: 0.9
+  }
+  h3{
+    color: $light;
+    line-height: 40px;
+    padding: 15px;
+    font-weight: 400;
+    font-size: 16px;
+    text-transform: uppercase;
+  }
+  &_modal{
+    @extend %modal;
+    padding: 20px;
+    &-open{
+      transform: scale(1) translateZ(0);
+    }
   }
 }
 

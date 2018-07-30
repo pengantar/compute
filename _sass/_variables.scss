@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Karla:400,400i,700|Maven+Pro:400,500,700|Nunito:400,400i,600,600i,700');
 
 $light: #fff;
-$dark: #141313;
+$dark: #24292e;
 $mute: darken($light, 7.5%);
 $pale: lighten($dark, 15%);
 $orange: #F07444;
@@ -9,3 +9,13 @@ $padding: 15px;
 $margin: 25px;
 $body-font: 'Nunito', sans-serif;
 $heading-font: 'Maven Pro', sans-serif;
+
+%modal {
+  position: relative;
+  min-width: 60%;
+  max-width: 840px;
+  background: $light;
+  padding: 67px 20px 25px;
+  transform: scale(0) translateZ(-600px);
+  transition: transform 0.3s ease-in-out;
+}

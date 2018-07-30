@@ -124,8 +124,6 @@
   right: 0;
   z-index: 9999;
   &_close{
-    margin: 25px 0;
-    background-color: $pale;
     color:$light;
     border: 0;
     outline: 0;
@@ -134,12 +132,16 @@
     padding:$padding/2 $padding*1.5;
   }
   &_inner{
+    position: relative;
     width:100%;
-    background-color: $dark;
+    background-color: $light;
     max-width:540px;
     padding: $padding * 2.5;
-    box-shadow: 0 25px 40px -10px rgba(158,174,221,0.2);
-    color: darken($light, 10%);
+    box-shadow: 0 0 120px rgba(0,0,0,0.2);
+    color: $pale;
+    h2{
+      color: $dark;
+    }
   }
   &_show {
     overflow: hidden;
