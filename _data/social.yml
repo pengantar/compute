@@ -1,0 +1,9 @@
+- name: facebook
+  url: https://www.facebook.com/ComputechLimited/
+  icon: fab fa-facebook-f
+- name: twitter
+  url: https://twitter.com/WeAreComputech/
+  icon: fab fa-twitter
+- name: linkedin 
+  url: https://www.linkedin.com/company/computech-limited/
+  icon: fab fa-linkedin-in

@@ -3,18 +3,14 @@
     <div>
       <p class = 'mute'>Copyright &copy; <span class = 'year'></span> Computech Limited. All Rights Reserved</p>     
     </div>
-    <div>
-      <p class = 'follow mute'>Follow us
-        <a href = 'https://www.facebook.com/ComputechLimited/' target = '_blank'>
-          <i class='fab fa-facebook-f'></i></a>
+    <div follow mute>Follow us
+      <div class = 'footer_share'>
+        {%- for item in site.data.social -%}
+        <a href = '{{ item.url }}' class = 'contain {{ item.name }}' target = '_blank' rel = 'noopener'>
+          <i class='{{ item.icon }}'></i></a>
         </a>
-        <a href = 'https://twitter.com/WeAreComputech' target = '_blank'>
-          <i class='fab fa-twitter'></i></a>
-        </a>
-        <a href = 'https://www.linkedin.com/company/computech-limited?trk=company_logo' target = '_blank'> 
-          <i class='fab fa-linkedin-in'></i>
-        </a>
-      </p>
+        {%- endfor -%}
+      </div>
     </div>
   </div>          
 </footer>
