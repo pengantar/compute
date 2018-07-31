@@ -122,50 +122,6 @@ h1 {
   float: right;
   clear: both;
 }
-.box-1{
-  background: Linear-gradient(rgba($dark, 0.3),rgba($dark, 0.3)), url(/assets/images/rsz_bank.jpg);
-}
-.box-2{
-  display: inline-block;
-  transition: all 1s ease;
-  background: Linear-gradient(rgba($dark, 0.3), rgba($dark, 0.3)),url(/assets/images/enterprise.jpg);
-}
-[class*=box-]{
-  height: 210px;
-  width: 100%;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-[class*=box-] h4{
-  color: $light;
-  font-size: 20px;
-  text-align: center;
-  vertical-align: middle;
-  padding: 25%;
-}
-#SME-text{  
-  height: 100%;
-  width: 100%;
-  padding: 20px;
-  display: none;
-  border: 2px solid #f8f8f8;
-  margin: 10px; 
-}
-#ENT-text{
-  height: 150vh;
-  width: 100%;
-  padding: 20px;
-  display: none;    
-  border: 2px solid #f8f8f8;
-  margin: 10px;
-}
-
-// index page 
-
-#trailer-infrastructure{
-  margin-top: 65px;  
-  margin-bottom: 65px; 
-}
 
 .award{
   margin: 25px;
@@ -1492,12 +1448,6 @@ textright{
   align-items: center;
   justify-content: center;
   min-height: 360px;
-}
-.banner-about h1{    
-  color: $light;
-  padding-top: 100px;
-  text-transform: uppercase;
-  text-align: center;
 }
 @media (max-width: 575px) { 
   .img-brand{
