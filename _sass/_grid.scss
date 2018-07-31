@@ -6,7 +6,7 @@
   display: grid;
   grid-template-columns: 1fr;
   @media screen and (min-width: 768px){
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 .grid-fibonacci{
@@ -20,38 +20,38 @@
   display: grid;
   grid-template-columns: 1fr;
   @media screen and (min-width: 668px){
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
   }
   @media screen and (min-width: 992px){
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 .grid-3{
   display: grid;
   grid-template-columns: 1fr;
   @media screen and (min-width: 557px){
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
   }
   @media screen and (min-width: 769px){
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
   }
   @media screen and (min-width: 1025px) {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(4, 1fr);
   }
 }
 .grid-4{
   display: grid;
   grid-template-columns: 1fr;
   @media screen and (min-width: 480px){
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
   }
   @media screen and (min-width: 667px){
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
   }
   @media screen and (min-width: 769px){
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(4, 1fr);
   }
   @media screen and (min-width: 1025px) {
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(5, 1fr);
   }
 }
