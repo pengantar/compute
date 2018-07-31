@@ -7,7 +7,7 @@ title: Partners
   {%- for partner in site.data.partners -%}
     <div class = 'partner'>  
       <a href = '{{ partner.url }}' target = '_blank' rel = 'noopener'>
-        <img  src = '/assets/partners/{{ partner.logo }}' class = 'img-responsive img-front' >
+        <img  src = '/assets/partners/{{ partner.logo }}' alt = 'partner' />
       </a>
     </div>
   {%- endfor -%}
