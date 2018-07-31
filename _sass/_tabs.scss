@@ -147,12 +147,6 @@ li.active a, li.active a:hover {
   color: #F68E35;
 }
 
-#new-banking-lending td{
-  padding: 15px;
-  vertical-align:middle;
-  
-}
-
 .nav.nav-justified > li > a{
   color: $dark;
   
@@ -203,4 +197,64 @@ li.active a, li.active a:hover {
 }
 .seaTabs_content_active {
   display: block;
+}
+
+.showcase {
+  padding-top: 20px;
+  height: auto;
+  padding-bottom: 25px;
+  overflow: hidden;
+}
+.showcase .tabs {
+  width: 100%;
+}
+
+.showcase .tab-nav li {
+  display: block;
+}
+.showcase .tab-nav a {
+  display: block;
+  border-bottom: 2px solid transparent;
+  color: #666;
+  text-decoration: none;
+  text-transform: uppercase;
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+}
+.showcase .tab-nav a.active {
+  border-color: #f77070;
+  color: #f77070;
+  font-weight: 700;
+}
+
+.tab-content {
+  padding: 48px 0;
+}
+.tab-content h3 {
+  margin: 0 0 12px;
+  color: $dark;
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.tab-content p {
+  color: $pale;
+  text-align: left;
+}
+.tab-content img {
+  display: block;
+  width: 100%;
+}
+.tab-content .row {
+  display: table;
+}
+.tab-content .row .column {
+  display: table-cell;
+  width: 60%;
+  padding: 0 0 0 24px;
+  vertical-align: middle;
+}
+.tab-content .row .column:first-child {
+  width: 40%;
+  padding: 0;
 }

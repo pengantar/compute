@@ -1,6 +1,22 @@
 .jumbotron p{
   color: $light;
 }
+.carousel-inner{
+  .item {
+    position: relative;
+  }
+  h1{
+    text-transform: capitalize;
+  }
+}
+.carousel-caption{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba($dark, 0.5);
+}
 .slow {
   animation-duration: 3s;
   animation-delay: 1s;
@@ -9,31 +25,7 @@
   animation-duration: 6s;
   animation-delay: 3s;
 }
-#owl-example{
-  display: block;
-  width: 100%;
-  height: 100vh;   
-  
-}
-.owl-carousel{
-  text-align: center;
-  background: linear-gradient(rgba($dark, 0.94),rgba($dark, 0.94));
-}
-#owl-carousel div h2{
-  text-align: center;  
-}
-.owl-carousel div h2{
-  text-align: center;
-  padding-left: 320px;
-}
-.owl-carousel div h2, .owl-carousel div .textoverlay{
-  position: absolute;
-  color:$light;
-  font-size:45px;
-  display:block;
-  text-align: center; 
-  padding-top: 250px;
-}
+
 .linear1{
   background: Linear-gradient(rgba($dark, 0.9),rgba($dark, 0.9));
 }
@@ -72,9 +64,7 @@
   padding: 0;
   margin: 0;
 }
-#section1{
-  background-color: #263238;
-}
+
 .grey{
   color: $light;
 }
@@ -115,9 +105,7 @@ h1 {
   text-align: justify;
   color:#333;
 }
-#box-centre{
-  margin-left: 130px;
-}
+
 .right-side{
   float: right;
   clear: both;
@@ -181,28 +169,9 @@ h1 {
   margin-left: 25px;
   
 }
-#locations h2{
-  font-size: 27px;
-  padding-bottom: 20px;
-}
-
-// About us page 
-#about-parts{
-  padding-top: 70px;
-  padding-bottom: 70px;  
-}
-#services-parts{
-  margin-top: 55px; 
-  margin-bottom: 55px;
-}
 
 // Profile page 
 
-#about-page{
-  height: auto;   
-  margin-top: 20px;
-  padding-bottom: 20px;
-}
 .img-flag{
   display: block;
   margin-left: auto;
@@ -314,11 +283,6 @@ h1 {
   color: $dark;
   font-size: 15px;
 }
-#new-strengths{
-  width: auto;
-  height: 250px;
-  color: #757575;  
-}
 
 // Start of view and download button 
 
@@ -363,11 +327,6 @@ h1 {
   height: auto;
   width: 100%;
 }
-
-#loc{
-  padding-left: 1115px;
-  padding-top: 216px;
-}
 .fa-dot-circle-o{
   color: $dark;
 }
@@ -377,9 +336,7 @@ h1 {
 .im{
   padding-right: 50px;
 }
-#image{
-  padding-right: 50px;
-}
+
 .men-btn{
   background-color: transparent;
   border: 0;
@@ -411,121 +368,19 @@ a:visited{
   text-align: center;
 }
 
-#new-regions{
-  height: auto;
-  background-color: $dark;
-  background-image: url(/assets/flags/always.png);
-}
 .flag-image{
   padding: 20px;
   border-radius: 5px;
 }
 
-// The About section 
-#section2{
-  height: auto;
-  width: 100%;
-  background-image:  url(/new-bg/645305_seryiy_fon.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding-top: 100px;
-  padding-bottom: 90px;
-}
 .boold{
   font-weight: 900;
 }
 
-#section2 h2{    
-  color: $dark; 
-}
-#paragraph{
-  background-color: $light;
-  width: auto;
-  border-radius: 5px;
-  margin: 10px;
-  padding: 20px;
-  margin-top: 50px;
-}
-#section2 h4{
-  color:$orange; 
-}
-#section2 p{
-  font-size: 1.2em;
-  color: #999;
-}
-
-// About Full page 
-#About-full{
-  color: $dark;
-  height: 100vh;
-  padding-top:150px;
-}
-#office{
-  background-image: url(/assets/office.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  height: 100vh;
-}
-
-.custom-list{
-  list-style-image: url(/assets/arrow.png);
-}
-
-// products & services section 
-
-#section3{
-  height: auto;
-  background-color: $light;
-  padding-bottom: 50px;
-}
-
-#section3 i.fa {
-  font-size: 40px;
-  border: 4px solid $orange;
-  width: 100px;
-  height: 100px;
-  padding: 27px 25px;
-  margin-bottom: 10px;
-  border-radius: 50%;
-  transition: all 0.5s;
-}
-
-#section3 i.fa:hover {
-  background-color: $orange;  
-  transition: .2s ease;
-}
-
-// Best client page styling 
-.client-image{
-  height: 300px;
-  width: 150px;
-  padding-left: 35px;
-}
 .cust-h2{
   text-transform: capitalize;
   font-size: 18px;
   padding-bottom: 10px;  
-}
-
-// Partners section 
-#section5{  
-  margin-top: 100px;
-  padding-top: 80px;
-  height: auto;
-  padding-bottom: 70px;
-  margin-top: 0px; 
-}
-#sect-partners{
-  height: auto;
-  padding-bottom: 20px; 
-  margin-top: 20px;
-}
-#sect-partners img{
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .row-space{
@@ -533,14 +388,6 @@ a:visited{
   margin-bottom: 30px;
 }
 
-// --toogle button icon styling-- 
-
-button.btn.collapsed:before{
-  content: 'VIEW MORE PARTNERS' ;  
-  display:block;
-  width:auto;
-  transition: 1s ease;
-}
 .cust-btn{
   background-color: transparent; 
   border: 0;
@@ -830,19 +677,6 @@ button.btn.collapsed:before{
   padding-left: 70px;
 }
 
-.offer-left,
-.offer-right {
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-.offer-left{
-  background-image: url(/new-bg/645305_seryiy_fon.jpg);
-  height: 60vh;
-}
-.offer-right{
-  background-image: url(/assets/kill/dna.jpg);    
-  height: 35vh;
-}
 .white{
   color: $light;
 }
@@ -869,11 +703,6 @@ img.map, map area{
 }
 
 // End of offerings page 
-
-#soft{
-  padding-top: 60px;
-  padding-left: 350px
-}
 .one{
   padding-top: 40px;
   margin-left: 33%;
@@ -913,45 +742,6 @@ img.map, map area{
 .eight{
   color: #138698;    
 }
-
-// Ripple 
-
-.circle {
-  height:100px;
-  width:100px;
-  border-radius:50%;
-  background-color:red;  
-  position:relative;
-  top:100px;
-  left:300px;
-  transition:height .25s ease, width .25s ease;
-  transform:translate(-50%,-50%);
-}
-.circle:hover{
-  height:150px;
-  width:150px;
-}
-.circle:before,
-.circle:after {
-  content:'';
-  display:block;
-  position:absolute;
-  top:0; right:0; bottom:0; left:0;
-  border-radius:50%;
-  border:1px solid red;
-}
-
-.circle:before {
-  animation: ripple 2s linear infinite;
-}
-.circle:after {
-  animation: ripple 2s linear 1s infinite;
-}
-.circle:hover:before,
-.circle:hover:after {
-  animation: none;
-}
-
 // Software page 
 
 .split_title{
@@ -989,25 +779,13 @@ img.map, map area{
   margin-top: 20px;
 }
 
-.column-1{
-  border-right: 3px solid $light;
-}
-.column-2{
-  border-right: 3px solid $light;
-}
-.column-3{
-  border-right: 3px solid $light;
-}
-
 // Countries 
-// Uganda 
 
 .flag-map{
   float: right;
   position: relative;
   top: -400px;
 }
-
 
 // For the Services page 
 .active-1{
@@ -1017,24 +795,7 @@ img.map, map area{
   float: left;
   padding-right: 10px;
 }
-textright{
-  float: right;
-  padding-left: 10px;
-}
-.background{
-  background-color: #EFEFEF;
-}
 
-//  Servers in compute deco  
-.text-pimp{
-  background-color: $dark;
-  border-radius: 10px;
-  padding: 10px;
-  text-align: center;
-  color: $orange;
-  width: 100%;
-  box-shadow: 4px 4px 2px #888;     
-}
 .server-list{
   margin-top: 65px;
 }
@@ -1319,69 +1080,6 @@ textright{
   padding-top: 10px;
 }
 
-
-.showcase {
-  padding-top: 20px;
-  height: auto;
-  padding-bottom: 25px;
-  overflow: hidden;
-}
-.showcase .tabs {
-  width: 100%;
-}
-
-.showcase .tab-nav li {
-  display: block;
-}
-.showcase .tab-nav a {
-  display: block;
-  border-bottom: 2px solid transparent;
-  color: #666;
-  text-decoration: none;
-  text-transform: uppercase;
-  -webkit-transition: .3s ease;
-  transition: .3s ease;
-}
-.showcase .tab-nav a.active {
-  border-color: #f77070;
-  color: #f77070;
-  font-weight: 700;
-}
-
-.tab-content {
-  padding: 48px 0;
-}
-.tab-content h3 {
-  margin: 0 0 12px;
-  color: $dark;
-  font-size: 20px;
-  font-weight: 700;
-  text-transform: uppercase;
-}
-.tab-content p {
-  color: $pale;
-  text-align: left;
-}
-.tab-content img {
-  display: block;
-  width: 100%;
-}
-.tab-content .row {
-  display: table;
-}
-.tab-content .row .column {
-  display: table-cell;
-  width: 60%;
-  padding: 0 0 0 24px;
-  vertical-align: middle;
-}
-.tab-content .row .column:first-child {
-  width: 40%;
-  padding: 0;
-}
-.column {
-  width: 100%;
-}
 .services {
   padding: 60px;  
 }
@@ -1415,7 +1113,7 @@ textright{
 }
 .service-box p{
   line-height: 26px;
-  color: #000;
+  color: $dark;
 }
 
 .service-box h5{
@@ -1431,7 +1129,7 @@ textright{
   width: 80px;
   text-align: center;
   border: solid 4px $light;
-  outline: 1px solid #dddddd;
+  outline: 1px solid $mute;
   margin-top: 10px;
 }
 .service-box.side-left .service-icon{

@@ -1,5 +1,5 @@
 title: Computech Limited
-email: your@computechlimted.com
+email: info@computechlimted.com
 description: "East & Central Africa's Leading Technology System Provider"
 url: ""
 # Build settings
@@ -9,8 +9,8 @@ plugins:
   - jekyll-sitemap
   - jekyll-paginate-v2
   - jekyll-redirect-from
-sass:
-  style: compressed
+# sass:
+#   style: compressed
 
 pagination:
   enabled: true
