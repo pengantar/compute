@@ -22,10 +22,15 @@
 }
 // center horizontally and vertically
 .contain{
-  display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
+  &,&_row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &_row{
+    flex-flow: row wrap;
+  }
 }
 .decorate{
   color: $orange;
