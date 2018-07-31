@@ -9,8 +9,8 @@ plugins:
   - jekyll-sitemap
   - jekyll-paginate-v2
   - jekyll-redirect-from
-# sass:
-#   style: compressed
+sass:
+  style: compressed
 
 pagination:
   enabled: true
