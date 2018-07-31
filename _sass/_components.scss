@@ -348,8 +348,11 @@ h1 {
   font-size: 15px; 
   text-align: center; 
 }
-.country-title{
- padding-left: 0;
+.country-title {
+  color: dimgrey;
+  margin: auto;
+  padding: inherit;
+  display: block;
 }
 .all-text{
   color: $dark;
