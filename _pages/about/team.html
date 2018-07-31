@@ -8,7 +8,7 @@ title: team
     <div class = 'card-custom grid-2'> 
       {%- for member in site.data.about.team -%}
       <div class = 'md-trigger member' data-modal = 'modal-1'>
-        <img src = '/assets/team/{{ member.picture }}.jpg' alt = 'team member' class = 'img-responsive img-team img-rounded member_image'>
+        <img src = '/assets/team/{{ member.picture }}.jpg' alt = 'team member' class = 'img-rounded member_image'>
         <h5 class = 'member_name'>{{ member.name | capitalize }}</h5>
         <span class = 'orange member_title'>{{ member.title | upcase }}</span> 
         <p class = 'hide member_description'>{{member.description }}</p>  
@@ -21,7 +21,7 @@ title: team
       <h3 class = 'modal_name'></h3>
       <div class = 'modal_body'>
         <div>
-          <img src = '' alt = 'team member' class = 'img-responsive img-rounded mt-2 shade'>
+          <img src = '' alt = 'team member' class = 'img-rounded mt-2 shade'>
           <div class = 'decorate modal_title mt-2'></div>
         </div>
         <div>

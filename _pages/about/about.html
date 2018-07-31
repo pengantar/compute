@@ -8,7 +8,7 @@ title: About Us
     {%- for item in site.data.about.home -%}
     <div>
       <div class = 'hovereffect card-shadow'>
-        <img class = 'img-responsive' src = '/assets/about/{{ item }}{% if forloop.index == 3 %}.png{% else %}.jpg{% endif %}' alt = '{{item}}'>
+        <img src = '/assets/about/{{ item }}{% if forloop.index == 3 %}.png{% else %}.jpg{% endif %}' alt = '{{item}}'>
         <div class = 'overlay'>
           <a href = '/about-us/{{ item }}/'>{{ item | upcase }}</a> 
         </div>

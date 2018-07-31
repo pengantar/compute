@@ -1,16 +1,11 @@
 <script src = 'https://code.jquery.com/jquery-1.11.3.min.js'></script>
 <script src = '/assets/js/bootstrap.min.js'></script>
 <script src = '/assets/js/jquery.easing.1.3.js'></script>
-<script src = '/assets/js/jquery.bootstrap-dropdown-on-hover.min.js'></script>
-<script src = '/assets/js/jquery.smartmenus.js'></script>
-<script src = '/assets/js/jquery.smartmenus.bootstrap.min.js'></script>
-<!-- <script src = '/assets/js/jquery.fittext.js'></script> -->
-<script src = '/assets/js/jquery.aniview.js'></script>
-<script src = '/assets/js/dropdown.js'></script>
-{%- unless page.layout == 'blog' or page.layout == 'post' -%}
+<script src = '/assets/js/index.js'></script>
+{%- if page.layout == 'page' -%}
   <script src = '/assets/js/particles.js'></script>
   <script src = '/assets/js/particlesjson.js'></script>
-  {%- endunless -%}
+{%- endif -%}
 {% assign scripts = page.dependencies.scripts %}
 {%- if scripts -%}
   {%- for script in scripts -%}

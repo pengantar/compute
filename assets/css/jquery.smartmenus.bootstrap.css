@@ -16,7 +16,8 @@
             background-image:none !important;
  }
  .dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus {
-            background-color:red;
+		opacity: 0.9;
+		background: inherit;
  }
 .navbar-nav:not(.sm-collapsible) ul .caret {
 	position: absolute;

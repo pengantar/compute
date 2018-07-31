@@ -9,7 +9,7 @@ layout: default
       <div class = 'post_item text_center'>
         {% if post.image %}
         <figure>
-          <a href = '{{ post.url }}' title = '{{ post.title }}'><img width = '600' height = '400' src = '/assets/articles/uploads/{{ post.placeholder }}' class = 'attachment-glow-archive-img size-glow-archive-img wp-post-image' alt = '{{ post.title }}' title = '{{ post.title }}' srcset = '/assets/articles/uploads/{{ post.image }}' /></a>
+          <a href = '{{ post.url }}' title = '{{ post.title }}'><img width = '600' height = '400' src = '/assets/posts/{{ post.placeholder }}' class = 'post_image' alt = '{{ post.title }}' title = '{{ post.title }}' srcset = '/assets/articles/uploads/{{ post.image }}' /></a>
         </figure>
         {% endif %}
         <article>
