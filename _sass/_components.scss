@@ -690,12 +690,12 @@ button.btn.collapsed:before{
       margin: 0 15px;
       color: $light;
       border-radius: 50%;
+      &:hover{
+        color: $light;
+        opacity: 0.9;
+      }
     }
   }    
-}
-.follow{    
-  padding-top: 15px;
-  float: right;
 }
 
 .rights{
@@ -781,7 +781,6 @@ button.btn.collapsed:before{
   color: $dark;
 }
 
-
 .quote {
   background: $light;
   padding: 5px;
@@ -797,34 +796,6 @@ button.btn.collapsed:before{
   position: relative;  
   left: 20px;
 }
-.student {
-  margin-left: 25px;
-  margin-bottom: 80px;
-}
-.student .photo {
-  background-color: #ccc;
-  border-radius: 100px;
-  width: 60px;
-  height: 60px;
-  float: left;
-  margin-right: 10px;
-}
-.student p {
-  position: relative;
-  top: 5px;
-  text-transform: uppercase;
-}
-.student p:nth-child(2) {
-  font-size: 16px;
-  font-weight: 600;
-  margin-bottom: 0;
-}
-.student p:nth-child(3) {
-  font-size: 14px;
-  color: $light;
-}
-
-// -----------------TEAM PAGE STYLING------------------------ 
 
 .left{
   float: left;
@@ -846,19 +817,7 @@ button.btn.collapsed:before{
   padding-left: 25px;
   padding-right: 25px;
 }
-#SMT{
-  padding-top: 210px;
-}
-#cent{
-  text-align: center;
-}
-.SMH1{
-  color: $orange; 
-  font-family: serif;
-  text-align: center;
-  margin-top: 300px;
-  
-}
+
 .fa-angle-down{
   text-align: center;
   color: $orange; 
@@ -866,20 +825,6 @@ button.btn.collapsed:before{
 .arrow-dowm{
   text-align: center;
 }
-.box-shadow--8dp {
-  box-shadow: 0 8px 10px 1px rgba($dark, .14), 0 3px 14px 2px rgba($dark, .12), 0 5px 5px -3px rgba($dark, .2)
-}
-.card-img-top{
-  margin-top: -70px;
-}
-.row-team2{
-  margin-top: 100px;
-}
-.row-team3{
-  margin-top: 100px;
-  margin-bottom: 50px;
-}
-
 
 // Styling solutions  
 #solutions{
@@ -902,11 +847,7 @@ button.btn.collapsed:before{
   border-right: 1px solid $orange;
   
 }
-#part1{
-  height: auto;
-  width: 100%;
-  
-}
+
 .loyalty{
   padding-top: 50px;
 }
@@ -920,74 +861,11 @@ button.btn.collapsed:before{
   overflow-x: hidden;
 }
 
-// Software page 
-#IT{
-  height: 100vh;
-  width: 100%;
-  padding-top: 70px;
-  background-image: url(/new-bg/645305_seryiy_fon.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  padding-bottom: 50px;
-}
-.software-image{
-  padding-top: 70px;
-}
-#nsoft-series{
-  padding-top: 50px;
-  background-image: url(/assets/rvp.jpg);
-  background-size: cover;
-}
-#new-microsoft{
-  height: 100vh;
-}
-#nservices{
-  height: 100vh;
-  padding-top: 100px;
-  padding-left: 100px;  
-  background: linear-gradient(rgba($dark, 0.64), rgba($dark, 0.64)),url(/assets/marble.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-// Current software section 
-
-#software-section{
-  padding-top: 60px;
-  background-image: url(/new-bg/645305_seryiy_fon.jpg);
-}
-#software-section h2{
-  color: $light;
-}
 .soft-left{
   border-right: 3px solid $light;  
 }
 
 // For the new software page 
-
-.newsoft{
-  padding-top: 100px;
-  padding-bottom: 100px;
-}
-#new-soft{
-  background-image: url(/assets/rvp.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-// Microsoft page 
-
-#microsoft-section{
-  padding-top: 60px;
-  background-image: url(/new-bg/645305_seryiy_fon.jpg);
-}
-#microsoft-section2{
-  padding-top: 60px;
-  background-image: url(/new-bg/645305_seryiy_fon.jpg);
-}
-#microsoft-section h2{
-  color: $light;
-}
 .micro-left{
   border-right: 3px solid $light;
 }
@@ -996,22 +874,6 @@ button.btn.collapsed:before{
   padding-left: 70px;
 }
 
-// Styling for the offerings page 
-
-.IT{
-  height: 450px;
-  width: 450px;
-  background-image: url(/assets/abd.jpg);
-  border-radius: 100%;
-  display: inline-block;
-  margin-left: 200px;
-}
-.circles{
-  margin-left: 50px; 
-}
-.IT-link{
-  position: relative;
-}
 .offer-left,
 .offer-right {
   background-size: cover;
@@ -1046,34 +908,6 @@ button.btn.collapsed:before{
   text-decoration: none;
 }
 
-.offer-item{
-  padding-top: 30vh;
-  text-align: center;
-  
-}
-.offer-item-right{ 
-  
-  text-align: center;
-  padding-top: 20vh;
-  
-}
-.offer-item a{
-  color: $light;
-  font-size: 45px;
-  margin-bottom: 40px;
-}
-.offer-item a:hover{
-  text-decoration: none;
-}
-.offer-item-right a{
-  color: $light;
-  font-size: 45px;
-  margin-bottom: 40px;
-}
-.offer-item-right a:hover{
-  text-decoration: none;
-}
-
 img.map, map area{
   outline: none;
 }
@@ -1089,15 +923,6 @@ img.map, map area{
   margin-left: 33%;
   color: #D63344;
   padding-bottom: 10px;
-}
-.ion-laptop  {
-  font-size: 37px;
-}
-.ion-stats-bars{
-  font-size: 37px;
-}
-.ion-medkit{
-  font-size: 37px;
 }
 .two{
   color: #F58C30;
@@ -1119,13 +944,6 @@ img.map, map area{
   margin-left: -180px;
   margin-top: 30px;
 }
-.ion-ios-cog-outline{
-  font-size: 37px;
-}
-.ion-cash{
-  font-size: 37px;
-  
-}
 .six{
   color: #053A5C;
   margin-left: 140px;
@@ -1136,17 +954,8 @@ img.map, map area{
   margin-left: -279px;
   margin-top: 28px;
 }
-.ion-lock-combination{
-  font-size: 37px;
-}
-.ion-radio-waves{
-  font-size: 37px;
-}
 .eight{
   color: #138698;    
-}
-.ion-ios-printer{
-  font-size: 37px;
 }
 
 // Ripple 
@@ -1307,29 +1116,6 @@ textright{
 .download-card{  
   padding: 10px;
 }
-// Start fo networks 
-
-.network-list{
-  margin-top: 65px;
-}
-
-.card-security2 ul{
-  list-style: none;
-}
-.security-banner{
-  height: 200px;
-  width: 1500px;
-}
-.card-custom-security{
-  background-color: $dark;  
-}
-.security-card{
-  padding-top: 40px;
-}
-
-.img-security{
-  height: 200px;
-}
 
 // For the team page  
 .member{
@@ -1473,16 +1259,6 @@ textright{
   padding: 20px;
 }
 
-// Download page 
-
-#downloads{
-  padding-top: 15px;
-  padding-bottom: 125px;
-  background-color: $light;
-}
-
-// End of downloads check tabs on tabsdownload.css 
-
 .border-btm{
   border-bottom: 1px solid $light;
 }
@@ -1502,11 +1278,6 @@ textright{
   background-position: center;
   background-repeat: no-repeat;
   background-image: url(/assets/images/security.png);
-}
-.webp{
-  [class*=banner-] {
-    background-image: url(/assets/images/security.webp);
-  }
 }
 .banner,
 .banner1{
