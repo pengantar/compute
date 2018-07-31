@@ -256,5 +256,5 @@ $(function(){
     });
   }
   let tz = elem('#tanzania');
-  elem ? tabs() : false;
+  tz ? tabs() : false;
 })();
