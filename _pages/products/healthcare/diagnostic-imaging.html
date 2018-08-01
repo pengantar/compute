@@ -8,44 +8,23 @@ title: Diagnostic Imaging
     <div class = 'definition shade'>
       <h3 class = 'definition_title text_center'>DGS</h3> 
       <div class = 'definition_desc hide'>
-        <h4>DGS</h4>              
-        <ul>
-          <li>
-            <h4>Radiography</h4>
-            <ul>
-              <li>GE’s fixed radiology systems are available in both the Digital and Analogue version, depending on your needs. The Digital systems are more technically advanced and so able to do more. The analogue systems can be easily upgraded to Digital and are known for their simplicity, reliability and crisp images</li>
-              <li>Mobile radiography systems provide the same reliability, sharp image output and simplicity of use but with the ability to move wherever needed</li>
-            </ul>
-          </li>
-        </ul>
-        <ul>
-          <li><h4>Fluoroscopy</h4>
-            <ul>
-              <li>The GE range of Fluoroscopes offer optimal image quality, low dose, ease of use, and a small footprint, and can be used for both therapy and diagnosis.</li>
-            </ul>
-          </li>
-        </ul>
-        <ul>
-          <li><h4>Mammography</h4>
-            <ul>
-              <li>The mammography machine from GE is not only state-of-the-art with excellent image quality, reliability and efficiency, but it is also very patient-friendly in detecting breast cancer early</li>
-            </ul>
-          </li>
-        </ul>
-        <ul>
-          <li><h4>BMD</h4>
-            <ul>
-              <li>GE has a range of products measuring BMD. The range has both fixed and mobile BMD machines to measure bone mineral density, particularly important for people at risk of osteoporosis</li>
-            </ul>
-          </li>
-        </ul>
-        <ul>
-          <li><h4>Interventional</h4>
-            <ul>
-              <li>GE Cathlabs allow doctors to make informed decisions so that patients can have the best care possible. The Cath Labs are versatile ma-2, easy to use and have unsurpassed imaging power in diagnosing heart function and artery blockage.</li>
-            </ul>
-          </li>
-        </ul>                               
+        <div class = 'showcase'>
+          <div class = 'tabs' id = 'tabz'>
+          {%- assign dgs = site.data.diagnostics -%}
+            <div class = 'tab-nav'>
+              <ul class = 'grid-tab grid-4'>
+              {% for d in dgs %}
+                <li><a href = '#{{ d.term | downcase }}' class = 'text_center {% if forloop.first %} active {% endif %}'>{{ d.term }}</a></li>
+              {% endfor %}
+              </ul>
+            </div>
+          {% for s in dgs %}
+          <div id = '{{ s.term | downcase }}' class = 'tab-content {% if forloop.first %}active{% endif %}'>
+            {{ s.description | markdownify }}
+          </div>
+          {% endfor %}            
+          </div>                         
+        </div>
       </div> 
     </div>
     <div class = 'definition shade'>                                      

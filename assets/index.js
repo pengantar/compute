@@ -244,7 +244,7 @@ $(function(){
   textarea ? autosize(textarea) : false;
 })();
 
-(function tz(){
+(function tabz(){
   function tabs() {
     $('.tab-content').not('.active').hide();
     $('.tab-nav a').click(function(e) {
@@ -255,6 +255,6 @@ $(function(){
       $($.attr(this, 'href')).fadeIn(300);
     });
   }
-  let tz = elem('#tanzania');
-  tz ? tabs() : false;
+  let tabz = elem('#tabz');
+  tabz ? console.log('found') : false;
 })();

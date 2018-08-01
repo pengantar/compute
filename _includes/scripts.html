@@ -3,13 +3,13 @@
 <script src = '/assets/js/jquery.easing.1.3.js'></script>
 <script src = '/assets/js/index.js'></script>
 {%- if page.layout == 'page' -%}
-  <script src = '/assets/js/particles.js'></script>
-  <script src = '/assets/js/particlesjson.js'></script>
+  <script defer src = '/assets/js/particles.js'></script>
+  <script defer src = '/assets/js/particlesjson.js'></script>
 {%- endif -%}
 {% assign scripts = page.dependencies.scripts %}
 {%- if scripts -%}
   {%- for script in scripts -%}
-    <script src = '/assets/js/{{script}}.js'></script>
+    <script defer src = '/assets/js/{{script}}.js'></script>
   {%- endfor -%}
 {%- endif -%}
 <script src = '/assets/index.js'></script>
