@@ -41,7 +41,6 @@
         - physical security solutions
         - storage
 
-    - sublink: internet & cloud solutions
     - sublink: services 
       children:
         - leasing 
