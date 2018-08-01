@@ -256,5 +256,5 @@ $(function(){
     });
   }
   let tabz = elem('#tabz');
-  tabz ? console.log('found') : false;
+  tabz ? tabs() : false;
 })();
