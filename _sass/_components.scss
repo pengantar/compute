@@ -359,13 +359,6 @@ a:visited{
 .btn-primary{
   color: $light;
 }
-.map-right{
-  float: right;
-}
-
-.collapsepadding{
-  padding-top: 50px;
-}
 
 .btn:hover {
   color: $light;  
@@ -374,19 +367,6 @@ a:visited{
   text-decoration: underline;
 }
 
-#new_soft{
-  height: auto;
-  padding-top: 60px;    
-  background-image: url(/new-bg/645305_seryiy_fon.jpg);
-  background-size: cover
-  
-}
-#new_soft h3{
-  color: $light;
-}
-#new_soft ol li{
-  color: $light;
-}
 .under {
   background-color: $dark;
   height: 40px;
@@ -718,47 +698,25 @@ img.map, map area{
 #Map{
   outline: none;
 }
-
 // Infra page 
 .down-space{
   margin-top: 20px;
-}
-
-// Countries 
-
-.flag-map{
-  float: right;
-  position: relative;
-  top: -400px;
 }
 
 // For the Services page 
 .active-1{
   color: $orange;
 }
-.imageleft{
-  float: left;
-  padding-right: 10px;
-}
 
 .server-list{
   margin-top: 65px;
 }
-.agreement{
-  background-color: #607D8B;
-}
-
 .storage-list{
   margin-top: 65px;  
 }
 
 //  End of storage page 
 //  Start of security  
-
-.zoomIn{
-  animation-duration: 0.6s;
-  animation-duration: 0.6s;  
-}
 
 .center-contents img{
   display: block;
@@ -771,12 +729,6 @@ img.map, map area{
   display: block;
   margin-left: auto;
   margin-right: auto;
-}
-
-// End of Security 
-
-.download-card{  
-  padding: 10px;
 }
 
 // For the team page  
@@ -982,7 +934,6 @@ img.map, map area{
   color: $light !important;
   cursor: pointer;
   display: inline-block;
-  font-size: 1rem;
   font-size: 22px;
   line-height: 1rem;
   margin: 15px 20px;
@@ -992,13 +943,11 @@ img.map, map area{
   text-transform: uppercase;
   font-weight: 700;
   &:hover {
-    background-color: #EF762D;
     color: $light;
     text-decoration: none;
   }
   &:before,
   &:after {
-    border-color: transparent;
     transition: all 0.25s;
     border-style: solid;
     border-width: 0;
@@ -1030,9 +979,6 @@ img.map, map area{
 
 .services {
   padding: 60px;  
-}
-.services .pad-top{
-  padding-top: 60px;
 }
 .services img{
   margin: 0 auto;
