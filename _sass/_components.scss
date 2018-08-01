@@ -833,7 +833,7 @@ img.map, map area{
   &_modal{
     @extend %modal;
     &-open{
-      transform: scale(1) translateZ(0);
+      @extend %open;
     }
   }
 }
@@ -858,13 +858,13 @@ img.map, map area{
     }
   }
   &_overlay{
-    height: 100vh !important;
-    bottom: 0;
-    padding: 100px 25px 25px;
+    transform: translate3d(0,0,0);
     position: fixed;
+    height: 100vh !important;
+    padding: 25px;
     cursor: pointer;
     perspective: 600px;
-    z-index: 20000;
+    z-index: 2000 !important;
   }
   &_body{
     display: grid;
@@ -911,7 +911,7 @@ img.map, map area{
     @extend %modal;
     padding: 20px;
     &-open{
-      transform: scale(1) translateZ(0);
+      @extend %open;
     }
   }
 }
