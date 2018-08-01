@@ -112,7 +112,6 @@ h1 {
 }
 
 .award{
-  margin: 25px;
   &s{
     margin: 60px 0;
   }
@@ -196,61 +195,17 @@ h1 {
   font-size: 15px;
   color: $dark;
 }
-#laptop-table td{
-  padding: 15px;
-  vertical-align:middle;
-}
 
 .text-colour{  
   color: $dark;
 }
-.image-shadow{
-  box-shadow: 0 4px 8px 0 rgba($dark, 0.2), 0 6px 20px 0 rgba($dark, 0.19);
-}
+
 .profile-text{
   color: $dark;
   font-size: 15px; 
   text-align: justify;      
 }
-.td-auto{
-  display: block;
-  margin-right: auto;
-  margin-left: auto; 
-}
-// Atm Page 
-.auto-center{
-  display: block;
-  margin-right: auto;
-  margin-left: auto;   
-  z-index: 99;
-  left: 0;
-  position:absolute;
-  text-align:center;
-  top: 80px;
-  width: 100%;
-  color: $light;
-  font-size: 23px;
-}
 
-// End of Atm page 
-
-.img-front{
-  display: block;
-  margin-right: auto;
-  margin-left: auto;
-}
-.partner-rows1{
-  border:1px solid #f8f8f8;
-  padding: 30px;
-}
-
-.partner-rows1 img{
-  display: block;
-  margin-right: auto;
-  margin-left: auto;
-  height: 67px;
-  line-height: 67px;
-}
 .virus img{
   display: block;
   margin-right: auto;
