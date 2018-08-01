@@ -791,6 +791,9 @@ img.map, map area{
       @extend %open;
     }
   }
+  &_name{
+    text-transform: capitalize;
+  }
 }
 .modal {
   &_close{
