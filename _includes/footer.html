@@ -5,11 +5,9 @@
     </div>
     <div class = 'mute'>Follow us
       <div class = 'footer_share'>
-        {%- for item in site.data.social -%}
-        <a href = '{{ item.url }}' class = 'contain {{ item.name }}' target = '_blank' rel = 'noopener'>
-          <i class='{{ item.icon }}'></i></a>
-        </a>
-        {%- endfor -%}
+      {%- for item in site.data.social -%}
+        <a href = '{{ item.url }}' class = 'contain {{ item.name }}' target = '_blank' rel = 'noopener'><i class='{{ item.icon }}'></i></a>
+      {%- endfor -%}
       </div>
     </div>
   </div>          

@@ -173,7 +173,7 @@ $(function(){
   }
   
   // classList support for class management
-  // altho to be fair, the api sucks because it won't accept multiple classes at once
+  // altho to be fair, the api sucks because it won't accept multiple t_class at once
   var hasClass, addClass, removeClass;
   
   if ( 'classList' in document.documentElement ) {
@@ -244,12 +244,54 @@ $(function(){
   textarea ? autosize(textarea) : false;
 })();
 
+(function tabs() {
+  let dfn = elem('.definition_modal');
+  if (dfn) {
+    let tiles = elems('.tile');
+    Array.from(tiles).map(function(tile,index){
+      tile.addEventListener('click', function(e) {
+        let id = tile.id;
+        let activeTab = elem(`.${id}`);
+        let hide = 'hide';
+        let t_class = activeTab.classList;
+        t_class.contains(hide) ? t_class.remove(hide) : false;
+        Array.from(activeTab.parentNode.children).filter(function(child) {
+          return child != activeTab;
+        }).map(function(sibling) {
+          let s_class = sibling.classList;
+          s_class.contains(hide) ? false : s_class.add(hide);
+        }); 
+      });
+    });
+  }
+})();
+
+(function dgs(){
+  let dfns = elem('.definition');
+  if (dfns) {
+    let tiles = elems('.tile');
+    let hide = 'hide';
+    Array.from(tiles).map(function(tile) {
+      tile.addEventListener('click', function(event) {
+        let t_id = tile.id;
+        let tab = `.${t_id}`;
+        console.log(tab);
+        let tab_el = elem(tab);
+        console.log(tab_el);
+        let tab_class = tab_el.classList;
+        tab_class.contains(hide) ? tab_class.remove(hide) : false;
+      });
+    });
+  }
+})();
+
 (function tabz(){
   function tabs() {
     $('.tab-content').not('.active').hide();
-    $('.tab-nav a').click(function(e) {
+    $('.tile').on('click', function(e) {
       e.preventDefault();
-      $('.tab-nav a').removeClass('active');
+      console.log(this.id);
+      $('.tile').removeClass('active');
       $(this).addClass('active');
       $('.tab-content').hide();
       $($.attr(this, 'href')).fadeIn(300);

@@ -1,24 +1,24 @@
-<form role = 'form' class = 'ma card-shadow shake'>
+<form class = 'ma card-shadow shake'>
   {%- assign title = page.title | downcase -%}
   <h4 class = 'center'><strong>{% if title != 'contact us' %}Contact us for more details on {{ page.title }} {% else %} Please contact us using the form below {% endif %}</strong></h4>
   <fieldset class = 'form-group'>
     <label for = 'exampleInputEmail1'>Full Name</label>
-    <input type = 'text' class = 'col-sm-3 form-control form-fixer'  id = 'name' name = 'name' value = '' data-error = 'Please enter your name' placeholder = 'Name' required>
+    <input type = 'text' class = 'col-sm-3 form-control form-fixer'  id = 'name' name = 'Name' value = '' placeholder = 'Name' required>
   </fieldset>
 
   <fieldset class = 'form-group'>
     <label for = 'email'>Email</label>
-    <input type = 'email' class = 'form-control form-fixer' id = 'email' data-error = 'Please enter your email' name = 'email' value = '' placeholder = 'you@awesome.com' required>   
+    <input type = 'email' class = 'form-control form-fixer' id = 'email' name = 'Email' value = '' placeholder = 'you@awesome.com' required>   
   </fieldset>
 
   <fieldset class = 'form-group'>
     <label for = 'msg_subject'>Phone number</label>
-    <input type = 'text' name = 'tel' data-error = 'Please enter your phone number' class = 'form-control form-fixer' id = 'msg_subject' value = '' placeholder = 'Phone Number' required>
+    <input type = 'text' name = 'Phone Number' class = 'form-control form-fixer' id = 'msg_subject' value = '' placeholder = 'Phone Number' required>
   </fieldset>
 
   <fieldset class = 'form-group'>
     <label for = 'message'>Message</label>
-    <textarea  type = 'text' name = 'message' data-error = 'Please enter your message' class = 'form-control form-fixer' id = 'message' rows = '3' value = '' placeholder = 'Please enter your message' required></textarea>
+    <textarea name = 'Message' class = 'form-control form-fixer' id = 'message' rows = '3' value = '' placeholder = 'Please enter your message' required></textarea>
   </fieldset>
   
   <br>

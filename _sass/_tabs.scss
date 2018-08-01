@@ -1,11 +1,9 @@
 //----- Tabs -----
 .tabs {
-  width:100;
+  width:100%;
   display:inline-block;
 }
 
-//----- Tab Links -----
-// Clearfix 
 .tab-links:after{
   display:block;
   clear:both;
@@ -218,7 +216,6 @@ li.active a, li.active a:hover {
   color: #666;
   text-decoration: none;
   text-transform: uppercase;
-  -webkit-transition: .3s ease;
   transition: .3s ease;
 }
 .showcase .tab-nav a.active {
@@ -227,9 +224,6 @@ li.active a, li.active a:hover {
   font-weight: 700;
 }
 
-.tab-content {
-  padding: 48px 0;
-}
 .tab-content h3 {
   margin: 0 0 12px;
   color: $dark;
@@ -244,17 +238,4 @@ li.active a, li.active a:hover {
 .tab-content img {
   display: block;
   width: 100%;
-}
-.tab-content .row {
-  display: table;
-}
-.tab-content .row .column {
-  display: table-cell;
-  width: 60%;
-  padding: 0 0 0 24px;
-  vertical-align: middle;
-}
-.tab-content .row .column:first-child {
-  width: 40%;
-  padding: 0;
 }

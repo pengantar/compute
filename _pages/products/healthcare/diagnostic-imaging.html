@@ -8,29 +8,26 @@ title: Diagnostic Imaging
     <div class = 'definition shade'>
       <h3 class = 'definition_title text_center'>DGS</h3> 
       <div class = 'definition_desc hide'>
-        <div class = 'showcase'>
-          <div class = 'tabs' id = 'tabz'>
-          {%- assign dgs = site.data.diagnostics -%}
-            <div class = 'tab-nav'>
-              <ul class = 'grid-tab grid-4'>
-              {% for d in dgs %}
-                <li><a href = '#{{ d.term | downcase }}' class = 'text_center {% if forloop.first %} active {% endif %}'>{{ d.term }}</a></li>
-              {% endfor %}
-              </ul>
-            </div>
-          {% for s in dgs %}
-          <div id = '{{ s.term | downcase }}' class = 'tab-content {% if forloop.first %}active{% endif %}'>
-            {{ s.description | markdownify }}
+        <div class = 'custom_tabs'>
+        {%- assign dgs = site.data.diagnostics -%}
+          <div class = 'grid-tab grid-4'>
+          {% for d in dgs %}
+            <div id = '{{ d.term | downcase }}' class = 'tile text_center {% if forloop.first %} active {% endif %}'>{{ d.term }}</div>
+          {% endfor %}
           </div>
+          <div>
+          {% for s in dgs %}
+            <div class = '{{ s.term | downcase }} tab-content {% unless forloop.first %}hide{% endunless %}'>
+              {{ s.description | markdownify }}
+            </div>
           {% endfor %}            
-          </div>                         
+          </div>
         </div>
       </div> 
     </div>
     <div class = 'definition shade'>                                      
-      <h3 class = 'definition_title text_center'>CT</h3>
+      <h3 class = 'definition_title text_center'>CT Scanners</h3>
       <div class = 'definition_desc hide'>
-        <h4> CT Scanners</h4>
         <ul>
           <li>The GE CT scanners have innovative technologies, have ultra-low doses to the patient, are very quick and simple to use and range from 8 Slice to 512 slices</li>
         </ul>
@@ -39,7 +36,6 @@ title: Diagnostic Imaging
     <div class = 'definition shade'>
       <h3 class = 'definition_title text_center'>MRI</h3>  
       <div class = 'definition_desc hide'>
-        <h4> MRI</h4>
         <ul>
           <li>GE has two types of MRI – 1.5 Tesla and 3.0 T in its range. These MRI provide sharper scans, are more comfortable and make the patient less anxious</li>
         </ul>
@@ -48,7 +44,7 @@ title: Diagnostic Imaging
     <div class = 'definition shade'>
       <h3 class = 'definition_title text_center'>Surgery</h3> 
       <div class = 'definition_desc hide'>
-        <h4> Surgery (Mostly for Theatres)</h4>
+        <h4>Mostly for Theatres</h4>
         <ul>
           <li>C-Arm</li>
         </ul>
@@ -57,7 +53,6 @@ title: Diagnostic Imaging
     <div class = 'definition shade'>
       <h3 class = 'definition_title text_center'>Nuclear Medicine</h3>
       <div class = 'definition_desc hide'>
-        <h4>Nuclear Medicine</h4>
         <ul>
           <li>PET CT</li>
           <li>Cyclotron</li>

@@ -13,9 +13,11 @@
   color: $mute;
 }
 .hide{
-  visibility: 0;
   opacity: 0;
   transform: scale(0);
+}
+.show{
+  @extend %open;
 }
 .fit{
   padding: 0;

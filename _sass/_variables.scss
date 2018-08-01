@@ -25,6 +25,7 @@ $linkedin: #007bb6;
   opacity: 0;
   transform: translateZ(-600px);
   transition: transform 0.3s ease-in-out, opacity 0.25 ease-out;
+  overflow-y: auto;
 }
 %open{
   transform: translateZ(0);
