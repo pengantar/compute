@@ -3,6 +3,9 @@
   align-items: center;
   margin: 40px 0;
   position: relative;
+  img{
+    width: 40%;
+  }
   &_item{
     display: inline-flex;
     justify-content: center;
