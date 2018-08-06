@@ -1,7 +1,4 @@
-# migrate
-- color 
+# move
 - padding utilities
-- grid utilities
 - optimize images
 - schema data
-- modals
