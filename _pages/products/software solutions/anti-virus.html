@@ -2,33 +2,34 @@
 layout: page
 permalink: '/products-services/software-solutions/anti-virus/'
 title: Anti Virus
+items:
+  - url: https://www.microsoft.com/en-us/security/default.aspx
+    image: microsoft.jpg
+  - url: https://www.webroot.com/us/en/business
+    image: webroot.png
+  - url: https://us.norton.com/internet-security
+    image: norton.png
+  - url: https://www.symantec.com/products/threat-protection/endpoint-family/endpoint-protection
+    image: symantec.png
+  - url: https://usa.kaspersky.com/enterprise-security
+    image: kaspersky-logo.jpg
+  - url: https://www.mcafee.com/us/index.html
+    image: mcafee-logo.png
 ---
 <div class = 'mt-4 animated zoomIn'>
   <div class = 'wrap'>
     <div class = 'card card-block card-custom'> 
-      <h4 class = 'center'><strong>Computech offers multi-vendor options based <br> on your custom requirements for anti-virus <br> and internet security software.</strong></h4>
-      
-      <div class = 'grid-2 mt-2 mb-2'> 
-        <a class = 'partner' href = 'https://www.microsoft.com/en-us/security/default.aspx' target = '_blank'>
-          <img src = '/assets/partners/microsoft.jpg' alt = 'partner'/>
+      <h4 class = 'center'><strong>Computech offers multi-vendor options based <br> on your custom requirements for anti-virus <br> and internet security software.</strong></h4>    
+      <div class = 'grid-2 mt-4'> 
+      {%- for item in page.items -%}
+        <a class = 'partner' href = '{{ item.url }}' target = '_blank'>
+          <img src = '/assets/partners/{{ item.image }}' alt = 'partner'/>
         </a>
-        <a class = 'partner' href = 'https://www.webroot.com/us/en/business' target = '_blank'>
-          <img src = '/assets/partners/webroot.png' alt = 'partner'/>
-        </a>
-        <a class = 'partner' href = 'https://us.norton.com/internet-security' target = '_blank'>
-          <img src = '/assets/partners/norton.png' alt = 'partner'/>
-        </a>
-        <a class = 'partner' href = 'https://www.symantec.com/products/threat-protection/endpoint-family/endpoint-protection' target = '_blank'>
-          <img src = '/assets/partners/symantec.png' alt = 'partner'/>
-        </a>
-        <a class = 'partner' href = 'http://usa.kaspersky.com/enterprise-security' target = '_blank'>
-          <img src = '/assets/partners/kaspersky-logo.jpg' alt = 'partner'/>
-        </a>
-        <a class = 'partner' href = 'https://www.mcafee.com/us/index.html' target = '_blank'>
-          <img src = '/assets/partners/mcafee-logo.png' alt = 'partner'/>
-        </a>
+      {%- endfor -%}
       </div>
-      {% include form.html %} 
+      <div clas = 'mt-4'>
+        {% include form.html %} 
+      </div>
     </div>                  
   </div>
 </div>
