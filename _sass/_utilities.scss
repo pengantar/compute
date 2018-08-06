@@ -14,7 +14,14 @@
 }
 .hide{
   opacity: 0;
-  transform: scale(0);
+  &, &_xs{
+    transform: scale(0);
+  }
+  &_xs{  
+    @media screen and (min-width: 667px) {
+      transform: scale(1);
+    } 
+  }
 }
 .show{
   @extend %open;
