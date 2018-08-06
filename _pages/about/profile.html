@@ -3,45 +3,40 @@ layout: page
 permalink: '/about-us/profile/'
 title: Profile
 --- 
-<div id = 'about-page' class = 'animated zoomIn'>
+<div class = 'animated zoomIn'>
   <div class = 'wrap'>
     <div class = 'card card-block card-custom grid-1'>
       <div class = 'profile-text' style = 'line-height:30px;'>
         <h3 class = 'center'>About Us</h3>
-        <p class = 'profile-text'>Founded in 1987, Computech Limited is a leading East African systems integrator, providing technology solutions to solve businesses’ most important problems. Celebrating 30 years since inception, Computech Limited has now expanded to have offices in 5 countries and a significant regional footprint. Headquartered in Kenya with operations across Tanzania, Uganda, Rwanda, and Zambia, Computech Limited continues to explore opportunities to further serve the region by providing local, regional, and international expertise.<br><br>
-          Computech has significant experience across industry sectors, products and services, with substantial work done in providing professional services, infrastructure solutions, technical support, and technology outsourcing to all sectors,. Key clients have ranged from banking and financial services, telecommunications, manufacturing, government, and NGOS. Key partners include household names such as HP, Microsoft, and Cisco, many of whom first entered the East African market in partnership with Computech. With a recent entry into the Healthcare market, Computech is enthusiastic about the ever-present opportunities for growth and technology-driven improvement in the region.</p>
-          <br>                                                     
-          <p class = 'cafe text_left'><strong>Our Vision</strong> is to be Africa’s most respected and trusted provider of technology for business</p>
-          <br>                  
-          <p class = 'cafe text_left'><strong>Our Mission</strong> is to enable high-performance organisations, allowing businesses to work and communicate better, faster, and more profitably</p>
-          <br>                  
+        <p class = 'profile-text'>Founded in 1987, Computech Limited is a leading East African systems integrator, providing technology solutions to solve businesses’ most important problems. Celebrating 30 years since inception, Computech Limited has now expanded to have offices in 5 countries and a significant regional footprint. Headquartered in Kenya with operations across Tanzania, Uganda, Rwanda, and Zambia, Computech Limited continues to explore opportunities to further serve the region by providing local, regional, and international expertise.</p>
+        <p>Computech has significant experience across industry sectors, products and services, with substantial work done in providing professional services, infrastructure solutions, technical support, and technology outsourcing to all sectors,. Key clients have ranged from banking and financial services, telecommunications, manufacturing, government, and NGOS. Key partners include household names such as HP, Microsoft, and Cisco, many of whom first entered the East African market in partnership with Computech. With a recent entry into the Healthcare market, Computech is enthusiastic about the ever-present opportunities for growth and technology-driven improvement in the region.</p>
+                                                     
+        <p class = 'cafe text_left'><strong>Our Vision</strong> is to be Africa’s most respected and trusted provider of technology for business</p>
+        <br>                  
+        <p class = 'cafe text_left'><strong>Our Mission</strong> is to enable high-performance organisations, allowing businesses to work and communicate better, faster, and more profitably</p>                 
         </div>
         <div class = 'shade'>
           <h3 class = 'center'>Our Regional Presence</h3>                    
-          <img src = '/assets/images/africa.png' class = 'img-front img-responsive' alt = '' usemap = '#Map' />
+          <img src = '/assets/images/africa.png' alt = '' usemap = '#Map' />
           {%- include map.html -%}
           <br>
           <div id = 'country'>
-            <div class = 'row'>
-              <div class = 'col-sm-12 col-xs-12 col-lg-12 col-md-12 col-xl-12'>
-                <div class = 'seaTabs'>
-                  {%- assign about = site.data.about.profile -%}
-                  <div class = 'seaTabs_switch'>
-                    {%- for item in about -%}
-                    <div class = 'seaTabs_tab {% if forloop.index == 1 %} seaTabs_switch_active {% endif %}'>
-                      <img src = '/assets/country/{{ item.country | downcase }}.jpg'><br>
-                    </div>
-                    {%- endfor -%}
-                  </div>
-                  <div class = 'seaTabs_content' style = 'line-height:25px;'>
-                    {%- for item in about -%}
-                    <div class = 'seaTabs_item {% if forloop.index == 1 %} seaTabs_content_active {% endif %}'>
-                      <h3 class = 'country-title text_left'>{{ item.country }}</h3>
-                      <p class = 'profile-text'>{{ item.description }}</p>
-                    </div>
-                    {%- endfor -%}
-                  </div>
+            <div class = 'seaTabs'>
+              {%- assign about = site.data.about.profile -%}
+              <div class = 'seaTabs_switch'>
+                {%- for item in about -%}
+                <div class = 'seaTabs_tab {% if forloop.index == 1 %} seaTabs_switch_active {% endif %}'>
+                  <img src = '/assets/country/{{ item.country | downcase }}.jpg'><br>
                 </div>
+                {%- endfor -%}
+              </div>
+              <div class = 'seaTabs_content' style = 'line-height:25px;'>
+                {%- for item in about -%}
+                <div class = 'seaTabs_item {% if forloop.index == 1 %} seaTabs_content_active {% endif %}'>
+                  <h3 class = 'country-title text_left'>{{ item.country }}</h3>
+                  <p class = 'profile-text'>{{ item.description }}</p>
+                </div>
+                {%- endfor -%}
               </div>
             </div>
           </div>
