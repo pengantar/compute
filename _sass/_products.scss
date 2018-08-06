@@ -1,12 +1,11 @@
 .product{
-  min-height: 360px;
   border-radius: 6px;
   box-shadow: 0 0 60px rgba(0,0,0,0.17);
   overflow: hidden;
   background: #fff;
   align-self: stretch;
   &_image{ 
-    background-image: url(/assets/devices/accessories/hp/E5C13AA.png);
+    background-image: url(/assets/placeholders/light.png);
     background-size:contain;
     background-position: center;
     background-repeat: no-repeat;

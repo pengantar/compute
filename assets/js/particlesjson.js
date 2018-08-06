@@ -2,10 +2,10 @@ if (document.querySelector('#particles-js')) {
   particlesJS("particles-js", {
     "particles": {
       "number": {
-        "value": 80,
+        "value": 50,
         "density": {
           "enable": true,
-          "value_area": 500
+          "value_area": 750
         }
       },
       "color": {
