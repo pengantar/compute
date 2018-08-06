@@ -2,31 +2,28 @@
   {%- assign title = page.title | downcase -%}
   <h4 class = 'center'><strong>{% if title != 'contact us' %}Contact us for more details on {{ page.title }} {% else %} Please contact us using the form below {% endif %}</strong></h4>
   <fieldset class = 'form-group'>
-    <label for = 'exampleInputEmail1'>Full Name</label>
-    <input type = 'text' class = 'col-sm-3 form-control form-fixer'  id = 'name' name = 'Name' value = '' placeholder = 'Name' required>
+    <label for = 'name'>Full Name</label>
+    <input type = 'text' class = 'col-sm-3 form-control'  id = 'name' name = 'Name' value = '' placeholder = 'Name' required>
   </fieldset>
 
   <fieldset class = 'form-group'>
     <label for = 'email'>Email</label>
-    <input type = 'email' class = 'form-control form-fixer' id = 'email' name = 'Email' value = '' placeholder = 'you@awesome.com' required>   
+    <input type = 'email' class = 'form-control' id = 'email' name = 'Email' value = '' placeholder = 'you@awesome.com' required>   
   </fieldset>
 
   <fieldset class = 'form-group'>
     <label for = 'msg_subject'>Phone number</label>
-    <input type = 'text' name = 'Phone Number' class = 'form-control form-fixer' id = 'msg_subject' value = '' placeholder = 'Phone Number' required>
+    <input type = 'text' name = 'Phone Number' class = 'form-control' id = 'msg_subject' value = '' placeholder = 'Phone Number' required>
   </fieldset>
 
   <fieldset class = 'form-group'>
     <label for = 'message'>Message</label>
-    <textarea name = 'Message' class = 'form-control form-fixer' id = 'message' rows = '3' value = '' placeholder = 'Please enter your message' required></textarea>
+    <textarea name = 'Message' class = 'form-control' id = 'message' rows = '3' value = '' placeholder = 'Please enter your message' required></textarea>
   </fieldset>
   
-  <br>
-  
   <div class = 'g-recaptcha' data-callback = 'recaptchaCallback' data-sitekey = '6LdOxwoUAAAAACdtGAhPXI4eUVqkJyAyydr7tq2H' data-them = 'dark' required></div>
-  <div style = 'float:right'>
+  <div>
     <button  class = 'btn btn-success snip' type = 'submit' id = 'submit'> SUBMIT</button>
   </div>
-  <div class = 'clearfix'></div> 
 </form>
 {% include autoresize.html %}
