@@ -37,9 +37,6 @@ autopages:
       - "tags.html"
     title: ":tag" # :tag is replaced by the tag name
     permalink: "/tag/:tag"
-# Exclude from processing.
-# The following items will not be processed, by default. Create a custom list
-# to override the default setting.
 exclude:
   - Gemfile
   - Gemfile.lock
