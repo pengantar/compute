@@ -1,4 +1,4 @@
-<form class = 'ma card-shadow shake'>
+<form class = 'ma card-shadow shake {% unless page.permalink == '/contact-us/'%} mt-4 {% endunless %}'>
   {%- assign title = page.title | downcase -%}
   <h4 class = 'center'><strong>{% if title != 'contact us' %}Contact us for more details on {{ page.title }} {% else %} Please contact us using the form below {% endif %}</strong></h4>
   <fieldset class = 'form-group'>

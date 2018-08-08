@@ -53,31 +53,29 @@
 .expected{
   background: $orange;
 }
-
-.mb-1{
-  margin-bottom: 10px;
-}
-.mb-2{
-  margin-bottom: 20px;
-}
-.mt-2{
-  margin-top: 20px;
-}
-.mt-4{
-  margin-top: 60px;
-}
-.ma-2{
-  margin: 20px;
-}
 .ma{
   margin-left: auto;
   margin-right: auto;
+}
+@for $i from 1 through 4 {
+  $margin: $i * 25px * 0.5;
+  // margin bottom
+  .mb-#{$i} {
+    margin-bottom: $margin !important;
+  }
+  // margin top
+  .mt-#{$i} {
+    margin-top: $margin !important;
+  }
+  // padding around
+  .ma-#{$i} {
+    padding: $margin !important;
+  }
 }
 .shade{
   box-shadow:  0 0 60px rgba(0,0,0,0.17);
 }
 .overlay{
-  height: 100%;
   width: 100%;
   bottom: 0;
   top: 0;

@@ -12,7 +12,7 @@
     - sublink: cyber security 
       children: 
         - access control
-        # - asset protection     
+        - asset protection     
         # - improve revenue & reduce costs    
         # - reaction & recovery 
         # - visibility           

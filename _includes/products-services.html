@@ -1,14 +1,12 @@
 <div class = 'wrap'>
   <div class = 'grid-3 mt-2'>
     {% for service in site.data.products-services %}
-    <div class='space-bound aniview slow' data-av-animation='fadeIn' >
-      <div class='hovereffect card-shadow'>
-        <img src='/assets/products/{{ service | slugify }}.jpg' alt='{{ service }}'>
-        <div class='overlay shadow contain'>                           
-          <a class='hover-links' href='/products-services/{{ service | slugify }}/'>{{ service | upcase }}</a>
-        </div>
-      </div>
-    </div>
+    <a class='space-bound aniview slow hovereffect card-shadow' data-av-animation='fadeIn' href = '/products-services/{{ service | slugify }}/'>
+      <img src='/assets/products/{{ service | slugify }}.jpg' alt='{{ service }}'>
+      <span class='overlay shadow contain'>                           
+        {{ service | upcase }}
+      </span>
+    </a>
     {% endfor %}
   </div>
 </div>

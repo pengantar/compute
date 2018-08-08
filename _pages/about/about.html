@@ -6,14 +6,12 @@ title: About Us
 <div id = 'about-parts'>
   <div class = 'wrap grid-3'>                  
     {%- for item in site.data.about.home -%}
-    <div>
-      <div class = 'hovereffect card-shadow'>
-        <img src = '/assets/about/{{ item }}{% if forloop.index == 3 %}.png{% else %}.jpg{% endif %}' alt = '{{item}}'>
-        <div class = 'overlay'>
-          <a href = '/about-us/{{ item }}/'>{{ item | upcase }}</a> 
-        </div>
-      </div>
-    </div>
+    <a href = '/about-us/{{ item }}/' class = 'hovereffect card-shadow'>
+      <img src = '/assets/about/{{ item }}{% if forloop.index == 3 %}.png{% else %}.jpg{% endif %}' alt = '{{item}}'>
+      <span class = 'overlay'>
+        {{ item | upcase }}
+      </span>
+    </a>
     {%- endfor -%}
   </div>    
 </div>  

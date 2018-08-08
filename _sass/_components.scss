@@ -26,9 +26,6 @@
   animation-delay: 3s;
 }
 
-.linear1{
-  background: Linear-gradient(rgba($dark, 0.9),rgba($dark, 0.9));
-}
 // For the images in the ATM section 
 .image-container {
   position: absolute;
@@ -161,21 +158,7 @@ h1 {
   padding: 20px;
   background: linear-gradient(rgba($dark, 0.6), rgba($dark, 0.6));
 }
-.img-flag{
-  height: 60px;
-  width: 100%;
-  margin-bottom: 15px;
-  margin-left: 25px;
-  
-}
 
-// Profile page 
-
-.img-flag{
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
 .cafe{
   color: #F68E35;
   padding-left: 15px;
@@ -387,7 +370,7 @@ a:visited{
   }
   &-custom{
     background-color: $light;
-    padding-top: 50px;  
+    padding-top: 10px;  
     opacity: 0.9;
     li{
       list-style:square;  
@@ -396,6 +379,7 @@ a:visited{
     }   
   } 
   &-shadow{
+    display: block;
     box-shadow: 0 15px 60px 0 rgba(158, 174, 221, 0.3);
     border-radius: 10px;
   }
