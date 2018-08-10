@@ -39,6 +39,7 @@ autopages:
     permalink: "/tag/:tag"
 exclude:
   - Gemfile
+  - Rakefile
   - Gemfile.lock
   - node_modules
   - vendor
