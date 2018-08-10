@@ -14,12 +14,11 @@
 }
 .hide{
   opacity: 0;
-  &, &_xs{
-    transform: scale(0);
-  }
+  transform: scale(0);
   &_xs{  
+    display: none;
     @media screen and (min-width: 667px) {
-      transform: scale(1);
+      display: initial;
     } 
   }
 }
@@ -73,6 +72,9 @@
   }
   .pa-#{$i} {
     padding: 0 $margin !important;
+  }
+  .pt-#{$i} {
+    padding-top: $margin !important;
   }
 }
 .shade{

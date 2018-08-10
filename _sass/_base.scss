@@ -9,14 +9,14 @@ body {
   padding-top:50px;
   margin: 0; 
   font-family: $body-font;
-  font-size: 16px;
+  font-size: 17px;
   transition: all .5s ease;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
   justify-content: space-between;
   overflow-x: hidden;
-  line-height: 1.5;
+  line-height: 1.6;
 }
 h1,h2,h3,h4,h5,h6{
   font-family: $heading-font;
@@ -45,19 +45,12 @@ a:hover {
 img{
   max-width: 100%;
 }
-// label{
-//   display: none;
-// }
 form{
   max-width: 540px;
   padding: 30px 15px;
 }
 textarea.form-control {
   height: 100%;
-}
-
-label {
-  font-weight: normal !important;
 }
 input{
   padding: 15px;
@@ -66,10 +59,10 @@ input{
 textarea{
   resize: none;
 }
-form input[type="text"][disabled], form textarea[disabled] {
+input[type="text"][disabled], textarea[disabled] {
   background:#fff
 }
-form input[type="text"].error, form textarea.error {
+input[type="text"].error, textarea.error {
   background:#e6e6e6;
   border-color:#c0392b
 }
@@ -78,17 +71,6 @@ fieldset {
   margin:0;
   padding:0
 }
-table{
-  vertical-align: top;
-  border-collapse: collapse;
-  text-align: justify;
-  height: 100%;
-  width: 100%;
-}
-td {
-  text-align: center;
-}
-
 blockquote:before,
 blockquote:after,
 q:before,
@@ -134,7 +116,7 @@ img {
 
 ::placeholder{
   font-size: 16px;
-  color: $pale;
+  color: lighten($pale, 20%);
 }
 main{
   padding-bottom: 60px;
@@ -151,14 +133,14 @@ aside{
   }
 }
 p{
-  padding: 15px 0;
+  padding: 12.5px 0;
   color: $pale;
-  line-height: 1.7;
 }
 hr{
   margin-top: 30px;
   height: 12px;
-  height: 12px;
-  border: 7;
-  box-shadow: inset 0 12px 12px -12px rgba($dark, 0.5);
+}
+label{
+  font-weight: 500;
+  font-family: $heading-font;
 }

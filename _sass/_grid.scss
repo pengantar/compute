@@ -3,8 +3,7 @@
   grid-template-columns: 1fr;
 }
 [class*='grid-']{
-  grid-column-gap: 50px;
-  grid-row-gap: 50px;
+  grid-gap: 40px;
 }
 .grid{
   @extend %grid;

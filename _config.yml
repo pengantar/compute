@@ -47,4 +47,15 @@ exclude:
 include: 
   - _pages
 
+defaults:
+  -
+    scope:
+      path: "_posts"
+      type: "posts"
+    values:
+      layout: "post"
+      author: Computech
+      permalink: /:title/
+      # published: false
+
 # 1c10fb70aeafa03e66f93146939a6e9e45798344 cf25acefb4bd1be2f767b5d257042bac7c9455f7
