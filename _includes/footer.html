@@ -4,7 +4,7 @@
       <p class = 'mute'>Copyright &copy; <span class = 'year'></span> Computech Limited. All Rights Reserved</p>
     </div>
     <div class = 'mute'>
-      <span class = 'hide-xs'>Follow Us</span>
+      <span class = 'hide_xs'>Follow Us</span>
       <div class = 'footer_share'>
       {%- for item in site.data.social -%}
         <a href = '{{ item.url }}' class = 'contain {{ item.name }}' target = '_blank' rel = 'noopener'><img src='/assets/icons/{{ item.name | slugify }}.svg' alt = '{{item.name }} icon' /></a>
