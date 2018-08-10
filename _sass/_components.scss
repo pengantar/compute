@@ -692,24 +692,65 @@ img.map, map area{
   }
 }
 .modal {
+	display: none;
+	position: fixed;
+  bottom: 0;
+	top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
   &_close{
     position: absolute;
-    top: 0;
-    right: 0;
-    background-color: rgba(0,0,0,0.25);
-    color: #fff;
+    top: 5px;
+    right: 10px;
+    background-color: transparent;
     border: 0;
-    font-size: 36px;
     outline: 0;
     cursor: pointer;
-    padding: 0;
+    font-size: 32px;
     width: 50px;
     height: 50px;
+    opacity: 0.6;
     transition: opacity 0.25s ease-out;
     margin: 0;
     &:hover{
-      opacity: 0.9;
+      opacity: 1;
     }
+  }
+  &_inner{
+    position: relative;
+    width:100%;
+    background-color: $light;
+    max-width:540px;
+    padding: $padding * 2.5;
+    box-shadow: 0 0 120px rgba(0,0,0,0.2);
+    color: $pale;
+    h2{
+      color: $dark;
+    }
+  }
+  &_show {
+    overflow: hidden;
+    position: relative;
+    &:before {
+      position: absolute;
+      content: '';
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 999;
+      background-color: rgba(255, 255, 255, 0.85);
+    }
+  }
+  &_show &{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  &_title{
+    color: $light;
   }
   &_overlay{
     transform: translate3d(0,0,0);
@@ -719,6 +760,7 @@ img.map, map area{
     cursor: pointer;
     perspective: 600px;
     z-index: 2000 !important;
+    background: rgba($light, 0.9) !important;
   }
   &_body{
     display: grid;
@@ -731,16 +773,10 @@ img.map, map area{
     }
   }
   &_name{
-    position: absolute;
-    top: 0;
-    width: 100%;
-    left: 0;
-    background: $orange;
-    color: $light;
+    color: $orange;
     text-transform: uppercase;
     margin: 0;
     line-height: 50px;
-    padding-left: 20px;
   }
 }
 .definition{
@@ -763,7 +799,6 @@ img.map, map area{
   }
   &_modal{
     @extend %modal;
-    padding: 20px;
     &-open{
       @extend %open;
     }
