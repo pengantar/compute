@@ -60,11 +60,10 @@
 <meta property = 'og:description'  content = '{{ desc }}'/>
 {%- endif -%}
 
-<link rel = 'canonical' href = '{{ page.url | replace:'index.htm l','' | absolute_url }}'> 
+<link rel = 'canonical' href = '{{ page.url | replace:'index.html','' | absolute_url }}'> 
 <link rel = 'icon' href = '/assets/images/fav.ico'>
 <link href = '/assets/css/bootstrap.css' rel = 'stylesheet'>
 <link rel = 'stylesheet' href = '/assets/style.css'>
-<link rel = 'stylesheet' href = '/assets/css/dropdown.css'>
 {% assign styles = page.dependencies.styles %}
 {%- if styles -%}
 {%- for style in styles -%}

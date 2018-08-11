@@ -7,37 +7,35 @@ dependencies:
 title: Contact Us
 --- 
 <div class = 'wrap grid-1'>  
-  <div>
-    <div id = 'country'>
-      {% assign contacts = site.data.contacts %}
-      <div class = 'tabs'>
-        <div class = 'tab_switch'>
-          {% for contact in contacts %}
-          <div class = 'tab {% if forloop.first %}tab_active{% endif %}'>
-            <img src = '/assets/country/{{ contact.country | downcase }}.jpg'>
-          </div>
-          {% endfor %}
+  <div class = 'address'>
+    {% assign contacts = site.data.contacts %}
+    <div class = 'tabs'>
+      <div class = 'tab_switch'>
+        {% for contact in contacts %}
+        <div class = 'tab {% if forloop.first %}tab_active{% endif %}'>
+          <img src = '/assets/country/{{ contact.country | downcase }}.jpg'>
         </div>
-        
-        <div class = 'tab_content profile-text'>
-          {% for contact in contacts %}
-          <div class = 'tab_item {% if forloop.first %}tab_item_active{% endif %}'>
-            <h3 class = 'country-title text_left'>{{ contact.country | capitalize }}</h3>
-            {% for region in contact.regions %}
-              <p><span class = 'region-title'>{{ region.name }}</span></p>
-              {% for detail in region.details %}
-                {{ detail | markdownify }}
-              {% endfor %}
-              {% if region.directions %}
-                 {{ region.directions }}
-              {% endif %}
-            {% endfor %}
-          </div>
-          {% endfor %}
-        </div>
+        {% endfor %}
       </div>
-    </div>             
-  </div>
+      
+      <div class = 'tab_content profile-text'>
+        {% for contact in contacts %}
+        <div class = 'tab_item {% if forloop.first %}tab_item_active{% endif %}'>
+          <h3 class = 'country-title text_left'>{{ contact.country | capitalize }}</h3>
+          {% for region in contact.regions %}
+            <p><span class = 'region-title'>{{ region.name }}</span></p>
+            {% for detail in region.details %}
+              {{ detail | markdownify }}
+            {% endfor %}
+            {% if region.directions %}
+                {{ region.directions }}
+            {% endif %}
+          {% endfor %}
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>             
   <div>            
     {% include form.html %} 
   </div>

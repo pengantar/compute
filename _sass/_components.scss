@@ -114,19 +114,10 @@
 
 //  CSS used here will be applied after bootstrap.css  
 
-.vm{
-  font-size: 15px;
-  color: $dark;
-}
-
 .text-colour{  
   color: $dark;
 }
 
-.profile-text{
-  color: $dark;
-  text-align: justify;      
-}
 
 .virus img{
   display: block;
@@ -135,10 +126,6 @@
   line-height: 100px;
   height: 100px;
   padding: 20px;
-}
-
-.img-workshop{
-  height: 300px;
 }
 
 // End of physical sec 
@@ -156,42 +143,7 @@
   padding: inherit;
   display: block;
 }
-.all-text{
-  color: $dark;
-  font-size: 15px;
-}
 
-// Start of view and download button 
-
-.view-btn{
-  margin-right: 30px;
-  background-color: #004D40;
-  padding: 17px;
-  color: $light;
-  margin-bottom: 25px;
-  font-size: 21px;
-}
-.view-btn:hover{
-  color: $light;
-  text-decoration: none;
-}
-.download-btn{
-  margin-bottom: 25px;
-  background-color: #006064;
-  padding: 17px;
-  color: $light;
-  font-size: 21px;    
-}
-.download-btn:hover{
-  color: $light;
-  text-decoration: none;
-}
-
-// End of view and downlaod button 
-
-.sections{
-	padding-top: 28px;
-}
 .line {
   border-bottom: 4px solid $orange;
   height: 10px;
@@ -225,29 +177,12 @@ a:visited{
   background-color: $orange;
 }
 
-.cust-h2{
-  text-transform: capitalize;
-  font-size: 18px;
-  padding-bottom: 10px;  
-}
-
-.row-space{
-  margin-top: 30px;
-  margin-bottom: 30px;
-}
-.under {
-  background-color: $dark;
-  height: 40px;
-  width: 60px;
-  border: 1px solid $dark;
-  margin-right: 100px;
-  border-radius: 5px;
-  padding: 15px;  
+.address p{
+  padding: 3px 0;
 }
 .card{  
   display: block; 
   background-color: $light;
-  padding-top: 10px;    
   box-shadow: 0 15px 60px 0 rgba(158, 174, 221, 0.3);
   border-radius: 10px;
   a{
@@ -472,27 +407,6 @@ a:visited{
   padding-left: 70px;
 }
 
-.white{
-  color: $light;
-}
-.wow {
-  visibility: hidden;
-}
-
-.view-button{
-  background-color: transparent;
-  padding: 15px;
-  width: 100px;
-  border: 3px solid $light;
-  border-radius: 5px;
-  color: $light;   
-  font-size: 25px;
-}
-.view-button a{
-  color: $light;
-  text-decoration: none;
-}
-
 img.map, map area{
   outline: none;
 }
@@ -536,9 +450,6 @@ img.map, map area{
   color: $orange;
 }
 
-.server-list{
-  margin-top: 65px;
-}
 .storage-list{
   margin-top: 65px;  
 }
@@ -735,16 +646,6 @@ img.map, map area{
 .float-right{
   float: right;
 }
-.ref-logo{
-  padding: 20px;
-}
-
-.border-btm{
-  border-bottom: 1px solid $light;
-}
-.mui-tabs__bar{
-  color: $orange;
-}
 
 // End of client section 
 [class*=banner-] {
@@ -781,13 +682,6 @@ img.map, map area{
 .contact-img{
   text-align: center;
   align-content: center;
-}
-.mui-tabs__pane{
-  padding-top: 15px;
-}
-.robot{
-  padding-top: 40px;
-  padding-bottom: 30px;
 }
 
 // pdf buttons 
