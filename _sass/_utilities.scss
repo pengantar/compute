@@ -76,6 +76,9 @@
   .pt-#{$i} {
     padding-top: $margin !important;
   }
+  .pb-#{$i} {
+    padding-bottom: $margin !important;
+  }
 }
 .shade{
   box-shadow:  0 0 60px rgba(0,0,0,0.17);

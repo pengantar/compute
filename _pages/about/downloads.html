@@ -20,11 +20,11 @@ title: Downloads
           <div class = 'grid-3 mt-3 mb-2'>
             {%- for d in item.downloads -%}
             <div class = 'download-card'>
-              <div class = 'card text_center'> 
+              <div class = 'card text_center pt-2 pb-2'> 
                 <img src = '/assets/icons/{{ d.icon }}'  alt = 'Card image cap'>
                 <div class = 'card-block'>
-                  <h4 class = 'card-title text_center'>{{ d.name }}</h4>  <br>
-                  <p class = 'card-text text_center'>More info about {{ d.name }}</p> <br>
+                  <h4 class = 'card-title text_center'>{{ d.name }}</h4>
+                  <p class = 'card-text text_center'>More info about {{ d.name }}</p>
                   <a  href = '/assets/pdf/{{ d.file }}' download = '{{ d.name | downcase | slugify }}' class = 'snip'>DOWNLOAD</a>
                 </div>
               </div>
