@@ -244,7 +244,8 @@ a:visited{
   border-radius: 5px;
   padding: 15px;  
 }
-.card{   
+.card{  
+  display: block; 
   background-color: $light;
   padding-top: 10px;    
   box-shadow: 0 15px 60px 0 rgba(158, 174, 221, 0.3);

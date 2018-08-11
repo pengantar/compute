@@ -5,7 +5,6 @@
   background: #fff;
   align-self: stretch;
   &_image{ 
-    background-image: url(/assets/placeholders/light.png);
     background-size:contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -15,7 +14,7 @@
   &_footer{
     min-height: 120px;
     text-align: left;
-    line-height: 1.7em;
+    line-height: 1.7rem;
     padding: 20px;
   }
   &_body{
@@ -25,7 +24,7 @@
   }
   &_price{
     color: #000;
-    font-size: 2.5rem;
+    font-size: 1.5rem;
     font-weight: 700;
     padding: 10px 0;
     text-align: center;
@@ -33,7 +32,7 @@
   &_description{
     color: #222;
     font-weight: 600;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     text-transform: uppercase;
     text-align: center;
   }
@@ -48,7 +47,7 @@
     margin: 0 auto;
     text-align: center;
     color: #fff;
-    font-size: 1rem;
+    font-size: 0.8rem;
     border-radius: 2.5px;
     box-shadow: 0 0 60px rgba(0,0,0,0.17);
   }
