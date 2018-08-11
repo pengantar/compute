@@ -43,6 +43,7 @@ exclude:
   - node_modules
   - vendor
   - README.md
+  - LICENSE.md
 
 include: 
   - _pages
