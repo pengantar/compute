@@ -1,58 +1,37 @@
 
-//----- Tabs -----
 .tab {
-  display:none;
-  &s{
-    width:100%;
-    display:inline-block;
-  }
-  &-content {
-    color: $dark;
-    font-size: 15px;
-    text-align: justify;  
-    border-radius:3px;
-    background:$light;
-    margin: 10px;
-    padding: 20px;
-    box-shadow: 0 0 130px rgba(0,0,0,0.17);
-    a{
-      color: #EA783A;
-      font-weight:600;
-      &:hover{
-        color: #EA783A;
-        text-decoration: none;
-      }
-    }
-  }
-  &.active {
-    display:block;
-    border: 1px solid $dark;
-  }  
-}
-.seaTabs {
+  background: #f8f8f8;
+  cursor: pointer;
+  justify-content: space-between;
+  padding: 0 3px;
+  position: relative;
+  box-shadow: 0 12px 25px -5px rgba(158,174,221,0.15);
   p{
     line-height: 30px;
     padding:0;
   }
-  &_content a{
-    color: #F68E35;
-  }
-  
-  &_tab {
-    background: #f8f8f8;
-    cursor: pointer;
-    justify-content: space-between;
-    padding: 0 3px;
-    position: relative;
-    box-shadow: 0 12px 25px -5px rgba(158,174,221,0.15);
-  }
-  
+  &_active {
+    &:after {
+      content: '';
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 3px;
+      width: 5px;
+      border-radius: 1px;
+      background: $orange;
+      color: $orange;
+      z-index: 2;
+    }
+  }  
   &_item { 
     display: none; 
-  }
-  
-  &_content_active {
-    display: block;
+    a{
+      color: #F68E35;
+    }
+    &_active {
+      display: block;
+    }
   }
   &_switch { 
     overflow: hidden;
@@ -64,20 +43,6 @@
     padding: 0 0 20px;
     img{
       width: 100%;
-    }
-    &_active {
-      &:after {
-        content: '';
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 3px;
-        width: 5px;
-        border-radius: 1px;
-        background: $orange;
-        color: $orange;
-        z-index: 2;
-      }
     }
   }
 }

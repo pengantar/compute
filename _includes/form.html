@@ -1,26 +1,14 @@
 <form class = 'ma card shake {% unless page.permalink == '/contact-us/'%} mt-4 {% endunless %}'>
   {%- assign title = page.title | downcase -%}
   <h3 class = 'underline mb-2'><span></span>{% if title != 'contact us' %}Contact us for more details on {{ page.title }} {% else %} Please contact us using the form below {% endif %}</h3>
-  <fieldset class = 'form-group'>
-    <label for = 'name'>Full Name</label>
-    <input type = 'text' class = 'col-sm-3 form-control'  id = 'name' name = 'Name' value = '' placeholder = 'Name' required>
-  </fieldset>
-
-  <fieldset class = 'form-group'>
-    <label for = 'email'>Email</label>
-    <input type = 'email' class = 'form-control' id = 'email' name = 'Email' value = '' placeholder = 'you@awesome.com' required>   
-  </fieldset>
-
-  <fieldset class = 'form-group'>
-    <label for = 'msg_subject'>Phone number</label>
-    <input type = 'text' name = 'Phone Number' class = 'form-control' id = 'msg_subject' value = '' placeholder = 'Phone Number' required>
-  </fieldset>
-
-  <fieldset class = 'form-group'>
-    <label for = 'message'>Message</label>
-    <textarea name = 'Message' class = 'form-control' id = 'message' rows = '3' value = '' placeholder = 'Please enter your message' required></textarea>
-  </fieldset>
-  
+  <label for = 'name'>Full Name</label>
+  <input type = 'text' class = 'col-sm-3 mb-1 form-control'  id = 'name' name = 'Name' value = '' placeholder = 'Name' required>
+  <label for = 'email'>Email</label>
+  <input type = 'email' class = 'mb-1 form-control' id = 'email' name = 'Email' value = '' placeholder = 'you@awesome.com' required>   
+  <label for = 'msg_subject'>Phone number</label>
+  <input type = 'text' name = 'Phone Number' class = 'mb-1 form-control' id = 'msg_subject' value = '' placeholder = 'Phone Number' required>
+  <label for = 'message'>Message</label>
+  <textarea name = 'Message' class = 'mb-1 form-control' id = 'message' rows = '3' value = '' placeholder = 'Please enter your message' required></textarea>
   <div class = 'g-recaptcha' data-callback = 'recaptchaCallback' data-sitekey = '6LdOxwoUAAAAACdtGAhPXI4eUVqkJyAyydr7tq2H' data-them = 'dark' required></div>
   <div>
     <button  class = 'snip' type = 'submit' id = 'submit'> SUBMIT</button>

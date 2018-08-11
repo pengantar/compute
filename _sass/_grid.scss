@@ -10,56 +10,30 @@
 }
 .grid-1{
   @extend %grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+}
+.grid-2{
+  @extend %grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+.grid-3{
+  @extend %grid;
+  grid-template-columns: repeat(auto-fit, minmax(225px, 1fr));
+}
+.grid-4{
+  @extend %grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+}
+.grid-auto{
+  @extend %grid;
   @media screen and (min-width: 768px){
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr auto;
   }
 }
 .grid-fibonacci{
   @extend %grid;
   @media screen and (min-width: 992px){
     grid-template-columns: 7fr 3fr;
-  }
-}
-.grid-2{
-  @extend %grid;
-  @media screen and (min-width: 668px){
-    grid-template-columns: repeat(2, 1fr);
-  }
-  @media screen and (min-width: 992px){
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-.grid-3{
-  @extend %grid;
-  @media screen and (min-width: 557px){
-    grid-template-columns: repeat(2, 1fr);
-  }
-  @media screen and (min-width: 769px){
-    grid-template-columns: repeat(3, 1fr);
-  }
-  @media screen and (min-width: 1025px) {
-    grid-template-columns: repeat(4, 1fr);
-  }
-}
-.grid-4{
-  @extend %grid;
-  @media screen and (min-width: 480px){
-    grid-template-columns: repeat(2, 1fr);
-  }
-  @media screen and (min-width: 667px){
-    grid-template-columns: repeat(3, 1fr);
-  }
-  @media screen and (min-width: 769px){
-    grid-template-columns: repeat(4, 1fr);
-  }
-  @media screen and (min-width: 1025px) {
-    grid-template-columns: repeat(5, 1fr);
-  }
-}
-.grid-auto{
-  @extend %grid;
-  @media screen and (min-width: 768px){
-    grid-template-columns: 1fr auto;
   }
 }
 .grid-tab{

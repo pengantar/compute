@@ -5,18 +5,18 @@ title: Downloads
 ---
 <div class = 'animated zoomIn'>
   <div class = 'wrap'>
-    <div class = 'seaTabs'>
+    <div class = 'tabs'>
       {%- assign downloads = site.data.about.downloads -%}
-      <div class = 'seaTabs_switch grid-3'>
+      <div class = 'tab_switch grid-3'>
         {%- for item in downloads -%}
-        <div class = 'seaTabs_tab pt-1 contain {% if forloop.index == 1 %} seaTabs_switch_active {% endif %}'>
+        <div class = 'tab pt-1 contain {% if forloop.index == 1 %} tab_active {% endif %}'>
           {{ item.nav | upcase }}
         </div>
         {%- endfor -%}
       </div>
-      <div class = 'seaTabs_content'>
+      <div class = 'tab_content'>
         {%- for item in downloads -%}
-        <div class = 'seaTabs_item {% if forloop.index == 1 %} seaTabs_content_active {% endif %}'>
+        <div class = 'tab_item {% if forloop.index == 1 %} tab_item_active {% endif %}'>
           <div class = 'grid-3 mt-3 mb-2'>
             {%- for d in item.downloads -%}
             <div class = 'download-card'>

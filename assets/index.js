@@ -130,10 +130,6 @@ $("#contactForm").submit(function(event){
   submitForm();
 });
 
-//Initializing tab layout
-$('.nav-tabs a').click(function(){
-  $(this).tab('show');
-})
 
 $("a[href*='#']:not([href='#'])").click(function() {
   if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
@@ -150,13 +146,13 @@ $("a[href*='#']:not([href='#'])").click(function() {
   }
 });
 
-// sea.tabs.js
-
 $(function(){
-  $('.seaTabs_tab').each(function(item){
+  let tab = 'tab_active'
+  let content = 'tab_item_active' 
+  $('.tab').each(function(item){
     $(this).click(function(){
-      $(this).addClass('seaTabs_switch_active').siblings().removeClass('seaTabs_switch_active');
-      $($('.seaTabs_item')[item]).addClass('seaTabs_content_active').siblings().removeClass('seaTabs_content_active');
+      $(this).addClass(tab).siblings().removeClass(tab);
+      $($('.tab_item')[item]).addClass(content).siblings().removeClass(content);
     });
   });
 });

@@ -19,18 +19,18 @@ description: "Founded in 1987, Computech Limited is a leading East African syste
         <h3 class = 'center'>Our Regional Presence</h3>                    
         <img src = '/assets/images/africa.png' alt = "Computech's Regional Mark" />
         <div class = 'mt-3'>
-          <div class = 'seaTabs'>
+          <div class = 'tabs'>
             {%- assign about = site.data.about.profile -%}
-            <div class = 'seaTabs_switch'>
+            <div class = 'tab_switch'>
               {%- for item in about -%}
-              <div class = 'seaTabs_tab {% if forloop.index == 1 %} seaTabs_switch_active {% endif %}'>
+              <div class = 'tab {% if forloop.index == 1 %} tab_active {% endif %}'>
                 <img src = '/assets/country/{{ item.country | downcase }}.jpg'><br>
               </div>
               {%- endfor -%}
             </div>
-            <div class = 'seaTabs_content' style = 'line-height:25px;'>
+            <div class = 'tab_content'>
               {%- for item in about -%}
-              <div class = 'seaTabs_item {% if forloop.index == 1 %} seaTabs_content_active {% endif %}'>
+              <div class = 'tab_item {% if forloop.index == 1 %} tab_item_active {% endif %}'>
                 <h3 class = 'country-title text_left'>{{ item.country }}</h3>
                 <p class = 'profile-text'>{{ item.description }}</p>
               </div>

@@ -10,18 +10,18 @@ title: Contact Us
   <div>
     <div id = 'country'>
       {% assign contacts = site.data.contacts %}
-      <div class = 'seaTabs'>
-        <div class = 'seaTabs_switch'>
+      <div class = 'tabs'>
+        <div class = 'tab_switch'>
           {% for contact in contacts %}
-          <div class = 'seaTabs_tab {% if forloop.first %}seaTabs_switch_active{% endif %}'>
+          <div class = 'tab {% if forloop.first %}tab_active{% endif %}'>
             <img src = '/assets/country/{{ contact.country | downcase }}.jpg'>
           </div>
           {% endfor %}
         </div>
         
-        <div class = 'seaTabs_content profile-text'>
+        <div class = 'tab_content profile-text'>
           {% for contact in contacts %}
-          <div class = 'seaTabs_item {% if forloop.first %}seaTabs_content_active{% endif %}'>
+          <div class = 'tab_item {% if forloop.first %}tab_item_active{% endif %}'>
             <h3 class = 'country-title text_left'>{{ contact.country | capitalize }}</h3>
             {% for region in contact.regions %}
               <p><span class = 'region-title'>{{ region.name }}</span></p>
