@@ -38,4 +38,4 @@ Built into Windows 10 Operating System is the **[Windows Defender](https://www.m
 
 **Keep your devices and systems safe from future malware attacks. [Computech Limited](/), recently recognized as Microsoft’s Partner of the Year 2017 for Cloud Productivity]**, is here to help you with a seamless upgrade to the latest, secure and verified Windows 10 Operating System.
 
-**Call [#ComputechKenya](https://www.linkedin.com/search/results/content/?keywords=%23ComputechKenya&amp;origin=HASH_TAG_FROM_FEED")** on 0730141000 or email us on **[info@computechlimited.com](mailto:info@computechlimited.com/)** if you are in Tanzania, Uganda, Rwanda, or Zambia**.
+> Call **[#ComputechKenya](https://www.linkedin.com/search/results/content/?keywords=%23ComputechKenya&amp;origin=HASH_TAG_FROM_FEED")** on 0730141000 or email us on **[info@computechlimited.com](mailto:info@computechlimited.com/)** if you are in Tanzania, Uganda, Rwanda, or Zambia**.

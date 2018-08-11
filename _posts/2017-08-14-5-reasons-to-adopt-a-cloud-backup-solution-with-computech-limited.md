@@ -5,7 +5,7 @@ tags:
   - cloud computing
   - cyber security
 ---
-<img class="aligncenter size-full" src="/assets/posts/backup-solutions.jpg" alt="backup-solutions"/>
+![Back up solutions](/assets/posts/backup-solutions.jpg)
 
 Protecting enterprise data is essential for survival of any business. With the ever-increasing threats of cyberattacks, businesses without a sound data backup and disaster recovery plan are continuing to lose critical assets and their competitive edge. However, traditional methods of data protection have been proven to be difficult, unreliable, and expensive, especially with the large volume of data that modern businesses now store and process.
 
@@ -35,4 +35,4 @@ Most governments across the world require businesses to store their data off the
 
 Many organizations don’t backup their data until a disaster strikes, and when they do, they use traditional methods that can’t sufficiently cope with their requirements and they end up losing their critical data. Our portfolio includes the world’s best cloud backup and disaster recovery solutions to protect your mission-critical assets from disasters, cyberattacks, system failures, and even human error, because we want your business to operate optimally all the time.
 
-Keep your data safe and secure with a solid cloud backup solution - call #ComputechKenya now on 0730 141 000 or email <a href="mailto:info@computechlimited.com">info@computechlimited.com</a> if you are in Tanzania, Uganda, Rwanda or Zambia
+> Keep your data safe and secure with a solid cloud backup solution - call #ComputechKenya now on 0730 141 000 or email [info@computechlimited.com](mailto:info@computechlimited.com) if you are in Tanzania, Uganda, Rwanda or Zambia

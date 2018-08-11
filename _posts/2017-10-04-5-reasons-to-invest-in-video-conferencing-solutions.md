@@ -5,9 +5,9 @@ tags:
   - video conferencing
   - cisco
 ---
-<a href="http://www.computechlimited.com/cisco.html"><img class="aligncenter" src="/assets/posts/whatsapp-image.jpg" alt="" width="802" height="535" /></a>
+[![](/assets/posts/whatsapp-image.jpg)](/products-services/cisco/)
 
-As the modern workforce becomes more mobile and more people work remotely, business leaders are recognizing the many benefits video conferencing can provide to their businesses. Over the years, [Computech Limited](http://www.computechlimited.com/cisco.html) has been enabling businesses to leverage video conferencing and other collaboration technologies in order to significantly scale productivity and reduce costs.
+As the modern workforce becomes more mobile and more people work remotely, business leaders are recognizing the many benefits video conferencing can provide to their businesses. Over the years, [Computech Limited](/products-services/cisco/) has been enabling businesses to leverage video conferencing and other collaboration technologies in order to significantly scale productivity and reduce costs.
 
 Here are 5 specific reasons for businesses to invest in video conferencing solutions:
 
@@ -31,4 +31,4 @@ Video conferencing comes in handy when you want to troubleshoot a challenge that
 
 Video collaboration tools enable you to connect directly with customers as if you were in the same room. Whether it’s a live product demo or an important meeting with stakeholders seated in different places, video conferencing reduces the distance between your business and your customer, fostering stronger relationships, better customer service, and increasing customer touch points.
 
-There are unlimited benefits that your business can enjoy using our video conferencing solutions. Get in touch with [Computech Limited](mailto:marketing@computechlimited.com) to find out more on how video conferencing can help your business.
+> There are unlimited benefits that your business can enjoy using our video conferencing solutions. Get in touch with [Computech Limited](mailto:marketing@computechlimited.com) to find out more on how video conferencing can help your business.

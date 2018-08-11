@@ -26,36 +26,6 @@
   animation-delay: 3s;
 }
 
-// For the images in the ATM section 
-.image-container {
-  position: absolute;
-  width: 200px;
-  height: 300px;
-  background: rgba($dark, .6);
-  z-index: 9999;
-}
-.image-container .after {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  display: none;
-  color: $light;
-}
-.image-container:hover .after {
-  display: block;
-  background: rgba($dark, .6);
-}
-// End for the images in the ATM section 
-.learnMore{
-  background-color: transparent;
-  border: 2px solid $light;
-  padding: 13px;
-  color: $light;
-  margin-top: 30px;
-}
-
 .section {
   clear: both;
   padding: 0;
@@ -67,23 +37,6 @@
 }
 .space{
   padding-bottom: 50px;
-}
-h1 {
-  position: relative;
-}
-.owl-pagination {
-  position: absolute;
-  right: 0;
-  left: 0;
-  bottom: 20px;
-}
-
-.black-header{
-  color: $light;
-  background-color: $dark;
-  text-align: center;
-  padding: 3px;
-  font-size: 25px;
 }
 
 // Particles for the not homepage 
@@ -161,12 +114,6 @@ h1 {
 
 //  CSS used here will be applied after bootstrap.css  
 
-#myarea{
-  position:absolute;
-  left:374px;
-  width:250px;
-  top:414px;
-}
 .vm{
   font-size: 15px;
   color: $dark;
@@ -257,28 +204,11 @@ h1 {
   height: auto;
   width: 100%;
 }
-.fa-dot-circle-o{
-  color: $dark;
-}
+
 .move{
   margin-left: 100px;
 }
-.im{
-  padding-right: 50px;
-}
 
-.men-btn{
-  background-color: transparent;
-  border: 0;
-}
-.header-image h5{
-  color: $dark; 
-  text-align: left;
-  margin-top: 150px;
-  
-  font-size: 3em;
-  padding-left: 50px;
-}
 .orange{
   color: $orange;  
 }
@@ -294,18 +224,6 @@ a:visited{
   color: $light;
   background-color: $orange;
 }
-.list-group-item{
-  text-align: center;
-}
-
-.flag-image{
-  padding: 20px;
-  border-radius: 5px;
-}
-
-.boold{
-  font-weight: 900;
-}
 
 .cust-h2{
   text-transform: capitalize;
@@ -317,31 +235,6 @@ a:visited{
   margin-top: 30px;
   margin-bottom: 30px;
 }
-
-.cust-btn{
-  background-color: transparent; 
-  border: 0;
-}
-
-.btn { 
-  color: $light;
-  display: inline-block;
-  border-radius: 2px;
-  border: none;
-  height: 45px;
-  z-index: 999;
-}
-.btn-primary{
-  color: $light;
-}
-
-.btn:hover {
-  color: $light;  
-}
-.underline{
-  text-decoration: underline;
-}
-
 .under {
   background-color: $dark;
   height: 40px;
@@ -353,9 +246,9 @@ a:visited{
 }
 .card{   
   background-color: $light;
-  border-radius: 6px;
-  padding-top: 10px;  
-  opacity: 0.9;  
+  padding-top: 10px;    
+  box-shadow: 0 15px 60px 0 rgba(158, 174, 221, 0.3);
+  border-radius: 10px;
   a{
     &,
     &:hover,
@@ -367,11 +260,6 @@ a:visited{
     list-style:square;
     line-height: 26px;    
   } 
-  &-shadow{
-    display: block;
-    box-shadow: 0 15px 60px 0 rgba(158, 174, 221, 0.3);
-    border-radius: 10px;
-  }
   &-title{
     color: $dark;
   }
@@ -903,111 +791,28 @@ img.map, map area{
 
 // pdf buttons 
 .snip {
-  background-color: #EF762D;
+  background-color: $dark;
   border: none;
-  color: $light !important;
-  cursor: pointer;
   display: inline-block;
-  font-size: 22px;
-  line-height: 1rem;
-  margin: 15px 20px;
+  min-width: 200px;
+  color: $orange;
+  cursor: pointer;
+  font-size: 20px;
+  margin: 15px;
   outline: none;
   padding: 15px;
-  position: relative;
   text-transform: uppercase;
-  font-weight: 700;
+  border-radius: 30px;
+  line-height: 1.25;
+  font-family: $heading-font;
+  opacity: 1;
+  transition: all 0.3s ease-in;
   &:hover {
+    opacity: 0.96;
     color: $light;
-    text-decoration: none;
-  }
-  &:before,
-  &:after {
-    transition: all 0.25s;
-    border-style: solid;
-    border-width: 0;
-    content: "";
-    height: 24px;
-    position: absolute;
-    width: 24px;
-  }
-  &:before {
-    border-color: #EF762D;
-    border-right-width: 2px;
-    border-top-width: 2px;
-    right: -5px;
-    top: -5px;
-  }
-  &:after {
-    border-bottom-width: 2px;
-    border-color: #EF762D;
-    border-left-width: 2px;
-    bottom: -5px;
-    left: -5px;
   }
 }
 
-// pdf buttons 
-.td-down h3{
-  padding-top: 10px;
-}
-
-.services {
-  padding: 60px;  
-}
-.services img{
-  margin: 0 auto;
-}
-.service-box{
-  margin-bottom: 40px;
-  cursor: pointer;
-}
-.service-box:hover .service-icon{
-  color: #f9f9f9;
-  background: $orange;
-  transition: all 1s;
-}
-.service-box.side-left{
-  text-align: right;
-}
-.service-box.side-right{
-  text-align: left;
-}
-.service-box h3{
-  color: $orange;
-  text-transform: uppercase;
-  font-size: 16px;
-  font-weight: bold;
-  margin-bottom: 10px;
-}
-.service-box p{
-  line-height: 26px;
-  color: $dark;
-}
-
-.service-box h5{
-  color: grey;
-}
-
-.service-icon{
-  display: inline-block;
-  font-size: 30px;
-  color: $orange;
-  line-height: 73px;
-  background: #f9f9f9;
-  width: 80px;
-  text-align: center;
-  border: solid 4px $light;
-  outline: 1px solid $mute;
-  margin-top: 10px;
-}
-.service-box.side-left .service-icon{
-  float: right;
-  margin-left: 20px;
-}
-.service-box.side-right .service-icon{
-  float: left;
-  margin-right: 20px;
-}
 .flex {
   display: flex;
   flex-direction: column;

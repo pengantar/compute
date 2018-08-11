@@ -4,7 +4,7 @@ title: 'Cyber Security: 6 Tactics to keep your technology safe'
 tags:
   - cyber security
 ---
-<img class="aligncenter size-full" src="/assets/posts/cyber-secuity.jpg" alt="cyber security" />
+<img class="aligncenter size-full" src="/assets/posts/cyber-security.jpg" alt="cyber security" />
 
 The recent WannaCry ransomware attack that affected over 100, 000 computers across the world has shown just how vital an effective cyber security strategy is for any forward thinking organization. It has brought into focus key elements of cyber defense such as **Patch Management**, **Network Filtering**, **Antivirus Protection**, **Backups**, **Staff Security Awareness Training** and a comprehensive **Incident Response Plan**.
 
@@ -35,4 +35,4 @@ It is essential for organizations to have a well thought out, comprehensive inci
 
 Overall, we recommend that your organization not only focuses on today’s threats but to remain vigilant and forward thinking in order to anticipate potential threats.
 
-Call Computech today on +257 730 141 000 for a comprehensive, detailed cyber security audit and further guidance on protecting your valuable systems and data.]]
+> Call Computech today on +257 730 141 000 for a comprehensive, detailed cyber security audit and further guidance on protecting your valuable systems and data.

@@ -36,4 +36,4 @@ Traditional firewalls cannot handle modern threats because most of these threats
 
 With a new generation of devices seeking to connect to your network with each passing day, planning for a next-generation firewall is now a necessity. Computech Limited provides the world's best next-generation cyber security solutions and has a pool of talented and certified security engineers to safeguard your business technologies against cyber threats.
 
-To be safe from all sorts of threats with our next-generation firewall solutions, call Computech Kenya now on 0730141000 or email security@computechlimited.com if you are in Tanzania, Uganda, Rwanda or Zambia
+> To be safe from all sorts of threats with our next-generation firewall solutions, call Computech Kenya now on 0730141000 or email [security@computechlimited.com](mailto:security@computechlimited.com) if you are in Tanzania, Uganda, Rwanda or Zambia

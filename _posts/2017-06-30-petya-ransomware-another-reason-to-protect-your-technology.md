@@ -5,9 +5,9 @@ tags:
   - cyber security
   - ransomware
 ---
-<img class="aligncenter size-full" src="/assets/posts/ransomware-feature.jpg" alt="499979-ransomware-feature"/>
+![ransomware-feature](/assets/posts/ransomware-feature.jpg)
 
-**[As the world is coming to terms with the damage caused by WannaCry, the ransomware that crippled many businesses across the globe, another major cyber security attack has hit the headlines, with over 64 countries affected so far!](http://www.bbc.com/news/technology-40416611)**
+As the world is coming to terms with the damage caused by WannaCry, the ransomware that crippled many businesses across the globe, [another major cyber security attack](http://www.bbc.com/news/technology-40416611) has hit the headlines, with over 64 countries affected so far!
 
 Petya, as the new ransomware has been nicknamed, has continued to disrupt businesses and bring organisations to a standstill. The malware is reported to exploit the same vulnerability in computers running on the unpatched version of the Windows Operating System just like its predecessor WannaCry. Unlike WannaCry whose spread was quickly halted after a researcher discovered a flaw in its code, Petya has been reported to spread more quickly and is feared to be infecting more systems across the world.
 
@@ -26,6 +26,6 @@ Due to the unprecedented and sometimes unpredictable nature of cyber-attacks, in
 ### C. Operation Disruption
 Depending on the level of preparation, and the degree of attack, a business may take longer to fully recover and thus the prolonged delay in production. This adds onto the production costs
 
-[Can you account for all access to your system?](http://www.computechlimited.com/AccessControl.html) If you were attacked today, how long would it take you to fully recover? Do you have full visibility over your network environment? Computech Limited is here to help you find answers to these and more questions. 
+[Can you account for all access to your system?](/products-services/cyber-security/access-control/) If you were attacked today, how long would it take you to fully recover? Do you have full visibility over your network environment? Computech Limited is here to help you find answers to these and more questions. 
 
 > **Call us now on +254 730 141 000 or send us an email through security@computechlimited.com and we shall help you assess your cyber security situation and offer you effective solutions to protect, detect and prevent damages caused by cyber attacks**

@@ -1,6 +1,6 @@
-<form class = 'ma card-shadow shake {% unless page.permalink == '/contact-us/'%} mt-4 {% endunless %}'>
+<form class = 'ma card shake {% unless page.permalink == '/contact-us/'%} mt-4 {% endunless %}'>
   {%- assign title = page.title | downcase -%}
-  <h4 class = 'center'><strong>{% if title != 'contact us' %}Contact us for more details on {{ page.title }} {% else %} Please contact us using the form below {% endif %}</strong></h4>
+  <h3 class = 'underline mb-2'><span></span>{% if title != 'contact us' %}Contact us for more details on {{ page.title }} {% else %} Please contact us using the form below {% endif %}</h3>
   <fieldset class = 'form-group'>
     <label for = 'name'>Full Name</label>
     <input type = 'text' class = 'col-sm-3 form-control'  id = 'name' name = 'Name' value = '' placeholder = 'Name' required>
@@ -23,7 +23,7 @@
   
   <div class = 'g-recaptcha' data-callback = 'recaptchaCallback' data-sitekey = '6LdOxwoUAAAAACdtGAhPXI4eUVqkJyAyydr7tq2H' data-them = 'dark' required></div>
   <div>
-    <button  class = 'btn btn-success snip' type = 'submit' id = 'submit'> SUBMIT</button>
+    <button  class = 'snip' type = 'submit' id = 'submit'> SUBMIT</button>
   </div>
 </form>
 <script>
