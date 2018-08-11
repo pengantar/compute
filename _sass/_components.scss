@@ -87,35 +87,12 @@
   }
 }
 
-.box-round1{
-  padding: 10px;
-  margin-bottom: 30px;
-  border: 1px solid #f8f8f8;
-}
-.card-img-top{
-  height: 228px;
-  width: 100%;
-}
 .read-more{
   float: right;
   color: $dark;
 }
 .read-more:hover{
   text-decoration: none;
-}
-.effect1{
-  box-shadow: 0 10px 6px -6px #777;
-}
-
-.card-cust{
-  padding: 20px;
-  background: linear-gradient(rgba($dark, 0.6), rgba($dark, 0.6));
-}
-
-//  CSS used here will be applied after bootstrap.css  
-
-.text-colour{  
-  color: $dark;
 }
 
 
@@ -241,15 +218,6 @@ a:visited{
   }
 }
 
-.rights{
-  width: 100%;
-  background-color: #263238;
-  margin: 0;
-  padding: 0;
-}
-.titl{
-  color: $orange; 
-}
 .center{
   text-align: center;
 }
@@ -259,45 +227,6 @@ a:visited{
 .off:hover{
   color: $light;
   transition:  2s;
-}
-
-// service section styling
-
-.module {
-  padding: 140px 0;
-}
-
-.module-title {
-  font-size: 20px;
-  text-align: center; 
-}
-
-.font-alt { 
-  text-align: center;
-  text-transform: uppercase;
-}
-
-.font-inc {
-  text-transform: uppercase;
-  text-align: center;
-}
-
-.content-box {
-  margin: 25px auto;
-}
-
-.content-box-icon {
-  font-size: 4rem;
-  text-align: left;
-}
-
-.content-box-title {
-  font-size: 1.5rem;
-  color: $dark;
-}
-
-.content-box-text {
-  color: #777;
 }
 
 // ....button styling........ 
@@ -312,22 +241,6 @@ a:visited{
 
 .black{
   color: $dark;
-}
-
-.quote {
-  background: $light;
-  padding: 5px;
-  border-radius: 5px;
-  margin-bottom: 30px;
-}
-.quote:after {
-  content: '';
-  width: 0px;
-  height: auto;
-  border-style: solid;
-  border-color: $light transparent transparent transparent;
-  position: relative;  
-  left: 20px;
 }
 
 .left{
@@ -359,115 +272,8 @@ a:visited{
   text-align: center;
 }
 
-// Styling solutions  
-#solutions{
-  width: 100%;
-  height: 100vh;
-  margin-top: 50px;
-  background-color: $light;
-}
-#solutions ul li a:link{
-  color:$orange; 
-}
 .center{
   text-align: center;
-}
-.pad-sol{
-  padding-top: 40px;
-}
-.border-right{
-  height: auto;
-  border-right: 1px solid $orange;
-  
-}
-
-.loyalty{
-  padding-top: 50px;
-}
-.bond{
-  font-weight: 500;
-}
-.quote{
-  padding-top: 100px;
-}
-#MiPricing-modal{
-  overflow-x: hidden;
-}
-
-.soft-left{
-  border-right: 3px solid $light;  
-}
-
-// For the new software page 
-.micro-left{
-  border-right: 3px solid $light;
-}
-.micro-up{
-  margin-top: -30px;
-  padding-left: 70px;
-}
-
-img.map, map area{
-  outline: none;
-}
-
-// Software page 
-
-.split_title{
-  font-weight:900;
-  border-bottom: 2px solid $light;    
-}
-.left{
-  height: auto;
-  border-right: 6px solid $light;
-}
-.right{
-  height: auto;
-}
-.item-left p{
-  color: $light;
-  font-size: 25px;
-}
-
-.item-left a{
-  color:$orange; 
-}
-.item-right p{
-  color: $light;
-  font-size: 25px;
-}
-.item-right a{
-  color:$orange; 
-}
-
-// Infra page 
-.down-space{
-  margin-top: 20px;
-}
-
-// For the Services page 
-.active-1{
-  color: $orange;
-}
-
-.storage-list{
-  margin-top: 65px;  
-}
-
-//  End of storage page 
-//  Start of security  
-
-.center-contents img{
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-.center-contents h4{
-  text-align: center;
-  color: $dark;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 // For the team page  
@@ -612,39 +418,11 @@ img.map, map area{
     padding: 15px 0;
   }
 }
-.item-point{
-  background-color: $dark;
-  margin: 20px;
-  text-align: center;
-  padding: 15px;
-  color: $light;
-}
-.img-team{
-  object-fit: cover;
-}
-.img-teamh{
-  height: 200px;
-}
-.img-size{
-  text-align: center;
-  height: 200px;
-}
-.img-item{
-  height: 120px;
-  width: 120px;
-}
-// End of End point 
 
+// End of End point 
 
 .region-title{
   text-decoration: underline;
-}
-
-.float-left{
-  float: left;
-}
-.float-right{
-  float: right;
 }
 
 // End of client section 
@@ -671,18 +449,6 @@ img.map, map area{
   color: $light;
 }
 
-[id*=new-service-] {
-  height: auto;
-  width: 100%;
-  background-color: $light;      
-  padding-top: 90px;
-  padding-bottom: 30px;
-}
-
-.contact-img{
-  text-align: center;
-  align-content: center;
-}
 
 // pdf buttons 
 .snip {
@@ -716,12 +482,6 @@ img.map, map area{
   min-height: 360px;
 }
 @media (max-width: 575px) { 
-  .img-brand{
-    display: block;
-  }
-}
-
-@media (max-width: 767px) { 
   .img-brand{
     display: block;
   }
