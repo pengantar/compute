@@ -159,13 +159,6 @@ h1 {
   background: linear-gradient(rgba($dark, 0.6), rgba($dark, 0.6));
 }
 
-.cafe{
-  color: #F68E35;
-  padding-left: 15px;
-  padding-right: 15px;
-  box-shadow: 0 0 50px rgba(0,0,0,0.17);
-}
-
 //  CSS used here will be applied after bootstrap.css  
 
 #myarea{
@@ -360,7 +353,9 @@ a:visited{
 }
 .card{   
   background-color: $light;
-  border-radius: 4px;
+  border-radius: 6px;
+  padding-top: 10px;  
+  opacity: 0.9;  
   a{
     &,
     &:hover,
@@ -368,15 +363,9 @@ a:visited{
       text-decoration: none;
     }
   }
-  &-custom{
-    background-color: $light;
-    padding-top: 10px;  
-    opacity: 0.9;
-    li{
-      list-style:square;  
-      font-size: 14.6px;
-      line-height: 26px;    
-    }   
+  li{
+    list-style:square;
+    line-height: 26px;    
   } 
   &-shadow{
     display: block;

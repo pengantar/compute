@@ -42,7 +42,7 @@
     background: #f8f8f8;
     cursor: pointer;
     justify-content: space-between;
-    padding: 0 3px 8px;
+    padding: 0 3px;
     position: relative;
     box-shadow: 0 12px 25px -5px rgba(158,174,221,0.15);
   }
@@ -69,12 +69,13 @@
       &:after {
         content: '';
         position: absolute;
-        height: 1px;
+        top: 0;
         bottom: 0;
         left: 3px;
-        right: 3px;
+        width: 5px;
         border-radius: 1px;
         background: $orange;
+        color: $orange;
         z-index: 2;
       }
     }

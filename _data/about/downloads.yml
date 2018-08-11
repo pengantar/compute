@@ -1,17 +1,14 @@
-- nav: About Us
+- nav: About Computech
   downloads:
-    - name: Microsoft Licensing
-      icon: workspace.png
-      file: enterprise-agreement-program-guide.pdf
-    - name: Microsoft Services
-      icon: laptop-1.png
-      file: 20170818-computech-microsoft-services.pdf
+    - name: Computech Company Profile
+      icon: teamwork.png
+      file: 2018-computech-limited-profile.pdf
 
 - nav: Custom Software
   downloads:
     - name: iLoyalty
       icon: layers.png
-      file: miLoyalty-1.pdf
+      file: miLoyalty.pdf
     - name: iPricing
       icon: money-bag.png
       file: miPricing.pdf 
@@ -23,13 +20,16 @@
   downloads:
     - name: Cyber Security
       icon: security.png
-      file: 20170821-computech_security-portfolio.pptx
+      file: 20170821-computech-security-portfolio.pptx
     - name: Cyber Security Flyer
       icon: flyer.png
       file: computech-security-flyer.pdf
 
 - nav: Microsoft Portfolio
   downloads:
-  - name: Computech Company Profile
-    icon: teamwork.png
-    file: 2018-computech-limited-profile.pdf
+    - name: Microsoft Licensing
+      icon: workspace.png
+      file: enterprise-agreement-program-guide.pdf
+    - name: Microsoft Services
+      icon: laptop-1.png
+      file: 20170818-computech-microsoft-services.pdf

@@ -18,16 +18,14 @@ items:
 ---
 <div class = 'animated zoomIn'>
   <div class = 'wrap'>
-    <div class = 'card card-block card-custom'> 
-      <h4 class = 'center'><strong>Computech offers multi-vendor options based <br> on your custom requirements for anti-virus <br> and internet security software.</strong></h4>    
-      <div class = 'grid-2 mt-4'> 
+    <h4 class = 'center'><strong>Computech offers multi-vendor options based <br> on your custom requirements for anti-virus <br> and internet security software.</strong></h4>    
+    <div class = 'grid-2 mt-4'> 
       {%- for item in page.items -%}
-        <a class = 'partner' href = '{{ item.url }}' target = '_blank'>
-          <img src = '/assets/partners/{{ item.image }}' alt = 'partner'/>
-        </a>
+      <a class = 'partner' href = '{{ item.url }}' target = '_blank'>
+        <img src = '/assets/partners/{{ item.image }}' alt = 'partner'/>
+      </a>
       {%- endfor -%}
-      </div>
-      {% include form.html %} 
-    </div>                  
-  </div>
+    </div>
+    {% include form.html %} 
+  </div>                  
 </div>
