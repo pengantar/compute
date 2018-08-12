@@ -467,11 +467,13 @@ a:visited{
 }
 
 .flex {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
   min-height: 360px;
+  flex-direction: column;
+  &,&_row{
+    display: flex;
+    align-items: center;
+  }
   &_row{
     flex-flow: row wrap;
     justify-content: space-between;
