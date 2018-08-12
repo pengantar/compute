@@ -2,7 +2,7 @@ const gulp = require('gulp');
 const image = require('gulp-image');
  
 gulp.task('image', function () {
-  gulp.src('./team/*')
+  gulp.src('./devices/**/**/*')
     .pipe(image({
       pngquant: true,
       optipng: false,
