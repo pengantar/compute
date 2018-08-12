@@ -541,12 +541,9 @@ label {
 
 .navbar-toggle {
   font-size: 1.75rem;
-  margin-right: 15px;
-  margin-bottom: 8px;
   background-color: transparent;
   background-image: none;
   border: 1px solid transparent;
-  border-radius: 4px
 }
 
 .navbar-toggle:focus {
@@ -1054,11 +1051,6 @@ button.close {
   padding-left: 55px;
 }
 
-.navbar-nav.sm-collapsible ul ul ul ul .dropdown-menu > li > a,
-.navbar-nav.sm-collapsible ul ul ul ul .dropdown-menu .dropdown-header {
-  padding-left: 65px;
-}
-
 .navbar-nav .dropdown-menu > li > a {
   white-space: normal;
 }
@@ -1076,44 +1068,6 @@ button.close {
   right: auto;
 }
 
-.dropdown-menu.pull-right {
-  right: 0;
-  left: auto;
-}
-
-.dropdown-menu.pull-top {
-  bottom: 100%;
-  top: auto;
-  margin: 0 0 2px;
-  box-shadow: 0 -6px 12px rgba(0, 0, 0, 0.175);
-}
-
-.dropdown-menu.pull-center {
-  right: 50%;
-  left: auto;
-}
-
-.dropdown-menu.pull-middle {
-  right: 100%;
-  margin: 0 2px 0 0;
-  box-shadow: -5px 0 10px rgba(0, 0, 0, 0.2);
-  left: auto;
-}
-
-.dropdown-menu.pull-middle.pull-right {
-  right: auto;
-  left: 100%;
-  margin: 0 0 0 2px;
-  box-shadow: 5px 0 10px rgba(0, 0, 0, 0.2);
-}
-
-.dropdown-menu.pull-middle.pull-center {
-  right: 50%;
-  margin: 0;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-}
-
-
 .dropdown-submenu {
   position: relative;
 }
@@ -1123,22 +1077,6 @@ button.close {
   left: 100%;
   margin-top: -6px;
   margin-left: -1px;
-  border-top-left-radius: 0;
-}
-
-.dropdown-submenu > a:before {
-  display: block;
-  float: right;
-  width: 0;
-  height: 0;
-  content: "";
-  margin-top: 6px;
-  margin-right: -8px;
-  border-width: 4px 0 4px 4px;
-  border-style: solid;
-  border-left-style: dashed;
-  border-top-color: transparent;
-  border-bottom-color: transparent;
 }
 
 @media (max-width: 767px) {
@@ -1146,9 +1084,6 @@ button.close {
     margin-top: 8px;
     border-color: inherit;
     border-style: solid;
-    border-width: 4px 4px 0;
-    border-left-color: transparent;
-    border-right-color: transparent;
   }
   .navbar-nav .dropdown-submenu > a {
     padding-left: 40px;
@@ -1168,4 +1103,80 @@ button.close {
   .navbar-nav > .open > .dropdown-menu > .dropdown-submenu > .dropdown-menu > li > .dropdown-menu > li > .dropdown-menu > li > .dropdown-menu > li > .dropdown-menu > li > a {
     padding-left: 75px;
   }
+}
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus{
+  background-color: transparent;
+}
+.navbar-default .navbar-nav > .dropdown > a .caret {
+  background-color: transparent;
+}
+.navbar-default{
+  background-color: $light;
+  box-shadow: 0 0 50px rgba(0,0,0,0.17);
+  border-color: transparent;
+  ul {
+    margin-top: 7.5px;  
+  }
+  img{
+    width: 250px;
+    padding: 17.5px 0;
+  }
+}
+.men-link:hover,
+.men-link:focus,
+.men-link:active {
+  background-color: $dark !important;
+}
+.navbar-default ul li a{
+  font-family: $heading-font;
+  font-weight: 500;
+  border: 2px solid transparent;
+  text-transform: uppercase;
+  font-size: 15.4px;
+  &.nav_link{
+    color: $dark;
+    &-active{
+      color:  $orange;
+    }
+  }
+}
+.navbar-default ul li a:hover{
+  color: $orange;
+  text-decoration: none;
+}
+.dropdown-menu{
+  background-color: $dark;
+}
+.dropdown-menu li a{
+  color: white;
+}
+.navbar-default .navbar-nav > .active{
+  color: $dark;
+  background: $orange;
+}
+// Cleanup the grey effect
+
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+  background-color: transparent;
+  color:  $orange;
+  border: 2px solid  $orange !important;
+}
+.navbar-default .navbar-nav > li > a:active ,
+.navbar-default .navbar-nav > li > a:focus{
+  color: $orange;
+}
+.dropdown-menu.animated {
+  animation-duration: 0.55s;
+  animation-timing-function: ease;
+}
+
+.dropdown-menu li{
+  border-bottom: 1px solid $light;
+}
+.dropdown-menu li a{   
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+.dropdown-menu li:last-child{
+  border-bottom: none;
 }
