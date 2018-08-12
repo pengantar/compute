@@ -277,3 +277,21 @@ $(function(){
   let tabz = elem('#tabz');
   tabz ? tabs() : false;
 })();
+
+(function fancyInput(input, btn) {
+  input = elem('.chimp_input');
+  btn = elem('.chimp_submit');
+  if(input && btn) {
+    let btn_class = btn.classList;
+    let hide = 'chimp_hide';
+    let show = 'chimp_show';
+    // input.addEventListener('keydown', function(event) {
+    //   btn_class.contains(hide) ? btn_class.remove(show) : btn_class.add(hide);
+    // });
+    // input.addEventListener('keyup', function(event) {
+    //   setTimeout(() => {
+    //     btn_class.contains(hide) ? btn_class.remove(hide) : btn_class.add(show);
+    //   }, 5000);
+    // });
+  }
+})();

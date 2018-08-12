@@ -1,7 +1,6 @@
 title: Computech Limited
 email: info@computechlimted.com
 description: "East & Central Africa's Leading Technology System Provider"
-url: '/'
 markdown: kramdown
 plugins:
   - jekyll-feed
@@ -36,6 +35,14 @@ autopages:
       - "tags.html"
     title: ":tag" # :tag is replaced by the tag name
     permalink: "/tag/:tag"
+url: 'https://computechlimited.com'
+github: onweru
+repo: compute
+branch: master
+mailchimp:
+  url: ''
+  hidden: ''
+  validate: '' 
 exclude:
   - Gemfile
   - Rakefile
