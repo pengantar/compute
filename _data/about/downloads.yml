@@ -12,7 +12,7 @@
     - name: iPricing
       icon: money-bag.png
       file: miPricing.pdf 
-    - name: roof of delivery
+    - name: proof of delivery
       icon: analytics-1.png
       file: aria-enterprise.pdf
 

@@ -54,13 +54,11 @@
   &:hover {
     a, p {
       opacity: 1;
-      filter: alpha(opacity=100);
       transform: translate3d(0,0,0);
     }
     img {
       opacity: 0.6;
       transform: scale(1.2);
-      filter: alpha(opacity=60);
     }
   }
   .overlay {
