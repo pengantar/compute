@@ -1,6 +1,6 @@
 ---
 layout: page
-permalink: '/products-services/healthcare/diagnostc-imaging/'
+permalink: '/products-services/healthcare/diagnostic-imaging/'
 title: Diagnostic Imaging
 ---   
 <div class = 'animated zoomIn'>
@@ -8,16 +8,16 @@ title: Diagnostic Imaging
     <div class = 'definition shade'>
       <h3 class = 'definition_title text_center'>DGS</h3> 
       <div class = 'definition_desc hide'>
-        <div class = 'custom_tabs'>
+        <div class = 'tabs'>
         {%- assign dgs = site.data.diagnostics -%}
-          <div class = 'grid-tab grid-4'>
+          <div class = 'tab_switch grid-tab grid-4'>
           {% for d in dgs %}
-            <div id = '{{ d.term | downcase }}' class = 'tile text_center {% if forloop.first %} active {% endif %}'>{{ d.term }}</div>
+            <div class = 'tab{% if forloop.first %} tab_active {% endif %} contain pt-1'>{{ d.term }}</div>
           {% endfor %}
           </div>
-          <div>
+          <div div class = 'tab_content'>
           {% for s in dgs %}
-            <div class = '{{ s.term | downcase }} tab-content {% unless forloop.first %}hide{% endunless %}'>
+            <div class = 'tab_item {% if forloop.first %}tab_item_active{% endif %}'>
               {{ s.description | markdownify }}
             </div>
           {% endfor %}            

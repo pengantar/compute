@@ -28,7 +28,7 @@
 
     - sublink: healthcare
       children:
-        - diagnostc imaging
+        - diagnostic imaging
         - ultrasound  
 
     - sublink: infrastructure 

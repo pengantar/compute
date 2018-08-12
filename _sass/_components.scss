@@ -157,33 +157,6 @@ a:visited{
 .address p{
   padding: 3px 0;
 }
-.card{  
-  display: block; 
-  background-color: $light;
-  box-shadow: 0 15px 60px 0 rgba(158, 174, 221, 0.3);
-  border-radius: 10px;
-  a{
-    &,
-    &:hover,
-    &:active{
-      text-decoration: none;
-    }
-  }
-  li{
-    list-style:square;
-    line-height: 26px;    
-  } 
-  &-title{
-    color: $dark;
-  }
-  &s{
-    img{
-      max-width: 64px;
-      margin: 0 auto 15px;
-    }
-  }
-}
-
 // Footer section 
 .footer{
   padding: 20px 0;   
