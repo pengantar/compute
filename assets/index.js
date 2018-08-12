@@ -262,25 +262,6 @@ $(function(){
   }
 })();
 
-(function dgs(){
-  let dfns = elem('.definition');
-  if (dfns) {
-    let tiles = elems('.tile');
-    let hide = 'hide';
-    Array.from(tiles).map(function(tile) {
-      tile.addEventListener('click', function(event) {
-        let t_id = tile.id;
-        let tab = `.${t_id}`;
-        console.log(tab);
-        let tab_el = elem(tab);
-        console.log(tab_el);
-        let tab_class = tab_el.classList;
-        tab_class.contains(hide) ? tab_class.remove(hide) : false;
-      });
-    });
-  }
-})();
-
 (function tabz(){
   function tabs() {
     $('.tab-content').not('.active').hide();
