@@ -26,10 +26,10 @@
   animation-delay: 3s;
 }
 
-.section {
-  clear: both;
-  padding: 0;
-  margin: 0;
+.download{
+  img {
+    width: 50px !important;
+  }
 }
 
 .grey{
@@ -50,17 +50,6 @@
   right: 0;
 }
 
-// For justifying the text 
-.text-justify{
-  text-align: justify;
-  color:#333;
-}
-
-.right-side{
-  float: right;
-  clear: both;
-}
-
 .award{
   &s{
     margin: 60px 0;
@@ -70,6 +59,7 @@
     text-transform: uppercase;
   }
 }
+
 .partner{
   padding: 30px 15px;
   display: flex;
@@ -90,22 +80,10 @@
 .read-more{
   float: right;
   color: $dark;
+  &:hover{
+    text-decoration: none;
+  }
 }
-.read-more:hover{
-  text-decoration: none;
-}
-
-
-.virus img{
-  display: block;
-  margin-right: auto;
-  margin-left: auto;
-  line-height: 100px;
-  height: 100px;
-  padding: 20px;
-}
-
-// End of physical sec 
 
 .country-links{
   margin: 0;
@@ -143,15 +121,6 @@
 }
 a:visited{
   text-decoration: none;
-}
-
-.b-active{
-  color: $light;
-  background-color: $orange;
-}
-.b-active:hover{
-  color: $light;
-  background-color: $orange;
 }
 
 .address p{
