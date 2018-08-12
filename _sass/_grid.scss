@@ -10,7 +10,9 @@
 }
 .grid-1{
   @extend %grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  @media screen  and (min-width: 769px){
+    grid-template-columns: 1fr 1fr;
+  }
 }
 .grid-2{
   @extend %grid;

@@ -14,7 +14,7 @@ items:
   <div class = 'grid-2'>
     {% for item in page.items %}
     <div class = 'aniview slow' data-av-animation = 'fadeIn'>
-      <a href = '/products-services/endpoint-devices/{{ item | downcase | slugify }}/'class = 'hovereffect card-shadow'>
+      <a href = '/products-services/endpoint-devices/{{ item | downcase | slugify }}/'class = 'hovereffect card'>
         <img src = '/assets/images/{{ item | downcase | slugify }}.jpg' alt = '{{ item }}'>
         <span class = 'overlay shadow contain'>                           
           {{ item }}   
