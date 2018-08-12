@@ -8,6 +8,8 @@ gem "rake", "~> 12"
 #avoid polling for changes
 gem 'wdm', '>= 0.1.0'
 
+gem 'html-proofer'
+
 # Add your them here!
 group :jekyll_plugins do
   gem "jekyll-feed", "~> 0.6"
