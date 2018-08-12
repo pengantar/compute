@@ -122,7 +122,8 @@ a:visited{
 }
 
 .address p{
-  padding: 3px 0;
+  padding: 5px 0;
+  margin: 0;
 }
 // Footer section 
 .footer{
@@ -330,6 +331,12 @@ a:visited{
   &:hover{
     opacity: 0.9
   }
+  &.def{
+    background: transparent;
+    span{
+      color: $orange;
+    }
+  }
   h3{
     color: $light;
     line-height: 40px;
@@ -473,4 +480,8 @@ a:visited{
       width: 100%;
     }
   }
+}
+.popup {
+  max-width:700px;
+  width:90%;
 }

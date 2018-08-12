@@ -5,8 +5,8 @@
         - "P.O.Box 59789-00200, Nairobi, Kenya"
         - "Email: [sales@computechlimited.com](mailto:sales@computechlimited.com)"
         - "Tel: [+254 730 141 000](tel:+254 730 141000)"
-      directions: "<a data-popup-open = 'popup-1' href = '#'>View Map</a>"
-      name: "Computech Limited – Nairobi"
+      directions: "<iframe src = 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.8511981119777!2d36.79291251475377!3d-1.261567599079834!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f17693fefd66f%3A0x9de7207203bcfd82!2sComputech+Limited!5e0!3m2!1sen!2ske!4v1482128087001' width = '600' height = '300' frameborder = '0' style = 'border:0' allowfullscreen></iframe>"
+      name: "Computech Limited – Nairob"
     - details: 
         - "Nyali Road Opp. Kongowea Main Entrance, Mombasa, Kenya"
       name: "Computech Limited – Mombasa"
@@ -27,7 +27,7 @@
         - "Email: [info.uganda@computechlimited.com](mailto: info.uganda@computechlimited.com)"
         - "Tel: [+256 414 342 910](tel:+256 414 342 910)"
         - "Mobile: [+256 414 346 547](tel: +256 414 346 547)"
-      directions: "<a data-popup-open = 'popup-2' href = '#'>View Map</a>"
+      directions: "<iframe src = 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.7583969920165!2d32.61375924993323!3d0.3140216997697697!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x177dbb75f56863a7%3A0xd76295d6eb97b948!2sComputech+(Uganda)+Limited!5e0!3m2!1sen!2ske!4v1482129597296' width = '600' height = '300' frameborder = '0' style = 'border:0' allowfullscreen></iframe>"
       name: "Computech Limited - Uganda"
 - country: Rwanda
   regions: 

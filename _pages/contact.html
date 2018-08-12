@@ -1,9 +1,6 @@
 ---
 layout: page
 permalink: '/contact-us/'
-dependencies:
-  scripts:
-    - map-modal
 title: Contact Us
 --- 
 <div class = 'wrap grid-1'>  
@@ -28,7 +25,10 @@ title: Contact Us
               {{ detail | markdownify }}
             {% endfor %}
             {% if region.directions %}
-                {{ region.directions }}
+            <div class = 'definition def'>
+              <span class = 'definition_title'></span><span>View Map</span>
+              <span class = 'hide definition_desc'>{{ region.directions }}</span>
+            </div>
             {% endif %}
           {% endfor %}
         </div>
@@ -40,4 +40,10 @@ title: Contact Us
     {% include form.html %} 
   </div>
 </div>    
-{% include directions.html %}
+<div class = 'overlay modal_overlay contain hide'>
+  <div class = 'definition_modal pt-4 popup'>
+    <div class = 'definition_body'></div> 
+    <span class = 'definition_term'></span>
+    <div class = 'modal_close contain'>&times;</div>
+  </div>
+</div>

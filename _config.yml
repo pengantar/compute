@@ -8,9 +8,6 @@ plugins:
   - jekyll-sitemap
   - jekyll-paginate-v2
   - jekyll-redirect-from
-  - jekyll-minifier
-jekyll-minifier:
-  exclude: ['*.js','*.css','*.xml']
 sass:
   style: compressed
 
