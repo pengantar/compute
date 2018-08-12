@@ -2,56 +2,27 @@
 layout: page
 permalink: '/products-services/infrastructure/'
 title: Infrastructure
+items:
+  - name: Backup & Replication
+    image: servers
+  - name: Compute
+    image: processor
+  - name: Data Centres
+    image: data-centre
+  - name: Physical Security Solutions
+    image: access-control
+  - name: Storage
+    image: storage
 --- 
 <div class = 'mb-2'>
-  <div class = 'wrap grid-4'>                 
-    <div class = 'aniview slow' data-av-animation = 'fadeIn'>
-      <div class = 'card'>
-        <img class = 'img-responsive' src = '/assets/images/servers.jpg' alt = ''>
-        <div class = 'overlay linear'>                           
-          <a href = '/products-services/infrastructure/backup-replication/'>Backup <br> AND <br> Replication</a>        
-        </div>
+  <div class = 'wrap grid-3'>   
+    {%- for item in page.items -%}                            
+    <div class = 'card aniview slow' data-av-animation = 'fadeIn'>
+      <img src = '/assets/images/{{ item.image }}.jpg' alt = ''>
+      <div class = 'overlay linear'>                           
+        <a href = '/products-services/infrastructure/{{ item.name | downcase | slugify }}/'>{{ item.name | upcase }}</a>        
       </div>
-    </div>
-    <div class = 'aniview slow' data-av-animation = 'fadeIn'>
-      <div class = 'card'>
-        <img class = 'img-responsive' src = '/assets/images/processor.jpg' alt = ''>
-        <div class = 'overlay linear'>                           
-          <a href = '/products-services/infrastructure/compute/'>Compute</a>        
-        </div>
-      </div>
-    </div>
-    <div class = 'aniview slow' data-av-animation = 'fadeIn'>
-      <div class = 'card'>
-        <img class = 'img-responsive' src = '/assets/images/data-centre.jpg' alt = ''>
-        <div class = 'overlay linear'>                           
-          <a href = '/products-services/infrastructure/data-centres/'>Data centres</a>        
-        </div>
-      </div>
-    </div>               
-    <div class = 'aniview slow' data-av-animation = 'fadeIn'>
-      <div class = 'card'>
-        <img class = 'img-responsive' src = '/assets/images/lan.jpg' alt = ''>
-        <div class = 'overlay linear'>                           
-          <a href = '/products-services/infrastructure/networks/'>Networks</a>           
-        </div>
-      </div>
-    </div>
-    <div class = 'aniview slow' data-av-animation = 'fadeIn'>
-      <div class = 'card'>
-        <img class = 'img-responsive' src = '/assets/images/access-control.jpg' alt = ''>
-        <div class = 'overlay linear'>                           
-          <a href = '/products-services/infrastructure/physical-security/'>PHYSICAL SECURITY SOLUTIONS</a>        
-        </div>
-      </div>
-    </div>
-    <div class = 'aniview slow' data-av-animation = 'fadeIn'>
-      <div class = 'card'>
-        <img class = 'img-responsive' src = '/assets/images/board.jpg' alt = ''>
-        <div class = 'overlay linear'>                           
-          <a  href = '/products-services/infrastructure/storage/'>Storage</a>        
-        </div>
-      </div>
-    </div>         
+    </div>   
+    {%- endfor -%}    
   </div>
 </div>
