@@ -18,7 +18,7 @@ title: Contact Us
       <div class = 'tab_content profile-text'>
         {% for contact in contacts %}
         <div class = 'tab_item {% if forloop.first %}tab_item_active{% endif %}'>
-          <h3 class = 'country-title text_left'>{{ contact.country | capitalize }}</h3>
+          <h3 class = 'slim'>{{ contact.country | capitalize }}</h3>
           {% for region in contact.regions %}
             <p><span class = 'region-title'>{{ region.name }}</span></p>
             {% for detail in region.details %}
