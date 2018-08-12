@@ -52,12 +52,11 @@ img{
 //   margin: 1em 40px
 // }
 form{
-  max-width: 540px;
+  max-width: 480px;
   padding: 30px 15px;
+  cursor: default !important;
 }
-textarea.form-control {
-  height: 100%;
-}
+
 input{
   padding: 15px;
   font-size: 1.25rem;
@@ -65,13 +64,7 @@ input{
 textarea{
   resize: none;
 }
-input[type="text"][disabled], textarea[disabled] {
-  background:#fff
-}
-input[type="text"].error, textarea.error {
-  background:#e6e6e6;
-  border-color:#c0392b
-}
+
 fieldset {
   border:0px;
   margin:0;

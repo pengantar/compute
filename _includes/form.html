@@ -1,6 +1,6 @@
-<form class = 'text_left ma card shake {% unless page.permalink == '/contact-us/'%} mt-4 {% endunless %}' action = 'https://formcarry.com/s/{{ site.formcarry }}' method = 'POST' accept-charset = 'UTF-8'>
+<form class = 'text_left ma card {% unless page.permalink == '/contact-us/'%} mt-4 {% endunless %}' action = 'https://formcarry.com/s/{{ site.formcarry }}' method = 'POST' accept-charset = 'UTF-8'>
   {%- assign title = page.title | downcase -%}
-  <h3 class = 'underline mb-2'><span></span>{% if title != 'contact us' %}Contact us for more details on {{ page.title }} {% else %} Please contact us using the form below {% endif %}</h3>
+  <h3 class = 'underline mb-2 slim'><span></span>{% if title != 'contact us' %}Contact us for more details on {{ page.title }} {% else %} Please contact us using the form below {% endif %}</h3>
   <label for = 'name'>Full Name</label>
   <input type = 'text' class = 'col-sm-3 mb-1 form-control'  id = 'name' name = 'Name' value = '' placeholder = 'Name' required>
   <label for = 'email'>Email</label>

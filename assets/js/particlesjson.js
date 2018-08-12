@@ -2,7 +2,7 @@ if (document.querySelector('#particles-js')) {
   particlesJS("particles-js", {
     "particles": {
       "number": {
-        "value": 50,
+        "value": 60,
         "density": {
           "enable": true,
           "value_area": 750
@@ -33,7 +33,7 @@ if (document.querySelector('#particles-js')) {
         "speed": 5            
       },
       "size": {
-        "value": 3,
+        "value": 2,
         "random": true,
         "anim": {
           "enable": true,
@@ -44,9 +44,9 @@ if (document.querySelector('#particles-js')) {
       },
       "line_linked": {
         "enable": true,
-        "distance": 100,
+        "distance": 80,
         "color": "#ffffff",
-        "opacity": 0.03,
+        "opacity": 0.2,
         "width": 0.5
       },
     },
