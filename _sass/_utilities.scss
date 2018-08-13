@@ -57,27 +57,30 @@
   margin-right: auto;
 }
 @for $i from 1 through 4 {
-  $margin: $i * 25px * 0.5;
+  $size: $i * 25px * 0.5;
   // margin bottom
   .mb-#{$i} {
-    margin-bottom: $margin !important;
+    margin-bottom: $size !important;
   }
   // margin top
   .mt-#{$i} {
-    margin-top: $margin !important;
+    margin-top: $size !important;
   }
   // padding around
   .ma-#{$i} {
-    padding: $margin !important;
-  }
-  .pa-#{$i} {
-    padding: 0 $margin !important;
+    padding: $size !important;
   }
   .pt-#{$i} {
-    padding-top: $margin !important;
+    padding-top: $size !important;
   }
   .pb-#{$i} {
-    padding-bottom: $margin !important;
+    padding-bottom: $size !important;
+  }
+  .pl-#{$i} {
+    padding-left: $size !important;
+  }
+  .pr-#{$i} {
+    padding-right: $size !important;
   }
 }
 .shade{

@@ -9,15 +9,11 @@ title: Diagnostic Imaging
       <h3 class = 'definition_title text_center'>DGS</h3> 
       <div class = 'definition_desc hide'>
         <div class = 'tabs'>
-        {%- assign dgs = site.data.diagnostics -%}
-          <div class = 'tab_switch grid-tab grid-4'>
-          {% for d in dgs %}
-            <div class = 'tab{% if forloop.first %} tab_active {% endif %} contain pt-1'>{{ d.term }}</div>
-          {% endfor %}
-          </div>
+          {%- assign dgs = site.data.diagnostics -%}
           <div div class = 'tab_content'>
           {% for s in dgs %}
-            <div class = 'tab_item {% if forloop.first %}tab_item_active{% endif %}'>
+          <div class = 'tab tab_active pl-2 pt-1 pb-1 text_left'>{{ s.term }}</div>
+            <div class = 'mt-1 mb-1'>
               {{ s.description | markdownify }}
             </div>
           {% endfor %}            
