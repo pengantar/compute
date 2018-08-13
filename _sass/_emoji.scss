@@ -1,0 +1,37 @@
+$emojis: (
+  wave: "\1F44B",
+  warn: "\26A0",
+  gear: "\2699",
+  calendar: "\1F4C5",
+  folder: "\1F4C2",
+  mail: "\1F4E7",
+  money: "\1F480",
+  write: "\270D",
+  clap: "\1F447",
+  smile: "\1F642",
+  sad: "\1F61E"
+);
+
+
+@each $emoji, $code in $emojis {
+  .em_#{$emoji} {
+    background: transparent;
+    display: inline-grid;
+  }
+  .em_#{$emoji}:after {
+    content: $code;
+    justify-self: center;
+  }
+}
+
+[class^=em_]:after {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+@for $i from 1 through 5 {
+  $margin : $i * 25px; 
+  .em-#{$i} {
+    font-size: $margin;
+  }
+}
