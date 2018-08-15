@@ -44,6 +44,16 @@ function hideModal(shell) {
   });
 };
 
+(function simple() {
+// simple modal
+// use general modal overlay
+// be triggered by a button
+// have a simple modal body
+// modal close icon
+// modal body contents will be set to value of modal content
+// function should only be called if a modal content element exists
+})();
+
 (function definition() {
   let shell = '.definition_modal';
   let definitions = elems('.definition');
@@ -295,3 +305,4 @@ $(function(){
     // });
   }
 })();
+
