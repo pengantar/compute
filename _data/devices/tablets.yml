@@ -1,7 +1,7 @@
 - image: MP1J2BA.png
   model: MP1J2B/A
   brand: apple
-  name: iPad 5th Gneration
+  name: iPad 5th Generation
   description:
     -  SPACE GREY 
     - Apple A9 - 64-bit(Embedded m9 coprocessor)
@@ -25,7 +25,7 @@
 - image: MPG42BA.png
   model: MPG42B/A
   brand: apple
-  name: iPad 5th Gneration
+  name: iPad 5th Generation
   description:
     - GOLD 
     - Apple A9 - 64-bit(Embedded m9 coprocessor)
@@ -48,7 +48,7 @@
 - image: MP272BA.png
   model: MP272B/A 
   brand: apple
-  name: iPad 5th Gneration 
+  name: iPad 5th Generation 
   description:
     -  GOLD
     - Apple A8x - 64-bit
@@ -71,7 +71,7 @@
 - image: MPG52BA.png
   model: MPG52B/A 
   brand: apple
-  name: iPad 5th Gneration
+  name: iPad 5th Generation
   description:
     - GOLD
     - Apple A9 - 64-bit(Embedded m9 coprocessor)
@@ -94,7 +94,7 @@
 - image: MLYJ2BROSEGOLD.jpg
   model: MP262B/A
   brand: apple
-  name: iPad 5th Gneration 
+  name: iPad 5th Generation 
   description:
     - SPACE GREY 
     - Apple A9 - 64-bit(Embedded m9 coprocessor)
