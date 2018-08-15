@@ -16,16 +16,12 @@ items:
   - url: https://www.mcafee.com/us/index.html
     image: mcafee-logo.png
 ---
-<div class = 'animated zoomIn'>
-  <div class = 'wrap'>
-    <h4 class = 'center'><strong>Computech offers multi-vendor options based <br> on your custom requirements for anti-virus <br> and internet security software.</strong></h4>    
-    <div class = 'grid-2 mt-4'> 
-      {%- for item in page.items -%}
-      <a class = 'partner' href = '{{ item.url }}' target = '_blank'>
-        <img src = '/assets/partners/{{ item.image }}' alt = 'partner'/>
-      </a>
-      {%- endfor -%}
-    </div>
-    {% include form.html %} 
-  </div>                  
+<h4 class = 'center'><strong>Computech offers multi-vendor options based <br> on your custom requirements for anti-virus <br> and internet security software.</strong></h4>    
+<div class = 'grid-2 mt-4'> 
+  {%- for item in page.items -%}
+  <a class = 'partner' href = '{{ item.url }}' target = '_blank'>
+    <img src = '/assets/partners/{{ item.image }}' alt = 'partner'/>
+  </a>
+  {%- endfor -%}
 </div>
+{% include form.html %}

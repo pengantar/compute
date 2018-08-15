@@ -286,6 +286,9 @@ a:visited{
       opacity: 1;
     }
   }
+  &_content{
+    display: none;
+  }
   &_inner{
     position: relative;
     width:100%;

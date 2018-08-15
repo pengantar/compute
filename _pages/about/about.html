@@ -3,15 +3,14 @@ layout: page
 permalink: /about-us/
 title: About Us
 ---
-<div id = 'about-parts'>
-  <div class = 'wrap grid-3'>                  
-    {%- for item in site.data.about.home -%}
-    <a href = '/about-us/{{ item }}/' class = 'card'>
-      <img src = '/assets/about/{{ item }}{% if forloop.index == 3 %}.png{% else %}.jpg{% endif %}' alt = '{{item}}'>
-      <span class = 'overlay'>
-        {{ item | upcase }}
-      </span>
-    </a>
-    {%- endfor -%}
-  </div>    
-</div>  
+<div class = 'grid-3'>                  
+  {%- for item in site.data.about.home -%}
+  <a href = '/about-us/{{ item }}/' class = 'card'>
+    <img src = '/assets/about/{{ item }}{% if forloop.index == 3 %}.png{% else %}.jpg{% endif %}' alt = '{{item}}'>
+    <span class = 'overlay'>
+      {{ item | upcase }}
+    </span>
+  </a>
+  {%- endfor -%}
+</div>    
+
