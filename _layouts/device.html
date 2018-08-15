@@ -1,3 +1,8 @@
+---
+layout: page
+---
+{%- assign category = page.title | downcase | slugify -%}
+{%- assign devices = site.data.devices[category] -%}
 <div class = 'grid-2 mt-4'>
   {%- for item in devices -%}
   <div class = 'product'>
@@ -20,4 +25,3 @@
   </div>
   {%- endfor -%}       
 </div>
-  

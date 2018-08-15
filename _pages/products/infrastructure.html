@@ -2,6 +2,7 @@
 layout: page
 permalink: '/products-services/infrastructure/'
 title: Infrastructure
+full: true
 noindex: true
 items:
   - name: Backup & Replication
@@ -16,7 +17,7 @@ items:
     image: storage
 --- 
 <div class = 'mb-2'>
-  <div class = 'wrap grid-3'>   
+  <div class = 'grid-3'>   
     {%- for item in page.items -%}                            
     <div class = 'card aniview slow' data-av-animation = 'fadeIn'>
       <img src = '/assets/images/{{ item.image }}.jpg' alt = ''>

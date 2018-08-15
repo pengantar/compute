@@ -55,6 +55,7 @@ exclude:
 
 include: 
   - _pages
+  - _devices
 
 defaults:
   -
@@ -65,3 +66,10 @@ defaults:
       layout: "post"
       author: Computech
       permalink: /:title/
+  -
+    scope:
+      path: "_devices"
+      type: "pages"
+    values:
+      layout: "device"
+      full: true

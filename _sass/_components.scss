@@ -178,7 +178,6 @@ a:visited{
   box-shadow: 0 0 130px rgba(0,0,0,0.25);
   border-radius: 10px;
   background: $dark;
-  line-height: 1.1rem;
   font-weight: 400;
   h2,h4{
     font-weight: inherit;
@@ -297,6 +296,7 @@ a:visited{
     padding: $padding * 2.5;
     box-shadow: 0 0 120px rgba(0,0,0,0.2);
     color: $pale;
+    border-radius: 6px;
     h2{
       color: $dark;
     }
@@ -380,7 +380,16 @@ a:visited{
     }
   }
 }
-
+.simple{
+  &_modal{
+    @extend %modal;
+    padding: 0;
+    max-width: 480px;
+    &-open{
+      @extend %open;
+    }
+  }
+}
 .tag{
   padding: 10px 15px;
   margin: 10px 10px 10px 0;
@@ -408,7 +417,6 @@ a:visited{
   height: 180px;  
   text-transform: uppercase;
   background-color: $dark;
-  // background-image: url(/assets/images/security.png);
 }
 
 // pdf buttons 
@@ -428,12 +436,37 @@ a:visited{
   line-height: 1.25;
   font-family: $heading-font;
   opacity: 1;
+  text-align: center;
   transition: all 0.3s ease-in;
   &:hover {
     opacity: 0.96;
     color: $light;
   }
 }
+
+.form{
+  display: flex;
+  flex-direction: column;
+  &_input {
+    display: block;
+    width: 100%;
+    padding: 10px 12.5px;
+    font-size: 16px;
+    outline: 0;
+    line-height: 1.6;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    transition: all ease-in-out .15s;
+    &:focus {
+      border-color: #66afe9;
+      box-shadow: 0 0 8px rgba(102, 175, 233, .6)
+    }
+  }
+  &_label{
+    display:none;
+  }
+}
+
 
 .tab {
   background: #f8f8f8;

@@ -48,12 +48,9 @@ img{
   border: 0
 }
 
-// figure {
-//   margin: 1em 40px
-// }
 form{
   max-width: 480px;
-  padding: 30px 15px;
+  padding: 15px;
   cursor: default !important;
 }
 
@@ -70,17 +67,6 @@ fieldset {
   margin:0;
   padding:0
 }
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-	content: "";
-}
-
-blockquote,
-q {
-	quotes: "" "";
-}
 
 hr {
 	background-color: #ccc;
@@ -91,7 +77,8 @@ hr {
 
 ul,
 ol {
-	margin: 0 0 1.5em 3em;
+  margin: 15px;
+  color: $pale;
 }
 
 ul {

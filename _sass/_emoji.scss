@@ -12,16 +12,16 @@ $emojis: (
   sad: "\1F61E"
 );
 
-
 @each $emoji, $code in $emojis {
-  .em_#{$emoji} {
-    background: transparent;
-    display: inline-grid;
-  }
   .em_#{$emoji}:after {
     content: $code;
     justify-self: center;
   }
+}
+
+[class^=em_] {
+  background: transparent;
+  display: inline-grid;
 }
 
 [class^=em_]:after {

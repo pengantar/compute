@@ -44,7 +44,7 @@
       data: $(this).serialize(),
       contentType: 'application/x-www-form-urlencoded',
       success: function (data) {
-        showModal('Review submitted', 'Thanks for your review! It will show on the site once it has been approved.');
+        showModal('Comment submitted', 'Your comment will show on the site once it has been approved.');
         $(this).removeClass('form-loading');
         $("form").trigger("reset");
       },
@@ -71,11 +71,3 @@
     $('body').addClass('modal_show');
   }
 })(jQuery);
-
-(function toggleForm() {
-  $('.form_toggle').on('click', function() {
-    $('.form-comments').toggleClass('form-open');
-    $(this).toggleClass('toggled');
-    $(this).hasClass('toggled') ? $(this).text('Cancel') : $(this).text('Comment');
-  });
-})();

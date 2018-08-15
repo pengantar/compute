@@ -27,8 +27,31 @@ h1 {
   font-size: 2em;
 }
 
+code,
 pre {
-  overflow: auto
+  font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+pre {
+  display: block;
+  padding: 9.5px;
+  margin: 0 0 10px;
+  font-size: 13px;
+  line-height: 1.42857143;
+  word-break: break-all;
+  word-wrap: break-word;
+  background-color: #f5f5f5;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  overflow: auto;
+  code {
+    padding: 0;
+    font-size: inherit;
+    color: inherit;
+    white-space: pre-wrap;
+    background-color: transparent;
+    border-radius: 0;
+  }
 }
 
 button,
@@ -167,32 +190,6 @@ address {
   margin-bottom: 20px;
 }
 
-code,
-pre {
-  font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
-}
-
-pre {
-  display: block;
-  padding: 9.5px;
-  margin: 0 0 10px;
-  font-size: 13px;
-  line-height: 1.42857143;
-  word-break: break-all;
-  word-wrap: break-word;
-  background-color: #f5f5f5;
-  border: 1px solid #ccc;
-  border-radius: 4px
-}
-
-pre code {
-  padding: 0;
-  font-size: inherit;
-  color: inherit;
-  white-space: pre-wrap;
-  background-color: transparent;
-  border-radius: 0
-}
 
 label {
   display: inline-block;
@@ -202,38 +199,19 @@ label {
 }
 
 
-.form-control {
-  display: block;
-  width: 100%;
-  padding: 10px 12.5px;
-  font-size: 16px;
-  outline: 0;
-  line-height: 1.6;
-  border: 1px solid #ccc;
-  border-radius: 6px;
-  transition: all ease-in-out .15s
-}
-
-.form-control:focus {
-  border-color: #66afe9;
-  box-shadow: 0 0 8px rgba(102, 175, 233, .6)
-}
-
 .fade {
   opacity: 0;
   transition: opacity .15s linear;
-}
-
-.fade.in {
-  opacity: 1;
+  &.in {
+    opacity: 1;
+  }
 }
 
 .collapse {
   display: none;
-}
-
-.collapse.in {
-  display: block;
+  &.in {
+    display: block;
+  }
 }
 
 .collapsing {

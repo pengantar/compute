@@ -47,9 +47,16 @@
   </div>
 {% endfor %}
 </div>
-{% include comments-form.md %}
+<div class = 'simple_button snip'>COMMENT</div>
+<div class = 'modal_overlay overlay hide contain'>
+  <div class = 'simple_modal pb-2 pt-2'>
+      {% include comments-form.md %}
+    <div class = 'modal_close'>&times;</div>
+  </div>
+</div>
 <article class="modal">
   <div class = 'modal_inner'>
+    <span class = 'em_wave em-2'></span>
     <h2 class="modal_title"></h2>
     <div class="modal_text"></div>
     <button class="modal_close contain">&times;</button>

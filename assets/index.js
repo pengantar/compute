@@ -45,13 +45,15 @@ function hideModal(shell) {
 };
 
 (function simple() {
-// simple modal
-// use general modal overlay
-// be triggered by a button
-// have a simple modal body
-// modal close icon
-// modal body contents will be set to value of modal content
-// function should only be called if a modal content element exists
+  let button = elem('.simple_button');
+  if(button) {
+    let modal = elem('.simple_modal');
+    let shell = '.simple_modal';
+    button.addEventListener('click', function() {
+      toggleModal(shell);
+    });
+    hideModal(shell);
+  } 
 })();
 
 (function definition() {
