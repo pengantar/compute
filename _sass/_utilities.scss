@@ -116,24 +116,56 @@
     background: rgba(39,48,57,.15); 
   }
 }
+.flex {
+  justify-content: center;
+  min-height: 360px;
+  &,&_rev{
+    flex-direction: column;
+  }
+  &,&_row,&_rev{
+    display: flex;
+    align-items: center;
+  }
+  &_row{
+    flex-flow: row wrap;
+    justify-content: space-between;
+  }
+}
+.reverse{
+  order: -1;
+}
 .thumb{
   width: 100px;
 }
-.facebook{
-  background: $facebook;
-}
-.twitter {
-  background: $twitter;
-}
-.linkedin{
-  background: $linkedin;
-}
-.google-plus{
-  background: $google-plus;
+
+$sites: (
+  facebook: #325c94,
+  twitter: #00abdc,
+  google-plus: #dd4b38,
+  linkedin: #007bb6
+);
+
+@each $item, $color in $sites {
+  .#{$item} {
+    background: $color;
+  }
 }
 
 .cafe{
   color: #F68E35;
+  padding-left: 15px;
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 20fr;
+  &:before{
+    position: relative;
+    font-size: 2rem;
+    line-height: 16px;
+    content: '\201f';
+    color: lighten($pale, 30%);
+    top: -5px;
+    left: 0;
+  }
 }
 .white{
   color: $light;
@@ -142,15 +174,3 @@
 .slim{
   font-weight: 400;
 }
-// .cafe:before,
-// .cafe:after{
-//   position: relative;
-//   font-size: 5rem;
-//   line-height: 16px;
-// }
-// .cafe::before {
-//     content: '\201f';
-// }
-// .cafe::after {
-//     content: "\201d";
-// }

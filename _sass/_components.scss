@@ -77,15 +77,9 @@
   margin: 0 auto;
   margin-bottom: 15px;  
 }
-#slide-section{
-  height: auto;
-  width: 100%;
-}
-
 .move{
   margin-left: 100px;
 }
-
 .orange{
   color: $orange;  
 }
@@ -438,24 +432,6 @@ a:visited{
   }
 }
 
-.flex {
-  justify-content: center;
-  min-height: 360px;
-  flex-direction: column;
-  &,&_row{
-    display: flex;
-    align-items: center;
-  }
-  &_row{
-    flex-flow: row wrap;
-    justify-content: space-between;
-  }
-}
-@media (max-width: 575px) { 
-  .img-brand{
-    display: block;
-  }
-}
 .tab {
   background: #f8f8f8;
   cursor: pointer;
