@@ -22,17 +22,20 @@
     padding: 25px 20px;
     background-color: #eee;
   }
+  &_price,
+  &_desc {
+    font-weight: 500;
+    font-family: $heading-font;
+  }
   &_price{
     color: #000;
-    font-size: 1.5rem;
-    font-weight: 700;
-    padding: 10px 0;
+    font-size: 1.67rem;
+    padding: 0 0 10px;
     text-align: center;
   }
   &_desc{
-    color: #222;
-    font-weight: 600;
-    font-size: 1rem;
+    color: $pale;
+    font-size: 1.1rem;
     text-transform: uppercase;
     text-align: center;
   }
