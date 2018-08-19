@@ -15,13 +15,13 @@ $emojis: (
 @each $emoji, $code in $emojis {
   .em_#{$emoji}:after {
     content: $code;
-    justify-self: center;
   }
 }
 
 [class^=em_] {
-  background: transparent;
   display: inline-grid;
+  justify-self: center;
+  background: transparent;
 }
 
 [class^=em_]:after {

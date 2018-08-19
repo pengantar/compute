@@ -15,12 +15,12 @@
     color: $pale;
   }
   &_user{
-    width:60px;
+    width:60px !important;
   }
   &_body{
     flex: 1;
     box-shadow: 0 15px 30px -10px rgba(158, 174, 221, 0.2);
-    padding:25px 0 0 15px; 
+    padding:0 0 0 15px; 
   }
   &_container{
     background: #fff;
