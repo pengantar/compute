@@ -1,4 +1,4 @@
-<h2 class = 'underline'>Search by tag<span></span></h2>
+<h2 class = 'underline'>Search by tag</h2>
 <div class = 'tag_container'>
 {%- for tag in site.tags | unique | sort -%}
   {% capture tag_name %}{{ tag | first }}{% endcapture %}

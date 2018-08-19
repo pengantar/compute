@@ -101,7 +101,7 @@
   margin-top: 0;
   position: relative;
   text-decoration: none;
-  span,
+  &::before,
   &::after{
     content: '';
     position: absolute;
@@ -109,7 +109,7 @@
     left: 0;
     height: 1px;
   }
-  span{
+  &::before{
     width: 33%;
     background: $orange;
   }
@@ -155,18 +155,12 @@ $sites: (
 
 .cafe{
   color: #F68E35;
-  padding-left: 15px;
   position: relative;
-  display: grid;
-  grid-template-columns: 1fr 20fr;
-  &::before{
-    position: relative;
+  &::before {
     font-size: 2rem;
     line-height: 16px;
-    content: '\201f';
     color: lighten($pale, 30%);
-    top: -5px;
-    left: 0;
+    content: '\201f';
   }
 }
 .white{

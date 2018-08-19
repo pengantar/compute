@@ -1,5 +1,5 @@
 <div class = 'mt-1'>
-  <h2 class = 'underline'>Recent Posts<span></span></h2>	
+  <h2 class = 'underline'>Recent Posts</h2>	
   <ul>
     {% assign recent = site.posts | where_exp: "item", "item != page" %}
     {% for post in recent | limit : 5 %}
