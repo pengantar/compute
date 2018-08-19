@@ -102,7 +102,7 @@
   position: relative;
   text-decoration: none;
   span,
-  &:after{
+  &::after{
     content: '';
     position: absolute;
     bottom: 0;
@@ -113,7 +113,7 @@
     width: 33%;
     background: $orange;
   }
-  &:after{
+  &::after{
     width: 100%;
     background: rgba(39,48,57,.15); 
   }
@@ -159,7 +159,7 @@ $sites: (
   position: relative;
   display: grid;
   grid-template-columns: 1fr 20fr;
-  &:before{
+  &::before{
     position: relative;
     font-size: 2rem;
     line-height: 16px;

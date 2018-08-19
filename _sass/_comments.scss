@@ -58,31 +58,29 @@
 }
 
 .form {
-	position: relative;
+  position: relative;
+  &::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.7);
+    z-index: 10;
+  }
+  &_spinner {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 11;
+  }
 }
 
-.form-loading:before {
+.form-loading::before {
 	content: '';
 }
 
 .form-loading .form_spinner {
 	display: block;
-}
-
-.form:before {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	background-color: rgba(255, 255, 255, 0.7);
-	z-index: 10;
-}
-
-.form_spinner {
-	display: none;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	z-index: 11;
 }
