@@ -10,10 +10,10 @@
   title: CEO, KENYA
   picture: dipak
   description: "A fellow of the Chartered Association of the Certified Accountants (FCCA), Dipak joined Computech as Chief Accountant in 1992 after stints with Abercrombie & Kent, Ashwin Brothers and Interact Travels. Dipak has risen steadily to CEO position and has been involved in all aspects of growing the business to current levels. Dipak has a keen interest in ICT emerging trends, world affairs, community service and keeping fit through cycling and working out."
-- name: Mandheer Singh Sehmi
-  title: Head of Software Solutions
-  picture: mandheer
-  description: "Mandheer has over 20 years’ experience working with Microsoft products in East Africa, along with experience across industries such as real estate, hospitality, and automobiles in the US, UAE and East Africa. Mandheer has led the software team successfully over the years, enhancing the strong relationship with Microsoft and developing partnerships with other software solutions. Mandheer holds a BA and MBA from the University of New Orleans."
+# - name: Mandheer Singh Sehmi
+#   title: Head of Software Solutions
+#   picture: mandheer
+#   description: "Mandheer has over 20 years’ experience working with Microsoft products in East Africa, along with experience across industries such as real estate, hospitality, and automobiles in the US, UAE and East Africa. Mandheer has led the software team successfully over the years, enhancing the strong relationship with Microsoft and developing partnerships with other software solutions. Mandheer holds a BA and MBA from the University of New Orleans."
 - name: Halima Mubarak
   title: Head of Sales
   picture: halima
@@ -30,10 +30,10 @@
   title: Manager - Strategy & Transformation
   picture: elahe
   description: "Elahe has worked across several industries including aviation, real estate, banking, hospitality, and manufacturing. Previously with Bain & Company in London and Johannesburg, Elahe is using her background in management and strategy consulting to drive Computech Limited’s Transformation Program. Elahe holds a BA from Stanford University."
-- name: Yazim Nanji
-  title: Head - Business Internet
-  picture: yazim
-  description: "Yazim has worked across several aspects of hospitality and technology, including internet service provision, hotel and property management, and e-commerce solutions. With over 25 years’ experience across Europe, South Africa, Uganda and Kenya, Yazim is heading the latest addition to Computech Limited’s portfolio – Business Internet. Yazim holds a BSc in Economics and Finance from the University of Hartford."
+# - name: Yazim Nanji
+#   title: Head - Business Internet
+#   picture: yazim
+#   description: "Yazim has worked across several aspects of hospitality and technology, including internet service provision, hotel and property management, and e-commerce solutions. With over 25 years’ experience across Europe, South Africa, Uganda and Kenya, Yazim is heading the latest addition to Computech Limited’s portfolio – Business Internet. Yazim holds a BSc in Economics and Finance from the University of Hartford."
 - name: George Kimani
   title: GM UGANDA
   picture: george

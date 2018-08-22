@@ -142,6 +142,7 @@
 
 $sites: (
   facebook: #325c94,
+  instagram: #fb3958,
   twitter: #00abdc,
   google-plus: #dd4b38,
   linkedin: #007bb6
@@ -156,6 +157,8 @@ $sites: (
 .cafe{
   color: #F68E35;
   position: relative;
+  display: grid;
+  grid-template-columns: 1fr 25fr;
   &::before {
     font-size: 2rem;
     line-height: 16px;
