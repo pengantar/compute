@@ -1,6 +1,13 @@
 <title> {% if page.title %} {{ page.title }} |{% endif %} {{ site.title }}</title>
 <meta charset = 'utf-8'>
-{%- assign desc = page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 150 | escape -%}
+{%- if page.description -%}
+  {%- assign raw_desc = page.description -%}
+{%- elsif page.excerpt -%}
+  {%- assign raw_desc = page.excerpt -%}
+{% else %}
+  {%- assign raw_desc = site.description -%}
+{% endif %}
+{%- assign desc = raw_desc | strip_html | normalize_whitespace | truncate: 160 | escape -%}
 {%- if jekyll.environment == 'production' -%}
   {%- include analytics.html -%}
 {%- endif -%}
