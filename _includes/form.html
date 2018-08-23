@@ -1,18 +1,18 @@
 <form class = 'text_left ma card' action = 'https://formcarry.com/s/{{ site.formcarry }}' method = 'POST' accept-charset = 'UTF-8'>
   <h3 class = 'underline mb-2 slim'>Send us a message</h3>
   <label for = 'name'>Full Name</label>
-  <input type = 'text' class = 'mb-1 form_input'  id = 'name' name = 'Name' value = '' placeholder = 'Name' required>
+  <input type = 'text' class = 'mb-1 form_input'  id = 'name' name = 'Name' placeholder = 'Name' required>
   <label for = 'email'>Email</label>
-  <input type = 'email' class = 'mb-1 form_input' id = 'email' name = '_replyto' value = '' placeholder = 'you@awesome.com' required>   
+  <input type = 'email' class = 'mb-1 form_input' id = 'email' name = '_replyto' placeholder = 'you@awesome.com' required>   
   <label for = 'msg_subject'>Phone number</label>
-  <input type = 'text' name = 'Phone Number' class = 'mb-1 form_input' id = 'msg_subject' value = '' placeholder = 'Phone Number' required>
+  <input type = 'text' name = 'Phone Number' class = 'mb-1 form_input' id = 'msg_subject' placeholder = 'Phone Number' required>
+  <label for = 'country'>Country</label>
+  <input type = 'text' name = 'Country' class = 'mb-1 form_input' id = 'country' placeholder = 'Kenya' required>
   <label for = 'message'>Message</label>
-  <textarea name = 'Message' class = 'mb-1 form_input' id = 'message' rows = '1' value = '' placeholder = 'Please enter your message' required></textarea>
+  <textarea name = 'Message' class = 'mb-1 form_input' id = 'message' rows = '1' placeholder = 'Please enter your message' required></textarea>
   <div class = 'g-recaptcha' data-callback = 'recaptchaCallback' data-sitekey = '6LdOxwoUAAAAACdtGAhPXI4eUVqkJyAyydr7tq2H' data-them = 'dark' required></div>
   <div>
     <button  class = 'snip' type = 'submit' id = 'submit'> SUBMIT</button>
   </div>
 </form>
-<script>
-  {% include autoresize.js %}
-</script>
+<script>{% include autoresize.js %}</script>
