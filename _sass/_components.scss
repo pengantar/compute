@@ -519,3 +519,8 @@ a:visited{
   max-width:700px;
   width:90%;
 }
+.gallery{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, min-max(150px, 1fr));
+  grid-gap: 5px;
+}
