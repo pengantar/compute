@@ -3,7 +3,7 @@
 {%- if page.description -%}
   {%- assign raw_desc = page.description -%}
 {%- elsif page.excerpt -%}
-  {%- assign raw_desc = page.excerpt -%}
+  {%- assign raw_desc = page.content -%}
 {% else %}
   {%- assign raw_desc = site.description -%}
 {% endif %}
@@ -22,36 +22,42 @@
 <meta name = 'keywords' content = '{{ site.title }}'>
 <meta property = 'og:locale' content = 'en_US' />
 {%- if page.layout == 'post' -%}
-<meta property = 'og:type' content = 'article' />
-<meta property = 'og:title' content = '{{page.title}}' />
-<meta property = 'og:url' content = '/{{page.title}}' />
-{%- assign pageDate = page.date | date_to_xmlschema -%}
-<meta property = 'article:published_time' content = '{{ pageDate }}' />
-<script type = 'application/ld+json'>
-  {'@context': 'http://schema.org',
-  '@type': 'BlogPosting',
-  'name': '{{ site.title }}',
-  'headline': '{{ page.title }}',
-  'description': '{{ desc }}',
-  'url': '{{site.url}}/{{ page.permalink }}',
-  'datePublished': '{{ pageDate }}',
-  'dateModified': '{{ pageDate }}',
-  'author': {
-    '@type': 'Person',
-    'name': '{{ page.author }}'
-  },
-  'publisher': {
-    '@type': 'Organization',
-    'logo': {
-      '@type':'ImageObject',
-      'url':'{{ site.url }}/assets/top_log.png',
-      'width':600,
-      'height':60
-    },
-    'name': '{{ site.title }}'
-  }
-}
-</script>
+  <meta property = 'og:type' content = 'article' />
+  <meta property = 'og:title' content = '{{page.title}}' />
+  <meta property = 'og:url' content = '/{{page.title}}' />
+  {%- assign pageDate = page.date | date_to_xmlschema -%}
+  <meta property = 'article:published_time' content = '{{ pageDate }}' />
+  <script type = "application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "BlogPosting",
+      "mainEntityOfPage":"{{site.url}}{{page.url}}",
+      "name": "{{ site.title }}",
+      "headline": "{{ page.title }}",
+      "description": "{{ desc }}",
+      "url": "{{site.url}}/{{ page.permalink }}",
+      "datePublished": "{{ pageDate }}",
+      "dateModified": "{{ pageDate }}",
+      "author": {
+        "@type": "Person",
+        "name": "{{ page.author }}"
+      },
+      "image":{  
+        "@type":"ImageObject",
+        "url":"{{site.url}}/assets/posts/{{page.image}}.jpg"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "logo": {
+          "@type":"ImageObject",
+          "url":"{{ site.url }}/assets/top_log.png",
+          "width":600,
+          "height":60
+        },
+        "name": "{{ site.title }}"
+      }
+    }
+  </script>
 {%- endif -%}
 
 {%- if page.thumbnail -%} <!-- If thumbnail is set -->

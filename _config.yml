@@ -35,7 +35,7 @@ autopages:
       - "tags.html"
     title: ":tag" # :tag is replaced by the tag name
     permalink: "/tag/:tag"
-url: 'https://computechlimited.com'
+url: 'https://www.computechlimited.com'
 github: onweru
 repo: compute
 branch: master
@@ -66,6 +66,7 @@ defaults:
       layout: "post"
       author: Computech
       permalink: /:title/
+      image: cyber-security
   -
     scope:
       path: "_devices"

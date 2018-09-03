@@ -1,17 +1,17 @@
-.product{
+.pd{
   border-radius: 6px;
   box-shadow: 0 0 60px rgba(0,0,0,0.17);
   overflow: hidden;
   background: #fff;
   align-self: stretch;
-  &_image{ 
+  &_pic{ 
     background-size:contain;
     background-position: center;
     background-repeat: no-repeat;
     height: 120px;
     margin: 20px;
   }
-  &_footer{
+  &_tail{
     min-height: 120px;
     text-align: left;
     line-height: 1.7rem;
@@ -42,6 +42,12 @@
   &_spec{
     display: grid;
     grid-template-columns: 1fr 14fr;
+    &::before {
+      content: '\221A';
+      font-size: inherit;
+      font-weight: 700;
+      color: $orange;
+    }
   }
   &_status{
     width: 100px;
