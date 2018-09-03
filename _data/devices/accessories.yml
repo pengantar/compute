@@ -2,7 +2,7 @@
   model: E5C13AA
   brand: lenovo
   name: HP Z5000 Bluetooth Mouse
-  price: KES  3,898
+  price: KES 3,898
   status: Expected
 - image: H6F00AA.png
   model: H6F00AA
@@ -20,13 +20,13 @@
   model: 4X40K09936
   brand: lenovo
   name: 4X4CASE_BO ThinkPad 15.6\ Basic Backpack
-  price: KES  2,506
+  price: KES 2,506
   status: Available
 - image: 31P7410.jpg
   model: 31P7410
   brand: lenovo
   name: MOUSE TPopticalMouse
-  price: KES  1,253
+  price: KES 1,253
   status: Available
 - image: 57Y4303.jpg
   model: 57Y4303

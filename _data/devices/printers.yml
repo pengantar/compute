@@ -1,7 +1,7 @@
 - image: F5S29C.jpg
   name: HP DESKJET INK ADVANTAGE 2135 AIO PRNTeR
   model: F5S29C
-  price: KES  6,264
+  price: KES 6,264
   description: INKJET PRINTER
   status: Available
 - image: F5S44C.jpg
@@ -13,7 +13,7 @@
 - image: T8W46C.jpg
   name: HP Deskjet IA 3785
   model: T8W46C
-  price: KES  9,744
+  price: KES 9,744
   description: 
     - INKJET PRINTER
     - Sea Grass Green with Wireless
@@ -21,7 +21,7 @@
 - image: T8W42C.png
   name: HP Deskjet IA 3775
   model: T8W42C
-  price: KES  9,744
+  price: KES 9,744
   description: 
     - INKJET PRINTER
     - Stone with Wireless
@@ -37,13 +37,13 @@
 - image: F5R96C.png
   name: HP DeskJet Ink Advantage 3835 All-in-One
   model: F5R96C
-  price: KES  12,528
+  price: KES 12,528
   description: INKJET PRINTER
   status: Available
 - image: F1H97C.png
   name: HP DeskJet IA 4675 AiO Printer:AFR/ME-en
   model: F1H97C
-  price: KES  13,781
+  price: KES 13,781
   description: INKJET PRINTER
   status: Available
 - image: X3B09A.jpg
@@ -55,13 +55,13 @@
 - image: D3Q16B.png
   name: HP Page Wide Pro 452dw Printer
   model: D3Q16B
-  price: KES  48,998
+  price: KES 48,998
   description: PAGEWIDE PRINTER
   status: Available
 - image: D3Q20B.png
   name: HP PageWide Pro 477dw Printer
   model: D3Q20B
-  price: KES  63,754
+  price: KES 63,754
   description: PAGEWIDE PRINTER
   status: Available
 - image: CR768A.png
@@ -79,13 +79,13 @@
 - image: G1X85A.png
   name: HP Officejet 7612 Wide format e-AIO
   model: G1X85A
-  price: KES  21,854
+  price: KES 21,854
   description: OFFICEJET PRINTER
   status: Expected
 - image: D9L18A.png
   name: HP OfficeJet PRO 8710
   model: D9L18A
-  price: KES  22,968
+  price: KES 22,968
   description: 
     - OFFICEJET PRINTER
     - ALL-IN-ONE PRINTER
@@ -93,7 +93,7 @@
 - image: D9L19A.png
   name: HP OFFICEJET PRO 8720
   model: D9L19A
-  price: KES  31,320
+  price: KES 31,320
   description: 
     - OFFICEJET PRINTER
     - ALL-IN-ONE PRINTER
@@ -101,7 +101,7 @@
 - image: D9L20A.png
   name: HP OfficeJet Pro 8730
   model: D9L20A
-  price: KES  45,240
+  price: KES 45,240
   description: 
     - OFFICEJET PRINTER
     - All-in-One Printer
@@ -109,13 +109,13 @@
 - image: G5J38A.png
   name: HP Officejet Pro 7740 Wide Format AiO
   model: G5J38A
-  price: KES  28,675
+  price: KES 28,675
   description: OFFICEJET PRINTER
   status: Available
 - image: G3Q35A.png
   name: HP LaserJet P102w
   model: G3Q35A
-  price: KES  16,704
+  price: KES 16,704
   description: 
     - MONO LASERJET PRINTER SINGLE FUNCTION
     - (Replacement for 1102w)
@@ -123,13 +123,13 @@
 - image: G3Q47A.jpg
   name: HP LaserJet Pro M203dw
   model: G3Q47A
-  price: KES  26,448
+  price: KES 26,448
   description: MONO LASERJET PRINTER SINGLE FUNCTION
   status: Available
 - image: C5J91A.jpg
   name: HP LaserJet Pro M402dne
   model: C5J91A
-  price: KES  27,562
+  price: KES 27,562
   description: MONO LASERJET PRINTER SINGLE FUNCTION
   status: Expected
 - image: C5F95A.jpg
@@ -141,37 +141,37 @@
 - image: G3Q57A.jpg
   name: HP LaserJet Pro MFP M130a (Replacement for 125a)
   model: G3Q57A
-  price: KES  19,349
+  price: KES 19,349
   description: MONO LASERJET PRINTER MULTI FUNCTION
   status: Available
 - image: G3Q58A.jpg
   name: HP LaserJet Pro MFP M130nw (Replacement for 125nw)
   model: G3Q58A
-  price: KES  23,107
+  price: KES 23,107
   description: MONO LASERJET PRINTER MULTI FUNCTION
   status: Available
 - image: G3Q74A.jpg
   name: HP LaserJet Pro MFP M227sdn
   model: G3Q74A
-  price: KES  33,130
+  price: KES 33,130
   description: MONO LASERJET PRINTER MULTI FUNCTION
   status: Expected
 - image: G3Q75A.png
   name: HP LaserJet Pro MFP M227fdw
   model: G3Q75A
-  price: KES  46,632
+  price: KES 46,632
   description: MONO LASERJET PRINTER MULTI FUNCTION
   status: Available
 - image: F6W15A.jpg
   name: HP LaserJet Pro MFP M426fdw
   model: F6W15A
-  price: KES  60,552
+  price: KES 60,552
   description: MONO LASERJET PRINTER MULTI FUNCTION
   status: Available
 - image: CF388A.jpg
   name: HP Color LaserJet Pro
   model: CF388A
-  price: KES  40,368
+  price: KES 40,368
   description: 
     - COLOR LASERJET PRINTER MULTI FUNCTION
     - M452nw 27ppm,
@@ -198,7 +198,7 @@
 - image: E6B70A.png
   name: HP LaserJet Enterprise M605dn
   model: E6B70A
-  price: KES  121,104
+  price: KES 121,104
   description: ENTERPRISE PRINTER
   status: Expected
 - image: E6B68A.png
@@ -222,7 +222,7 @@
 - image: A3E42A.png
   name: HP LaserJet Pro MFP M435NW
   model: A3E42A
-  price: KES  143,376
+  price: KES 143,376
   description: ENTERPRISE PRINTER
   status: Available
 - image: CF236A.png
@@ -328,8 +328,8 @@
   description: 
     - presentation imager for 1D & 2D Barcodes 
     - "KIT:EMEA ONLY"
-  price: DS9208-SR USB KIT - U21
-  price: KES  32,931
+  price: KES DS9208-SR USB KIT - U21
+  price: KES 32,931
   status: Expected
 
 - image: DS7708-SR4U2100ZCW.jpg

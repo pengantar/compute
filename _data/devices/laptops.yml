@@ -41,28 +41,6 @@
   price: KES 188,616 
   status: Expected
 
-- image: MPXQ2BA.jpg
-  model: MPXQ2B/A
-  purpose: APPLEMACBOOKS
-  brand: apple
-  name: MacBook Pro 13"  SpaceGrey
-  description:
-    - 2.3 GHz Intel Core i5 7th Gen (Turbo Boost up to 3.6 GHz) with 4MB 
-    - Retina display 13.3-inch (diagonal) LED-IPS 2560 x 1600 (WQXGA)
-    - 8GB of 2133MHz  LPDDR3 SDRAM 
-    - 128 GB PCIe-based flash storage  
-    - Intel Iris plus Graphics 640 
-    - "Weight: 1.37 kg" 
-    - 720p FaceTime HD camera 
-    - Two USB-C Port(Thunderbolt 3) 
-    - OS X 10.12 Sierra 
-    - 802.11a
-    - b/g/n/ac Wireless
-    - Bluetooth 4.2 
-    - one-year limited warranty. (SPACE GREY)
-  price: KES 188,616
-  status: Expected
-
 - image: MPXX2BA.jpg
   model: MPXX2B/A
   purpose: APPLEMACBOOKS
@@ -108,29 +86,6 @@
   price: KES 256,128 
   status: Expected
 
-- image: MacBookPro13SpaceGreyMNQF2B.png
-  model: MPXW2B/A
-  purpose: MacBook Pro 13  SpaceGrey
-  name: MacBook Pro 13  SpaceGrey
-  brand: apple
-  description:
-    - 3.1 GHz Intel Core i5 7th Gen (Turbo Boost up to 3.6 GHz) with 4MB 
-    - Retina display 13.3-inch (diagonal) LED-IPS 2560 x 1600 (WQXGA)
-    - 8GB of 2133MHz  LPDDR3 SDRAM 
-    - 512 GB PCIe-based flash storage  
-    - Intel Iris plus Graphics 640 
-    - "Weight: 1.37 kg" 
-    - 720p FaceTime HD camera 
-    - Four USB-C Port(Thunderbolt 3) 
-    - Multi-touch Touch Pad with Touch ID 
-    - OS X 10.12 Sierra 
-    - 802.11a
-    - b/g/n/ac Wireless
-    - Bluetooth 4.2 
-    - one-year limited warranty. (SPACE GREY) 
-  price: KES 281,880
-  status: Expected
-
 - image: MJ1K2ZMA.jpg
   model: MJ1K2ZM/A
   purpose: APPLEMACBOOKS
@@ -142,25 +97,6 @@
     - USB & USB-C CONNECTIONS
   price: KES 11,414
   status: Expected
-
-- image: 90NB0CH4-M06750.jpg
-  model: 90NB0CH4-M06750
-  purpose: ASUS 
-  brand: asus
-  name: Asus - X541SA-XO131T 
-  description:
-    - (Red) Intel® Dual-Core Celeron® N3060 Processor (2M Cache, up to 2.48 GHz)
-    - 2GB DDR3 (on board)
-    - 500GB
-    - Intel HD Graphics
-    - 15.6 HD LED
-    - UMA
-    - 8xSuper Multi-Dual
-    - Windows 10
-    - VGA 
-    - 1 Yr Warranty RE
-  price: KES 37,584
-  status: Available
 
 - image: 90NB0CH1-M06740.jpeg
   model: 90NB0CH1-M06740
@@ -389,7 +325,7 @@
     - kbd TP 
     - Intel AC 2x2 nvP +BT 4.2 
     - FP
-  price: KES  $94,656
+  price: KES 94,656
   status: Available
 
 - image: X2G30ES.png
@@ -1210,97 +1146,6 @@
   price: KES 223,099 
   status: Available
 
-- image: 80TL00A2AK.png
-  model: 80TL00A2AK
-  purpose: V- Series
-  name: V110 -15
-  description:
-    - i3-6006U
-    - 4GB Base DDR4
-    - 500GB 5400rpm
-    - Intel HD Graphics
-    - 15.6'' HD
-    - DOS
-    - Wi-fi AC 1x1 + BT4.1
-    - N-FPR
-    - 0.3 MP Camera
-    - DVD RW
-    - 4 cell
-    - 45W AC
-    - KYB UK English
-    - 1 Year Carry-in
-  price: KES 50,050
-  status: Available
-
-- image: 80WR0002UE.jpg
-  model: 80WR0002UE
-  purpose: V- Series
-  name: V510-14
-  description:
-    - I5-7200U
-    - 4GB DDR4 Base
-    - 500GB 5400rpm
-    - Intel HD
-    - 14.0 HD Anti-Glare
-    - Free DOS
-    - Wi-fi AC 1x1 + BT4.1
-    - N-WWAN
-    - Y-FPR
-    - 720p HD Cam
-    - 4 cell
-    - 45W_AC
-    - DVDRW
-    - KB English-UK
-    - 1 Year Carry-i
-  price: KES 68,818
-  status: Available
-
-- image: 80WR000SUE.jpg
-  model: 80WR000SUE
-  purpose: V- Series
-  name: V510-14
-  description:
-    - I5-7200U
-    - 8GB(4Base+4) DDR4
-    - 1TB 5400rpm
-    - AMD Radeon R5 M430 2GB
-    - 14.0'' HD
-    - Free DOS
-    - Wi-fi AC 1x1 + BT4.1
-    - Y-FPR
-    - 720p HD Camera
-    - 4 cell
-    - 65W AC
-    - DVD RW
-    - KYB UK English
-    - 1 Year Carry-in
-  price: KES 79,767
-  status: Expected
-
-- image: 20H1002GUE.jpg
-  model: 20H1002GUE
-  purpose: V- Series
-  name: E470
-  description:
-    - i5-7200U
-    - 8 GB DDR4
-    - 1TB 5400rpm
-    - NVIDIA 920M 2GB
-    - 14.0" HD
-    - AG
-    - Black
-    - Free DOS
-    - ThinkPad AC 1x1 + BT
-    - N-FPR
-    - N-TPM
-    - 720p HD Camera
-    - 3 Cell
-    - 65W_3PIN_UK
-    - KYB UK English 
-    - 1 Year Carry-in
-  price: KES  83,677
-  status: Available
-
 - image: 20EM000VUE.jpg
   model: 20FW0012UE
   brand: lenovo
@@ -1874,25 +1719,6 @@
   price: KES 96,066     
   status: Available
 
-- image: INS-5567-2-BLACK.png
-  model: INS-5567-2-Black
-  purpose: Dell Inspiron laptop
-  brand: dell
-  name: Black - Inspiron 15
-  description:
-    - 5000 Series (Intel) - 5567 7th Generation Intel(R) Core(TM) i7-7500U Processor (4M Cache up to 3.50 GHz) 
-    - 15.6-inch FHD (1920 x 1080) Anti-glare LED-Backlit Display
-    - 8GB DDR4
-    - 2400MHz
-    - 1TB 5400 rpm SATA Hard Drive/AMD Radeon R7 M445 Graphics 4G GDDR5
-    - 802.11ac + Bluetooth
-    - Dual Band 2.4&5 GHz
-    - 1x1
-    - Ubuntu Linux 16.04
-    - 1Y Parts Only Warranty
-  price: KES 96,066     
-  status: Available
-
 - image: INS-7567-3-Black%20GAMING.jpg
   model: INS-7567-3-Black GAMING
   purpose: DELL CONSUMER XPS & GAMEING NOTEBOOK
@@ -1916,26 +1742,6 @@
     - McAfee 30day Trial
     - 1Y Parts Only Warrant
   price: KES 151,749 
-  status: Available
-
-- image: XPS%2013-MLK-2%20(9360).jpg
-  model: XPS 13-MLK-2 (9360)
-  purpose: DELL CONSUMER XPS & GAMEING NOTEBOOK
-  brand: dell
-  name: XPS13 MLK (9360)
-  description:
-    - 7th Generation Intel(R) Core(TM) i7-7500U (4MB Cache up to 3.5 GHz)
-    - 13.3 inch FHD AG (1920 x 1080) InfinityEdge display
-    - Silver
-    - 8GB LPDDR3 1866MHz
-    - 256GB M.2 PCIe SSD
-    - 60WHr Integrated Battery
-    - Killer 1535 802.11ac 2x2 WiFi and Bluetooth 4.1
-    - Windows 10 Home-HE 64bit English
-    - Microsoft Office 30 Day Trial
-    - Microsoft Office 30 Day Trial
-    - 1Yr Partner Led Carry In Servic
-  price: KES 201,927
   status: Available
 
 - image: XPS%2013-MLK.jpg
