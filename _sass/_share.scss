@@ -7,14 +7,15 @@
     width: 40%;
   }
   &_copy{
-    position: relative;
+    position: absolute;
     padding: 8px 15px;
     border-radius: 5px;
     background: $dark;
     color: $light;
-    top: -40px;
+    top: -50px;
     width: 120px;
-    left: -10px;
+    z-index: 5;
+    left: -25px;
     animation: blink 3s ease-in forwards;
   }  
   &_item{
