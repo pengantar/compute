@@ -6,8 +6,8 @@ full: true
 ---
 <div class = 'awards grid-3'>
   {%- for award in site.data.about.awards reversed -%}
-  <div class = 'hovereffect card award'>
-    <img class = 'img-responsive' src = '/assets/images/trophy.jpg'>
+  <div class = 'card award'>
+    <img src = '/assets/images/trophy.jpg'>
     <div class = 'overlay shadow contain'>
       <p>{{ award.name }} <br> {{ award.year }}</p>
     </div>

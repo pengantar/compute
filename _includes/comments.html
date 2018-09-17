@@ -35,14 +35,7 @@
         </script>
       </div>
       {{ message | markdownify}}
-      <div class = 'comment_meta'>
-        <!-- <div class = 'comment_icon'>
-          <img src = '/assets/comment.svg' alt = 'user icon'><span class = 'comment_reply'></span>
-        </div> -->
-        <!-- <div class = 'comment_icon'>
-          <img src = '/assets/like.svg' alt = 'user icon'> <span class = 'comment_likes'></span>
-        </div> -->
-      </div>
+      <div class = 'comment_meta'></div>
     </div>
   </div>
 {% endfor %}
@@ -54,11 +47,11 @@
     <div class = 'modal_close'>&times;</div>
   </div>
 </div>
-<article class="modal">
+<article class='modal'>
   <div class = 'modal_inner'>
     <span class = 'em_wave em-2'></span>
-    <h2 class="modal_title"></h2>
-    <div class="modal_text"></div>
-    <button class="modal_close contain">&times;</button>
+    <h2 class='modal_title'></h2>
+    <div class='modal_text'></div>
+    <button class='modal_close contain'>&times;</button>
   </div>
 </article>
