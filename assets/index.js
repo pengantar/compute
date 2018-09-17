@@ -39,13 +39,10 @@ function elems(selector) {
       let lastIndex = shareLength - 1;
       let lastShareItem = shareItems[lastIndex];
       if(lastShareItem.classList.contains('share_copy') == false) {
-        console.log('adding notification bar');
         elem('.share').appendChild(copyText);
         setTimeout(function() { 
           elem('.share').removeChild(copyText)
         }, 4000);
-      } else {
-        console.log('not adding notification bar');
       }
     };
 
@@ -337,7 +334,6 @@ $(function(){
     $('.tab-content').not('.active').hide();
     $('.tile').on('click', function(e) {
       e.preventDefault();
-      console.log(this.id);
       $('.tile').removeClass('active');
       $(this).addClass('active');
       $('.tab-content').hide();

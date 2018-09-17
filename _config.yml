@@ -36,7 +36,7 @@ autopages:
       mode: raw
       cased: true
     layouts:
-      - "tags.html"
+      - "tags.md"
     title: ":tag" # :tag is replaced by the tag name
     permalink: "/tag/:tag"
 url: 'https://www.computechlimited.com'
