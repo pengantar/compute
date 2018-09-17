@@ -329,6 +329,18 @@ $(function(){
   }
 })();
 
+(function HelloImage() {
+  let post = document.querySelector('.post_body');
+  let postImages = post.querySelectorAll('img');
+  postImages.forEach((image) => {
+     console.log(image.alt);
+     let desc = document.createElement('p');
+     desc.classList.add('thumb_alt');
+     desc.textContent = image.alt;
+     image.insertAdjacentHTML('afterend', desc.outerHTML);
+  });
+})();
+
 (function tabz(){
   function tabs() {
     $('.tab-content').not('.active').hide();

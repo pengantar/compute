@@ -9,7 +9,9 @@ layout: default
       <h2>{{ page.title }}</h2>
       {%- include share.html -%}
     </div>
-    <img src = '/assets/news/{{ page.image.name | lstrip }}.{{ page.image.type | lstrip }}' alt = "{{ page.image.description  | replace: "'", "" }}" class = 'blog__thumb'>
-    {{ content }}
+    <div class = 'post_body'>
+      <img src = '/assets/news/{{ page.image.name | lstrip }}.{{ page.image.type | lstrip }}' alt = "{{ page.image.description  | replace: "'", "" }}" class = 'blog__thumb'>
+      {{ content }}
+    </div>
   </div>
 </div>

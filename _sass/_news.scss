@@ -1,9 +1,10 @@
+
 .article{
   box-shadow: 0 0 15px rgba(0,0,0,0.17);
   &_package {
     color: $orange;
   }
-  &_event {
+  &_awards {
     color: $orange;
   }
   &_excerpt{
@@ -89,4 +90,11 @@
 .blog{
   // @include viewport;
   padding:25px;
+}
+.thumb_alt {
+  color: #888;
+  font-style: italic;
+  font-size: 15px;
+  margin-bottom: 30px;
+  border-bottom: 1px solid #f0f0f0;
 }
