@@ -12,10 +12,7 @@
     - sublink: cyber security 
       children: 
         - access control
-        - asset protection     
-        # - improve revenue & reduce costs    
-        # - reaction & recovery 
-        # - visibility           
+        - asset protection         
 
     - sublink: endpoint devices 
       children:
@@ -52,10 +49,7 @@
       children:
         - anti-virus
         - custom software solutions
-        - microsoft portfolio
-        - cloud services 
-        - licensing
-        - managed services
+        - microsoft solutions
 
 - link: partners
 - link: blog 

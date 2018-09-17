@@ -26,103 +26,6 @@
   animation-name: zoomIn;
   animation-duration: 0.6s;
 }
-@keyframes wobly {
-  0%{
-    transform: scale(1.2,1.2);
-  }
-  33%{
-    transform: scale(1.5,1.2);
-  }
-  100%{
-    transform: scale(1,1);
-    left: 0;
-  }
-}
-
-@keyframes wobble_first {
-  0%{
-    transform: scale(0,0);
-    left: 0;
-  }
-  33%{
-    transform: scale(1.67);
-    left: 12px;
-  }
-  67% {
-    transform: scale(0.67,1);
-    left: 66px;
-  }
-  100%{
-    transform: scale(1);
-    left: 54px;
-  }
-}
-
-@keyframes wobble_second {
-  0%{
-    transform: scale(0);
-    left: 0;
-  }
-  33%{
-    transform: scale(1.67);
-    left: 18px;
-  }
-  67% {
-    transform: scale(0.67,1);
-    left: 120px;
-  }
-  100%{
-    transform: scale(1);
-    left: 108px;
-  }
-}
-@keyframes wobble_third {
-  0%{
-    transform: scale(0);
-    left: 0;
-  }
-  33%{
-    transform: scale(1.67);
-    left: 24px;
-  }
-  67% {
-    transform: scale(0.67,1);
-    left: 174px;
-  }
-  100%{
-    transform: scale(1);
-    left: 162px;
-  }
-}
-
-@keyframes wobble_last {
-  0%{
-    transform: scale(0);
-    left: 0;
-  }
-  33%{
-    transform: scale(1.67);
-    left: 32px;
-  }
-  67% {
-    transform: scale(0.67,1);
-    left: 228px;
-  }
-  100%{
-    transform: scale(1);
-    left: 216px;
-  }
-}
-@keyframes show {
-  0% {
-    opacity: 0;
-    transform: translateX(250px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
 @keyframes hide {
   0% {
     opacity: 1;
@@ -131,5 +34,16 @@
   100% {
     opacity: 0;
     transform: translateX(250px);
+  }
+}
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
   }
 }

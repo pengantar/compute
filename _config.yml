@@ -10,6 +10,10 @@ plugins:
 sass:
   style: compressed
 
+collections:
+  news:
+    output: true 
+
 pagination:
   enabled: true
   debug: false
@@ -67,6 +71,14 @@ defaults:
       author: Computech
       permalink: /:title/
       image: cyber-security
+  -
+    scope:
+      path: "_news"
+      type: "news"
+    values:
+      layout: "news-post"
+      author: Computech
+      permalink: /news/:title/
   -
     scope:
       path: "_devices"

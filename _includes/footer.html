@@ -1,15 +1,34 @@
 <footer class = 'footer'>
-  <div class = 'wrap grid-1'>     
-    <div class = 'flex_row'>
-      <p class = 'mute center_xs'>Copyright &copy; <span class = 'year'></span> Computech Limited. All Rights Reserved</p>
-    </div>
-    <div class = 'mute text_center'>
-      <span class = 'hide_xs'>Follow Us</span>
-      <div class = 'footer_share'>
-      {%- for item in site.data.social -%}
-        <a href = '{{ item.url }}' class = 'contain {{ item.name }}' target = '_blank' rel = 'noopener'><img src='/assets/icons/{{ item.name | slugify }}.svg' alt = '{{item.name }} icon' /></a>
-      {%- endfor -%}
+  <div class = 'wrap'>
+    <div class = 'grid-3 footer_upper'>
+      <div>
+        <h3>Endpoint Devices</h3>
+        {% for product in site.data.products %}
+        <span><a href = '/products-services/endpoint-devices/{{ product | downcase | slugify }}/' title = '{{ product }}'> {{ product }}</a></span>
+        {% endfor %}
       </div>
-    </div>
+      <div>
+        <h3>Solutions</h3>
+        {% for solution in site.data.solutions %}
+        <span><a href = '/products-services/{% if forloop.first %}software-solutions{% else %}services{% endif %}/{{ solution | downcase | slugify }}/' title = '{{ solution }}'> {{ solution }}</a></span>
+        {% endfor %}
+      </div>
+      <div>
+        <h3>Useful Links</h3>
+        <span><a href = '/blog/' title = 'Computech Blog'>Blog</a></span>
+        <span><a href = '/about-us/careers/' title = 'Computech Careers'>Careers</a></span>
+        <span><a href = '/about-us/profile/' title = 'Computech Profile'>Profile</a></span>
+        <span><a href = '/news/' title = 'Computech News'>News</a></span>
+      </div>
+      <div>
+        <h3>Follow Us</h3>
+        <div class = 'footer_share'>
+        {%- for item in site.data.social -%}
+          <a href = '{{ item.url }}' class = 'contain {{ item.name }}' target = '_blank' rel = 'noopener' title = 'Follow Computech on {{ item.name }}'><img src='/assets/icons/{{ item.name | slugify }}.svg' alt = '{{item.name }} icon' /></a>
+        {%- endfor -%}
+        </div>   
+      </div>
+    </div>  
+    <p class = 'mute text_center mt-3 mb-1'>Copyright &copy; <span class = 'year'></span> Computech Limited. All Rights Reserved</p>
   </div>          
 </footer>

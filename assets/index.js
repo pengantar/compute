@@ -1,11 +1,69 @@
 function elem(selector, parent = document){
-  return parent.querySelector(selector);
+  let elem = document.querySelector(selector);
+  return elem != false ? elem : false;
 }
 
 function elems(selector) {
   let elems = document.querySelectorAll(selector);
   return elems.length ? elems : false; 
 }
+
+(function() {
+  let items = elems('.share_item');
+
+  (function shareItem() {
+    const copyToClipboard = str => {
+      const el = document.createElement('textarea');  // Create a <textarea> element
+      el.value = str;                                 // Set its value to the string that you want copied
+      el.setAttribute('readonly', '');                // Make it readonly to be tamper-proof
+      el.style.position = 'absolute';                 
+      el.style.left = '-9999px';                      // Move outside the screen to make it invisible
+      document.body.appendChild(el);                  // Append the <textarea> element to the HTML document
+      const selected =            
+        document.getSelection().rangeCount > 0        // Check if there is any content selected previously
+          ? document.getSelection().getRangeAt(0)     // Store selection if found
+          : false;                                    // Mark as false to know no selection existed before
+      el.select();                                    // Select the <textarea> content
+      document.execCommand('copy');                   // Copy - only works as a result of a user action (e.g. click events)
+      document.body.removeChild(el);                  // Remove the <textarea> element
+      if (selected) {                                 // If a selection existed before copying
+        document.getSelection().removeAllRanges();    // Unselect everything on the HTML document
+        document.getSelection().addRange(selected);   // Restore the original selection
+      }
+      const copyText = document.createElement('div');
+      copyText.classList.add('share_copy');
+      copyText.innerText = 'Link Copied';
+      // check if there's another notification
+      let shareItems = Array.from(elem('.share').children);
+      let shareLength = shareItems.length;
+      let lastIndex = shareLength - 1;
+      let lastShareItem = shareItems[lastIndex];
+      if(lastShareItem.classList.contains('share_copy') == false) {
+        console.log('adding notification bar');
+        elem('.share').appendChild(copyText);
+        setTimeout(function() { 
+          elem('.share').removeChild(copyText)
+        }, 4000);
+      } else {
+        console.log('not adding notification bar');
+      }
+    };
+
+    elem('main').addEventListener('click', function(event) {
+      let shareTrigger = event.target.closest('.share_item');
+      if(shareTrigger) {
+        let copyclass = shareTrigger.classList.contains('copy') ? true : false;
+        let shareSrc = shareTrigger.href;
+        event.preventDefault();
+        if(copyclass) {
+          copyToClipboard(shareSrc);
+        } else {
+          window.open(shareSrc, 'mywin','left=20,top=20,width=500,height=500,toolbar=1,resizable=0');
+        }
+      }
+    });
+  })();
+})();
 
 function findText(parent, child) {
   return parent.querySelector(child).innerHTML;
@@ -308,3 +366,45 @@ $(function(){
   }
 })();
 
+
+(function ($) {
+  var $comments = $('.js-comments');
+  let $form = $('#comments-form');
+  $form.submit(function () {
+    let form = this;
+
+    $(this).addClass('form-loading');
+
+    $.ajax({
+      type: $(this).attr('method'),
+      url: $(this).attr('action'),
+      data: $(this).serialize(),
+      contentType: 'application/x-www-form-urlencoded',
+      success: function (data) {
+        showModal('Comment submitted', 'Your comment will show on the site once it has been approved.');
+        $(this).removeClass('form-loading');
+        $("form").trigger("reset");
+      },
+      error: function (err) {
+        showModal('Error', 'Sorry, there was an error with the submission!');
+        $(this).removeClass('form-loading');
+        $("form").trigger("reset");
+      }
+    });
+
+    return false;
+  });
+
+  $('.modal_close').click(function () {
+    $('body').removeClass('modal_show');
+    $('form').removeClass('form-loading').removeClass('form-open');
+    $('.form_toggle').removeClass('toggled');
+  });
+
+  function showModal(title, message) {
+    $('.modal_title').text(title);
+    $('.modal_text').html(message);
+
+    $('body').addClass('modal_show');
+  }
+})(jQuery);

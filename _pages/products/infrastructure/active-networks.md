@@ -3,14 +3,6 @@ layout: page
 permalink: '/products-services/infrastructure/active-networks/'
 title: Active Networks
 ---
-<div class = 'grid-1'>
-  <div>
-    <img src = '/assets/placeholders/light.png' alt = ''/>
-  </div>
-  <div>
-    <img src = '/assets/placeholders/light.png' alt = ''/>
-  </div>
-</div>
 
 ### About Active Networks
 

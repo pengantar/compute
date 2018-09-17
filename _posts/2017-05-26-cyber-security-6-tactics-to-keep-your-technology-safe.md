@@ -4,7 +4,7 @@ title: 'Cyber Security: 6 Tactics to keep your technology safe'
 tags:
   - cyber security
 ---
-<img class="aligncenter size-full" src="/assets/posts/cyber-security.jpg" alt="cyber security" />
+![cyber security](/assets/posts/cyber-security.jpg)
 
 The recent WannaCry ransomware attack that affected over 100, 000 computers across the world has shown just how vital an effective cyber security strategy is for any forward thinking organization. It has brought into focus key elements of cyber defense such as **Patch Management**, **Network Filtering**, **Antivirus Protection**, **Backups**, **Staff Security Awareness Training** and a comprehensive **Incident Response Plan**.
 
