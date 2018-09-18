@@ -329,7 +329,7 @@ $(function(){
   }
 })();
 
-(function HelloImage() {
+(function AltImage() {
   let post = document.querySelector('.post_body');
   let postImages = post.querySelectorAll('img');
   postImages.forEach((image) => {
