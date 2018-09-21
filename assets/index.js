@@ -90,36 +90,40 @@ function modifyClass(el, targetClass) {
     
   }
   
-  let mainSection = document.querySelector('main');
+  let mainSection = document.querySelector('.slides_container');
   
-  mainSection.addEventListener('click', function(event) {
-    let dot = event.target.closest('.dot');
-    let direction = event.target.closest('.direction');
-    let left = event.target.closest('.slide_left');
-    let right = event.target.closest('.slide_right');
-    
-    if (dot) {
-      let dots = dot.parentNode.children;
-      let slides = dot.parentNode.previousElementSibling.children;
-      let position = Array.from(dots).indexOf(dot);
-      activateSlide(slides, position, undefined);
-    }
-    
-    if(left || right) {
-      let slides = direction.previousElementSibling.previousElementSibling.children;
-      left ? activateSlide(slides, undefined, 0) : right ? activateSlide(slides, undefined, 1) : false ;
-    }
-  });
-  
-  mainSection.addEventListener('keydown', function(event) {
-    let slides = Array.from(event.target.children);
-    if(slides) {
-      let direction = event.code.toLowerCase() === 'arrowleft' ?  0 : (event.code.toLowerCase()  === 'arrowright' ? 1 : undefined); 
-      if (direction !== undefined ) {
-        direction === 0 ? activateSlide(slides, undefined, 0) : activateSlide(slides, undefined, 1) ;
+  function sliderHelpers(check) {
+    check.addEventListener('click', function(event) {
+      let dot = event.target.closest('.dot');
+      let direction = event.target.closest('.direction');
+      let left = event.target.closest('.slide_left');
+      let right = event.target.closest('.slide_right');
+      
+      if (dot) {
+        let dots = dot.parentNode.children;
+        let slides = dot.parentNode.previousElementSibling.children;
+        let position = Array.from(dots).indexOf(dot);
+        activateSlide(slides, position, undefined);
       }
-    }
-  });
+      
+      if(left || right) {
+        let slides = direction.previousElementSibling.previousElementSibling.children;
+        left ? activateSlide(slides, undefined, 0) : right ? activateSlide(slides, undefined, 1) : false ;
+      }
+    });
+    
+    check.addEventListener('keydown', function(event) {
+      let slides = Array.from(event.target.children);
+      if(slides) {
+        let direction = event.code.toLowerCase() === 'arrowleft' ?  0 : (event.code.toLowerCase()  === 'arrowright' ? 1 : undefined); 
+        if (direction !== undefined ) {
+          direction === 0 ? activateSlide(slides, undefined, 0) : activateSlide(slides, undefined, 1) ;
+        }
+      }
+    });
+  }
+
+  mainSection ? sliderHelpers(mainSection) : false; 
   
   function autoPlaySlide (speed) {
     window.setInterval(function() {
@@ -263,7 +267,7 @@ function fillModal(name, title, description, url) {
   let new_name = elem('.modal_name', modal);
   let new_title = elem('.modal_title', modal);
   let new_description = elem('.modal_description', modal);
-  let img = elem('img', modal);
+  let img = modal.children[0].children[0].children[0];
   setText(new_name, name);
   setText(new_description, description);
   setText(new_title, title);
