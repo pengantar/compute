@@ -43,7 +43,6 @@
         - leasing 
         - maintenance 
         - outsourcing   
-        - service centre
 
     - sublink: software solutions
       children:
@@ -52,5 +51,6 @@
         - microsoft solutions
 
 - link: partners
+- link: news 
 - link: blog 
 - link: contact us 

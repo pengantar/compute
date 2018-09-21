@@ -2,27 +2,43 @@
 layout: default
 permalink: '/'
 ---
-<div class = 'jumbotron'>
-  <div id = 'slides' class = 'carousel fade' data-ride = 'carousel'>
-    {%- assign slides = site.data.slides -%}
-    <ol class = 'carousel-indicators'>
-    {%- for slide in slides -%}
-      {% assign index = forloop.index | minus: 1 %}
-      <li data-target = '#slides' data-slide-to = '{{ index }}' {% if forloop.first %} class = 'active' {% endif %}></li>
-    {%- endfor -%}
-    </ol>
-    <div class = 'carousel-inner' role = 'listbox'>
-    {%- for slide in slides -%}
-      <figure class = 'item {% if forloop.first %}active{% endif %}'>
-        <img src = '/assets/images/{{ slide.image }}' class = 'img-responsive' alt = 'slide'>
-        <figcaption class = 'carousel-caption'>
-          <div class = 'caption'>
-            <h1>{{ slide.description }}</h1>
-          </div>
-        </figcaption>
-      </figure>
-    {%- endfor -%}
-    </div> 
+{%- assign slides = site.data.slides -%}
+
+<div class = 'slides_container mb-4'>
+  <div id = 'particles-js'></div>
+  <div class = 'slides' tabindex = '0'>
+  {%- for slide in slides -%}
+    <div class = 'slide {% if forloop.first %} slide_active {% endif %}'>
+      <h1>{{ slide.description }}</h1>
+    </div>
+  {%- endfor -%}
+  </div>
+  <div class = 'dots'>
+  {%- for item in slides -%}
+    <div class = 'dot {% if forloop.first %} dot_active {% endif %}'></div>
+  {%- endfor -%}
+  </div>
+  <div class = 'direction'>
+    <div class = 'slide_left'><span class = 'angle__left'></span></div>
+    <div class = 'slide_right'><span class = 'angle__right'></span></div>
   </div>
 </div>
+
 {%- include products-services.html -%}
+
+<section class = 'wrap mb-4 mt-4'>
+  <h5 class = 'orange center pt-4'>TALK TO SALES</h5>
+  <h2 class = 'center'>Our experts love to answer questions.</h2>
+  <div class = 'mt-4 grid-1 grid-tab'>
+    <div class = 'dark pt-2 pb-2 pl-1 pr-1'>
+    <h5 class = 'pl-2 orange'>OUR SERVICE CENTRE</h5>
+    <ul class = 'list'>
+      <li><span class = 'listing'></span>One Stop Shop for all IT related repairs</li>
+      <li><span class = 'listing'></span>HP Authorised Service Centre and HP Gold Partner</li>
+      <li><span class = 'listing'></span>Excellent customer service to meet all your needs</li>
+      <li><span class = 'listing'></span>Fully equipped Service Centre with certified engineers offering warranty support and repairs</li>
+    </ul>
+    </div>
+    <div>{% include form.html %}</div>
+  </div>
+</section>

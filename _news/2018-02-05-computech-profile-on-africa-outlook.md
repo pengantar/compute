@@ -4,7 +4,7 @@ category: mentions
 image:
   name: outlook-0
   type: jpg
-  description: ""
+  description: "Computech's Staff"
 # title: "Computech is HPE’s Overall Partner of the Year"
 ---
 

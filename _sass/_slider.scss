@@ -1,119 +1,10 @@
-.carousel-control {
-  position: absolute;
-  top: 200px;
-  bottom: auto;
-  left: 0;
-  width: 15%;
-  font-size: 40px;
-  color: #fff;
-  text-align: center;
-  text-shadow: 0 1px 1px rgba(0, 0, 0, .1);
-  filter: alpha(opacity=50);
-  opacity: .5;
-}
-.carousel-control.left, .carousel-control.right{
-  background-image: none no-repeat !important;
-}
-.carousel-control .glyphicon-chevron-left, .carousel-control .glyphicon-chevron-right, .carousel-control .icon-prev, .carousel-control .icon-next {
-  width: 30px;
-  height: 30px;
-  margin-top: -10px;
-  font-size: 30px;
-}
-.jumbotron{
-  padding: 0px;
-  margin-bottom: 0px;
-background-color: #fff;
-}
-#myCarousel{
-  padding: 0px;
-  margin-bottom: 0px;    
-}
-.carousel-indicators li{
-  border-radius: 50% !important;
-  background-color: #ddd;
-  border: none;
-}
-.carousel-indicators li:active{
-  
-  background-color: #fff;
-  
-}
-
-.carousel-inner > .item > img, .carousel-inner > .item > a > img {
-  height: auto;
-  display: block;      
-  min-width: 100%;
-  width: 100%;
-  max-width: 100%;
-  line-height: 1;
-  
-}
-.carousel-caption {
-  height: 100%;
-  width: auto;
-  bottom:0;
-  display: table-cell;
-  z-index: 10;
-  padding-top: 0;
-  padding-bottom: 0;
-  color: #FFF;
-  text-align: center;
-  text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.6);
-  
-}
-.caption{
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%);
-  width: auto;
-  height: auto;
-  padding: 10px 0px; 
-  text-align: center;
-  vertical-align: middle;
-  border-radius: 2px;
-}
-.caption h1{
-  font-size: 22.5px;
-  padding: 0 20px;
-}
-
-.carousel.fade {
-  opacity: 1;
-}
-.carousel.fade .item {
-  transition: opacity ease-in-out .7s;
-  left: 0 !important;
-  opacity: 0;
-  top: 0;
-  position:absolute;
-  width: 100%;
-  display:block !important;
-  z-index:1;
-}
-.carousel.fade .item:first-child {
-  top:auto;
-  position:relative;
-}
-.carousel.fade .item.active {
-  opacity: 1;
-  transition: opacity ease-in-out .7s;
-  z-index:2;
-}
-
-@media only screen and (max-width: 768px) {
-  .carousel-inner > .item > img, .carousel-inner > .item > a > img {            
-      height: 310px;
-  }
-}
-
 @keyframes showSlide {
   0%{
-    transform: translateX(-2000px);
+    transform: translateX(4000px);
     opacity: 0;
   }
-  50% {
-    transform: translateX(0);
+  33% {
+    transform: translateX(100px);
     opacity: 0;
   }
   100% {
@@ -122,16 +13,24 @@ background-color: #fff;
   }
 }
 
-.control {
+.dot {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: relative;
-  width: 9px;
-  height: 9px;
+  width: 27px;
+  height: 27px;
   background: transparent;
-  border: 1px solid $mute;
-  border-radius: 50%;
-  margin: 5px;
   cursor: pointer;
-  transition: all 1s ease-in;
+  border-radius: 50%;
+  &::after {
+    content: '';
+    background: $mute;
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    transition: all 1s ease-in;
+  }
   &s{
     position: absolute;
     bottom: 25px;
@@ -139,27 +38,34 @@ background-color: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 3;
+    z-index: 11;
   }
   &_active{
-    width: 12px;
-    height:12px;
-    background: $dark;
-    border: 1px solid transparent;
+    &::after {
+      background: $light;
+      width: 12px;
+      height:12px;
+    }
   }
 }
 
 .slide{
   background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 100%;
+  min-height: 480px;
   color: $mute;
   opacity: 0;
   position: absolute;
-  transform: translateX(-2000px);
+  z-index: 10;
+  transform: translateX(4000px);
   transition: opacity 1s ease-out;
   h1{
-    color: $dark;
+    color: $light;
     text-align: center;
+    padding: 25px;
   }
   img{
     width: 100%;
@@ -173,9 +79,9 @@ background-color: #fff;
       outline: none;
     }
     &_container{
+      background: $dark;
       width: 100%;
       position: relative;
-      margin: 50px 0;
       &:hover .slide_left,
       &:hover .slide_right, {
         opacity: 1;
@@ -194,7 +100,7 @@ background-color: #fff;
     display: flex;
     align-items: center;
     background: transparent;
-    z-index: 2;
+    z-index: 11;
     color: $mute;
     font-size: 5rem;
     padding: 10px;

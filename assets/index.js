@@ -8,6 +8,134 @@ function elems(selector) {
   return elems.length ? elems : false; 
 }
 
+function pushClass(el, targetClass) {
+  // equivalent to addClass
+  if (el && typeof el == 'object' && targetClass) {
+    elClass = el.classList;
+    elClass.contains(targetClass) ? false : elClass.add(targetClass);
+  }
+}
+
+function deleteClass(el, targetClass) {
+  // equivalent to removeClass
+  if (el && typeof el == 'object' && targetClass) {
+    elClass = el.classList;
+    elClass.contains(targetClass) ? elClass.remove(targetClass) : false;
+  }
+}
+
+function modifyClass(el, targetClass) {
+  // equivalent to toggleClass
+  if (el && typeof el == 'object' && targetClass) {
+    elClass = el.classList;
+    elClass.contains(targetClass) ? elClass.remove(targetClass) : elClass.add(targetClass);
+  }
+}
+
+// Replaces bootstrap carousel
+(function Slider() {
+  function activateSlide(el, position, direction) {
+    let allSlides = Array.from(el);
+    let active = 'slide_active';
+    let activeSlide = allSlides.filter((slide) => {
+      return slide.classList.contains(active);
+    })[0];
+    
+    let currentPosition = allSlides.indexOf(activeSlide);
+    // number of slides 
+    let size = allSlides.length;
+    
+    function switchDot(position) {
+      let active = 'dot_active';
+      let dots = Array.from(activeSlide.parentNode.nextElementSibling.children);
+      let activeDot = dots[currentPosition]; 
+      let targetDot = dots[position];
+      deleteClass(activeDot, active);
+      pushClass(targetDot, active);
+    }
+    
+    function switchSlide (position) {
+      let targetSlide = allSlides[position];
+      switchDot(position);
+      deleteClass(activeSlide, active);
+      pushClass(targetSlide, active);
+    }
+    
+    function arrows() {
+      // Get the position of the active Slide
+      if(direction === 1) {
+        if(currentPosition >= 0 && currentPosition !== (size - 1)) {
+          let position = (currentPosition + 1);
+          switchSlide(position);
+        } else {
+          let position = 0;
+          switchSlide(position);
+        }
+      } else {
+        if(currentPosition !== 0) {
+          let position = (currentPosition - 1);
+          switchSlide(position);
+        } else {
+          let position = (size - 1);
+          switchSlide(position);
+        }
+      }
+    }
+    
+    function dots() {
+      switchSlide(position);
+    }
+    
+    position === undefined ? arrows() : dots();
+    
+  }
+  
+  let mainSection = document.querySelector('main');
+  
+  mainSection.addEventListener('click', function(event) {
+    let dot = event.target.closest('.dot');
+    let direction = event.target.closest('.direction');
+    let left = event.target.closest('.slide_left');
+    let right = event.target.closest('.slide_right');
+    
+    if (dot) {
+      let dots = dot.parentNode.children;
+      let slides = dot.parentNode.previousElementSibling.children;
+      let position = Array.from(dots).indexOf(dot);
+      activateSlide(slides, position, undefined);
+    }
+    
+    if(left || right) {
+      let slides = direction.previousElementSibling.previousElementSibling.children;
+      left ? activateSlide(slides, undefined, 0) : right ? activateSlide(slides, undefined, 1) : false ;
+    }
+  });
+  
+  mainSection.addEventListener('keydown', function(event) {
+    let slides = Array.from(event.target.children);
+    if(slides) {
+      let direction = event.code.toLowerCase() === 'arrowleft' ?  0 : (event.code.toLowerCase()  === 'arrowright' ? 1 : undefined); 
+      if (direction !== undefined ) {
+        direction === 0 ? activateSlide(slides, undefined, 0) : activateSlide(slides, undefined, 1) ;
+      }
+    }
+  });
+  
+  function autoPlaySlide (speed) {
+    window.setInterval(function() {
+      let sliders = Array.from(document.querySelectorAll('.slides'));
+      if(sliders) {
+        sliders.forEach((slider) => {
+          activateSlide(slider.children, undefined, 1);
+        });
+      }
+    }, speed);
+  }
+  
+  autoPlaySlide(10000);  
+  
+})();
+
 (function() {
   let items = elems('.share_item');
 
@@ -331,14 +459,16 @@ $(function(){
 
 (function AltImage() {
   let post = document.querySelector('.post_body');
-  let postImages = post.querySelectorAll('img');
-  postImages.forEach((image) => {
-     console.log(image.alt);
-     let desc = document.createElement('p');
-     desc.classList.add('thumb_alt');
-     desc.textContent = image.alt;
-     image.insertAdjacentHTML('afterend', desc.outerHTML);
-  });
+  let postImages = post ? post.querySelectorAll('img') : false;
+  if(postImages) {
+    postImages.forEach((image) => {
+       console.log(image.alt);
+       let desc = document.createElement('p');
+       desc.classList.add('thumb_alt');
+       desc.textContent = image.alt;
+       image.insertAdjacentHTML('afterend', desc.outerHTML);
+    });
+  }
 })();
 
 (function tabz(){

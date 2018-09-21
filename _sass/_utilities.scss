@@ -1,3 +1,10 @@
+.dark {
+  background: $dark;
+  color: $light;
+}
+.orange{
+  color: $orange;  
+}
 .text{
   &_left{
     text-align: left;

@@ -1,7 +1,7 @@
 <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
 <script src = '/assets/js/bootstrap.min.js'></script>
 <script src = '/assets/js/index.js'></script>
-{%- if page.layout == 'page' -%}
+{%- if page.layout == 'page' or page.permalink == '/' -%}
   <script defer src = '/assets/js/particles.js'></script>
   <script defer src = '/assets/js/particlesjson.js'></script>
 {%- endif -%}

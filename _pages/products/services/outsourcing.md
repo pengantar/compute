@@ -2,22 +2,17 @@
 layout: page
 permalink: '/products-services/services/outsourcing/'
 title: Outsourcing
+partners:
+  - kq
+  - britam
+  - cba.png
 ---
 ### Partners
 
 <div class = 'grid-4 mt-2 mb-2'>
-  <div class = 'partner'>
-    <img src = '/assets/clients/kq.png' alt = 'client'>     
-  </div>
-  <div class = 'partner'>
-    <img src = '/assets/clients/britam.png' alt = 'client'>
-  </div>
-  <div class = 'partner'>
-    <img src = '/assets/partners/CBABeST.png' alt = 'client'> 
-  </div>
-  <div class = 'partner'>
-    <img src = '/assets/clients/comviva.png' alt = 'client'>
-  </div>
+  {%- for partner in page.partners -%}
+  <div class = 'partner'><img src = '/assets/clients/{{ partner }}.png' alt = 'client'></div>
+  {%- endfor -%}
 </div>   
 
 ### What is Outsourcing?

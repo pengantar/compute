@@ -14,11 +14,10 @@
         {% endfor %}
       </div>
       <div>
-        <h3>Useful Links</h3>
-        <span><a href = '/blog/' title = 'Computech Blog'>Blog</a></span>
-        <span><a href = '/about-us/careers/' title = 'Computech Careers'>Careers</a></span>
-        <span><a href = '/about-us/profile/' title = 'Computech Profile'>Profile</a></span>
-        <span><a href = '/news/' title = 'Computech News'>News</a></span>
+        <h3>About Us</h3>
+        {%- for item in site.data.about-us -%}
+        <span><a href = '/about-us/{{ item }}/' title = 'Computech {{ item | capitalize }}'>{{ item | capitalize }}</a></span>
+        {%- endfor -%}
       </div>
       <div>
         <h3>Follow Us</h3>

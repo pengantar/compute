@@ -2,26 +2,16 @@
 layout: page
 permalink: '/products-services/services/maintenance/'
 title: Maintenance
+partners: 
+  - safaricom
+  - simba
+  - britam
 ---
-<div class = 'grid-2'>
-  <div>
-    <img alt = '' src = '/assets/images/maintenance.jpg' >
-  </div>
-  <div>
-    <img alt = '' src = '/assets/images/maintenance-2.jpg'  >   
-  </div>
-</div>
-<h3 class = 'mt-2 mb-2'>Clients</h3>
+<h2 class = 'mb-2'>Clients</h2>
 <div class = 'partners grid-3'>
-  <div class = 'partner'>
-    <img src = '/assets/partners/safaricom.png'>
-  </div>
-  <div class = 'partner'>
-    <img src = '/assets/clients/simba.png'>
-  </div>
-  <div class = 'partner'>
-    <img src = '/assets/clients/britam.png'>
-  </div>
+  {%- for partner in page.partners -%}
+    <div class = 'partner'><img src = '/assets/clients/{{ partner }}.png' alt = 'client'></div>
+  {%- endfor -%}
 </div>
 
 ### What is Maintenance?
