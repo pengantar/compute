@@ -308,19 +308,52 @@ function switchToNonWebp () {
   });
 };
 
-$(document).ready(function() {
-  $('.carousel .carousel-caption').css('zoom', $('.carousel').width()/1050);  
-  (function initWebp() {
-    serveNonWebp() ? switchToNonWebp() : false;
-  })();
-});
+function createComponent(content, classAttr = false) {
+  let div = document.createElement('div');
+  div.innerHTML = content;
+  classAttr ? div.classList.add(classAttr) : false;
+  return div;
+}
+
+function fuzu () {
+  $.get('http://www.fuzu.com/api/company/computech-limited/all_jobs',
+    function(data, status) {
+      let fuzuData = data.fuzu_api[0];
+      let jobTitle = createComponent(fuzuData.title, 'job_title');
+      let jobLocation = createComponent(fuzuData.location, 'job_location');
+      let icon = document.createElement('img');
+      icon.src = '/assets/icons/location.svg';
+      icon.classList.add('job_icon');
+      icon.alt = 'icon';
+      jobLocation.insertBefore(icon, jobLocation.firstChild);
+      let jobApply = createComponent('Apply', 'snip');
+      let job = document.createElement('a');
+      job.classList.add('job');
+      job.setAttribute('href', fuzuData.url);
+      job.setAttribute('target', '_blank');
+      job.appendChild(jobTitle);
+      job.appendChild(jobLocation);
+      job.appendChild(jobApply);
+      let board = document.querySelector('.job_board');
+      board.appendChild(job);
+  });
+}
 
 $(window).resize(function() {
   $('.carousel .carousel-caption').css('zoom', $('.carousel').width()/1050);
 });
 
 $(document).ready(function(){
+
+  $('.carousel .carousel-caption').css('zoom', $('.carousel').width()/1050);  
+  (function initWebp() {
+    serveNonWebp() ? switchToNonWebp() : false;
+  })();
+
   $('.aniview').AniView();
+
+  fuzu();
+
 });
 
 //For the contact form sub
