@@ -316,7 +316,7 @@ function createComponent(content, classAttr = false) {
 }
 
 function fuzu () {
-  $.get('http://www.fuzu.com/api/company/computech-limited/all_jobs',
+  $.get('https://www.fuzu.com/api/company/computech-limited/all_jobs',
     function(data, status) {
       let fuzuData = data.fuzu_api[0];
       let jobTitle = createComponent(fuzuData.title, 'job_title');
