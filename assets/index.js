@@ -329,7 +329,7 @@ function fuzu () {
       let jobApply = createComponent('Apply', 'snip');
       let job = document.createElement('a');
       job.classList.add('job');
-      job.setAttribute('href', fuzuData.url);
+      job.setAttribute('href', fuzuData.styled_flow_url);
       job.setAttribute('target', '_blank');
       job.appendChild(jobTitle);
       job.appendChild(jobLocation);
