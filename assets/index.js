@@ -316,27 +316,30 @@ function createComponent(content, classAttr = false) {
 }
 
 function fuzu () {
-  $.get('https://www.fuzu.com/api/company/computech-limited/all_jobs',
-    function(data, status) {
-      let fuzuData = data.fuzu_api[0];
-      let jobTitle = createComponent(fuzuData.title, 'job_title');
-      let jobLocation = createComponent(fuzuData.location, 'job_location');
-      let icon = document.createElement('img');
-      icon.src = '/assets/icons/location.svg';
-      icon.classList.add('job_icon');
-      icon.alt = 'icon';
-      jobLocation.insertBefore(icon, jobLocation.firstChild);
-      let jobApply = createComponent('Apply', 'snip');
-      let job = document.createElement('a');
-      job.classList.add('job');
-      job.setAttribute('href', fuzuData.styled_flow_url);
-      job.setAttribute('target', '_blank');
-      job.appendChild(jobTitle);
-      job.appendChild(jobLocation);
-      job.appendChild(jobApply);
-      let board = document.querySelector('.job_board');
-      board.appendChild(job);
-  });
+  let board = document.querySelector('.job_board');
+  function callFuzu() {
+    $.get('https://www.fuzu.com/api/company/computech-limited/all_jobs',
+      function(data, status) {
+        let fuzuData = data.fuzu_api[0];
+        let jobTitle = createComponent(fuzuData.title, 'job_title');
+        let jobLocation = createComponent(fuzuData.location, 'job_location');
+        let icon = document.createElement('img');
+        icon.src = '/assets/icons/location.svg';
+        icon.classList.add('job_icon');
+        icon.alt = 'icon';
+        jobLocation.insertBefore(icon, jobLocation.firstChild);
+        let jobApply = createComponent('Apply', 'snip');
+        let job = document.createElement('a');
+        job.classList.add('job');
+        job.setAttribute('href', fuzuData.styled_flow_url);
+        job.setAttribute('target', '_blank');
+        job.appendChild(jobTitle);
+        job.appendChild(jobLocation);
+        job.appendChild(jobApply);
+        board.appendChild(job);
+    });
+  }
+  board ? callFuzu() : false;
 }
 
 $(window).resize(function() {
