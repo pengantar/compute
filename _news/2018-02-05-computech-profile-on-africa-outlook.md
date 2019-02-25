@@ -1,5 +1,5 @@
 ---
-layout: news-post
+title: Computech Profile on Africa Outlook
 category: mentions
 image:
   name: outlook-0

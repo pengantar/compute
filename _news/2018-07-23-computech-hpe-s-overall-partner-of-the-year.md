@@ -1,11 +1,10 @@
 ---
-layout: news-post
+title: "Computech is HPE’s Overall Partner of the Year"
 category: awards
 image:
   name: hpe-event-0
   type: jpg
   description: "Computech Limited & HPE teams celebrate 3 awards won by Computech during the HPE Africa Tour"
-title: "Computech is HPE’s Overall Partner of the Year"
 ---
 
 The HPE Africa Tour is an annual roadshow during which HPE recognises outstanding partners and thanks customers for their support. This year, the awards for English speaking Africa (East & Southern Africa) was held in Nairobi.
