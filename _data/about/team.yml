@@ -10,10 +10,6 @@
   title: CEO, KENYA
   picture: dipak
   description: "A fellow of the Chartered Association of the Certified Accountants (FCCA), Dipak joined Computech as Chief Accountant in 1992 after stints with Abercrombie & Kent, Ashwin Brothers and Interact Travels. Dipak has risen steadily to CEO position and has been involved in all aspects of growing the business to current levels. Dipak has a keen interest in ICT emerging trends, world affairs, community service and keeping fit through cycling and working out."
-# - name: Mandheer Singh Sehmi
-#   title: Head of Software Solutions
-#   picture: mandheer
-#   description: "Mandheer has over 20 years’ experience working with Microsoft products in East Africa, along with experience across industries such as real estate, hospitality, and automobiles in the US, UAE and East Africa. Mandheer has led the software team successfully over the years, enhancing the strong relationship with Microsoft and developing partnerships with other software solutions. Mandheer holds a BA and MBA from the University of New Orleans."
 - name: Halima Mubarak
   title: Sales Manager
   picture: halima
@@ -26,13 +22,16 @@
   title: Strategy & Transformation Manager
   picture: elahe
   description: "Elahe has worked across several industries including aviation, real estate, banking, hospitality, and manufacturing. Previously with Bain & Company in London and Johannesburg, Elahe is using her background in management and strategy consulting to drive Computech Limited’s Transformation Program. Elahe holds a BA from Stanford University."
+- name: James Mwangi
+  title: Head of Software
+  picture: male
+- name: Njambi Kimani
+  title: Regional Marketing Manager
+  picture: female
+  description: ""
 - name: Emy Mwangi
   title: Human Resource Manager
   picture: emy
-  description: ""
-- name: Charles Ogolla
-  title: Chief Financial Officer
-  picture: charles
   description: ""
 - name: Sameer Kassam
   title: Head of Customer Experience
@@ -41,18 +40,13 @@
 - name: George Kimani
   title: GM UGANDA
   picture: george
+- name: Simon
+  title: GM Zambia
+  picture: male
   description: "George has significant experience in financial administration and auditing. He has held various positions from Accountant, Audit Senior, and Chief Accountant. With 7 years’ experience in management within the IT sector, George has held the position of Assistant GM in Computech Uganda for 3 years, Managing Director Computech Rwanda & Burundi for 4 Years and has held the General Manager Computech Uganda position since January 2016."
 - name: Afzal Shaikh
   title: Head of Security
   picture: afzal
-  description: ""
-- name: Rajesh Shah 
-  title: Head of Services
-  picture: rajesh
-  description: ""
-- name: Shahid Iqbal 
-  title: Sales GM Uganda
-  picture: shahid
   description: ""
 - name: Sushin Kurunnantavida
   title: Head of Enterprise
@@ -62,7 +56,7 @@
   title: GM TANZANIA
   picture: jay
   description: "Jay has over 30 years of ICT experience in Africa (Kenya, Tanzania, Nigeria and Ghana), Middle East and India. In particular, Jay has sold medium to large projects in over 15 countries and has significant experience with BFSI and eGovernment software. Jay offers support to the regional offices on some of the larger software projects."
-- name: Sandip
+- name: Sandip Datta
   title: Head of Healthcare
   picture: sandip
   description: "Sandip has 27 years’ experience in the medical equipment industry, having worked with Larsen & Toubro Limited, GE Healthcare, Toshiba Medical Systems and Carestream Health. He has vast experience in India, South Africa, Kenya and Uganda in different capacities, particularly within Sales and Service. Sandip is based in Dar-es-Salaam, Tanzania, and holds a Bachelor of Engineering from NIT Tiruchirapalli, India, and an MBA from Calcutta University."
