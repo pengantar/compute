@@ -282,14 +282,14 @@ function fillModal(name, title, description, url) {
   let members = elems('.member');
   if(members) {
     Array.from(members).map(function(member, index) {
-      member.addEventListener('click', function() {
-        let name = findText(member, '.member_name');
-        let title = findText(member, '.member_title');
-        let description = findText(member, '.member_description');
-        let imgUrl = member.querySelector('img').src;
-        fillModal(name, title, description, imgUrl);
-        toggleModal(shell);
-      }); 
+      // member.addEventListener('click', function() {
+      //   let name = findText(member, '.member_name');
+      //   let title = findText(member, '.member_title');
+      //   let description = findText(member, '.member_description');
+      //   let imgUrl = member.querySelector('img').src;
+      //   fillModal(name, title, description, imgUrl);
+      //   toggleModal(shell);
+      // }); 
     }); 
     hideModal(shell);
   }
