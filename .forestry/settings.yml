@@ -5,15 +5,17 @@ admin_path:
 webhook_url: 
 sections:
 - type: directory
-  path: _news
-  label: news
-  create: all
-  match: "**/*"
-  templates:
-  - article
-- type: jekyll-pages
+  path: _pages
   label: Pages
   create: all
+  match: "**/*.{md,html,yml}"
+- type: directory
+  path: _news
+  label: News
+  create: all
+  match: "**/*.{md}"
+  templates:
+  - article
 - type: jekyll-posts
   label: Posts
   create: all
