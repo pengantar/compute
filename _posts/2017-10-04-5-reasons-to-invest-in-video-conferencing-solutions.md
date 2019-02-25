@@ -1,5 +1,4 @@
 ---
-layout: post
 title: '5 Reasons to Invest in Video Conferencing Solutions'
 tags: 
   - video conferencing

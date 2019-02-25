@@ -1,5 +1,4 @@
 ---
-layout: post
 title: '5 Reasons to Adopt a Cloud Backup Solution with Computech Limited'
 tags:
   - cloud computing

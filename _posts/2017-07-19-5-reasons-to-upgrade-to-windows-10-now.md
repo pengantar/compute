@@ -1,5 +1,4 @@
 ---
-layout: post
 title: '5 Reasons to Upgrade to Windows 10 Now'
 tags:
   - 'windows 10'

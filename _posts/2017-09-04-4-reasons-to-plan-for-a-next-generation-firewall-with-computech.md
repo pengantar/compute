@@ -1,5 +1,4 @@
 ---
-layout: post
 title: '4 Reasons to plan for a next-generation firewall with Computech'
 tags: 
   - cyber security

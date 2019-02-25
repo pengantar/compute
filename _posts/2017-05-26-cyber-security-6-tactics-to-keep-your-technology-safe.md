@@ -1,5 +1,4 @@
 ---
-layout: post
 title: 'Cyber Security: 6 Tactics to keep your technology safe'
 tags:
   - cyber security

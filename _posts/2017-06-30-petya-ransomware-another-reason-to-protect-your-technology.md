@@ -1,5 +1,4 @@
 ---
-layout: post
 title: 'Petya Ransomware: Another Reason to Protect your Technology'
 tags: 
   - cyber security
