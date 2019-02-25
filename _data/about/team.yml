@@ -10,21 +10,43 @@
   title: CEO, KENYA
   picture: dipak
   description: "A fellow of the Chartered Association of the Certified Accountants (FCCA), Dipak joined Computech as Chief Accountant in 1992 after stints with Abercrombie & Kent, Ashwin Brothers and Interact Travels. Dipak has risen steadily to CEO position and has been involved in all aspects of growing the business to current levels. Dipak has a keen interest in ICT emerging trends, world affairs, community service and keeping fit through cycling and working out."
-- name: Halima Mubarak
-  title: Sales Manager
-  picture: halima
-  description: "Halima has over 13 years’ experience in sales, customer service, operations, and management for both start-up and established companies. Her expertise in B2B sales and extensive knowledge of infrastructure and value-add IT solutions has enabled her to effectively lead the entire sales team. Halima was part of the team ensuring Computech Limited’s ISO 9001:2008 certification. Halima holds a Bachelor of Commerce in Economics from the University of Nairobi."
-- name: Saurin Shah
-  title: Head of volume
-  picture: saurin
-  description: "Saurin has significant experience in the IT industry, having worked with both vendors and distributors. Saurin has successfully led the Volume department, responsible for selling high-volume products such as laptops, PCs and printers, by streamlining the team and processes and developing strong relationships with key vendors. Saurin holds a Diploma in Electronics & Telecommunication from the Bombay Technical Education Board."
 - name: Elahe Anjarwalla
   title: Strategy & Transformation Manager
   picture: elahe
   description: "Elahe has worked across several industries including aviation, real estate, banking, hospitality, and manufacturing. Previously with Bain & Company in London and Johannesburg, Elahe is using her background in management and strategy consulting to drive Computech Limited’s Transformation Program. Elahe holds a BA from Stanford University."
+
+- name: Jay Venugopal
+  title: GM TANZANIA
+  picture: jay
+  description: "Jay has over 30 years of ICT experience in Africa (Kenya, Tanzania, Nigeria and Ghana), Middle East and India. In particular, Jay has sold medium to large projects in over 15 countries and has significant experience with BFSI and eGovernment software. Jay offers support to the regional offices on some of the larger software projects."
+- name: George Kimani
+  title: GM UGANDA
+  picture: george
+  description: "George has significant experience in financial administration and auditing. He has held various positions from Accountant, Audit Senior, and Chief Accountant. With 7 years’ experience in management within the IT sector, George has held the position of Assistant GM in Computech Uganda for 3 years, Managing Director Computech Rwanda & Burundi for 4 Years and has held the General Manager Computech Uganda position since January 2016."
+- name: Simon
+  title: GM Zambia
+  picture: male
+  description: ""
+- name: Sushin Kurunnantavida
+  title: Head of Enterprise
+  picture: sushin
+  description: ""
+- name: Afzal Shaikh
+  title: Head of Security
+  picture: afzal
+  description: ""
+- name: Saurin Shah
+  title: Head of volume
+  picture: saurin
+  description: "Saurin has significant experience in the IT industry, having worked with both vendors and distributors. Saurin has successfully led the Volume department, responsible for selling high-volume products such as laptops, PCs and printers, by streamlining the team and processes and developing strong relationships with key vendors. Saurin holds a Diploma in Electronics & Telecommunication from the Bombay Technical Education Board."
 - name: James Mwangi
   title: Head of Software
   picture: male
+  description: ""
+- name: Sameer Kassam
+  title: Head of Customer Experience
+  picture: sameer
+  description: "Sameer has over 15 years specializing in customer service and service delivery, having worked with British Gas and Camelot Group in the UK. Sameer’s work at Computech has been on extending the Outsource and Service Delivery portfolio regionally, whilst ensuring a focus on outstanding customer service. Sameer holds an HND in Management Information Systems."
 - name: Njambi Kimani
   title: Regional Marketing Manager
   picture: female
@@ -33,29 +55,6 @@
   title: Human Resource Manager
   picture: emy
   description: ""
-- name: Sameer Kassam
-  title: Head of Customer Experience
-  picture: sameer
-  description: "Sameer has over 15 years specializing in customer service and service delivery, having worked with British Gas and Camelot Group in the UK. Sameer’s work at Computech has been on extending the Outsource and Service Delivery portfolio regionally, whilst ensuring a focus on outstanding customer service. Sameer holds an HND in Management Information Systems."
-- name: George Kimani
-  title: GM UGANDA
-  picture: george
-- name: Simon
-  title: GM Zambia
-  picture: male
-  description: "George has significant experience in financial administration and auditing. He has held various positions from Accountant, Audit Senior, and Chief Accountant. With 7 years’ experience in management within the IT sector, George has held the position of Assistant GM in Computech Uganda for 3 years, Managing Director Computech Rwanda & Burundi for 4 Years and has held the General Manager Computech Uganda position since January 2016."
-- name: Afzal Shaikh
-  title: Head of Security
-  picture: afzal
-  description: ""
-- name: Sushin Kurunnantavida
-  title: Head of Enterprise
-  picture: sushin
-  description: ""
-- name: Jay Venugopal
-  title: GM TANZANIA
-  picture: jay
-  description: "Jay has over 30 years of ICT experience in Africa (Kenya, Tanzania, Nigeria and Ghana), Middle East and India. In particular, Jay has sold medium to large projects in over 15 countries and has significant experience with BFSI and eGovernment software. Jay offers support to the regional offices on some of the larger software projects."
 - name: Sandip Datta
   title: Head of Healthcare
   picture: sandip
