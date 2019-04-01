@@ -5,7 +5,6 @@ image:
   name: outlook-0
   type: jpg
   description: "Computech's Staff"
-# title: "Computech is HPE’s Overall Partner of the Year"
 ---
 
 Computech Limited is demonstrating ongoing entrepreneurial flair and an enthusiasm for technological innovation in order to combat a rapidly shifting IT landscape

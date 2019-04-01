@@ -7,3 +7,4 @@ package.json
 package-lock.json
 dist
 *schema.html
+.DS_Store
