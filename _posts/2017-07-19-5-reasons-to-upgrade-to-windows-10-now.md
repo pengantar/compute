@@ -5,7 +5,7 @@ tags:
   - microsoft
   - cyber security
 ---
-![alt="windows-10-logo](/assets/posts/windows.jpg)
+![alt="windows-10-logo](/assets/news/windows.jpg)
 
 The potential threat posed by cyberattacks is now more vivid than before, given the devastating effects two major recent ransomware attacks, WannaCry and Petya, had on organizations across the world. According to security researchers, roughly 98% of the computers affected by the ransomware were running on versions of Windows 7 and Windows XP.
 

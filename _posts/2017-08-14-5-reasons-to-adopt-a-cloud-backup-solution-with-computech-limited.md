@@ -4,7 +4,7 @@ tags:
   - cloud computing
   - cyber security
 ---
-![Back up solutions](/assets/posts/backup-solutions.jpg)
+![Back up solutions](/assets/news/backup-solutions.jpg)
 
 Protecting enterprise data is essential for survival of any business. With the ever-increasing threats of cyberattacks, businesses without a sound data backup and disaster recovery plan are continuing to lose critical assets and their competitive edge. However, traditional methods of data protection have been proven to be difficult, unreliable, and expensive, especially with the large volume of data that modern businesses now store and process.
 

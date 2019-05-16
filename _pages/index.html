@@ -38,12 +38,15 @@ description: "Founded in 1987, Computech Limited is a leading East African syste
   </div>
 </section>
 
-<!-- <div class = 'grid-3 partners'> 
-  {%- for partner in site.data.partners -%}
-    <div class = 'partner'>  
-      <a href = '{{ partner.url }}' target = '_blank' rel = 'noopener'>
-        <img  src = '/assets/partners/{{ partner.logo }}' alt = 'partner' />
-      </a>
-    </div>
-  {%- endfor -%}
-</div> -->
+<section class = 'wrap'>
+  <h2>Our Partners</h2>
+  <div class = 'grid-3 partners'> 
+    {%- for partner in site.data.partners -%}
+      <div class = 'partner'>  
+        <a href = '{{ partner.url }}' target = '_blank' rel = 'noopener'>
+          <img  src = '/assets/partners/{{ partner.logo }}' alt = 'partner' />
+        </a>
+      </div>
+    {%- endfor -%}
+  </div>
+</section>

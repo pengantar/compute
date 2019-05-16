@@ -21,10 +21,10 @@
 <meta name = 'SKYPE_TOOLBAR' content = 'SKYPE_TOOLBAR_PARSER_COMPATIBLE' />
 <meta name = 'keywords' content = '{{ site.title }}'>
 <meta property = 'og:locale' content = 'en_US' />
-{%- if page.layout == 'post' -%}
+{%- if page.layout == 'post' or page.layout == 'news-post' -%}
   <meta property = 'og:type' content = 'article' />
-  <meta property = 'og:title' content = '{{page.title}}' />
-  <meta property = 'og:url' content = '/{{page.title}}' />
+  <meta property = 'og:title' content = "{{ page.title }}" />
+  <meta property = 'og:url' content = "{{ page.url | absolute_url }}" />
   {%- assign pageDate = page.date | date_to_xmlschema -%}
   <meta property = 'article:published_time' content = '{{ pageDate }}' />
   <script type = "application/ld+json">
@@ -35,7 +35,7 @@
       "name": "{{ site.title }}",
       "headline": "{{ page.title }}",
       "description": "{{ desc }}",
-      "url": "{{site.url}}/{{ page.permalink }}",
+      "url": "{{ page.url | absolute_url }}",
       "datePublished": "{{ pageDate }}",
       "dateModified": "{{ pageDate }}",
       "author": {
@@ -44,7 +44,7 @@
       },
       "image":{  
         "@type":"ImageObject",
-        "url":"{{site.url}}/assets/posts/{{page.image}}.jpg"
+        "url":"{{site.url}}/assets/news/{{page.image.name }}.jpg"
       },
       "publisher": {
         "@type": "Organization",
@@ -63,7 +63,7 @@
 {%- if page.thumbnail -%} <!-- If thumbnail is set -->
 {%- assign thumbnail-url  = '/assets/posts/' | prepend: site.url | append: page.thumbnail | append: '.jpg' -%}
 {%- else -%} 
-{%- assign thumbnail-url =   '/assets/posts/' | prepend: site.url | append: page.image |  append: '.jpg' -%}
+{%- assign thumbnail-url =   '/assets/news/' | prepend: site.url | append: page.image.name |  append: '.jpg' -%}
 {%- endif -%}
 {%- if page.image -%}
 <meta property = 'og:image' content= '{{ thumbnail-url }}' />
