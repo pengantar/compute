@@ -631,3 +631,67 @@ a:visited{
     }
   }
 }
+
+.service-card {
+  height: 11rem;
+  width: 11rem;
+  display: inline-grid;
+  align-items: center;
+  text-align: center;
+  border-radius: 50%;
+  padding: 1rem;
+  font-weight: 500;
+  font-size: 0.9rem;
+  &:nth-child(odd) {
+    transform: translateX(2rem) translateY(3rem);
+  }
+}
+
+.banner_home {
+  background-image: linear-gradient(97deg,$dark 18%,hsla(0,0%,100%,0) 74%),url(/assets/news/hpe-event-0.jpg) !important;
+  display: flex;
+  flex-direction: column;
+  // align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 480px;
+}
+.banner_title {
+  max-widtH: 25rem;
+  color: $light;
+}
+
+.image{
+  &_holder {
+    margin-top: 6rem;
+    position: relative;
+  }
+  &_full{
+    width: 100%;
+    margin: 0;
+  }
+}
+
+.btn {
+  background-color: $orange;
+  border: 1px solid $orange;
+  display: inline-block;
+  width: 240px;
+  color: $light;
+  cursor: pointer;
+  font-size: 20px;
+  margin: 15px 0;
+  outline: none;
+  padding: 15px;
+  text-transform: uppercase;
+  border-radius: 30px;
+  line-height: 1.5;
+  position: relative;
+  z-index: 99;
+  text-align: center;
+  transition: opacity 0.3s cubic-bezier(0.215, 0.610, 0.355, 1);
+  &:hover {
+    color: $light;
+    opacity: 0.8;
+  }
+}

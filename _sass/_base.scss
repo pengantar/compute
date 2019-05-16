@@ -5,6 +5,10 @@
   letter-spacing: normal;
   word-spacing: normal;
 }
+html, body {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
 body {
   padding-top:50px;
   margin: 0; 
@@ -16,8 +20,9 @@ body {
   min-height: 100vh;
   justify-content: space-between;
   max-width: 100vw;
-  overflow-x: hidden;
   line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 h1,h2,h3,h4,h5,h6{
   font-family: $heading-font;

@@ -6,25 +6,19 @@ permalink: '/'
 
 <div class = 'slides_container mb-4'>
   <div id = 'particles-js'></div>
-  <div class = 'slides' tabindex = '0'>
   {%- for slide in slides -%}
-    <div class = 'slide {% if forloop.first %} slide_active {% endif %}'>
-      <h1>{{ slide.description }}</h1>
+    <div class = 'banner_home wrap'>
+      <h1 class = 'banner_title'>{{ slide.description }}</h1>
+      <a class =  "btn" href = "#cisco-connect">Cisco Connect</a>
     </div>
   {%- endfor -%}
-  </div>
-  <div class = 'dots'>
-  {%- for item in slides -%}
-    <div class = 'dot {% if forloop.first %} dot_active {% endif %}'></div>
-  {%- endfor -%}
-  </div>
-  <div class = 'direction'>
-    <div class = 'slide_left'><span class = 'angle__left'></span></div>
-    <div class = 'slide_right'><span class = 'angle__right'></span></div>
-  </div>
 </div>
 
 {%- include products-services.html -%}
+
+<div class = "image_holder" id = "cisco-connect">
+  <img src = "/assets/images/cisco-connect.jpg" class = "image_full" alt = "Computech Limited is exhibiting at Cisco Connect from the 19th to 21st of May in South Africa">
+</div>
 
 <section class = 'wrap mb-4 mt-4'>
   <h5 class = 'orange center pt-4'>TALK TO SALES</h5>
@@ -42,3 +36,13 @@ permalink: '/'
     <div>{% include form.html %}</div>
   </div>
 </section>
+
+<div class = 'grid-3 partners'> 
+  {%- for partner in site.data.partners -%}
+    <div class = 'partner'>  
+      <a href = '{{ partner.url }}' target = '_blank' rel = 'noopener'>
+        <img  src = '/assets/partners/{{ partner.logo }}' alt = 'partner' />
+      </a>
+    </div>
+  {%- endfor -%}
+</div>

@@ -27,8 +27,10 @@ full: true
             {% endfor %}
             {% if region.directions %}
             <div class = 'definition def'>
-              <span class = 'definition_title'></span><span>View Map</span>
-              <span class = 'hide definition_desc'>{{ region.directions }}</span>
+              <!-- <span class = 'definition_title'></span><span>View Map</span> -->
+              <!-- <span class = 'hide definition_desc'> -->
+                {{ region.directions }}
+              <!-- </span> -->
             </div>
             {% endif %}
           {% endfor %}

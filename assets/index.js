@@ -603,3 +603,15 @@ $(function(){
     $('body').addClass('modal_show');
   }
 })(jQuery);
+
+function newSlides() {
+  // cycle through a list of statements
+  // cycle automatically
+  // cycle manually
+  // if automatically, cycle from left to right ~ always
+  // if manually, cycle on both directions
+  // set time interval
+  // pause time interval if manual
+  // resume time interval after manual
+
+}
