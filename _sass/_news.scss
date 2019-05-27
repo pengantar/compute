@@ -1,6 +1,7 @@
 
 .article{
-  box-shadow: 0 0 15px rgba(0,0,0,0.17);
+  // box-shadow: 0 0 15px rgba(0,0,0,0.17);
+  box-shadow: -20px 25px 50px 0 rgba(0,0,0,.12);
   &_package {
     color: $orange;
   }

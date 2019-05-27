@@ -1,16 +1,16 @@
 <footer class = 'footer'>
   <div class = 'wrap'>
     <div class = 'grid-3 footer_upper'>
-      <div>
+      <!-- <div>
         <h3>Endpoint Devices</h3>
         {% for product in site.data.products %}
         <span><a href = '/products-services/endpoint-devices/{{ product | downcase | slugify }}/' title = '{{ product }}'> {{ product }}</a></span>
         {% endfor %}
-      </div>
+      </div> -->
       <div>
         <h3>Solutions</h3>
         {% for solution in site.data.solutions %}
-        <span><a href = '/products-services/{% if forloop.first %}software-solutions{% else %}services{% endif %}/{{ solution | downcase | slugify }}/' title = '{{ solution }}'> {{ solution }}</a></span>
+        <span><a href = '{{ solution.url }}' title = '{{ solution }}'> {{ solution.name }}</a></span>
         {% endfor %}
       </div>
       <div>
