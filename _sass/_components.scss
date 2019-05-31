@@ -443,6 +443,19 @@ a:visited{
   height: 180px;  
   text-transform: uppercase;
   background-color: $dark;
+  &_inner {
+    position: relative;
+    max-width: 27.5rem;
+    color: $light;
+    z-index: 99;
+    p {
+      color: inherit;
+      opacity: 0.8;
+    }
+    a {
+      color: $orange;
+    }
+  }
 }
 
 // pdf buttons 
@@ -656,10 +669,6 @@ a:visited{
   justify-content: center;
   width: 100%;
   min-height: 480px;
-}
-.banner_title {
-  max-widtH: 25rem;
-  color: $light;
 }
 
 .image{

@@ -9,8 +9,10 @@ description: "Founded in 1987, Computech Limited is a leading East African syste
   <div id = 'particles-js'></div>
   {%- for slide in slides -%}
     <div class = 'banner_home wrap'>
-      <h1 class = 'banner_title'>{{ slide.description }}</h1>
-      <a class =  "btn" href = "/news/computech-cisco-connect-south-africa/">Cisco Connect</a>
+      <div class = 'banner_inner'>
+        {{ slide.description | markdownify }}
+      </div>
+      <!-- <a class =  "btn" href = "/news/computech-cisco-connect-south-africa/">Cisco Connect</a> -->
     </div>
   {%- endfor -%}
 </div>
@@ -26,7 +28,7 @@ description: "Founded in 1987, Computech Limited is a leading East African syste
 <section class = 'wrap mb-4 mt-4'>
   <h5 class = 'orange center pt-4'>TALK TO SALES</h5>
   <h2 class = 'center'>Our experts love to answer questions.</h2>
-  <div class = 'mt-4 grid-1 grid-tab'>
+  <div class = 'mt-4 grid-tab'>
     <div class = 'dark pt-2 pb-2 pl-1 pr-1'>
     <h5 class = 'pl-2 orange'>OUR SERVICE CENTRE</h5>
     <ul class = 'list'>
@@ -36,19 +38,6 @@ description: "Founded in 1987, Computech Limited is a leading East African syste
       <li><span class = 'listing'></span>Fully equipped Service Centre with certified engineers offering warranty support and repairs</li>
     </ul>
     </div>
-    <div>{% include form.html %}</div>
+    <!-- <div>{% include form.html %}</div> -->
   </div>
 </section>
-
-<!-- <section class = 'wrap'>
-  <h2>Our Partners</h2>
-  <div class = 'grid-3 partners'> 
-    {%- for partner in site.data.partners -%}
-      <div class = 'partner'>  
-        <a href = '{{ partner.url }}' target = '_blank' rel = 'noopener'>
-          <img  src = '/assets/partners/{{ partner.logo }}' alt = 'partner' />
-        </a>
-      </div>
-    {%- endfor -%}
-  </div>
-</section> -->
