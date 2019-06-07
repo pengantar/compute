@@ -443,10 +443,18 @@ a:visited{
   height: 180px;  
   text-transform: uppercase;
   background-color: $dark;
-  &_inner {
-    position: relative;
-    max-width: 27.5rem;
+  &_home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    max-width: 40rem;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    min-height: 480px;
     color: $light;
+    position:relative;
     z-index: 99;
     p {
       color: inherit;
@@ -661,16 +669,6 @@ a:visited{
   }
 }
 
-.banner_home {
-  background-image: linear-gradient(97deg,$dark 18%,hsla(0,0%,100%,0) 74%),url(/assets/news/hpe-event-0.jpg) !important;
-  display: flex;
-  flex-direction: column;
-  // align-items: center;
-  justify-content: center;
-  width: 100%;
-  min-height: 480px;
-}
-
 .image{
   &_holder {
     margin-bottom: 4rem;
@@ -703,5 +701,28 @@ a:visited{
   &:hover {
     color: $light;
     opacity: 0.8;
+  }
+}
+
+.globing {
+  position: relative;
+  min-height: 75vh;
+  &::before, &::after {
+    content: "";
+    height: 8rem;
+    position: absolute;
+    width: 100%;
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
+  &::before {
+    top: 0;
+    background-image: url(/assets/images/iso-top.svg);
+    background-position: bottom;
+  }
+  &::after {
+    bottom: 0;
+    background-image: url(/assets/images/iso-bottom.svg);
+    background-position: top;
   }
 }
