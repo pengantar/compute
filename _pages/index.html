@@ -9,9 +9,7 @@ description: "Founded in 1987, Computech Limited is a leading East African syste
   <div id = 'particles-js'></div>
   {%- for slide in slides -%}
     <div class = 'banner_home wrap'>
-      <div class = 'banner_inner'>
-        {{ slide.description | markdownify }}
-      </div>
+      {{ slide.description | markdownify }}
     </div>
   {%- endfor -%}
 </div>

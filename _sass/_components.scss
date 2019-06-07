@@ -706,13 +706,13 @@ a:visited{
 
 .globing {
   position: relative;
-  min-height: 75vh;
+  min-height: 96vh;
   &::before, &::after {
     content: "";
     height: 8rem;
     position: absolute;
     width: 100%;
-    background-size: 100%;
+    background-size: cover;
     background-repeat: no-repeat;
   }
   &::before {
@@ -721,6 +721,7 @@ a:visited{
     background-position: bottom;
   }
   &::after {
+    height: 15rem;
     bottom: 0;
     background-image: url(/assets/images/iso-bottom.svg);
     background-position: top;
