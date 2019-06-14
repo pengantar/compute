@@ -461,7 +461,9 @@ a:visited{
       opacity: 0.8;
     }
     a {
-      color: $orange;
+      color: inherit;
+      opacity: 0.9;
+      text-decoration: underline !important;
     }
   }
 }
@@ -579,45 +581,26 @@ a:visited{
   margin: 0;
   li {
     display: grid;
-    grid-template-columns: 1fr 15fr;
+    grid-template-columns: 2.5rem auto;
     grid-gap: 10px;
-    color: $mute;
     padding-top: 10px;
+    margin-bottom: 0.5rem;
+    align-items: center;
+    &::before{
+      content: '';
+      width: 2.25rem;
+      height: 2.25rem;
+      position: relative;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      border-radius: 50%;
+      background-image: url(/assets/icons/point.svg);
+      background-size: 33%;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
   }
 }
-.listing{
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 50px;
-  height: 50px;
-  position: relative;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
-  border-radius: 50%;
-  &::after,
-  &::before {
-    content: '';
-    width: 0;
-    height: 0;
-    border-style: solid;
-    position: absolute;
-    mix-blend-mode: screen;
-  }
-  &::after{
-    border-width: 0 0 25px 12px;
-    border-color: transparent transparent $orange transparent;
-    transform: rotate(5deg);
-    top: 5px;
-  }
 
-  &::before{
-    border-width: 25px 12px 0 0;
-    border-color: $light transparent transparent transparent;
-    left: 25px;
-    transform: rotate(375deg);
-    top: 20px;
-  }
-}
 .job{
   width: 100%;
   display: grid;
@@ -709,7 +692,6 @@ a:visited{
   min-height: 96vh;
   &::before, &::after {
     content: "";
-    height: 8rem;
     position: absolute;
     width: 100%;
     background-size: cover;
@@ -719,11 +701,18 @@ a:visited{
     top: 0;
     background-image: url(/assets/images/iso-top.svg);
     background-position: bottom;
+    background-size: cover;
+    height: 5rem;
   }
   &::after {
-    height: 15rem;
+    height: 20rem;
     bottom: 0;
-    background-image: url(/assets/images/iso-bottom.svg);
-    background-position: top;
+    background-image: url(/assets/images/market-info.svg);
+    background-position: center;
+    background-size: cover;
   }
+}
+
+.negative-top {
+  margin-top: -7.5rem;
 }

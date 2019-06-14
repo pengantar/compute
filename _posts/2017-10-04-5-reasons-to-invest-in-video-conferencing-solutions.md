@@ -4,7 +4,7 @@ tags:
   - video conferencing
   - cisco
 ---
-[![](/assets/posts/whatsapp-image.jpg)](/products-services/cisco/)
+[![](/assets/news/whatsapp-image.jpg)](/products-services/cisco/)
 
 As the modern workforce becomes more mobile and more people work remotely, business leaders are recognizing the many benefits video conferencing can provide to their businesses. Over the years, [Computech Limited](/products-services/cisco/) has been enabling businesses to leverage video conferencing and other collaboration technologies in order to significantly scale productivity and reduce costs.
 

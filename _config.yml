@@ -67,7 +67,7 @@ defaults:
       path: "_posts"
       type: "posts"
     values:
-      layout: "post"
+      layout: "news-post"
       author: Computech
       permalink: /:title/
       image: cyber-security

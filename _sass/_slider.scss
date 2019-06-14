@@ -79,11 +79,11 @@
       outline: none;
     }
     &_container{
-      background: $dark;
+      background: linear-gradient(to bottom right,$orange, $orange, $dark);
       width: 100%;
       position: relative;
       &:hover .slide_left,
-      &:hover .slide_right, {
+      &:hover .slide_right {
         opacity: 1;
       }
     }

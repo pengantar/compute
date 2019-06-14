@@ -13,14 +13,14 @@
         - access control
         - asset protection         
 
-    - sublink: endpoint devices 
-      children:
-        - accessories   
-        - desktops   
-        - laptops
-        - printers
-        - projectors & screens 
-        - tablets
+    # - sublink: endpoint devices 
+    #   children:
+    #     - accessories   
+    #     - desktops   
+    #     - laptops
+    #     - printers
+    #     - projectors & screens 
+    #     - tablets
 
     - sublink: healthcare
       children:
