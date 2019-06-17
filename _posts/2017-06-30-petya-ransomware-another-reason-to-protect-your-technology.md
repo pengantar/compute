@@ -1,10 +1,11 @@
 ---
 title: 'Petya Ransomware: Another Reason to Protect your Technology'
-tags: 
-  - cyber security
-  - ransomware
+category: cyber security
+image:
+  name: ransomware-feature
+  type: jpg
+  description: 'Petya Ransomware: Another Reason to Protect your Technology'
 ---
-![ransomware-feature](/assets/news/ransomware-feature.jpg)
 
 As the world is coming to terms with the damage caused by WannaCry, the ransomware that crippled many businesses across the globe, [another major cyber security attack](http://www.bbc.com/news/technology-40416611) has hit the headlines, with over 64 countries affected so far!
 

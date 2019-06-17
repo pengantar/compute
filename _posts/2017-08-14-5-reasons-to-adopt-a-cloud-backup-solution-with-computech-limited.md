@@ -1,10 +1,13 @@
 ---
 title: '5 Reasons to Adopt a Cloud Backup Solution with Computech Limited'
-tags:
+categories:
   - cloud computing
   - cyber security
+image:
+  name: backup-solutions
+  type: jpg
+  description: "5 Reasons to Adopt a Cloud Backup Solution with Computech Limited"
 ---
-![Back up solutions](/assets/news/backup-solutions.jpg)
 
 Protecting enterprise data is essential for survival of any business. With the ever-increasing threats of cyberattacks, businesses without a sound data backup and disaster recovery plan are continuing to lose critical assets and their competitive edge. However, traditional methods of data protection have been proven to be difficult, unreliable, and expensive, especially with the large volume of data that modern businesses now store and process.
 

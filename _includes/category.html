@@ -1,0 +1,7 @@
+<h3 class = 'underline'>Search by Category</h3>
+<div class = 'tag_container'>
+{%- for tag in site.categories | unique | sort -%}
+  {% capture tag_name %}{{ tag | first }}{% endcapture %}
+  <a href = '/category/{{ tag_name | downcase | slugify }}' class = 'tag'>{{ tag_name }}</a>
+{%- endfor -%}
+</div>

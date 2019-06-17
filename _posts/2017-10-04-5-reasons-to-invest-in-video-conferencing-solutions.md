@@ -1,10 +1,13 @@
 ---
 title: '5 Reasons to Invest in Video Conferencing Solutions'
-tags: 
+categories: 
   - video conferencing
   - cisco
+image:
+  name: whatsapp-image
+  type: jpg
+  description: "5 Reasons to Invest in Video Conferencing Solutions"
 ---
-[![](/assets/news/whatsapp-image.jpg)](/products-services/cisco/)
 
 As the modern workforce becomes more mobile and more people work remotely, business leaders are recognizing the many benefits video conferencing can provide to their businesses. Over the years, [Computech Limited](/products-services/cisco/) has been enabling businesses to leverage video conferencing and other collaboration technologies in order to significantly scale productivity and reduce costs.
 

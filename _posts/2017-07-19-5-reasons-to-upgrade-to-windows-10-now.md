@@ -1,11 +1,11 @@
 ---
 title: '5 Reasons to Upgrade to Windows 10 Now'
-tags:
-  - 'windows 10'
-  - microsoft
-  - cyber security
+category: 'microsoft'
+image:
+  name: windows
+  type: jpg
+  description: "5 Reasons to Upgrade to Windows 10 Now"
 ---
-![windows 10 preview screen](/assets/news/windows.jpg)
 
 The potential threat posed by cyberattacks is now more vivid than before, given the devastating effects two major recent ransomware attacks, WannaCry and Petya, had on organizations across the world. According to security researchers, roughly 98% of the computers affected by the ransomware were running on versions of Windows 7 and Windows XP.
 

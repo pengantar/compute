@@ -12,6 +12,15 @@ layout: default
     <div class = 'post_body'>
       <img src = '/assets/news/{{ page.image.name | lstrip }}.{{ page.image.type | lstrip }}' alt = "{{ page.image.description  | replace: "'", "" }}" class = 'blog__thumb'>
       {{ content }}
+      {% include comments.html %}
+      <div class = 'mt-4'>
+        <aside role = 'complementary'>
+          {% include category.html %}
+        </aside>        
+      </div>    
     </div>
   </div>
 </div>
+<script>
+  {%- include autoresize.js -%}
+</script>

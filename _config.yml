@@ -3,7 +3,7 @@ email: info@computechlimted.com
 description: "East & Central Africa's Leading Technology System Provider"
 markdown: kramdown
 plugins:
-  - jekyll-feed
+  # - jekyll-feed
   - jekyll-sitemap
   - jekyll-paginate-v2
   - jekyll-redirect-from
@@ -26,19 +26,19 @@ pagination:
 # Plugin: Auto Pages (jekyll-paginate-v2)
 autopages:
   enabled: true
-  categories:
+  tags:
     enabled: false
   collections:
     enabled: false
-  tags:
+  categories:
     enabled: true
     slugify:
       mode: raw
       cased: true
     layouts:
-      - "tags.md"
-    title: ":tag" # :tag is replaced by the tag name
-    permalink: "/tag/:tag"
+      - "category.html"
+    title: ":cat" # :cat is replaced by the category name
+    permalink: "/category/:cat"
 url: 'https://www.computechlimited.com'
 github: onweru
 repo: compute
