@@ -7,12 +7,7 @@ full: true
 ---
 <div class = 'grid-1'>
   <div class = 'shade pl-2 pr-2'>
-    <h3>About Us</h3>
-    {{ site.data.profile | markdownify }}
-    <h3>Vision</h3>           
-    <p class = 'cafe'>Our Vision is to be Africa’s most respected and trusted provider of technology for business.</p>
-    <h3>Mission</h3>                  
-    <p class = 'cafe'>Our Mission is to enable high-performance organisations, allowing businesses to work and communicate better, faster, and more profitably.</p>        
+    {{ site.data.profile.content | markdownify }}     
   </div>
   <div class = 'pl-1 pr-1 flex_rev' id = 'countries'>
     <div class = 'mt-3'>
