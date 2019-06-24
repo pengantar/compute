@@ -271,6 +271,8 @@ a:visited{
   cursor: pointer;
   img{
     width: 100%;
+    max-width: 12.5rem;
+    border-radius: 50%;
   }
   &_modal{
     @extend %modal;
