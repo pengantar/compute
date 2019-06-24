@@ -1,5 +1,4 @@
 ---
-layout: news-post
 category: awards
 image:
   name: hpe-event-0

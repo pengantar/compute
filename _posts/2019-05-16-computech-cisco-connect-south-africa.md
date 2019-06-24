@@ -1,5 +1,4 @@
 ---
-layout: news-post
 category: news
 image:
   name: cisco-connect-1
