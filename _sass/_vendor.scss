@@ -627,132 +627,6 @@ address {
   }
 }
 
-.carousel {
-  position: relative
-}
-
-.carousel-inner {
-  position: relative;
-  width: 100%;
-  overflow: hidden
-}
-
-.carousel-inner>.item {
-  position: relative;
-  display: none;
-  transition: .6s ease-in-out left
-}
-
-.carousel-inner>.item>a>img,
-.carousel-inner>.item>img {
-  line-height: 1
-}
-
-@media all and (transform-3d),
-(-webkit-transform-3d) {
-  .carousel-inner>.item {
-    transition: transform .6s ease-in-out;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-    perspective: 1000px
-  }
-  .carousel-inner>.item.active,
-  .carousel-inner>.item.next.left,
-  .carousel-inner>.item.prev.right {
-    left: 0;
-    transform: translate3d(0, 0, 0)
-  }
-}
-
-.carousel-inner>.active{
-  display: block
-}
-
-.carousel-inner>.active {
-  left: 0
-}
-
-.carousel-indicators {
-  position: absolute;
-  bottom: 10px;
-  left: 50%;
-  z-index: 15;
-  width: 60%;
-  padding-left: 0;
-  margin-left: -30%;
-  text-align: center;
-  list-style: none
-}
-
-.carousel-indicators li {
-  display: inline-block;
-  width: 10px;
-  height: 10px;
-  margin: 1px;
-  text-indent: -999px;
-  cursor: pointer;
-  background-color: rgba(0, 0, 0, 0);
-  border: 1px solid #fff;
-  border-radius: 10px
-}
-
-.carousel-indicators .active {
-  width: 12px;
-  height: 12px;
-  margin: 0;
-  background-color: #fff
-}
-
-.carousel-caption {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  z-index: 10;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  color: #fff;
-  text-align: center;
-}
-
-.carousel-inner{
-  .item {
-    position: relative;
-  }
-  h1{
-    text-transform: capitalize;
-  }
-}
-
-@media screen and (min-width:768px) {
-  .carousel-control .glyphicon-chevron-left,
-  .carousel-control .glyphicon-chevron-right,
-  .carousel-control .icon-next,
-  .carousel-control .icon-prev {
-    width: 30px;
-    height: 30px;
-    margin-top: -10px;
-    font-size: 30px
-  }
-  .carousel-control .glyphicon-chevron-left,
-  .carousel-control .icon-prev {
-    margin-left: -10px
-  }
-  .carousel-control .glyphicon-chevron-right,
-  .carousel-control .icon-next {
-    margin-right: -10px
-  }
-  .carousel-caption {
-    right: 20%;
-    left: 20%;
-    padding-bottom: 30px
-  }
-  .carousel-indicators {
-    bottom: 20px
-  }
-}
-
 .hide {
   display: none!important
 }
@@ -771,7 +645,7 @@ address {
   }
 }
 
-/*  dropdown */
+//  dropdown 
 .dropdown-menu > li > a:hover,
 .dropdown-menu > li > a:focus {
   opacity: 0.9;
