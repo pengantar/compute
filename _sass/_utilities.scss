@@ -50,15 +50,6 @@
 .decorate{
   color: $orange;
 }
-.sold-out{
-  background: #dc3545;
-}
-.available{
-  background: #28a745;
-}
-.expected{
-  background: $orange;
-}
 .ma{
   margin-left: auto;
   margin-right: auto;
@@ -82,12 +73,6 @@
   }
   .pb-#{$i} {
     padding-bottom: $size !important;
-  }
-  .pl-#{$i} {
-    padding-left: $size !important;
-  }
-  .pr-#{$i} {
-    padding-right: $size !important;
   }
 }
 .shade{
@@ -161,18 +146,6 @@ $sites: (
   }
 }
 
-.cafe{
-  color: #F68E35;
-  position: relative;
-  display: grid;
-  grid-template-columns: 1fr 25fr;
-  &::before {
-    font-size: 2rem;
-    line-height: 16px;
-    color: lighten($pale, 30%);
-    content: '\201f';
-  }
-}
 .white{
   color: $light;
   font-weight: 400;

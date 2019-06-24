@@ -1,116 +1,116 @@
-@keyframes showSlide {
-  0%{
-    transform: translateX(4000px);
-    opacity: 0;
-  }
-  33% {
-    transform: translateX(100px);
-    opacity: 0;
-  }
-  100% {
-    transform: translateX(0);
-    opacity: 1;
-  }
-}
+// @keyframes showSlide {
+//   0%{
+//     transform: translateX(4000px);
+//     opacity: 0;
+//   }
+//   33% {
+//     transform: translateX(100px);
+//     opacity: 0;
+//   }
+//   100% {
+//     transform: translateX(0);
+//     opacity: 1;
+//   }
+// }
 
-.dot {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  width: 27px;
-  height: 27px;
-  background: transparent;
-  cursor: pointer;
-  border-radius: 50%;
-  &::after {
-    content: '';
-    background: $mute;
-    width: 9px;
-    height: 9px;
-    border-radius: 50%;
-    transition: all 1s ease-in;
-  }
-  &s{
-    position: absolute;
-    bottom: 25px;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 11;
-  }
-  &_active{
-    &::after {
-      background: $light;
-      width: 12px;
-      height:12px;
-    }
-  }
-}
+// .dot {
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   position: relative;
+//   width: 27px;
+//   height: 27px;
+//   background: transparent;
+//   cursor: pointer;
+//   border-radius: 50%;
+//   &::after {
+//     content: '';
+//     background: $mute;
+//     width: 9px;
+//     height: 9px;
+//     border-radius: 50%;
+//     transition: all 1s ease-in;
+//   }
+//   &s{
+//     position: absolute;
+//     bottom: 25px;
+//     width: 100%;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     z-index: 11;
+//   }
+//   &_active{
+//     &::after {
+//       background: $light;
+//       width: 12px;
+//       height:12px;
+//     }
+//   }
+// }
 
-.slide{
-  background: transparent;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  min-height: 480px;
-  color: $mute;
-  // opacity: 0;
-  // position: absolute;
-  z-index: 10;
-  // transform: translateX(4000px);
-  transition: opacity 1s ease-out;
-  h1{
-    color: $light;
-    text-align: center;
-    padding: 25px;
-  }
-  img{
-    width: 100%;
-  }
-  &s {
-    display: block;
-    width: 100%;
-    overflow: hidden;
-    box-shadow: 0 0 130px rgba(0,0,0,0.2);
-    &:focus{
-      outline: none;
-    }
-    &_container{
-      background: linear-gradient(to bottom right,$orange, $orange, $dark);
-      width: 100%;
-      position: relative;
-      &:hover .slide_left,
-      &:hover .slide_right {
-        opacity: 1;
-      }
-    }
-  }
-  &_active {
-    position: relative;
-    animation: showSlide 1s ease-in forwards;
-  }
-  &_left,&_right{
-    cursor: pointer;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    display: flex;
-    align-items: center;
-    background: transparent;
-    z-index: 11;
-    color: $mute;
-    font-size: 5rem;
-    padding: 10px;
-    opacity: 0;
-    transition: opacity 0.3s;
-  }
-  &_left{
-    left: 15px;
-  }
-  &_right{
-    right: 15px;
-  }
-}
+// .slide{
+//   background: transparent;
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   width: 100%;
+//   min-height: 480px;
+//   color: $mute;
+//   // opacity: 0;
+//   // position: absolute;
+//   z-index: 10;
+//   // transform: translateX(4000px);
+//   transition: opacity 1s ease-out;
+//   h1{
+//     color: $light;
+//     text-align: center;
+//     padding: 25px;
+//   }
+//   img{
+//     width: 100%;
+//   }
+//   &s {
+//     display: block;
+//     width: 100%;
+//     overflow: hidden;
+//     box-shadow: 0 0 130px rgba(0,0,0,0.2);
+//     &:focus{
+//       outline: none;
+//     }
+//     &_container{
+//       background: linear-gradient(to bottom right,$orange, $orange, $dark);
+//       width: 100%;
+//       position: relative;
+//       &:hover .slide_left,
+//       &:hover .slide_right {
+//         opacity: 1;
+//       }
+//     }
+//   }
+//   &_active {
+//     position: relative;
+//     animation: showSlide 1s ease-in forwards;
+//   }
+//   &_left,&_right{
+//     cursor: pointer;
+//     position: absolute;
+//     top: 0;
+//     bottom: 0;
+//     display: flex;
+//     align-items: center;
+//     background: transparent;
+//     z-index: 11;
+//     color: $mute;
+//     font-size: 5rem;
+//     padding: 10px;
+//     opacity: 0;
+//     transition: opacity 0.3s;
+//   }
+//   &_left{
+//     left: 15px;
+//   }
+//   &_right{
+//     right: 15px;
+//   }
+// }
