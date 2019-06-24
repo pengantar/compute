@@ -3,15 +3,9 @@ layout: page
 permalink: '/products-services/infrastructure/compute/'
 title: Compute
 ---
-<div class = 'grid-1 mb-1'>
-  <div class = 'contain'>
-    <img src = '/assets/images/compute.jpg'>
-  </div>
-  <div class = 'contain'>
-    <img src = '/assets/images/compute-3.jpg'>
-  </div>
-</div>
 
+<img src = '/assets/images/compute.jpg'>  
+  
 ### About Compute solutions
 
 Computing infrastructure is behind many company applications and data in the form of delivering accessibility, availability, security and ensuring the integrity of critical information assets.
