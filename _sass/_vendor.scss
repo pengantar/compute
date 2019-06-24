@@ -180,10 +180,21 @@ h5 {
 }
 
 blockquote {
-  padding: 10px 20px;
-  margin: 0 0 20px;
+  padding: 10px 1rem;
+  margin: 1rem 0;
   font-size: 17.5px;
-  border-left: 5px solid #eee
+  border-left: none;
+  position: relative;
+  &::before {
+    position: absolute;
+    padding: 1.5px;
+    content:"";
+    top: 0;
+    bottom: 0;
+    background: linear-gradient(to bottom, transparent, $orange,$orange,$orange,$orange, transparent);
+    left:0;
+    border-radius: 2px;
+  }
 }
 
 address {
