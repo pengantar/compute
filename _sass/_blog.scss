@@ -10,7 +10,7 @@
 	}
 }
 .post{
-	a{
+	a:not(.tag){
 		text-decoration: underline !important;
 	}
 	img{
@@ -21,8 +21,4 @@
     padding: 30px 15px;
 		margin-bottom: 50px;
 	}
-}
-
-aside a.tag {
-	text-decoration: none !important;
 }

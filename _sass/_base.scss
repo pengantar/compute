@@ -152,7 +152,7 @@ blockquote {
     content:"";
     top: 0;
     bottom: 0;
-    background: linear-gradient(to bottom, transparent, $orange,$orange,$orange,$orange, transparent);
+    background: linear-gradient(to bottom, $light, $orange, $light);
     left:0;
     border-radius: 2px;
   }
