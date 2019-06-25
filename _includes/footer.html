@@ -1,12 +1,12 @@
 <footer class = 'footer'>
   <div class = 'grid-3 wrap'>
-    <div>
+    <div class = 'footer_col'>
       <h3>Solutions</h3>
       {% for solution in site.data.solutions %}
       <span><a href = '{{ solution.url }}' title = '{{ solution }}'> {{ solution.name }}</a></span>
       {% endfor %}
     </div>
-    <div>
+    <div class = 'footer_col'>
       <h3>About Us</h3>
       {%- for item in site.data.about-us -%}
       <span><a href = '/about-us/{{ item }}/' title = 'Computech {{ item | capitalize }}'>{{ item | capitalize }}</a></span>
