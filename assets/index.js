@@ -615,3 +615,12 @@ function newSlides() {
   // resume time interval after manual
 
 }
+
+// (function(){
+//   let nav = document.querySelector(".nav");
+//   let links = nav.querySelectorAll("li");
+//   links.forEach(function(child, index){
+//     let actualLink = child.children && child.children.length >= 1 ? child.children[0].textContent : false;
+//     console.log(index, actualLink);
+//   })
+//  })();
