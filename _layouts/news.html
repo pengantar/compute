@@ -5,7 +5,7 @@ layout: default
 {%- assign news = site.news | sort: 'date' -%}
 {%- for post in news reversed %}
   <article class = 'article mb-4'>
-    <a href = '{{ post.url }}' {% if forloop.first %} class = 'grid-reverse mt-1 mb-2' {% endif %}>
+    <a href = '{{ post.url }}' {% if forloop.first %} class = 'grid-reverse' {% endif %}>
       <figure class = 'article_thumb'>
         <img src = '/assets/news/{{ post.image.name | lstrip }}.{{ post.image.type | lstrip }}' alt = '{{ post.description | replace:"'", '' }}' class = 'blog__thumb'>
       </figure>
