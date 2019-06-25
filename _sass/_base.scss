@@ -25,7 +25,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 h1,h2,h3,h4,h5,h6{
-  font-family: $heading-font;
   position: relative;
 }
 h1,
@@ -137,8 +136,24 @@ hr{
 }
 label{
   font-weight: 500;
-  font-family: $heading-font;
   display: inline-block;
   max-width: 100%;
   margin-bottom: 5px;
+}
+blockquote {
+  padding: 10px 1rem;
+  margin: 1rem 0;
+  font-size: 17.5px;
+  border-left: none;
+  position: relative;
+  &::before {
+    position: absolute;
+    padding: 1px;
+    content:"";
+    top: 0;
+    bottom: 0;
+    background: linear-gradient(to bottom, transparent, $orange,$orange,$orange,$orange, transparent);
+    left:0;
+    border-radius: 2px;
+  }
 }

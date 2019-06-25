@@ -93,8 +93,6 @@ a:visited{
 .footer{
   padding: 20px 0;   
   height: auto;
-  background-color: $dark;
-  color: $light;
   text-align: left;
   h3{
     color: inherit;
@@ -102,12 +100,13 @@ a:visited{
     font-size: 1.05rem;
   }  
   a:not(.contain){
-    color: $mute;
     display: inline-block;
-    padding: 3px 10px;
+    padding: 0.25rem 0;
+    opacity: 0.7;
     // font-size: 15px;
     &:hover{
       color: $orange;
+      opacity: 1;
     }
   }
   &_upper{
@@ -138,8 +137,7 @@ a:visited{
     }
   }    
   p{
-    margin: 0;
-    padding: 0;
+    grid-column: 1/-1;
   }
   .grid-1{
     grid-gap: 15px;
@@ -388,6 +386,8 @@ a:visited{
   }
   &.def{
     background: transparent;
+    max-width: calc(100vw - 50px);
+    overflow-x: scroll;
     span{
       color: $orange;
     }
@@ -485,7 +485,6 @@ a:visited{
   text-transform: uppercase;
   border-radius: 30px;
   line-height: 1.25;
-  font-family: $heading-font;
   opacity: 1;
   text-align: center;
   transition: all 0.3s ease-in;
@@ -630,7 +629,6 @@ a:visited{
     align-items: center;
   }
   &_title{
-    font-family: $heading-font;
     font-weight: 500;
   }
   .snip{

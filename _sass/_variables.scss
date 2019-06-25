@@ -5,11 +5,9 @@ $dark: #242a33;
 $mute: darken($light, 30%);
 $pale: lighten($dark, 15%);
 $orange: #F07444;
-$cafe: $orange;
 $padding: 15px;
 $margin: 25px;
 $body-font: 'Metropolis', sans-serif;
-$heading-font: 'Metropolis', sans-serif;
 
 %modal {
   position: relative;
