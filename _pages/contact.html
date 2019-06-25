@@ -10,7 +10,7 @@ full: true
     <div class = 'tabs'>
       <div class = 'tab_switch'>
         {% for contact in contacts %}
-        <div class = 'tab {% if forloop.first %}tab_active{% endif %}'>
+        <div class = 'tab flag {% if forloop.first %}tab_active{% endif %}'>
           <img src = '/assets/country/{{ contact.country | downcase }}.jpg'>
         </div>
         {% endfor %}
