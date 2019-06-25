@@ -10,7 +10,7 @@ In 2015, Computech Limited was appointed Independent Channel Partner (ICP) for G
 
 GE Healthcare, a unit of General Electric Company, is one of the world’s leading organisations dedicated to health. From expertise in medical imaging and information technologies to drug discovery and more, GE Healthcare works with healthcare leaders and patients in over 100 countries to deliver better care at a lower cost.
 
-<div class = 'grid-1 mb-4'>
+<div class = 'grid-1 mt-2 mb-4'>
   <a href = '/products-services/healthcare/diagnostic-imaging/' class = 'card'>
     <img src = '/assets/images/d-imaging-1.png' alt = ''>
     <span class = 'overlay linear'>      
