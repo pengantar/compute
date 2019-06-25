@@ -12,7 +12,7 @@ description: "Founded in 1987, Computech Limited is a leading East African syste
       <div class = 'tab_switch'>
         {%- for item in about -%}
         <div class = 'tab {% if forloop.index == 1 %} tab_active {% endif %}'>
-          <img src = '/assets/country/{{ item.country | downcase }}.jpg'><br>
+          <img src = '/assets/country/{{ item.country | downcase }}.jpg'>
         </div>
         {%- endfor -%}
       </div>

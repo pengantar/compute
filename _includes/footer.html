@@ -1,25 +1,25 @@
 <footer class = 'footer'>
-    <div class = 'grid-3 wrap footer_upper'>
-      <div>
-        <h3>Solutions</h3>
-        {% for solution in site.data.solutions %}
-        <span><a href = '{{ solution.url }}' title = '{{ solution }}'> {{ solution.name }}</a></span>
-        {% endfor %}
-      </div>
-      <div>
-        <h3>About Us</h3>
-        {%- for item in site.data.about-us -%}
-        <span><a href = '/about-us/{{ item }}/' title = 'Computech {{ item | capitalize }}'>{{ item | capitalize }}</a></span>
-        {%- endfor -%}
-      </div>
-      <div>
-        <h3>Follow Us</h3>
-        <div class = 'footer_share'>
+  <div class = 'grid-3 wrap'>
+    <div>
+      <h3>Solutions</h3>
+      {% for solution in site.data.solutions %}
+      <span><a href = '{{ solution.url }}' title = '{{ solution }}'> {{ solution.name }}</a></span>
+      {% endfor %}
+    </div>
+    <div>
+      <h3>About Us</h3>
+      {%- for item in site.data.about-us -%}
+      <span><a href = '/about-us/{{ item }}/' title = 'Computech {{ item | capitalize }}'>{{ item | capitalize }}</a></span>
+      {%- endfor -%}
+    </div>
+    <div>
+      <h3>Follow Us</h3>
+      <div class = 'footer_share'>
         {%- for item in site.data.social -%}
-          <a href = '{{ item.url }}' class = 'contain {{ item.name }}' target = '_blank' rel = 'noopener' title = 'Follow Computech on {{ item.name }}'><img src='/assets/icons/{{ item.name | slugify }}.svg' alt = '{{item.name }} icon' /></a>
+        <a href = '{{ item.url }}' class = 'contain {{ item.name }}' target = '_blank' rel = 'noopener' title = 'Follow Computech on {{ item.name }}'><img src='/assets/icons/{{ item.name | slugify }}.svg' alt = '{{item.name }} icon' /></a>
         {%- endfor -%}
-        </div>   
-      </div>
-      <p class = 'mute mt-1 mb-1'>Copyright &copy; <span class = 'year'></span> Computech Limited. All Rights Reserved</p>
-    </div>  
+      </div>   
+    </div>
+    <p class = 'mute mt-1 mb-1'>Copyright &copy; <span class = 'year'></span> Computech Limited. All Rights Reserved</p>
+  </div>  
 </footer>
