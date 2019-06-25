@@ -263,7 +263,6 @@ a:visited{
   }
 }
 
-
 // For the team page  
 .member{
   cursor: pointer;
@@ -384,14 +383,6 @@ a:visited{
   &:hover{
     opacity: 0.9
   }
-  &.def{
-    background: transparent;
-    max-width: calc(100vw - 50px);
-    overflow-x: scroll;
-    span{
-      color: $orange;
-    }
-  }
   h3{
     color: $light;
     line-height: 28px;
@@ -433,7 +424,6 @@ a:visited{
 }
 
 // End of End point 
-
 .region-title{
   text-decoration: underline;
 }
@@ -718,4 +708,9 @@ a:visited{
 
 .negative-top {
   margin-top: -7.5rem;
+}
+
+.map{
+  max-width: calc(100vw - 50px);
+  overflow-x: scroll;
 }

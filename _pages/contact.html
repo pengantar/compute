@@ -21,12 +21,12 @@ full: true
         <div class = 'tab_item {% if forloop.first %}tab_item_active{% endif %}'>
           <h3 class = 'slim'>{{ contact.country | capitalize }}</h3>
           {% for region in contact.regions %}
-            <p><span class = 'region-title'>{{ region.name }}</span></p>
+            <h4>{{ region.name }}</h4>
             {% for detail in region.details %}
               {{ detail | markdownify }}
             {% endfor %}
             {% if region.directions %}
-            <div class = 'definition def'>
+            <div class = 'map mt-1 mb-1'>
               <!-- <span class = 'definition_title'></span><span>View Map</span> -->
               <!-- <span class = 'hide definition_desc'> -->
                 {{ region.directions }}
