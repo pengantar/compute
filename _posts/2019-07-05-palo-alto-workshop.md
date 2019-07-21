@@ -1,6 +1,6 @@
 ---
 title: "Palo Alto Breakfast Workshop"
-category: ""
+category: "event"
 image:
   name: "palo-alto"
   type: jpg
