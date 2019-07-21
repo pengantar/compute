@@ -1,6 +1,6 @@
 ---
 title: "Cisco Connect"
-category: ""
+category: "event"
 image:
   name: "cisco-connect"
   type: jpg
