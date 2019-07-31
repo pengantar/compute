@@ -2,7 +2,7 @@
   display: flex;
   align-items: center;
   position: relative;
-  height: 44px;
+  height: 2rem;
   img{
     width: 40%;
   }
@@ -22,8 +22,8 @@
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    width: 44px;
-    height: 44px;
+    width: 2rem;
+    height: 2rem;
     transform-origin: 50% 50%;
     margin: 10px 7.5px 10px 0;
     background: $pale;

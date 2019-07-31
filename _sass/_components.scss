@@ -462,13 +462,13 @@ a:visited{
   background: linear-gradient(to bottom right, $orange, $orange, $dark);
   border: none;
   display: inline-block;
-  min-width: 200px;
+  min-width: 10rem;
   color: $light;
   cursor: pointer;
-  font-size: 20px;
+  font-size: 1rem;
   margin: 15px 0;
   outline: none;
-  padding: 15px;
+  padding: 0.5rem 1rem;
   text-transform: uppercase;
   border-radius: 30px;
   line-height: 1.25;

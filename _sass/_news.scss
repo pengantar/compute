@@ -4,11 +4,10 @@
   box-shadow: 0 9px 35px rgba(0,0,0,.05);
   overflow: hidden;
   border-radius: 1rem;
-  &_package {
-    color: $orange;
-  }
-  &_awards {
-    color: $orange;
+  &_details {
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 0.9rem;
   }
   &_excerpt{
     &:not(.visible) {

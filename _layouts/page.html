@@ -4,9 +4,7 @@ layout: default
 {%- include banner.html -%}
 <div class = 'mb-2'>
   <div class = 'wrap {% unless page.full -%}wrap_min{% endunless %}'>
-    
     {{ content }}
-    
     {%- unless page.full -%}
     <aside class = 'shade mt-4'>
       {%- assign title = page.title | downcase -%}

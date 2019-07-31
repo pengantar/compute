@@ -4,8 +4,7 @@ layout: default
 <div class = 'wrap_min pt-3 mt-2 grid-reverse post'>
   <div class = 'blog__posts'>
     <div class = 'editor'>
-      <h5 class = 'article_{{ page.category | downcase }}'>{{ page.category | upcase }}</h5>
-      <strong><time>{{ page.date | date: "%B %d, %Y" }}</time></strong>
+      <h5 class = 'article_details'>{{ page.category | upcase }} | <time>{{ page.date | date: "%B %d, %Y" }}</time></h5>
       <h2>{{ page.title }}</h2>
       {%- include share.html -%}
     </div>

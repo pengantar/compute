@@ -520,10 +520,14 @@ $(function(){
   let postImages = post ? post.querySelectorAll('img') : false;
   if(postImages) {
     postImages.forEach((image) => {
-       let desc = document.createElement('p');
+       let desc, newDesc;
+       desc = document.createElement('p');
        desc.classList.add('thumb_alt');
-       desc.textContent = image.alt;
-       image.insertAdjacentHTML('afterend', desc.outerHTML);
+       newDesc = image.alt;
+       if(newDesc.length > 5) {
+         desc.textContent = image.alt;
+         image.insertAdjacentHTML('afterend', desc.outerHTML);
+       }
     });
   }
 })();
