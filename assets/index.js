@@ -628,3 +628,55 @@ function newSlides() {
 //     console.log(index, actualLink);
 //   })
 //  })();
+
+let panels = elems('.panel');
+
+function newSlides() {
+  // cycle manually
+  // if manually, cycle on both directions
+  // set time interval
+  // pause time interval if manual
+  // resume time interval after manual
+  let left = 'panel_left';
+  let control = 'panel_control';
+  let panelContainer = elem('.panels');
+  let firstPanel = panels[0]
+  let countPanels = Array.from(panels).length;
+  let lastPanel = panels[countPanels - 1];
+  
+  function switchPanel(direction = true) {
+    // direction is true if manual click is to the right ... else it's false
+    let activePanel = elem('.panel_active', panels);
+    let nextPanel = activePanel.nextElementSibling
+    let previousPanel = activePanel.previousElementSibling;
+    let newPanel = Object.create(null);
+    if (direction) {
+      newPanel = nextPanel ? nextPanel : firstPanel;
+    }
+    if (!direction) {
+      newPanel = previousPanel ? previousPanel : lastPanel;
+    }
+    deleteClass(activePanel, 'panel_active');
+    pushClass(newPanel, 'panel_active')
+  }
+  
+  let automaticSwitch = window.setInterval(function(){
+    switchPanel();
+  }, 7500)
+  
+  panelContainer.addEventListener('click', function(event) {
+    let target = event.target;
+    let isControl = containsClass(target, control)
+    if(isControl) {
+      let isLeft = containsClass(target, left);
+      isLeft ? switchPanel(false) : switchPanel();
+      clearInterval(automaticSwitch);
+      automaticSwitch = window.setInterval(function(){
+        switchPanel();
+      }, 7500)
+    }
+  });
+  
+}
+
+panels ? newSlides() : false;

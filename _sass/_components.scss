@@ -688,13 +688,13 @@ a:visited{
     background-size: cover;
     background-repeat: no-repeat;
   }
-  &::before {
-    top: 0;
-    background-image: url(/assets/images/iso-top.svg);
-    background-position: bottom;
-    background-size: cover;
-    height: 5rem;
-  }
+  // &::before {
+  //   top: 0;
+  //   background-image: url(/assets/images/iso-top.svg);
+  //   background-position: bottom;
+  //   background-size: cover;
+  //   height: 5rem;
+  // }
   &::after {
     height: 20rem;
     bottom: 0;
