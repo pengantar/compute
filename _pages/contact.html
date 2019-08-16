@@ -10,7 +10,7 @@ full: true
     <div class = 'tabs'>
       <div class = 'tab_switch'>
         {% for contact in contacts %}
-        <div class = 'tab flag {% if forloop.first %}tab_active{% endif %}'>
+        <div class = 'tab {% if forloop.first %}tab_active{% endif %}'>
           <img src = '/assets/country/{{ contact.country | downcase }}.jpg'>
         </div>
         {% endfor %}
@@ -21,7 +21,7 @@ full: true
         <div class = 'tab_item {% if forloop.first %}tab_item_active{% endif %}'>
           <h3 class = 'slim'>{{ contact.country | capitalize }}</h3>
           {% for region in contact.regions %}
-            <h4>{{ region.name }}</h4>
+            <p><span class = 'region-title'>{{ region.name }}</span></p>
             {% for detail in region.details %}
               {{ detail | markdownify }}
             {% endfor %}

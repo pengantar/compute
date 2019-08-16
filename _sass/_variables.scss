@@ -1,13 +1,15 @@
-// @import url('https://fonts.googleapis.com/css?family=Maven+Pro:400,500|Open+Sans:400,400i,700');
+@import url('https://fonts.googleapis.com/css?family=Maven+Pro:400,500|Open+Sans:400,400i,700');
 
 $light: #fff;
 $dark: #242a33;
 $mute: darken($light, 30%);
 $pale: lighten($dark, 15%);
 $orange: #F07444;
+$cafe: $orange;
 $padding: 15px;
 $margin: 25px;
-$body-font: 'Metropolis', sans-serif;
+$body-font: 'Open Sans', sans-serif;
+$heading-font: 'Maven Pro', sans-serif;
 
 %modal {
   position: relative;
@@ -19,7 +21,7 @@ $body-font: 'Metropolis', sans-serif;
   opacity: 0;
   transform: translateZ(-600px);
   transition: all 0.3s ease-out;
-  box-shadow: 0  1.5rem 6rem rgba(0,0,0,0.17);
+  box-shadow: 0 0 130px rgba(0,0,0,0.33);
   overflow-y: auto;
 }
 %open{

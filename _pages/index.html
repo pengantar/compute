@@ -1,47 +1,44 @@
 ---
 layout: default
 permalink: '/'
-description: "Founded in 1987, Computech Limited is a leading East African systems integrator, providing technology solutions to solve businesses’ most important problems."
-slides:
-  - slide01
-  - slide02
-  - slide03
-  - slide04
 ---
 {%- assign slides = site.data.slides -%}
-<div class = 'slides_container'>
+
+<div class = 'slides_container mb-4'>
+  <div id = 'particles-js'></div>
   <div class = 'slides' tabindex = '0'>
-  {% for item in page.slides %}
-    <div class = 'slide slide_home {% if forloop.first %}slide_active{% endif %}' style = 'background-image: url(/assets/images/{{ item }}.jpg)'>
+  {%- for slide in slides -%}
+    <div class = 'slide {% if forloop.first %} slide_active {% endif %}' style = 'background-image: url(/assets/images/{{ slide.image }})'>
+      <h1>{{ slide.description }}</h1>
     </div>
-  {% endfor %}
+  {%- endfor -%}
   </div>
   <div class = 'dots'>
-  {% for item in page.slides %}
+  {%- for item in slides -%}
     <div class = 'dot {% if forloop.first %} dot_active {% endif %}'></div>
-  {% endfor %}
+  {%- endfor -%}
   </div>
   <div class = 'direction'>
-    <div class = 'slide_left'><img src = '/assets/icons/back.svg' alt = 'icon'></div>
-    <div class = 'slide_right'><img src = '/assets/icons/front.svg' alt = 'icon'></div>
+    <div class = 'slide_left'><span class = 'angle__left'></span></div>
+    <div class = 'slide_right'><span class = 'angle__right'></span></div>
   </div>
-</div>
-<div class = 'mb-4 mt-4'>
-  {%- for slide in slides -%}
-  <div class = ' wrap_min'>
-    {{ slide.description | markdownify }}
-  </div>
-  {%- endfor -%}
 </div>
 
-<section class = 'wrap_min mb-4'>
-  <h5 class = 'orange'>TALK TO SALES</h5>
-  <h2>Our experts love to answer questions.</h2>
-  <h5 class = 'orange'>OUR SERVICE CENTRE</h5>
-  <ul class = 'list mt-2'>
-    <li>One Stop Shop for all IT related repairs</li>
-    <li>HP Authorised Service Centre and HP Gold Partner</li>
-    <li>Excellent customer service to meet all your needs</li>
-    <li>Fully equipped Service Centre with certified engineers offering warranty support and repairs</li>
-  </ul>
+{%- include products-services.html -%}
+
+<section class = 'wrap mb-4 mt-4'>
+  <h5 class = 'orange center pt-4'>TALK TO SALES</h5>
+  <h2 class = 'center'>Our experts love to answer questions.</h2>
+  <div class = 'mt-4 grid-1 grid-tab'>
+    <div class = 'dark pt-2 pb-2 pl-1 pr-1'>
+    <h5 class = 'pl-2 orange'>OUR SERVICE CENTRE</h5>
+    <ul class = 'list'>
+      <li><span class = 'listing'></span>One Stop Shop for all IT related repairs</li>
+      <li><span class = 'listing'></span>HP Authorised Service Centre and HP Gold Partner</li>
+      <li><span class = 'listing'></span>Excellent customer service to meet all your needs</li>
+      <li><span class = 'listing'></span>Fully equipped Service Centre with certified engineers offering warranty support and repairs</li>
+    </ul>
+    </div>
+    <div>{% include form.html %}</div>
+  </div>
 </section>

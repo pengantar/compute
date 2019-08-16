@@ -1,0 +1,17 @@
+---
+layout: default
+---
+<div class = 'wrap_min pt-3 mt-2 grid-reverse post'>
+  <div class = 'blog__posts'>
+    <div class = 'editor'>
+      <h5 class = 'article_{{ page.category | downcase }}'>{{ page.category | upcase }}</h5>
+      <strong><time>{{ page.date | date: "%B %d, %Y" }}</time></strong>
+      <h2>{{ page.title }}</h2>
+      {%- include share.html -%}
+    </div>
+    <div class = 'post_body'>
+      <img src = '/assets/news/{{ page.image.name | lstrip }}.{{ page.image.type | lstrip }}' alt = "{{ page.image.description  | replace: "'", "" }}" class = 'blog__thumb'>
+      {{ content }}
+    </div>
+  </div>
+</div>

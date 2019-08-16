@@ -5,7 +5,7 @@ title: Outsourcing
 partners:
   - kq
   - britam
-  - cba
+  - cba.png
 ---
 ### Partners
 

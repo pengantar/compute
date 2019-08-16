@@ -1,8 +1,4 @@
-- name: Leasing 
-  url: /products-services/services/leasing/
-- name: Maintenance 
-  url: /products-services/services/maintenance/
-- name: Microsoft Solutions
-  url: /products-services/software-solutions/microsoft-solutions/
-- name: Cyber Security
-  url: /products-services/cyber-security/
+- Microsoft Solutions
+- Leasing 
+- Maintenance
+- Outsourcing

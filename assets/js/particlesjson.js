@@ -43,10 +43,10 @@ if (document.querySelector('#particles-js')) {
         }
       },
       "line_linked": {
-        "enable": false,
+        "enable": true,
         "distance": 80,
         "color": "#ffffff",
-        "opacity": 0,
+        "opacity": 0.2,
         "width": 0.5
       },
     },

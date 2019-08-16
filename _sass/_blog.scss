@@ -10,7 +10,8 @@
 	}
 }
 .post{
-	a:not(.tag){
+	a{
+		color: $orange;
 		text-decoration: underline !important;
 	}
 	img{

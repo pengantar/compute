@@ -1,6 +1,11 @@
-- description: | 
-    
-    # East & Central Africa's Leading Technology System Provider
+- image: slide01.jpg
+  description: "Celebrating 30 years as a leading <br> East African systems integrator"
 
-    Computech Limited celebrates 30+ years as a leading East African systems integrator. We deliver cutting edge solutions in key industries. So far, we're trusted by over 5,000 clients in [5 different countries](/about-us/profile#countries).
+- image: slide02.jpg
+  description: "Cutting edge solutions <br> in key industries"
 
+- image: slide03.jpg
+  description: "East & Central Africa's Leading <br> Technology System Provider"
+
+- image: slide04.jpg
+  description: "Trusted by over 5,000 clients <br> in 5 different countries"

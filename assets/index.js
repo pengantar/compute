@@ -282,14 +282,14 @@ function fillModal(name, title, description, url) {
   let members = elems('.member');
   if(members) {
     Array.from(members).map(function(member, index) {
-      // member.addEventListener('click', function() {
-      //   let name = findText(member, '.member_name');
-      //   let title = findText(member, '.member_title');
-      //   let description = findText(member, '.member_description');
-      //   let imgUrl = member.querySelector('img').src;
-      //   fillModal(name, title, description, imgUrl);
-      //   toggleModal(shell);
-      // }); 
+      member.addEventListener('click', function() {
+        let name = findText(member, '.member_name');
+        let title = findText(member, '.member_title');
+        let description = findText(member, '.member_description');
+        let imgUrl = member.querySelector('img').src;
+        fillModal(name, title, description, imgUrl);
+        toggleModal(shell);
+      }); 
     }); 
     hideModal(shell);
   }
@@ -520,14 +520,10 @@ $(function(){
   let postImages = post ? post.querySelectorAll('img') : false;
   if(postImages) {
     postImages.forEach((image) => {
-       let desc, newDesc;
-       desc = document.createElement('p');
+       let desc = document.createElement('p');
        desc.classList.add('thumb_alt');
-       newDesc = image.alt;
-       if(newDesc.length > 5) {
-         desc.textContent = image.alt;
-         image.insertAdjacentHTML('afterend', desc.outerHTML);
-       }
+       desc.textContent = image.alt;
+       image.insertAdjacentHTML('afterend', desc.outerHTML);
     });
   }
 })();
@@ -607,76 +603,3 @@ $(function(){
     $('body').addClass('modal_show');
   }
 })(jQuery);
-
-function newSlides() {
-  // cycle through a list of statements
-  // cycle automatically
-  // cycle manually
-  // if automatically, cycle from left to right ~ always
-  // if manually, cycle on both directions
-  // set time interval
-  // pause time interval if manual
-  // resume time interval after manual
-
-}
-
-// (function(){
-//   let nav = document.querySelector(".nav");
-//   let links = nav.querySelectorAll("li");
-//   links.forEach(function(child, index){
-//     let actualLink = child.children && child.children.length >= 1 ? child.children[0].textContent : false;
-//     console.log(index, actualLink);
-//   })
-//  })();
-
-let panels = elems('.panel');
-
-function newSlides() {
-  // cycle manually
-  // if manually, cycle on both directions
-  // set time interval
-  // pause time interval if manual
-  // resume time interval after manual
-  let left = 'panel_left';
-  let control = 'panel_control';
-  let panelContainer = elem('.panels');
-  let firstPanel = panels[0]
-  let countPanels = Array.from(panels).length;
-  let lastPanel = panels[countPanels - 1];
-  
-  function switchPanel(direction = true) {
-    // direction is true if manual click is to the right ... else it's false
-    let activePanel = elem('.panel_active', panels);
-    let nextPanel = activePanel.nextElementSibling
-    let previousPanel = activePanel.previousElementSibling;
-    let newPanel = Object.create(null);
-    if (direction) {
-      newPanel = nextPanel ? nextPanel : firstPanel;
-    }
-    if (!direction) {
-      newPanel = previousPanel ? previousPanel : lastPanel;
-    }
-    deleteClass(activePanel, 'panel_active');
-    pushClass(newPanel, 'panel_active')
-  }
-  
-  let automaticSwitch = window.setInterval(function(){
-    switchPanel();
-  }, 7500)
-  
-  panelContainer.addEventListener('click', function(event) {
-    let target = event.target;
-    let isControl = containsClass(target, control)
-    if(isControl) {
-      let isLeft = containsClass(target, left);
-      isLeft ? switchPanel(false) : switchPanel();
-      clearInterval(automaticSwitch);
-      automaticSwitch = window.setInterval(function(){
-        switchPanel();
-      }, 7500)
-    }
-  });
-  
-}
-
-panels ? newSlides() : false;

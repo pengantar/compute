@@ -43,8 +43,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  // box-shadow: 0 0 50px rgba(0,0,0,0.17);
-  box-shadow: -20px 25px 50px 0 rgba(0,0,0,.12);
+  box-shadow: 0 0 50px rgba(0,0,0,0.17);
   &s{
     background: #fff;
     max-width: 1250px;
@@ -89,10 +88,12 @@ a:visited{
   padding: 8px 0;
   margin: 0;
 }
-
+// Footer section 
 .footer{
   padding: 20px 0;   
   height: auto;
+  background-color: $dark;
+  color: $light;
   text-align: left;
   h3{
     color: inherit;
@@ -100,17 +101,20 @@ a:visited{
     font-size: 1.05rem;
   }  
   a:not(.contain){
+    color: $mute;
     display: inline-block;
-    padding: 0.25rem 0;
-    opacity: 0.7;
+    padding: 3px 10px;
     // font-size: 15px;
     &:hover{
       color: $orange;
-      opacity: 1;
     }
   }
-  &_col{
-    display: grid;
+  &_upper{
+    > div {
+      // text-align: center;
+      display: flex;
+      flex-direction: column;
+    }
   }
   &_share{
     display: inline-flex;
@@ -133,7 +137,8 @@ a:visited{
     }
   }    
   p{
-    grid-column: 1/-1;
+    margin: 0;
+    padding: 0;
   }
   .grid-1{
     grid-gap: 15px;
@@ -259,13 +264,12 @@ a:visited{
   }
 }
 
+
 // For the team page  
 .member{
   cursor: pointer;
   img{
     width: 100%;
-    max-width: 12.5rem;
-    border-radius: 50%;
   }
   &_modal{
     @extend %modal;
@@ -379,6 +383,12 @@ a:visited{
   &:hover{
     opacity: 0.9
   }
+  &.def{
+    background: transparent;
+    span{
+      color: $orange;
+    }
+  }
   h3{
     color: $light;
     line-height: 28px;
@@ -409,9 +419,8 @@ a:visited{
   padding: 10px 15px;
   margin: 10px 10px 10px 0;
   border-radius: 20px;
-  box-shadow: 0 9px 36px rgba(0,0,0,.1);
+  box-shadow: 0 0 30px rgba(0,0,0,0.17);
   text-transform: capitalize;
-  text-decoration: none;
   &_container{
     display: inline-flex;
     flex-flow: row wrap;
@@ -420,6 +429,7 @@ a:visited{
 }
 
 // End of End point 
+
 .region-title{
   text-decoration: underline;
 }
@@ -431,53 +441,32 @@ a:visited{
   width: 100%;       
   height: 180px;  
   text-transform: uppercase;
-  background: linear-gradient(to bottom right, #F07444, #F07444, $dark);
-  &_home {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 100%;
-    max-width: 40rem;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    min-height: 480px;
-    color: $light;
-    position:relative;
-    z-index: 99;
-    p {
-      color: inherit;
-      opacity: 0.8;
-    }
-    a {
-      color: inherit;
-      opacity: 0.9;
-      text-decoration: underline !important;
-    }
-  }
+  background-color: $dark;
 }
 
 // pdf buttons 
 .snip {
-  background: linear-gradient(to bottom right, $orange, $orange, $dark);
-  border: none;
+  background-color: $dark;
+  border: 1px solid $dark;
   display: inline-block;
-  min-width: 10rem;
-  color: $light;
+  min-width: 200px;
+  color: $orange;
   cursor: pointer;
-  font-size: 1rem;
+  font-size: 20px;
   margin: 15px 0;
   outline: none;
-  padding: 0.5rem 1rem;
+  padding: 15px;
   text-transform: uppercase;
   border-radius: 30px;
   line-height: 1.25;
+  font-family: $heading-font;
   opacity: 1;
   text-align: center;
   transition: all 0.3s ease-in;
-  box-shadow: 0 9px 36px rgba(0,0,0,.07);
   &:hover {
-    opacity: 0.9;
+    opacity: 0.96;
+    background: transparent;
+    border: 1px solid $orange;
     box-shadow: 0 0 30px rgba(0,0,0,0.17);
   }
 }
@@ -507,49 +496,44 @@ a:visited{
 
 
 .tab {
-  &:not(.flag) {
-    background: $orange;
-    box-shadow: 0 0 0.75rem rgba(0,0,0,0.12);
-    min-height: 3rem;
-  }
+  background: #f8f8f8;
   cursor: pointer;
   justify-content: space-between;
-  color: $light;
-  padding: 0;
+  padding: 0 3px;
   position: relative;
-  display: grid;
-  align-items: center;
+  box-shadow: 0 12px 25px -5px rgba(158,174,221,0.15);
   p{
     line-height: 30px;
     padding:0;
   }
   &_active {
-    &:not(.flag)::after {
+    &::after {
       content: '';
       position: absolute;
-      top: 100%;
-      left: 40%;
+      top: 0;
+      bottom: 0;
+      left: 0;
       width: 5px;
       border-radius: 1px;
+      background: $orange;
+      color: $orange;
       z-index: 2;
-      width: 0;
-      height: 0;
-      border-style: solid;
-      border-width: 0.75rem 0.75rem 0 0.75rem;
-      border-color: $orange transparent transparent transparent;
     }
   }  
   &_item { 
     display: none; 
+    a{
+      color: #F68E35;
+    }
     &_active {
       display: block;
     }
   }
   &_switch { 
+    overflow: hidden;
     width: 100%;
-    display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(3rem, 1fr));
-    grid-gap: 0.25rem;
+    display: flex;
+    justify-content: space-between;
     position: relative;
     margin: 0 0 5px;
     padding: 0 0 20px;
@@ -573,26 +557,45 @@ a:visited{
   margin: 0;
   li {
     display: grid;
-    grid-template-columns: 2.5rem auto;
+    grid-template-columns: 1fr 15fr;
     grid-gap: 10px;
+    color: $mute;
     padding-top: 10px;
-    margin-bottom: 0.5rem;
-    align-items: center;
-    &::before{
-      content: '';
-      width: 2.25rem;
-      height: 2.25rem;
-      position: relative;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-      border-radius: 50%;
-      background-image: url(/assets/icons/point.svg);
-      background-size: 33%;
-      background-repeat: no-repeat;
-      background-position: center;
-    }
   }
 }
+.listing{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  position: relative;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  border-radius: 50%;
+  &::after,
+  &::before {
+    content: '';
+    width: 0;
+    height: 0;
+    border-style: solid;
+    position: absolute;
+    mix-blend-mode: screen;
+  }
+  &::after{
+    border-width: 0 0 25px 12px;
+    border-color: transparent transparent $orange transparent;
+    transform: rotate(5deg);
+    top: 5px;
+  }
 
+  &::before{
+    border-width: 25px 12px 0 0;
+    border-color: $light transparent transparent transparent;
+    left: 25px;
+    transform: rotate(375deg);
+    top: 20px;
+  }
+}
 .job{
   width: 100%;
   display: grid;
@@ -618,6 +621,7 @@ a:visited{
     align-items: center;
   }
   &_title{
+    font-family: $heading-font;
     font-weight: 500;
   }
   .snip{
@@ -626,89 +630,4 @@ a:visited{
       display: none;
     }
   }
-}
-
-.service-card {
-  height: 11rem;
-  width: 11rem;
-  display: inline-grid;
-  align-items: center;
-  text-align: center;
-  border-radius: 50%;
-  padding: 1rem;
-  font-weight: 500;
-  font-size: 0.9rem;
-  &:nth-child(odd) {
-    transform: translateX(2rem) translateY(3rem);
-  }
-}
-
-.image{
-  &_holder {
-    margin-bottom: 4rem;
-    position: relative;
-  }
-  &_full{
-    width: 100%;
-    margin: 0;
-  }
-}
-
-.btn {
-  background-color: $orange;
-  border: 1px solid $orange;
-  display: inline-block;
-  width: 240px;
-  color: $light;
-  cursor: pointer;
-  font-size: 20px;
-  margin: 15px 0;
-  outline: none;
-  padding: 15px;
-  text-transform: uppercase;
-  border-radius: 30px;
-  line-height: 1.5;
-  position: relative;
-  z-index: 99;
-  text-align: center;
-  transition: opacity 0.3s cubic-bezier(0.215, 0.610, 0.355, 1);
-  &:hover {
-    color: $light;
-    opacity: 0.8;
-  }
-}
-
-.globing {
-  position: relative;
-  min-height: 96vh;
-  &::before, &::after {
-    content: "";
-    position: absolute;
-    width: 100%;
-    background-size: cover;
-    background-repeat: no-repeat;
-  }
-  // &::before {
-  //   top: 0;
-  //   background-image: url(/assets/images/iso-top.svg);
-  //   background-position: bottom;
-  //   background-size: cover;
-  //   height: 5rem;
-  // }
-  &::after {
-    height: 20rem;
-    bottom: 0;
-    background-image: url(/assets/images/market-info.svg);
-    background-position: center;
-    background-size: cover;
-  }
-}
-
-.negative-top {
-  margin-top: -7.5rem;
-}
-
-.map{
-  max-width: calc(100vw - 50px);
-  overflow-x: scroll;
 }

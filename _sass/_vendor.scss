@@ -12,6 +12,11 @@ a {
   background-color: transparent;
 }
 
+a:active,
+a:hover {
+  outline: 0
+}
+
 b,
 strong {
   font-weight: 700;
@@ -20,6 +25,33 @@ strong {
 h1 {
   margin: .67em 0;
   font-size: 2em;
+}
+
+code,
+pre {
+  font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+pre {
+  display: block;
+  padding: 9.5px;
+  margin: 0 0 10px;
+  font-size: 13px;
+  line-height: 1.42857143;
+  word-break: break-all;
+  word-wrap: break-word;
+  background-color: #f5f5f5;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  overflow: auto;
+  code {
+    padding: 0;
+    font-size: inherit;
+    color: inherit;
+    white-space: pre-wrap;
+    background-color: transparent;
+    border-radius: 0;
+  }
 }
 
 button,
@@ -32,9 +64,31 @@ textarea {
   color: inherit
 }
 
+button,
+input[type=button],
+input[type=submit] {
+  -webkit-appearance: button;
+  cursor: pointer
+}
+
+button[disabled],
+input[disabled] {
+  cursor: default
+}
+
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit
+}
+
 a {
   text-decoration: none
 }
+
 
 figure {
   margin: 0
@@ -42,6 +96,13 @@ figure {
 
 img {
   vertical-align: middle
+}
+
+.carousel-inner>.item>a>img,
+.carousel-inner>.item>img{
+  display: block;
+  max-width: 100%;
+  height: auto
 }
 
 .img-rounded {
@@ -116,6 +177,13 @@ h4 {
 
 h5 {
   font-size: 16px
+}
+
+blockquote {
+  padding: 10px 20px;
+  margin: 0 0 20px;
+  font-size: 17.5px;
+  border-left: 5px solid #eee
 }
 
 address {
@@ -220,6 +288,10 @@ address {
 
 .open>.dropdown-menu {
   display: block
+}
+
+.open>a {
+  outline: 0
 }
 
 .dropdown-menu-right {
@@ -501,6 +573,7 @@ address {
 
 .navbar-default {
   background-color: #f8f8f8;
+  border-color: #e7e7e7
 }
 
 .navbar-default .navbar-brand:focus,
@@ -543,6 +616,132 @@ address {
   }
 }
 
+.carousel {
+  position: relative
+}
+
+.carousel-inner {
+  position: relative;
+  width: 100%;
+  overflow: hidden
+}
+
+.carousel-inner>.item {
+  position: relative;
+  display: none;
+  transition: .6s ease-in-out left
+}
+
+.carousel-inner>.item>a>img,
+.carousel-inner>.item>img {
+  line-height: 1
+}
+
+@media all and (transform-3d),
+(-webkit-transform-3d) {
+  .carousel-inner>.item {
+    transition: transform .6s ease-in-out;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    perspective: 1000px
+  }
+  .carousel-inner>.item.active,
+  .carousel-inner>.item.next.left,
+  .carousel-inner>.item.prev.right {
+    left: 0;
+    transform: translate3d(0, 0, 0)
+  }
+}
+
+.carousel-inner>.active{
+  display: block
+}
+
+.carousel-inner>.active {
+  left: 0
+}
+
+.carousel-indicators {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  z-index: 15;
+  width: 60%;
+  padding-left: 0;
+  margin-left: -30%;
+  text-align: center;
+  list-style: none
+}
+
+.carousel-indicators li {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin: 1px;
+  text-indent: -999px;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0);
+  border: 1px solid #fff;
+  border-radius: 10px
+}
+
+.carousel-indicators .active {
+  width: 12px;
+  height: 12px;
+  margin: 0;
+  background-color: #fff
+}
+
+.carousel-caption {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: #fff;
+  text-align: center;
+}
+
+.carousel-inner{
+  .item {
+    position: relative;
+  }
+  h1{
+    text-transform: capitalize;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .carousel-control .glyphicon-chevron-left,
+  .carousel-control .glyphicon-chevron-right,
+  .carousel-control .icon-next,
+  .carousel-control .icon-prev {
+    width: 30px;
+    height: 30px;
+    margin-top: -10px;
+    font-size: 30px
+  }
+  .carousel-control .glyphicon-chevron-left,
+  .carousel-control .icon-prev {
+    margin-left: -10px
+  }
+  .carousel-control .glyphicon-chevron-right,
+  .carousel-control .icon-next {
+    margin-right: -10px
+  }
+  .carousel-caption {
+    right: 20%;
+    left: 20%;
+    padding-bottom: 30px
+  }
+  .carousel-indicators {
+    bottom: 20px
+  }
+}
+
 .hide {
   display: none!important
 }
@@ -561,7 +760,7 @@ address {
   }
 }
 
-//  dropdown 
+/*  dropdown */
 .dropdown-menu > li > a:hover,
 .dropdown-menu > li > a:focus {
   opacity: 0.9;
@@ -746,7 +945,7 @@ address {
   }
   img{
     width: 250px;
-    padding: 0.9rem 0;
+    padding: 17.5px 0;
   }
 }
 .men-link:hover,
@@ -755,6 +954,7 @@ address {
   background-color: $dark !important;
 }
 .navbar-default ul li a{
+  font-family: $heading-font;
   font-weight: 500;
   border: 2px solid transparent;
   text-transform: uppercase;

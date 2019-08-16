@@ -1,13 +1,11 @@
 
 .article{
-  // box-shadow: 0 0 15px rgba(0,0,0,0.17);
-  box-shadow: 0 9px 35px rgba(0,0,0,.05);
-  overflow: hidden;
-  border-radius: 1rem;
-  &_details {
-    font-weight: 400;
-    text-transform: uppercase;
-    font-size: 0.9rem;
+  box-shadow: 0 0 15px rgba(0,0,0,0.17);
+  &_package {
+    color: $orange;
+  }
+  &_awards {
+    color: $orange;
   }
   &_excerpt{
     &:not(.visible) {
