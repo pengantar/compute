@@ -1,5 +1,5 @@
 ---
-title: "Symantec™ Critical System Protection (CSP"
+title: "Symantec™ Critical System Protection (CSP)"
 image:
   name: computech-symantec-flyer
   type: jpg
