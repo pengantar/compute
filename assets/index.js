@@ -40,6 +40,7 @@ function modifyClass(el, targetClass) {
   function activateSlide(el, position, direction) {
     let allSlides = Array.from(el);
     let active = 'slide_active';
+    let retire = 'slide_retire';
     let activeSlide = allSlides.filter((slide) => {
       return slide.classList.contains(active);
     })[0];
@@ -60,6 +61,8 @@ function modifyClass(el, targetClass) {
     function switchSlide (position) {
       let targetSlide = allSlides[position];
       switchDot(position);
+      pushClass(activeSlide, retire);
+      deleteClass(targetSlide, retire);
       deleteClass(activeSlide, active);
       pushClass(targetSlide, active);
     }

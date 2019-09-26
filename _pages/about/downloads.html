@@ -8,7 +8,7 @@ full: true
   {%- assign downloads = site.data.about.downloads -%}
   <div class = 'tab_switch grid-tab grid-3'>
     {%- for item in downloads -%}
-    <div class = 'tab pt-1 contain {% if forloop.index == 1 %} tab_active {% endif %}'>
+    <div class = 'tab pt-1 pb-1 contain {% if forloop.index == 1 %} tab_active {% endif %}'>
       {{ item.nav | upcase }}
     </div>
     {%- endfor -%}

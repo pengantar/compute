@@ -496,29 +496,35 @@ a:visited{
 
 
 .tab {
-  background: #f8f8f8;
+  background: $light;
   cursor: pointer;
   justify-content: space-between;
-  padding: 0 3px;
+  // padding: 0 3px;
   position: relative;
-  box-shadow: 0 12px 25px -5px rgba(158,174,221,0.15);
+  background-color: $dark;
+  display: grid;
+  align-items: center;
+  color: $orange;
+  border-radius: 5px;
+  // border: 1px solid #f5f5f5;
   p{
     line-height: 30px;
     padding:0;
   }
   &_active {
-    &::after {
-      content: '';
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      left: 0;
-      width: 5px;
-      border-radius: 1px;
-      background: $orange;
-      color: $orange;
-      z-index: 2;
-    }
+    box-shadow: 0 2rem 1.5rem -1rem rgba($dark,0.5);
+    // &::after {
+    //   content: '';
+    //   position: absolute;
+    //   top: 0;
+    //   bottom: 0;
+    //   left: 0;
+    //   width: 5px;
+    //   border-radius: 1px;
+    //   background: $orange;
+    //   color: $orange;
+    //   z-index: 2;
+    // }
   }  
   &_item { 
     display: none; 
@@ -530,7 +536,7 @@ a:visited{
     }
   }
   &_switch { 
-    overflow: hidden;
+    // overflow: hidden;
     width: 100%;
     display: flex;
     justify-content: space-between;
