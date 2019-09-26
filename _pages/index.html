@@ -5,10 +5,10 @@ permalink: '/'
 {%- assign slides = site.data.slides -%}
 
 <div class = 'slides_container mb-4'>
-  <div id = 'particles-js'></div>
+  <!-- <div id = 'particles-js'></div> -->
   <div class = 'slides' tabindex = '0'>
   {%- for slide in slides -%}
-    <div class = 'slide {% if forloop.first %} slide_active {% endif %}' style = 'background-image: url(/assets/images/{{ slide.image }})'>
+    <div class = 'slide {% if forloop.first %} slide_active {% endif %}' style = 'background-image: url(/assets/news/{{ slide.image }})'>
       <h1>{{ slide.description }}</h1>
     </div>
   {%- endfor -%}
