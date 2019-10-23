@@ -350,12 +350,11 @@ function fuzu () {
           let message = `
             <h2>Thanks for checking!</h2>
             <p>There are no vacancies at the moment. We shall list new positions as they become available.</p>
+            <a href = 'mailto:HRKenya@computechlimited.com' class='simple_button snip'>Contact HR</a>
           `
           let errorContainer = document.createElement('div');
           pushClass(errorContainer, "pt-3 pb-3 center");
           errorContainer.innerHTML = message;
-
-          
           board.appendChild(errorContainer);
         }
     });

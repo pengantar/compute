@@ -14,22 +14,25 @@
   title: Strategy & Transformation Manager
   picture: elahe
   description: "Elahe has worked across several industries including aviation, real estate, banking, hospitality, and manufacturing. Previously with Bain & Company in London and Johannesburg, Elahe is using her background in management and strategy consulting to drive Computech Limited’s Transformation Program. Elahe holds a BA from Stanford University."
-
+- name: Emy Mwangi
+  title: Regional Human Resource Manager
+  picture: emy
+  description: ""
+- name: Sushin Kurunnantavida
+  title: Head of Enterprise
+  picture: sushin
+  description: ""
+- name: Njambi Kimani
+  title: Regional Marketing Manager
+  picture: njambi
+  description: ""
 - name: Jay Venugopal
   title: GM TANZANIA
   picture: jay
   description: "Jay has over 30 years of ICT experience in Africa (Kenya, Tanzania, Nigeria and Ghana), Middle East and India. In particular, Jay has sold medium to large projects in over 15 countries and has significant experience with BFSI and eGovernment software. Jay offers support to the regional offices on some of the larger software projects."
-- name: George Kimani
-  title: GM UGANDA
-  picture: george
-  description: "George has significant experience in financial administration and auditing. He has held various positions from Accountant, Audit Senior, and Chief Accountant. With 7 years’ experience in management within the IT sector, George has held the position of Assistant GM in Computech Uganda for 3 years, Managing Director Computech Rwanda & Burundi for 4 Years and has held the General Manager Computech Uganda position since January 2016."
-# - name: Simon
-#   title: GM Zambia
-#   picture: simon
-#   description: ""
-- name: Sushin Kurunnantavida
-  title: Head of Enterprise
-  picture: sushin
+- name: Arghya Sinha
+  title: GM Zambia
+  picture: arghya
   description: ""
 # - name: Afzal Shaikh
 #   title: Head of Security
@@ -39,22 +42,18 @@
   title: Head of volume
   picture: saurin
   description: "Saurin has significant experience in the IT industry, having worked with both vendors and distributors. Saurin has successfully led the Volume department, responsible for selling high-volume products such as laptops, PCs and printers, by streamlining the team and processes and developing strong relationships with key vendors. Saurin holds a Diploma in Electronics & Telecommunication from the Bombay Technical Education Board."
-- name: James Mwangi
-  title: Head of Software
-  picture: james
-  description: ""
+- name: George Kimani
+  title: GM UGANDA
+  picture: george
+  description: "George has significant experience in financial administration and auditing. He has held various positions from Accountant, Audit Senior, and Chief Accountant. With 7 years’ experience in management within the IT sector, George has held the position of Assistant GM in Computech Uganda for 3 years, Managing Director Computech Rwanda & Burundi for 4 Years and has held the General Manager Computech Uganda position since January 2016."
+# - name: James Mwangi
+#   title: Head of Software
+#   picture: james
+#   description: ""
 # - name: Sameer Kassam
 #   title: Head of Customer Experience
 #   picture: sameer
 #   description: "Sameer has over 15 years specializing in customer service and service delivery, having worked with British Gas and Camelot Group in the UK. Sameer’s work at Computech has been on extending the Outsource and Service Delivery portfolio regionally, whilst ensuring a focus on outstanding customer service. Sameer holds an HND in Management Information Systems."
-- name: Njambi Kimani
-  title: Regional Marketing Manager
-  picture: njambi
-  description: ""
-- name: Emy Mwangi
-  title: Human Resource Manager
-  picture: emy
-  description: ""
 - name: Sandip Datta
   title: Head of Healthcare
   picture: sandip
