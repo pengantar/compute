@@ -8,8 +8,21 @@
     <img src = '/assets/icons/twitter.svg' alt = 'share'>
   </a>
   
-  <a rel='nofollow' class = 'share_item linkedin'  title="Share on LinkedIn" target='_blank' href='http://www.linkedin.com/shareArticle?mini=true;title={{ page.title }};url={{ site.url }}{{ page.url }};summary={{ page.content | strip_html | truncate: 160 }}'><img src ='/assets/icons/linkedin.svg' alt = 'icon'/></a>
+  <script>
+    function shareViaLinkedin() {
+      window.open('http://www.linkedin.com/shareArticle?mini=true&url='+encodeURIComponent({{ site.url }}{{ page.url }}), '', 'left=0,top=0,width=650,height=420,personalbar=0,toolbar=0,scrollbars=0,resizable=0');
+    }
+  </script>
+  
+  <a rel='nofollow' class = 'share_item linkedin'  title="Share on LinkedIn" target='_blank' href='#linkidenshare' onclick="shareViaLinkedin()"><img src ='/assets/icons/linkedin.svg' alt = 'icon'/></a>
   <a class = 'share_item copy' href = '{{ site.url }}{{ page.url }}'>
     <img src ='/assets/icons/copy.svg' alt = 'icon'/>
   </a>
+
+  <script>
+    function shareViaLinkedin() {
+      window.open('http://www.linkedin.com/shareArticle?mini=true&url='+encodeURIComponent({{ .Permalink }}), '', 'left=0,top=0,width=650,height=420,personalbar=0,toolbar=0,scrollbars=0,resizable=0');
+    }
+  </script>
+  
 </div>
