@@ -18,11 +18,4 @@
   <a class = 'share_item copy' href = '{{ site.url }}{{ page.url }}'>
     <img src ='/assets/icons/copy.svg' alt = 'icon'/>
   </a>
-
-  <script>
-    function shareViaLinkedin() {
-      window.open('http://www.linkedin.com/shareArticle?mini=true&url='+encodeURIComponent({{ .Permalink }}), '', 'left=0,top=0,width=650,height=420,personalbar=0,toolbar=0,scrollbars=0,resizable=0');
-    }
-  </script>
-  
 </div>
