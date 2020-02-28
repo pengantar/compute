@@ -42,14 +42,22 @@
   title: Head of volume
   picture: saurin
   description: "Saurin has significant experience in the IT industry, having worked with both vendors and distributors. Saurin has successfully led the Volume department, responsible for selling high-volume products such as laptops, PCs and printers, by streamlining the team and processes and developing strong relationships with key vendors. Saurin holds a Diploma in Electronics & Telecommunication from the Bombay Technical Education Board."
-- name: George Kimani
-  title: GM UGANDA
-  picture: george
-  description: "George has significant experience in financial administration and auditing. He has held various positions from Accountant, Audit Senior, and Chief Accountant. With 7 years’ experience in management within the IT sector, George has held the position of Assistant GM in Computech Uganda for 3 years, Managing Director Computech Rwanda & Burundi for 4 Years and has held the General Manager Computech Uganda position since January 2016."
-# - name: James Mwangi
-#   title: Head of Software
-#   picture: james
-#   description: ""
+# - name: George Kimani
+#   title: GM UGANDA
+#   picture: george
+#   description: "George has significant experience in financial administration and auditing. He has held various positions from Accountant, Audit Senior, and Chief Accountant. With 7 years’ experience in management within the IT sector, George has held the position of Assistant GM in Computech Uganda for 3 years, Managing Director Computech Rwanda & Burundi for 4 Years and has held the General Manager Computech Uganda position since January 2016."
+- name: Anand Puthankalam
+  title: Head of Security
+  picture: anand-puthankalam
+  description: ""
+- name: Meshack Olando
+  title: Head of Software
+  picture: meshack-olando
+  description: ""
+- name: James Kariuki Mwangi
+  title: Finance Manager
+  picture: james-kariuki
+  description: ""
 # - name: Sameer Kassam
 #   title: Head of Customer Experience
 #   picture: sameer
