@@ -11,7 +11,8 @@
   picture: dipak
   description: "A fellow of the Chartered Association of the Certified Accountants (FCCA), Dipak joined Computech as Chief Accountant in 1992 after stints with Abercrombie & Kent, Ashwin Brothers and Interact Travels. Dipak has risen steadily to CEO position and has been involved in all aspects of growing the business to current levels. Dipak has a keen interest in ICT emerging trends, world affairs, community service and keeping fit through cycling and working out."
 - name: Elahe Anjarwalla
-  title: Strategy & Transformation Manager
+  # title: Strategy & Transformation Manager
+  title: Director
   picture: elahe
   description: "Elahe has worked across several industries including aviation, real estate, banking, hospitality, and manufacturing. Previously with Bain & Company in London and Johannesburg, Elahe is using her background in management and strategy consulting to drive Computech Limited’s Transformation Program. Elahe holds a BA from Stanford University."
 - name: Emy Mwangi
@@ -47,7 +48,7 @@
 #   picture: george
 #   description: "George has significant experience in financial administration and auditing. He has held various positions from Accountant, Audit Senior, and Chief Accountant. With 7 years’ experience in management within the IT sector, George has held the position of Assistant GM in Computech Uganda for 3 years, Managing Director Computech Rwanda & Burundi for 4 Years and has held the General Manager Computech Uganda position since January 2016."
 - name: Anand Puthankalam
-  title: Head of Security
+  title: Head of Cyber Security
   picture: anand-puthankalam
   description: ""
 - name: Meshack Olando
