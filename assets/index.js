@@ -35,6 +35,22 @@ function modifyClass(el, targetClass) {
   }
 }
 
+(function highlightLinks() {
+  const marker = ':bluebutton';
+  const links = Array.from(elems('a')).filter(function(link) {
+    return link.textContent.includes(marker);
+  })
+  
+  if(links) {
+    links.forEach(function(link){
+      let linkText = link.textContent
+      link.textContent = linkText.replace(marker, '');
+      pushClass(link, 'snip snip_blue');
+    })
+  }
+
+})();
+
 // Replaces bootstrap carousel
 (function Slider() {
   function activateSlide(el, position, direction) {

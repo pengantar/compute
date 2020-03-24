@@ -467,11 +467,24 @@ a:visited{
   opacity: 1;
   text-align: center;
   transition: all 0.3s ease-in;
+  text-decoration: none !important;
   &:hover {
     opacity: 0.96;
     background: transparent;
     border: 1px solid $orange;
     box-shadow: 0 0 30px rgba(0,0,0,0.17);
+  }
+  &_blue {
+    $blue: rgb(0,117,208);
+    text-decoration: none !important;
+    background-color: $blue;
+    color: $light !important;
+    border: none !important;
+    transition: opacity 0.3s ease-in;
+    &:hover {
+      background-color: $blue;
+      opacity: 0.8;
+    }
   }
 }
 

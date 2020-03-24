@@ -10,7 +10,7 @@
 	}
 }
 .post{
-	a{
+	a:not(.snip){
 		color: $orange;
 		text-decoration: underline !important;
 	}
