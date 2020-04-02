@@ -44,12 +44,45 @@ function modifyClass(el, targetClass) {
   
   if(links) {
     links.forEach(function(link){
-      let linkText = link.textContent
+      let linkText = link.textContent;
       link.textContent = linkText.replace(marker, '');
       pushClass(link, 'snip snip_blue');
     });
   }
+  
+  const smallmarker = ':small'
+  const smalls = Array.from(elems('p')).filter(function(paragraph){
+    const content = paragraph.textContent
+    return content.includes(smallmarker)
+  });
+  
+  if(smalls.length >= 1) {
+    smalls.forEach(function(small){
+      pushClass(small, 'small');
+      small.textContent = small.textContent.replace(smallmarker, "");
+    });
+  }
+  
+})();
 
+function videoMarkUp(id) {
+  return `
+  <div class = 'video'>
+  <iframe src='https://www.youtube.com/embed/${id}?controls=1&rel=0'></iframe>
+  </div>
+  `;
+}
+
+(function youtubeVideo(){
+  const videos = elems('.video');
+
+  if(videos) {
+    videos.forEach(function(video){
+      const id = video.dataset.video
+      const markup = videoMarkUp(id);
+      video.innerHTML = markup;
+    });
+  }
 })();
 
 // Replaces bootstrap carousel
@@ -145,7 +178,7 @@ function modifyClass(el, targetClass) {
       }
     });
   }
-
+  
   mainSection ? sliderHelpers(mainSection) : false; 
   
   function autoPlaySlide (speed) {
@@ -165,7 +198,7 @@ function modifyClass(el, targetClass) {
 
 (function() {
   let items = elems('.share_item');
-
+  
   (function shareItem() {
     const copyToClipboard = str => {
       const el = document.createElement('textarea');  // Create a <textarea> element
@@ -175,9 +208,9 @@ function modifyClass(el, targetClass) {
       el.style.left = '-9999px';                      // Move outside the screen to make it invisible
       document.body.appendChild(el);                  // Append the <textarea> element to the HTML document
       const selected =            
-        document.getSelection().rangeCount > 0        // Check if there is any content selected previously
-          ? document.getSelection().getRangeAt(0)     // Store selection if found
-          : false;                                    // Mark as false to know no selection existed before
+      document.getSelection().rangeCount > 0        // Check if there is any content selected previously
+      ? document.getSelection().getRangeAt(0)     // Store selection if found
+      : false;                                    // Mark as false to know no selection existed before
       el.select();                                    // Select the <textarea> content
       document.execCommand('copy');                   // Copy - only works as a result of a user action (e.g. click events)
       document.body.removeChild(el);                  // Remove the <textarea> element
@@ -200,7 +233,7 @@ function modifyClass(el, targetClass) {
         }, 4000);
       }
     };
-
+    
     elem('main').addEventListener('click', function(event) {
       let shareTrigger = event.target.closest('.share_item');
       if(shareTrigger) {
@@ -247,7 +280,7 @@ function hideModal(shell) {
   triggers.map(function(trigger) {
     let button = elem(trigger);
     if (button) {
-    button.addEventListener('click', function(e) {
+      button.addEventListener('click', function(e) {
         button == e.target ? toggleModal(shell) : false;
       });
     }
@@ -342,38 +375,38 @@ function fuzu () {
   let board = document.querySelector('.job_board');
   function callFuzu() {
     $.get('https://www.fuzu.com/api/company/computech-limited/all_jobs',
-      function(data, status) {
-        let fuzuData = data.fuzu_api;
-        if (data.fuzu_api.length >= 1) {
-          fuzuData.forEach(function(jobItem) {
-            let jobTitle = createComponent(jobItem.title, 'job_title');
-            let jobLocation = createComponent(jobItem.location, 'job_location');
-            let icon = document.createElement('img');
-            icon.src = '/assets/icons/location.svg';
-            icon.classList.add('job_icon');
-            icon.alt = 'icon';
-            jobLocation.insertBefore(icon, jobLocation.firstChild);
-            let jobApply = createComponent('Apply', 'snip');
-            let job = document.createElement('a');
-            job.classList.add('job');
-            job.setAttribute('href', jobItem.styled_flow_url);
-            job.setAttribute('target', '_blank');
-            job.appendChild(jobTitle);
-            job.appendChild(jobLocation);
-            job.appendChild(jobApply);
-            board.appendChild(job);
-          });
-        } else {
-          let message = `
-            <h2>Thanks for checking!</h2>
-            <p>There are no vacancies at the moment. We shall list new positions as they become available.</p>
-            <a href = 'mailto:HRKenya@computechlimited.com' class='simple_button snip'>Contact HR</a>
-          `
-          let errorContainer = document.createElement('div');
-          pushClass(errorContainer, "pt-3 pb-3 center");
-          errorContainer.innerHTML = message;
-          board.appendChild(errorContainer);
-        }
+    function(data, status) {
+      let fuzuData = data.fuzu_api;
+      if (data.fuzu_api.length >= 1) {
+        fuzuData.forEach(function(jobItem) {
+          let jobTitle = createComponent(jobItem.title, 'job_title');
+          let jobLocation = createComponent(jobItem.location, 'job_location');
+          let icon = document.createElement('img');
+          icon.src = '/assets/icons/location.svg';
+          icon.classList.add('job_icon');
+          icon.alt = 'icon';
+          jobLocation.insertBefore(icon, jobLocation.firstChild);
+          let jobApply = createComponent('Apply', 'snip');
+          let job = document.createElement('a');
+          job.classList.add('job');
+          job.setAttribute('href', jobItem.styled_flow_url);
+          job.setAttribute('target', '_blank');
+          job.appendChild(jobTitle);
+          job.appendChild(jobLocation);
+          job.appendChild(jobApply);
+          board.appendChild(job);
+        });
+      } else {
+        let message = `
+        <h2>Thanks for checking!</h2>
+        <p>There are no vacancies at the moment. We shall list new positions as they become available.</p>
+        <a href = 'mailto:HRKenya@computechlimited.com' class='simple_button snip'>Contact HR</a>
+        `
+        let errorContainer = document.createElement('div');
+        pushClass(errorContainer, "pt-3 pb-3 center");
+        errorContainer.innerHTML = message;
+        board.appendChild(errorContainer);
+      }
     });
   }
   board ? callFuzu() : false;
@@ -384,16 +417,16 @@ $(window).resize(function() {
 });
 
 $(document).ready(function(){
-
+  
   $('.carousel .carousel-caption').css('zoom', $('.carousel').width()/1050);  
   (function initWebp() {
     serveNonWebp() ? switchToNonWebp() : false;
   })();
-
+  
   $('.aniview').AniView();
-
+  
   fuzu();
-
+  
 });
 
 //For the contact form sub
@@ -539,10 +572,10 @@ $(function(){
   let postImages = post ? post.querySelectorAll('img') : false;
   if(postImages) {
     postImages.forEach((image) => {
-       let desc = document.createElement('p');
-       desc.classList.add('thumb_alt');
-       desc.textContent = image.alt;
-       image.insertAdjacentHTML('afterend', desc.outerHTML);
+      let desc = document.createElement('p');
+      desc.classList.add('thumb_alt');
+      desc.textContent = image.alt;
+      image.insertAdjacentHTML('afterend', desc.outerHTML);
     });
   }
 })();
@@ -586,9 +619,9 @@ $(function(){
   let $form = $('#comments-form');
   $form.submit(function () {
     let form = this;
-
+    
     $(this).addClass('form-loading');
-
+    
     $.ajax({
       type: $(this).attr('method'),
       url: $(this).attr('action'),
@@ -605,20 +638,20 @@ $(function(){
         $("form").trigger("reset");
       }
     });
-
+    
     return false;
   });
-
+  
   $('.modal_close').click(function () {
     $('body').removeClass('modal_show');
     $('form').removeClass('form-loading').removeClass('form-open');
     $('.form_toggle').removeClass('toggled');
   });
-
+  
   function showModal(title, message) {
     $('.modal_title').text(title);
     $('.modal_text').html(message);
-
+    
     $('body').addClass('modal_show');
   }
 })(jQuery);
