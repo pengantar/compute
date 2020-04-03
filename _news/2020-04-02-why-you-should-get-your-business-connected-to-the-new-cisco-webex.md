@@ -27,7 +27,7 @@ A strong business starts with strong relationships. Today it’s not about where
 130M active users per month
 
 1.5M \
-1.5M meeting devices in meeting rooms \
+1.5M meeting devices in meeting rooms
 
 _Cisco Webex users Worldwide_
 
