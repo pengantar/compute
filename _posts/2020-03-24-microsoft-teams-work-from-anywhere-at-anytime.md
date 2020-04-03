@@ -45,7 +45,7 @@ Get started with Microsoft Teams and enable your employees to work from anywhere
 
 [Get Started:bluebutton](https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAANAAeDJVYhUMU1aVjYwOTlSTUtCQTg3M0xDOFY3TEVQUS4u&fbclid=IwAR0rd4N2UG-nnVfhXL0LzdyhMEtgS_YgZgW1-hTggwGnBQoAb_wqYBfpI9s)
 
-### How to contact Us?
+### Contact Us.
 
 Contact us on:
 - [0725 290 601](tel:0725290601) 
@@ -55,3 +55,4 @@ Email us on:
 -  [Mandheer.Sehmi@computechlimited.com](mailto:Mandheer.Sehmi@computechlimited.com) 
 - [Meshack.olando@computechlimited.com](mailto:Meshack.olando@computechlimited.com)
 
+[![](/assets/news/cisco-webex-footer.jpg)](/contact-us/)

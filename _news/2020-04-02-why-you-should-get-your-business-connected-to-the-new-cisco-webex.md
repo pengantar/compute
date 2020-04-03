@@ -28,10 +28,8 @@ A strong business starts with strong relationships. Today it’s not about where
 
 1.5M \
 1.5M meeting devices in meeting rooms \
-Caption: Cisco Webex users Worldwide
 
-__*Kindly align the statistics in a landscape mode*__
-
+_Cisco Webex users Worldwide_
 
 ### Why get Cisco Webex?
 
