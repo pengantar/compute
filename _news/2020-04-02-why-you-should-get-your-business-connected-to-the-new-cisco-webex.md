@@ -20,14 +20,7 @@ _Experience the Cisco Webex meetings_
 
 A strong business starts with strong relationships. Today it’s not about where you work, but about how you work. Therefore, meeting effectively is a priority in every business. Cisco Webex provides you with a proven, simple, and innovative solution that helps you to achieve effective virtual meetings with active users around the Globe.
 
-27.9M \
-27.9M mobile downloads
-
-130M \
-130M active users per month
-
-1.5M \
-1.5M meeting devices in meeting rooms
+![27.9M mobile downloads, 130M active users per month, 1.5M meeting devices in meeting rooms](/assets/news/cicso-webex-download-statistic.jpg)
 
 _Cisco Webex users Worldwide_
 
