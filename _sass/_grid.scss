@@ -9,6 +9,12 @@
 .grid{
   @extend %grid;
 }
+@media screen and (min-width: 557px) {
+  .grid-4{
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 @media screen  and (min-width: 769px){
   .grid-1{
     grid-template-columns: 1fr 1fr;
@@ -30,6 +36,7 @@
     grid-template-columns: repeat(4, 1fr);
   }
 }
+
 
 .grid-fibonacci{
   @media screen and (min-width: 992px){
