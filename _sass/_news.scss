@@ -1,6 +1,11 @@
 
 .article{
   box-shadow: 0 0 15px rgba(0,0,0,0.17);
+  &_first {
+    img {
+      height: 100%;
+    }
+  }
   &_package {
     color: $orange;
   }
