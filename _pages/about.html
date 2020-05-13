@@ -4,7 +4,7 @@ permalink: /about-us/
 title: About Us
 full: true
 ---
-<div class = 'grid-3'>                  
+<div class = 'grid-4'>                  
   {%- for item in site.data.about.home -%}
   <a href = '/about-us/{{ item }}/' class = 'card'>
     <img src = '/assets/about/{{ item }}{% if forloop.index == 3 %}.png{% else %}.jpg{% endif %}' alt = '{{item}}'>
