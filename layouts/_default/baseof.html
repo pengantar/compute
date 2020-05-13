@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {{ partial "head" . }}
+  </head>
+  <body {% if page.id %}id={{page.id}}{% endif %}>
+    {{ partial "nav" . }}
+    <main>
+      {{ define "main" . }}{{ end }}
+    </main>
+    {{ partial "footer" . }%}
+
+    {{ partial "scripts" . }%}
+  </body>
+</html>

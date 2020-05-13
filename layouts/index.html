@@ -1,22 +1,19 @@
----
-layout: default
-permalink: '/'
----
-{%- assign slides = site.data.slides -%}
+{{ define "main" }}
+{{- $slides := .Site.Data.slides -}}
 
 <div class = 'slides_container mb-4'>
   <!-- <div id = 'particles-js'></div> -->
   <div class = 'slides' tabindex = '0'>
-  {%- for slide in slides -%}
-    <div class = 'slide {% if forloop.first %} slide_active {% endif %}' style = 'background-image: url(/assets/news/{{ slide.image }})'>
-      <h1>{{ slide.description }}</h1>
+  {{- range $index, $slide := $slides -}}
+    <div class = 'slide {{ if eq $index 0 }} slide_active {{ end }}' style = 'background-image: url(/assets/news/{{ $slide.image }})'>
+      <h1>{{ $slide.description }}</h1>
     </div>
-  {%- endfor -%}
+  {{- endfor -}}
   </div>
   <div class = 'dots'>
-  {%- for item in slides -%}
-    <div class = 'dot {% if forloop.first %} dot_active {% endif %}'></div>
-  {%- endfor -%}
+  {{- for item in slides -}}
+    <div class = 'dot {{ if eq $index 0 }} dot_active {{ end }}'></div>
+  {{- endfor -}}
   </div>
   <div class = 'direction'>
     <div class = 'slide_left'><span class = 'angle__left'></span></div>
@@ -24,7 +21,7 @@ permalink: '/'
   </div>
 </div>
 
-{%- include products-services.html -%}
+{{- partial "products-services" . -}}
 
 <section class = 'wrap mb-4 mt-4'>
   <h5 class = 'orange center pt-4'>TALK TO SALES</h5>
@@ -39,6 +36,7 @@ permalink: '/'
       <li><span class = 'listing'></span>Fully equipped Service Centre with certified engineers offering warranty support and repairs</li>
     </ul>
     </div>
-    <div>{% include form.html %}</div>
+    <div>{{ partial "form" . }}</div>
   </div>
 </section>
+{{ end }}

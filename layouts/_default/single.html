@@ -1,27 +1,28 @@
 ---
 layout: default
 ---
-{%- include banner.html -%}
+{{- partial "banner" . -}}
 <div class = 'mb-2 animated zoomIn'>
-  <div class = 'wrap {% unless page.full -%}grid-fibonacci{% endunless %}'>
+  <div class = 'wrap{{ if .Params.full -}}{{ else }} grid-fibonacci{{ end }}'>
     <div>
-    {{ content }}
+    {{ .Content }}
     </div>
-    {%- unless page.full -%}
+    {{- if .Params.full -}}
+    {{ else }}
     <div>
       <aside class = 'shade'>
-        {%- assign title = page.title | downcase -%}
-        <h4>Need more information about {{ page.title }}?</h4>
+        {{- $title := lower .Title -}}
+        <h4>Need more information about {{ .Title }}?</h4>
         <p class = 'pale'>Send us a message and will get back to you as soon as possible.</p>
         <div class = 'simple_button snip'>CONTACT US</div>
         <div class = 'modal_overlay overlay hide contain'>
           <div class = 'simple_modal'>
-              {%- include form.html -%}
+              {{- partial "form" . -}}
             <div class = 'modal_close'>&times;</div>
           </div>
         </div>
       </aside>
     </div>
-    {%- endunless -%}
+    {{- end -}}
   </div>
 </div>
