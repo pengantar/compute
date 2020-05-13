@@ -20,15 +20,15 @@
   .grid-auto{
     grid-template-columns: 1fr auto;
   }
-}
-.grid-2{
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-}
-.grid-3{
-  grid-template-columns: repeat(auto-fit, minmax(225px, 1fr));
-}
-.grid-4{
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  .grid-2{
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+  .grid-3{
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .grid-4{
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  }
 }
 
 .grid-fibonacci{
