@@ -10,6 +10,8 @@ title: "HP DRAGONFLY. LIGHTER THAN AIR."
 
 The HP Elite Dragonfly gives a new level of freedom to those on-the-go. This beautifully designed, ultralight business convertible laptop in a stunning dragonfly blue finish features an __ultrabright display__ and __advanced security__ to help keep you __safe__ and __productive__ wherever the day takes you.
 
+<span data-video="jQSmARn_6T4" class="video"></span>
+
 ### Ultralight and ready to impress
 
 The HP Elite Dragonfly provides __mobility beyond expectation__ in an ultralight __x360__ touch laptop. Striking finishes and an edge-to-edge display, highlights the design that incorporates __recycled__ materials including __ocean-bound plastics.__
