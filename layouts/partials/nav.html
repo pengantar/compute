@@ -1,40 +1,42 @@
 <div class = 'navbar navbar-default navbar-fixed-top' role = 'navigation'>
   <div class = 'wrap'>
     <div class = 'navbar-header'>
-      <a class = 'logo' href = '/'><img src = '/assets/images/logo.png' alt = 'Computech Limited'></a>
+      <a class = 'logo' href = '/'><img src = '{{ .Site.Params.logo }}' alt = 'Computech Limited'></a>
       <button type = 'button' class = 'navbar-toggle' data-toggle = 'collapse' data-target = '.navbar-collapse'>
         <span class = 'sr-only'>Toggle navigation</span>&#9776;
       </button>
     </div>
     <div class = 'navbar-collapse collapse'>
       <ul class = 'nav navbar-nav navbar-right'>
-        {% for link in site.data.nav %}
+        {{- $section := .Section }}
+        {{- $permalink := .RelPermalink }}
+        {{- range .Site.Data.nav }}
         <li>
-          {%- assign l_url = link.link | slugify  -%}
-          {%- assign url_len = l_url.size | plus : 2 -%}
-          {%- assign t = page.permalink | slice : 0, url_len -%}
-          {%- assign root_link = t | replace :  '/', '' -%}
-          <a href = '/{{ l_url }}/' class = "nav_link {% if l_url == root_link %} nav_link-active {% endif %} {% if page.layout == 'post' and link.link == 'blog' %} nav_link-active {% endif %}{% if page.layout == 'tags' and link.link == 'blog' %} nav_link-active {% endif %}">{{ link.link | upcase }}{% if link.sublinks %}<span class = 'caret'></span>{% endif %}</a>
-            {% if link.sublinks %}
+          {{- $l_url := urlize .link  -}}
+          {{- $url_len := add (len $l_url) 2 -}}
+          {{- $t := $permalink -}}
+          {{- $root_link := replace $t "/" "" -}}
+          <a href = '/{{ $l_url }}/' class = 'nav_link {{ if eq $l_url $root_link }} nav_link-active {{ end }} {{ if or (eq $section "blog") (eq $section "news") }} nav_link-active {{ end }}'>{{ upper .link  }}{{ if .sublinks }}<span class = 'caret'></span>{{ end }}</a>
+            {{ with .sublinks }}
             <ul class = 'dropdown-menu animated fadeIn'>
-              {% for sublink in link.sublinks %}
+              {{ range . }}
               <li>
-                {%- assign s_url = sublink.sublink | slugify  -%}
-                <a href = '/{{ l_url }}/{{ s_url }}/'><span class = 'menu-link'> {{ sublink.sublink | upcase }}</span>{% if sublink.children %}<span class = 'caret'></span>{% endif %}</a>
-                  {% if sublink.children %}
+                {{- $s_url := urlize .sublink -}}
+                <a href = '/{{ $l_url }}/{{ $s_url }}/'><span class = 'menu-link'> {{ upper .sublink }}</span>{{ if .children }}<span class = 'caret'></span>{{ end }}</a>
+                  {{ with .children }}
                   <ul class = 'dropdown-menu animated fadeIn'>
-                    {% for child in sublink.children %}
-                    {%- assign c_url = child | slugify  -%}
-                    <li><a href = '/{{ l_url }}/{{ s_url }}/{{ c_url }}/'>{{ child | upcase }}</a></li>
-                    {% endfor %}
+                    {{ range . }}
+                    {{- $c_url := urlize . -}}
+                    <li><a href = '/{{ $l_url }}/{{ $s_url }}/{{ $c_url }}/'>{{ upper . }}</a></li>
+                    {{ end }}
                   </ul>
-                  {% endif %}
+                  {{ end }}
               </li>
-              {% endfor %}
+              {{ end }}
             </ul>
-            {% endif %}
+            {{ end }}
         </li>
-        {% endfor %}
+        {{ end }}
       </ul>
     </div>
   </div>

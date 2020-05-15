@@ -1,0 +1,34 @@
+---
+title: Downloads
+full: true
+---
+<div class = 'tabs'>
+  {%- assign downloads = site.data.about.downloads -%}
+  <div class = 'tab_switch grid-tab grid-4'>
+    {%- for item in downloads -%}
+    <div class = 'tab pt-1 pb-1 contain {% if forloop.index == 1 %} tab_active {% endif %}'>
+      {{ item.nav | upcase }}
+    </div>
+    {%- endfor -%}
+  </div>
+  <div class = 'tab_content'>
+    {%- for item in downloads -%}
+    <div class = 'tab_item {% if forloop.index == 1 %} tab_item_active {% endif %}'>
+      <div class = 'grid-3 mt-3 mb-2'>
+        {%- for d in item.downloads -%}
+        <div class = 'download'>
+          <div class = 'card text_center pt-2 pb-2'> 
+            <img src = '/assets/icons/{{ d.icon }}'  alt = 'Card image cap'>
+            <div class = 'card-block'>
+              <h4 class = 'card-title text_center'>{{ d.name }}</h4>
+              <p class = 'card-text text_center'>More info about {{ d.name }}</p>
+              <a  href = '/assets/pdf/{{ d.file }}' download = '{{ d.name | downcase | slugify }}' class = 'snip'>DOWNLOAD</a>
+            </div>
+          </div>
+        </div>
+        {%- endfor -%}
+      </div>
+    </div>
+    {%- endfor -%}
+  </div>
+</div>

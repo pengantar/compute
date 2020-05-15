@@ -3,31 +3,31 @@
     <div class = 'grid-3 footer_upper'>
       <div>
         <h3>Endpoint Devices</h3>
-        {% for product in site.data.products %}
-        <span><a href = '/products-services/endpoint-devices/{{ product | downcase | slugify }}/' title = '{{ product }}'> {{ product }}</a></span>
-        {% endfor %}
+        {{ range .Site.Data.products }}
+        <span><a href = '/products-services/endpoint-devices/{{ urlize (lower .) }}/' title = '{{ . }}'> {{ . }}</a></span>
+        {{ end }}
       </div>
       <div>
         <h3>Solutions</h3>
-        {% for solution in site.data.solutions %}
-        <span><a href = '/products-services/{% if forloop.first %}software-solutions{% else %}services{% endif %}/{{ solution | downcase | slugify }}/' title = '{{ solution }}'> {{ solution }}</a></span>
-        {% endfor %}
+        {{ range $index, $s := .Site.Data.solutions }}
+        <span><a href = '/products-services/{{ if eq $index 0 }}software-solutions{{ else }}services{{ end }}/{{ urlize (lower $s) }}/' title = '{{ $s }}'> {{ $s }}</a></span>
+        {{ end }}
       </div>
       <div>
         <h3>About Us</h3>
-        {%- for item in site.data.about-us -%}
-        <span><a href = '/about-us/{{ item }}/' title = 'Computech {{ item | capitalize }}'>{{ item | capitalize }}</a></span>
-        {%- endfor -%}
+        {{- range .Site.Data.aboutUs -}}
+        <span><a href = '/about-us/{{ . }}/' title = 'Computech {{ . }}'>{{ . }}</a></span>
+        {{- end -}}
       </div>
       <div>
         <h3>Follow Us</h3>
         <div class = 'footer_share'>
-        {%- for item in site.data.social -%}
-          <a href = '{{ item.url }}' class = 'contain {{ item.name }}' target = '_blank' rel = 'noopener' title = 'Follow Computech on {{ item.name }}'><img src='/assets/icons/{{ item.name | slugify }}.svg' alt = '{{item.name }} icon' /></a>
-        {%- endfor -%}
+        {{- range .Site.Data.social -}}
+          <a href = '{{ .url }}' class = 'contain {{ .name }}' target = '_blank' rel = 'noopener' title = 'Follow Computech on {{ .name }}'><img src='/icons/{{ urlize .name }}.svg' alt = '{{.name }} icon' /></a>
+        {{- end -}}
         </div>   
       </div>
     </div>  
-    <p class = 'mute text_center mt-3 mb-1'>Copyright &copy; <span class = 'year'></span> Computech Limited. All Rights Reserved</p>
+    <p class = 'mute text_center mt-3 mb-1'>Copyright &copy; <span class = 'year'></span> {{ .Site.Title }}. All Rights Reserved</p>
   </div>          
 </footer>

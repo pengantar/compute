@@ -1,29 +1,22 @@
----
-layout: default
----
 <div class='wrap mt-4 grid-fibonacci'>
   <article class='post'>
     <header class='entry-header'>
-      <h1>{{ page.title }}</h1>		
+      <h1>{{ .Title }}</h1>		
       <div class='entry-meta'>
-        Posted <small>on </small><time datetime='{{ page.date }}'>September 4, 2017</time><small> by </small><a href='{{ site.url }}'>{{ site.title }}</a>	
+        Posted <small>on </small><time datetime='{{ .Date }}'>September 4, 2017</time><small> by </small><a href='{{ .Permalink }}'>{{ .Site.Title }}</a>	
       </div>
     </header>
     <div class = 'mb-2'>
-      {{ content }}  
-      {% include share.html %}	
+      {{ .Content }}  
+      {{ partial "share" . }}	
     </div>
-    {% include comments.html %}
   </article>
   <div>
     <aside class = 'shade' role = 'complementary'>
-      {% include sidebar.md %}
+      {{ partial "sidebar" . }}
     </aside>
   </div>
 </div>
 <div>
-  <!-- {% include maichimp.html %} -->
+  <!-- {{ partial "maichimp" . }} -->
 </div>
-<script>
-  {%- include autoresize.js -%}
-</script>

@@ -5,7 +5,27 @@ paginate = 10
 email = "info@computechlimted.com"
 hr = "HRKenya@computechlimited.com"
 description = "East & Central Africa's Leading Technology System Provider"
-formcarry = "ZJiOuD36e70"
+logo = "/images/logo.png"
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.extensions]
+      definitionList = true
+      footnote = true
+      linkify = true
+      strikethrough = true
+      table = true
+      taskList = true
+      typographer = true
+    [markup.goldmark.parser]
+      attribute = true
+      autoHeadingID = true
+      autoHeadingIDType = "github"
+    [markup.goldmark.renderer]
+      hardWraps = false
+      unsafe = true
+      xhtml = false
+
 
 # defaults:
 #   -

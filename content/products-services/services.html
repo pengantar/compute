@@ -1,0 +1,23 @@
+---
+title: Services
+full: true
+items: 
+  - card: Leasing
+    thumb: managed-service.jpg
+  - card: Maintenance
+    thumb: maintenance.jpg
+  - card: Outsourcing
+    thumb: outi1.jpg
+  - card: Service Centre
+    thumb: workshop.jpg
+---
+<div class = 'grid-3'>
+  {{- range .Params.items -}}
+  <div class = 'card'>
+    <img src = '/images/{{ .thumb }}' alt = ''>
+    <div class = 'overlay'>
+      <a href = '/products-services/services/{{ urlize (lower .card) }}/'>{{ .card }}</a>
+    </div>
+  </div>
+  {{- end -}}
+</div>

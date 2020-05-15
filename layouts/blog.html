@@ -1,30 +1,3 @@
----
-layout: default
----
-<div class = 'wrap_min pt-4 mt-2'>
-  {%- assign news = site.posts | sort: 'date' -%}
-  {%- for post in news reversed %}
-    <article class = 'article mb-4'>
-      <a href = '{{ post.url }}' {% if forloop.first %} class = 'grid-reverse mt-1 mb-2' {% endif %}>
-        <figure class = 'article_thumb'>
-          <img src = '/assets/news/{{ post.image.name | lstrip }}.{{ post.image.type | lstrip }}' alt = '{{ post.description | replace:"'", '' }}' class = 'blog__thumb'>
-        </figure>
-        <div class = 'article_meta {% if forloop.first %} center_y {% endif %}'>
-          <h5 class = 'article_{{ post.category | downcase }}'>{{ post.category | upcase }}</h5>
-          <h3>{{ post.title }}</h3>
-          <time>{{ post.date | date: "%B %d, %Y" }}</time>
-          <div class = 'article_excerpt {% if forloop.first %} visible {% endif %}'>
-            <p>{{ post.content | strip_html | truncate: 100 }}</p>
-          </div>
-        </div>
-      </a>
-    </article>
-    {%- if forloop.first -%}
-      <div class = 'grid-1 mb-4'>
-    {%- endif -%}
-    {%- if forloop.last -%}
-      </div>
-    {%- endif -%}
-  {%- endfor -%}
-  </div>
-                  
+{{ define "main" }}
+  {{ partial "archive" .}}
+{{ end }}

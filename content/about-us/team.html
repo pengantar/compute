@@ -1,0 +1,29 @@
+---
+title: Team
+full: true
+--- 
+<div class = 'grid-4'> 
+  {{- range .Site.Data.about.team -}}
+  <div class = 'member text_center'>
+    <img src = '/assets/team/{{ .picture }}.jpg' alt = 'team member' class = 'img-rounded member_image shade mb-1'>
+    <h5 class = 'member_name'>{{ .name }}</h5>
+    <span class = 'orange member_title'>{{ .title | upcase }}</span> 
+    <p class = 'hide member_description'>{{.description }}</p>  
+  </div>
+  {{- end -}}
+</div>
+<div class = 'overlay modal_overlay contain hide'>
+  <div class = 'member_modal'>
+    <div class = 'modal_body pt-3'>
+      <div>
+        <img src = '' alt = 'team member' class = 'img-rounded mt-1'>
+      </div>
+      <div>
+        <h3 class = 'modal_name'></h3>
+        <div class = 'decorate modal_title mb-1'></div>
+        <p class = 'modal_description'></p> 
+        <div class = 'modal_close contain'>&times;</div>
+      </div>
+    </div>
+    </div>
+</div>

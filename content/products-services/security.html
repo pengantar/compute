@@ -1,0 +1,25 @@
+---
+title: Cyber Security
+full: true
+noindex: true
+items:
+  - card: Access Control
+    thumb: access-control.png
+  - card: Asset Protection
+    thumb: asset-protection.png
+  - card: Improve Revenue & Reduce Costs
+    thumb: revenue.png
+  - card: Reaction & recovery
+    thumb: reaction.png
+  - card: Visibility
+    thumb: visibility.png
+--- 
+<div class = 'grid-4 text_center mb-4'>
+  {{- range $index, $item := .Params.items -}}
+  <a href = '/products-services/cyber-security/{{ if le $index 2 }}{{ urlize (lower $item.card) }}/{{ end }}'>
+    <img src = '/icons/{{ $item.thumb }}' class = 'thumb' alt = '{{ $item.card }}'>
+    <h4>{{ $item.card }}</h4>
+  </a>
+  {{- end -}}
+</div>
+{{ partial "form" . }}      

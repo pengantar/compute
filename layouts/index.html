@@ -5,15 +5,15 @@
   <!-- <div id = 'particles-js'></div> -->
   <div class = 'slides' tabindex = '0'>
   {{- range $index, $slide := $slides -}}
-    <div class = 'slide {{ if eq $index 0 }} slide_active {{ end }}' style = 'background-image: url(/assets/news/{{ $slide.image }})'>
+    <div class = 'slide {{ if eq $index 0 }} slide_active {{ end }}' style = 'background-image: url(/news/{{ $slide.image }})'>
       <h1>{{ $slide.description }}</h1>
     </div>
-  {{- endfor -}}
+  {{- end -}}
   </div>
   <div class = 'dots'>
-  {{- for item in slides -}}
+  {{- range $index, $s := $slides -}}
     <div class = 'dot {{ if eq $index 0 }} dot_active {{ end }}'></div>
-  {{- endfor -}}
+  {{- end -}}
   </div>
   <div class = 'direction'>
     <div class = 'slide_left'><span class = 'angle__left'></span></div>

@@ -1,0 +1,28 @@
+---
+title: Infrastructure
+full: true
+noindex: true
+items:
+  - name: Backup & Replication
+    image: servers
+  - name: Compute
+    image: processor
+  - name: Data Centres
+    image: data-centre
+  - name: Physical Security Solutions
+    image: access-control
+  - name: Storage
+    image: storage
+--- 
+<div class = 'mb-2'>
+  <div class = 'grid-3'>   
+    {{ range .Params.items -}}                            
+    <div class = 'card aniview slow' data-av-animation = 'fadeIn'>
+      <img src = '/images/{{ .image }}.jpg' alt = ''>
+      <div class = 'overlay linear'>                           
+        <a href = '/products-services/infrastructure/{{ urlize (lower .name) }}/'>{{ upper .name }}</a>        
+      </div>
+    </div>   
+    {{- end -}}    
+  </div>
+</div>

@@ -1,0 +1,21 @@
+{{ define "main" }}
+<div class='wrap mt-4 grid-fibonacci'>
+  <article class='post'>
+    <header class='entry-header'>
+      <h1>{{ .Title }}</h1>		
+      <div class='entry-meta'>
+        Posted <small>on </small><time datetime='{{ dateFormat "02. January 2006" .Date }}'>{{ dateFormat "02. January 2006" .Date }}</time><small> by </small><a href='{{ .Permalink }}'>{{ .Site.Title }}</a>	
+      </div>
+    </header>
+    <div class = 'mb-2'>
+      {{ .Content }}  
+      {{ partial "share" . }}	
+    </div>
+  </article>
+  <div>
+    <aside class = 'shade' role = 'complementary'>
+      {{ partial "sidebar" . }}
+    </aside>
+  </div>
+</div>
+{{ end }}
