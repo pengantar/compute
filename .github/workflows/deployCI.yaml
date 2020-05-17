@@ -59,7 +59,7 @@ jobs:
       if: contains(steps.can_commit.outputs.commit_message, 'nothing to commit')
       run: echo "Saw that no changes were made to Hugo site."
 
-    Push those changes back to the site branch.
+    # Push those changes back to the site branch.
     - name: Push to docs branch
       # if: steps.nothing_committed.conclusion == 'skipped'
       uses: ad-m/github-push-action@master
