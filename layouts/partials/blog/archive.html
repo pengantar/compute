@@ -12,7 +12,7 @@
         <h3>{{ $article.Title }}</h3>
         <time>{{ dateFormat "02 January, 2006" $article.Date  }}</time>
         <div class = 'article_excerpt {{ if eq $index 0 }} visible {{ end }}'>
-          <p>{{ $article.Content | truncate 100 }}</p>
+          <p>{{ $article.Plain | truncate 100 }}</p>
         </div>
       </div>
     </a>

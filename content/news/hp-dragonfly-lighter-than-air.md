@@ -1,9 +1,10 @@
 ---
+title: "HP DRAGONFLY. LIGHTER THAN AIR."
+date: "2020-05-14"
 image:
   name: HP-Elite-Dragonfly-Laptop-i5-web-banner
   type: jpg
   description: "HP DRAGONFLY. LIGHTER THAN AIR."
-title: "HP DRAGONFLY. LIGHTER THAN AIR."
 ---
  
 ### HP DRAGONFLY. LIGHTER THAN AIR.
