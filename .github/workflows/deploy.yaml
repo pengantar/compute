@@ -1,0 +1,68 @@
+name: DeployCI
+on:
+  push:
+    branches: 
+    - migration
+  pull_request:
+    branches: 
+    - migration
+
+jobs:
+  build:
+  # In this phase, the code is pulled from migration and the site rendered in Hugo. The built site is stored as an artifact for other stages.
+    runs-on: ubuntu-latest
+    steps:
+    # Check out migration branch from the repo.
+    - name: Checkout migration branch
+      uses: actions/checkout@v2
+
+    - name: Build site with Hugo
+      uses: lowply/build-hugo@v0.70.0
+
+    # If build succeeds, store the public/ dir as an artifact to be used in subsequent phases.
+    - name: Upload output public dir as artifact
+      uses: actions/upload-artifact@v1
+      with:
+        name: public
+        path: public/
+  publish:
+  # In the publish phase, the site is pushed up to a different branch which only stores the public/ folder ("docs" branch)
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+    # Check out the docs branch this time since we have to ultimately commit those changes there.
+    - name: Checkout docs branch
+      uses: actions/checkout@v2
+      with:
+        submodules: false
+        fetch-depth: 0
+        ref: ${{ env.SITE-BRANCH }}
+    # Download the artifact containing the newly built site. This overwrites the public/ dir from the check out above.
+    - name: Download artifact from build stage
+      uses: actions/download-artifact@v1
+      with:
+        name: .
+    # Add all the files/changes in public/ that were pulled down from the build stage and then commit them.
+    # The final line sets a GitHub Action output value that can be read by other steps.
+    # This function cannot store mult-line values so newline chars must be stripped.
+    - name: Commit files
+      id: can_commit
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git add -A public/
+        commit_message=$(git commit -m "Publish generated Hugo site." -a | tr -d '\n' || true)
+        echo "::set-output name=commit_message::$commit_message"
+    # Checks if previous stage had any valid commit.
+    - name: Nothing to commit
+      id: nothing_committed
+      if: contains(steps.can_commit.outputs.commit_message, 'nothing to commit')
+      run: echo "Saw that no changes were made to Hugo site."
+
+    # Push those changes back to the site branch.
+    - name: Push to docs branch
+      if: steps.nothing_committed.conclusion == 'skipped'
+      uses: ad-m/github-push-action@migration
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        branch: ${{ env.SITE-BRANCH }}
