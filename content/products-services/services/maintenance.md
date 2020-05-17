@@ -5,12 +5,10 @@ partners:
   - simba
   - britam
 ---
+
 <h2 class = 'mb-2'>Clients</h2>
-<div class = 'partners grid-3'>
-  {{- range .partners -}}
-    <div class = 'partner'><img src = '/clients/{{ . }}.png' alt = 'client'></div>
-  {{- end -}}
-</div>
+
+{{< partial "pages/maintenance" >}}
 
 ### What is Maintenance?
 

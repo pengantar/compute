@@ -1,9 +1,5 @@
----
-title: Access Control
-full: true
----
 <div class = 'grid-3'>
-  {{- range .Site.Data.definitions -}}
+  {{- range $.Site.Data.definitions -}}
   <div class = 'definition shade'>
     <h3 class = 'definition_title text_center'>{{ .term }}</h3>
     <div class = 'definition_desc hide'>{{ markdownify .description }}</div>

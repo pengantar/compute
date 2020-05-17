@@ -1,6 +1,7 @@
 ---
 title: Storage
 ---
+
 <div class = 'grid-2 mb-1'>
   <div class = 'pt-3'>
     <img src = '/images/storage-2.png'>

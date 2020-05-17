@@ -1,6 +1,7 @@
 ---
 title: Healthcare
----  
+---
+
 <div class = 'grid-1 mb-4'>
   <a href = '/products-services/healthcare/diagnostic-imaging/' class = 'card'>
     <img src = '/images/d-imaging-1.png' alt = ''>

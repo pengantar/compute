@@ -1,10 +1,9 @@
 ---
 title: Microsoft Solutions
 full: true
-description: "Computech Limited is a Microsoft Preferred Partner and Kenya’s top Enterprise Licensing Advisory. We are Gold in Cloud Productivity and have one of the most locally certified teams, with one of the largest outsourced Level 1 & 2 support teams in Eastern Africa."
 ---
 
-{{ markdownify .Params.description }}
+Computech Limited is a Microsoft Preferred Partner and Kenya’s top Enterprise Licensing Advisory. We are Gold in Cloud Productivity and have one of the most locally certified teams, with one of the largest outsourced Level 1 & 2 support teams in Eastern Africa.
 
 <div class = 'grid-2 mt-2 mb-2 animated zoomIn'>      
   <!-- Microsoft Cloud -->

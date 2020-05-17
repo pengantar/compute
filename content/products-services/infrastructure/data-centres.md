@@ -1,6 +1,7 @@
 ---
 title: Data Centre
----  
+---
+
 <div class = 'grid-2 mb-2'>
   <div>
     <img src = '/images/data-centre.jpg'>

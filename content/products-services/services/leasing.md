@@ -1,19 +1,13 @@
 ---
 title: Leasing
 items:
-  - i&m
+  - I&M
   - wd
   - pwc
 ---
 ### Partners
 
-<div class = 'grid-3 mt-2 mb-1'>
-  {{- range .Params.items -}}
-  <div class = 'partner'>
-    <img src = '/partners/{{ . }}.png' alt = '{{ .}}'>
-  </div>
-  {{- end -}}
-</div>
+{{< partial "pages/leasing" >}}
 
 ### What is Leasing?
 

@@ -58,4 +58,4 @@ We are committed to 24/7 Service Delivery. Kindly Fill out the following form so
 
 Feel free to always contact us on:
 
-![](/assets/news/service-center-mailer-footer.jpg)
+![](/news/service-center-mailer-footer.jpg)

@@ -11,14 +11,10 @@ items:
     image: symantec.png
   - url: https://usa.kaspersky.com/enterprise-security
     image: kaspersky-logo.jpg
-  - url: https://www.mcafee.com/us/index.html
-    image: mcafee-logo.png
+  # - url: https://www.mcafee.com/us/index.html
+  #   image: mcafee-logo.png
 ---
-<h4 class = 'center'><strong>Computech offers multi-vendor options based <br> on your custom requirements for anti-virus <br> and internet security software.</strong></h4>    
-<div class = 'grid-2 mt-4'> 
-  {{- range .Params.items -}}
-  <a class = 'partner' href = '{{ .url }}' target = '_blank'>
-    <img src = '/partners/{{ .image }}' alt = 'partner'/>
-  </a>
-  {{- end -}}
-</div>
+
+<h4 class = 'center'><strong>Computech offers multi-vendor options based <br> on your custom requirements for anti-virus <br> and internet security software.</strong></h4>
+
+{{< partial "pages/anti-virus" >}}

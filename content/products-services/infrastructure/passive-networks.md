@@ -1,6 +1,7 @@
 ---
 title: Passive Networks
 ---
+
 <div class = 'grid-2'>
   <div>
     <img src = '/images/two.jpg'>

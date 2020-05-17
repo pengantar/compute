@@ -7,11 +7,7 @@ partners:
 ---
 ### Partners
 
-<div class = 'grid-4 mt-2 mb-2'>
-  {%- range .Params.partners -%}
-  <div class = 'partner'><img src = '/clients/{{ . }}.png' alt = 'client'></div>
-  {%- end -%}
-</div>   
+{{< partial "pages/outsourcing" >}}
 
 ### What is Outsourcing?
 

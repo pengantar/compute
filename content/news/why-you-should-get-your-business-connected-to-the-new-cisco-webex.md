@@ -17,11 +17,13 @@ Each month, 130 million professionals rely on Webex to connect, collaborate and 
 
 <span data-video="0XsVUyCscVw" class="video"></span>
 
+<!-- {{< video "0XsVUyCscVw" >}} -->
+
 _Experience the Cisco Webex meetings_
 
 A strong business starts with strong relationships. Today it’s not about where you work, but about how you work. Therefore, meeting effectively is a priority in every business. Cisco Webex provides you with a proven, simple, and innovative solution that helps you to achieve effective virtual meetings with active users around the Globe.
 
-![27.9M mobile downloads, 130M active users per month, 1.5M meeting devices in meeting rooms](/assets/news/cicso-webex-download-statistic.jpg)
+![27.9M mobile downloads, 130M active users per month, 1.5M meeting devices in meeting rooms](/news/cicso-webex-download-statistic.jpg)
 
 _Cisco Webex users Worldwide_
 
@@ -33,19 +35,19 @@ What makes Cisco Webex different from the other video conferencing, remote commu
 
 Customize how you want to work and who you want to see in your meeting with multi-stream HD video. Add Cisco’s award-winning video room and desk devices to your Webex meeting for lifelike experiences. Enjoy exceptional mobile meetings even while you’re on the go. 
 
-![Cisco Webex Rooms](/assets/news/solution-overview-c22-738687_0.png)
+![Cisco Webex Rooms](/news/solution-overview-c22-738687_0.png)
 
 #### Customizable layouts
 
 Customize how you want to view your meeting with layout options, including active speaker plus seven participants. Choose a full-screen video layout with the ability to switch to a grid view that shows equal-sized windows for up to 25 video streams at once. Toggle back and forth between your content share and your video, depending on your meeting preference. Easily navigate your meeting with the centralized control bar for easy access to all your meeting controls. Lock and pin individual videos so that you can focus on the participant of your choosing and see their reactions. Chat privately or publicly with participants during a meeting, and monitor interest with real-time polls.
  
-![Customizable Layouts](/assets/news/solution-overview-c22-738687_1.png.jpeg)
+![Customizable Layouts](/news/solution-overview-c22-738687_1.png.jpeg)
 
 #### Document, application, and screen sharing
 
 Share an application or your entire screen with remote attendees in real time. Attendees can take control and share content, or annotate yours. On the go, share your content or screen from your browser, Android devices, or iPhone or iPad. With the Webex desktop app, easily share your screen wirelessly via Proximity. Organizations can have a faster-moving, smarter, and more connected workforce by sharing files from the IBM Connections Cloud and Microsoft One Drive.
          
-![Document, Application and screen sharing](/assets/news/solution-overview-c22-738687_2.png.jpeg)
+![Document, Application and screen sharing](/news/solution-overview-c22-738687_2.png.jpeg)
 
 ### We are mobile optimized
 #### Exceptional mobile experience
@@ -91,4 +93,4 @@ Fill in the Submission form Below to enable our technicians to allocate a 90-day
 
 ### Contact Us.
 
-[![](/assets/news/cisco-webex-footer.jpg)](tel:+254717951223)
+[![](/news/cisco-webex-footer.jpg)](tel:+254717951223)

@@ -1,0 +1,4 @@
+{{- $context := . }}
+{{- with .Get 0 }}
+  {{- partial . $context }}
+{{- end }}
