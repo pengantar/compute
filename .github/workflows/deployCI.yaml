@@ -61,7 +61,7 @@ jobs:
 
     # Push those changes back to the site branch.
     - name: Push to docs branch
-      # if: steps.nothing_committed.conclusion == 'skipped'
+      if: steps.nothing_committed.conclusion == 'skipped'
       uses: ad-m/github-push-action@master
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
