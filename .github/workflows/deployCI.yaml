@@ -42,7 +42,6 @@ jobs:
       uses: actions/download-artifact@v1
       with:
         name: public
-        path: ./*
     # Add all the files/changes in public/ that were pulled down from the build stage and then commit them.
     # The final line sets a GitHub Action output value that can be read by other steps.
     # This function cannot store mult-line values so newline chars must be stripped.
@@ -51,7 +50,7 @@ jobs:
       run: |
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
-        git add -A public/*
+        git add -A public/
         commit_message=$(git commit -m "Publish generated Hugo site." -a | tr -d '\n' || true)
         echo "::set-output name=commit_message::$commit_message"
     # Checks if previous stage had any valid commit.
