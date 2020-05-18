@@ -50,20 +50,24 @@ jobs:
       run: |
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
-        git add -A public/
+        git checkout deploy
+        git rm -rf .
+        mv --force public/* .
+        git add .
+# git add -A public/
         commit_message=$(git commit -m "Publish generated Hugo site." -a | tr -d '\n' || true)
         echo "::set-output name=commit_message::$commit_message"
     # Checks if previous stage had any valid commit.
-    - name: Nothing to commit
-      id: nothing_committed
-      if: contains(steps.can_commit.outputs.commit_message, 'nothing to commit')
-      run: echo "Saw that no changes were made to Hugo site."
+    # - name: Nothing to commit
+    #   id: nothing_committed
+    #   if: contains(steps.can_commit.outputs.commit_message, 'nothing to commit')
+    #   run: echo "Saw that no changes were made to Hugo site."
 
     # Push those changes back to the site branch.
-    - name: Push to docs branch
-      if: steps.nothing_committed.conclusion == 'skipped'
-      uses: ad-m/github-push-action@master
-      with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        branch: docs
-        force: true
+    # - name: Push to docs branch
+    #   if: steps.nothing_committed.conclusion == 'skipped'
+    #   uses: ad-m/github-push-action@master
+    #   with:
+    #     github_token: ${{ secrets.GITHUB_TOKEN }}
+    #     branch: docs
+    #     force: true
