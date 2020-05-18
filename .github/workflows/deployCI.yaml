@@ -54,7 +54,6 @@ jobs:
         git rm -rf .
         mv --force public/* .
         git add .
-# git add -A public/
         commit_message=$(git commit -m "Publish generated Hugo site." -a | tr -d '\n' || true)
         echo "::set-output name=commit_message::$commit_message"
     # Checks if previous stage had any valid commit.
