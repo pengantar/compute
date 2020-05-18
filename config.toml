@@ -7,10 +7,12 @@ hr = "HRKenya@computechlimited.com"
 description = "East & Central Africa's Leading Technology System Provider"
 logo = "/images/logo.png"
 twitter = "@wearecomputech"
+url = "https://www.computechlimited.com"
 [permalinks]
   blog = "/:title/"
   news = "/:title/"
-
+[minify]
+  minifyOutput = false
 [markup]
   [markup.goldmark]
     [markup.goldmark.extensions]

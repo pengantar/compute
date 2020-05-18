@@ -1,8 +1,8 @@
 <div class = 'wrap'>
   <div class = 'grid-4 mt-2'>
     {{ range .Site.Data.productsServices }}
-    <a class='space-bound aniview slow card' data-av-animation='fadeIn' href = '/products-services/{{ anchorize . }}/'>
-      <img src='/products/{{ replace (anchorize .) "--"  "-"}}.jpg' alt='{{ . }}'>
+    <a class='space-bound aniview slow card' data-av-animation='fadeIn' href = '/products-services/{{ replace (urlize .) "--" "-" }}/'>
+      <img src='/products/{{ replace (urlize .) "--" "-" }}.jpg' alt='{{ . }}'>
       <span class='overlay shadow contain'>                           
         {{ upper . }}
       </span>

@@ -1,10 +1,10 @@
 <div class = 'wrap_min pt-4 mt-2'>
   {{- $news := where .Site.RegularPages "Section" .Section }}
-  {{- $size := sub (len (.Paginator 9).Pages) 1 }}
+  {{- $size := sub (len (.Paginator 10).Pages) 1 }}
   {{- range $index, $article := (.Paginate $news).Pages }}
   <article class = 'article mb-4'>
-    <a href = '{{ $article.Permalink }}' {% if forloop.first %} class = 'grid-reverse mt-1 mb-2 article_first' {% end %}>
-      <figure class = 'article_thumb'>
+    <a href = '{{ $article.Permalink }}' {{ if eq $index 0 }} class = 'grid-reverse article_first' {{ end }}>
+      <figure class = 'article_thumb{{ if not (eq $index 0) }} clipped{{ end }}'>
         <img src = '/news/{{ $article.Params.image.name }}.{{ $article.Params.image.type }}' alt = '{{ replace $article.Params.description "'" "" }}' class = 'blog__thumb'>
       </figure>
       <div class = 'article_meta {{ if eq $index 0 }} center_y {{ end }}'>
@@ -20,7 +20,7 @@
   {{- if and (eq $index 0) (gt $size 1)  }}
   <div class = 'grid-2 mb-4'>
     {{- end }}
-    {{- if and (eq $index (add $size -1)) (gt $size 1) }}
+    {{- if and (eq $index $size) (gt $size 1) }}
   </div>
   {{- end }}
   {{- end }}

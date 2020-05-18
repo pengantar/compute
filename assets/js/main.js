@@ -65,25 +65,25 @@ function modifyClass(el, targetClass) {
   
 })();
 
-function videoMarkUp(id) {
-  return `
-  <div class = 'video'>
-  <iframe src='https://www.youtube.com/embed/${id}?controls=1&rel=0'></iframe>
-  </div>
-  `;
-}
+// function videoMarkUp(id) {
+//   return `
+//   <div class = 'video'>
+//   <iframe src='https://www.youtube.com/embed/${id}?controls=1&rel=0'></iframe>
+//   </div>
+//   `;
+// }
 
-(function youtubeVideo(){
-  const videos = elems('.video');
+// (function youtubeVideo(){
+//   const videos = elems('.video');
 
-  if(videos) {
-    videos.forEach(function(video){
-      const id = video.dataset.video
-      const markup = videoMarkUp(id);
-      video.innerHTML = markup;
-    });
-  }
-})();
+//   if(videos) {
+//     videos.forEach(function(video){
+//       const id = video.dataset.video
+//       const markup = videoMarkUp(id);
+//       video.innerHTML = markup;
+//     });
+//   }
+// })();
 
 // Replaces bootstrap carousel
 (function Slider() {

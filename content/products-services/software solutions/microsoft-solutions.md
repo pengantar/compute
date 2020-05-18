@@ -6,19 +6,14 @@ full: true
 Computech Limited is a Microsoft Preferred Partner and Kenya’s top Enterprise Licensing Advisory. We are Gold in Cloud Productivity and have one of the most locally certified teams, with one of the largest outsourced Level 1 & 2 support teams in Eastern Africa.
 
 <div class = 'grid-2 mt-2 mb-2 animated zoomIn'>      
-  <!-- Microsoft Cloud -->
   <div>
     <h3 class = 'pb-1 pt-1'>Microsoft Cloud</h3>                  
     <div id='dccn-a86a86bff2' class = 'shade'></div>
   </div>
-  
-  <!-- MICROSOFT MANAGED SERVICES -->
   <div>
     <h3 class = 'pt-1 pb-1'>Microsoft Managed Services</h3>
     <div id='dccn-2ed3132caf' class = 'shade'></div>     
   </div>
-  
-  <!-- MICROSOFT LICENSING -->
   <div>
     <h3 class = 'pt-1 pb-1'>Microsoft Licensing</h3>  
       <div id='dccn-61e7fc5771' class = 'shade'></div>
@@ -34,4 +29,4 @@ Computech Limited is a Microsoft Preferred Partner and Kenya’s top Enterprise 
   <div></div>
 </div>
 
-<script src = '/helpers.js'></script>
+<script src = '/js/helpers.js'></script>

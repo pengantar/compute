@@ -6,7 +6,7 @@ partners:
   - britam
 ---
 
-<h2 class = 'mb-2'>Clients</h2>
+## Clients\
 
 {{< partial "pages/maintenance" >}}
 

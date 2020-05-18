@@ -1,6 +1,7 @@
 ---
 title: Backup and Replication
 ---
+
 ### Back up
 
 Backup refers to the process of copying and archiving of computer data so it may be used to restore the original after a data loss event

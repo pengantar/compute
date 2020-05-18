@@ -1,6 +1,7 @@
 ---
 title: Compute
 ---
+
 <div class = 'grid-1 mb-1'>
   <div class = 'contain'>
     <img src = '/images/compute.jpg'>

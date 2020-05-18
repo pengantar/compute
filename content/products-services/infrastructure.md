@@ -1,7 +1,6 @@
 ---
 title: Infrastructure
 full: true
-noindex: true
 items:
   - name: Backup & Replication
     image: servers

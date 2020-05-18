@@ -1,5 +1,7 @@
 {{ define "main" }}
-<div class = 'grid-1'>  
+<br><br>
+<br><br>
+<div class = 'grid-1 wrap'>  
   <div class = 'address'>
     {{ $contacts := .Site.Data.contacts }}
     <div class = 'tabs'>
@@ -16,13 +18,11 @@
         <div class = 'tab_item {{ if eq $index 0 }}tab_item_active{{ end }}'>
           <h3 class = 'slim'>{{ $contact.country }}</h3>
           {{ range $contact.regions }}
-            <p><span class = 'region-title'>{{ .name }}</span></p>
-            {{ range .details }}
-              {{ markdownify . }}
-            {{ end }}
+            <h5>{{ upper .name }}</h5>
+            {{ markdownify .details }}
             {{ with .directions }}
             <div class = 'map mt-1 mb-1'>
-                {{ . }}
+              {{ . | safeHTML }}
             </div>
             {{ end }}
           {{ end }}

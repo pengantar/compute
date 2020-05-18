@@ -5,6 +5,7 @@ partners:
   - britam
   - cba.png
 ---
+
 ### Partners
 
 {{< partial "pages/outsourcing" >}}

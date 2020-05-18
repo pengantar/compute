@@ -1,11 +1,11 @@
----
-title: This is why you should get your Business Connected to the New Cisco Webex
-date: "2020-04-02"
-image:
-  name: cisco-webex-banner
-  type: jpg
-  description: "This is why you should get your Business Connected to the New Cisco Webex"
----
++++
+title = "This is why you should get your Business Connected to the New Cisco Webex"
+date = "2020-04-02"
+[image]
+  name = "cisco-webex-banner"
+  type = "jpg"
+  description = "This is why you should get your Business Connected to the New Cisco Webex"
++++
 
 ## Introducing Cisco Webex, Hassle-free video conferencing that just works.
 
@@ -15,9 +15,7 @@ Welcome to Cisco Webex an application and communication tool that enables you to
 
 Each month, 130 million professionals rely on Webex to connect, collaborate and move projects forward and faster. And teams can work with anyone from a browser, mobile, or video device. Webex Meetings offers integrated audio, video, and content sharing with highly secure web meetings from the Cisco Webex cloud. Cognitive Collaboration features such as Webex Assistant and People Insights bring artificial intelligence to automate meeting tasks.
 
-<span data-video="0XsVUyCscVw" class="video"></span>
-
-<!-- {{< video "0XsVUyCscVw" >}} -->
+{{< video "0XsVUyCscVw" >}}
 
 _Experience the Cisco Webex meetings_
 
