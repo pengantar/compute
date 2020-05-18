@@ -3,8 +3,7 @@ title: "World Youth Skills Day"
 category: "event"
 date: "2019-07-15"
 image:
-  name: "world-youth-day"
-  type: jpg
+  name: "world-youth-day.jpg"
   description: ""
 ---
 

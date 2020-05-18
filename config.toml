@@ -1,6 +1,6 @@
 title = "Computech Limited"
 baseurl = "https://www.computechlimited.com"
-paginate = 10
+paginate = 13
 [params]
 email = "info@computechlimted.com"
 hr = "HRKenya@computechlimited.com"
@@ -8,11 +8,15 @@ description = "East & Central Africa's Leading Technology System Provider"
 logo = "/images/logo.png"
 twitter = "@wearecomputech"
 url = "https://www.computechlimited.com"
+author = "Computech Limited"
+
 [permalinks]
   blog = "/:title/"
   news = "/:title/"
+
 [minify]
   minifyOutput = false
+  
 [markup]
   [markup.goldmark]
     [markup.goldmark.extensions]
@@ -31,30 +35,3 @@ url = "https://www.computechlimited.com"
       hardWraps = false
       unsafe = true
       xhtml = false
-
-
-# defaults:
-#   -
-#     scope:
-#       path: "_posts"
-#       type: "posts"
-#     values:
-#       layout: "news-post"
-#       author: Computech
-#       permalink: /:title/
-#       image: cyber-security
-#   -
-#     scope:
-#       path: "_news"
-#       type: "news"
-#     values:
-#       layout: "news-post"
-#       author: Computech
-#       permalink: /news/:title/
-#   -
-#     scope:
-#       path: "_devices"
-#       type: "pages"
-#     values:
-#       layout: "device"
-#       full: true

@@ -5,8 +5,7 @@ categories:
   - video conferencing
   - cisco
 image:
-  name: whatsapp-image
-  type: jpg
+  name: whatsapp-image.jpg
   description: "5 Reasons to Invest in Video Conferencing Solutions"
 ---
 

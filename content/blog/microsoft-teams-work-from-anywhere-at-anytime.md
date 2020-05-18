@@ -2,8 +2,7 @@
 title: "Microsoft Teams, Work from Anywhere, at Any time."
 date: "2020-03-24"
 image:
-  name: microsoft-home-1
-  type: jpg
+  name: microsoft-home-1.jpg
   description: ""
 ---
 

@@ -2,8 +2,7 @@
 title: "Flatten the Curve with Computech Limited"
 date: "2020-04-27"
 image:
-  name: computech-covid-19-together-as-one- banner
-  type: jpg
+  name: computech-covid-19-together-as-one- banner.jpg
   description: "Flatten the Curve with Computech Limited"
 ---
 

@@ -2,8 +2,7 @@
 category: awards
 date: "2018-07-23"
 image:
-  name: hpe-event-0
-  type: jpg
+  name: hpe-event-0.jpg
   description: Computech Limited & HPE teams celebrate 3 awards won by Computech during
     the HPE Africa Tour
 title: Computech is HPE’s Overall Partner of the Year

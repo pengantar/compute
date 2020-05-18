@@ -10,12 +10,17 @@
 {{- $logo = absURL (printf "images/%s"  $logo) }}
 {{- $image := $params.image }}
 {{- $author := $params.author }}
+{{- $section := .Section }}
 {{- with .Params.author }}
   {{ $author := . }}
 {{- end }}
 {{- with .Params.image }}
   {{- $image = . }}
-  {{- $image = printf "images/%s" $image.name }}
+  {{- if or (eq $section "news") (eq $section "blog") }}
+    {{- $image = printf "news/%s" $image.name }}
+  {{- else }}
+    {{- $image = printf "images/%s" $image.name }}
+  {{- end }}
 {{- end }}
 <meta name = 'keywords' content = '{{ .Site.Title }}'>
 <meta name="description" content="{{ $summary }}">

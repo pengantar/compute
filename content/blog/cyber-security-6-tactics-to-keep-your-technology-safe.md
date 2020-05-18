@@ -3,8 +3,7 @@ title: 'Cyber Security: 6 Tactics to keep your technology safe'
 category: cyber security
 date: "2017-05-26"
 image:
-  name: cyber-security
-  type: jpg
+  name: cyber-security.jpg
   description: "Cyber Security: 6 Tactics to keep your technology safe"
 ---
 

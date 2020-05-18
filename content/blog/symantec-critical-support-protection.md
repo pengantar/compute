@@ -2,8 +2,7 @@
 title: "Symantec™ Critical System Protection (CSP)"
 date: "2019-09-02"
 image:
-  name: computech-symantec-flyer
-  type: jpg
+  name: computech-symantec-flyer.jpg
   description: ""
 ---
 

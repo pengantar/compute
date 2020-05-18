@@ -2,8 +2,7 @@
 category: news
 date: "2019-07-25"
 image:
-  name: oracle-field-delivery
-  type: jpg
+  name: oracle-field-delivery.jpg
   description: "Computech awarded with the oracle Field Delivery Partner Status (FDP)"
 title: Computech awarded with the oracle Field Delivery Partner Status (FDP)
 ---

@@ -3,8 +3,7 @@ title: 'Petya Ransomware: Another Reason to Protect your Technology'
 category: cyber security
 date: "2017-06-30"
 image:
-  name: ransomware-feature
-  type: jpg
+  name: ransomware-feature.jpg
   description: 'Petya Ransomware: Another Reason to Protect your Technology'
 ---
 

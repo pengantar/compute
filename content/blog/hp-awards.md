@@ -3,8 +3,7 @@ title: "HP Awards 2019"
 category: "event"
 date: "2019-06-25"
 image:
-  name: "hp-awards"
-  type: jpg
+  name: "hp-awards.jpg"
   description: ""
 ---
 

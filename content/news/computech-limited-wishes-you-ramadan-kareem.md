@@ -2,8 +2,7 @@
 title: "May the spirit of Ramadan light up your soul. Happy Ramadan!"
 date: "2020-04-24"
 image:
-  name: computech-ramadan-kareem-2020
-  type: jpg
+  name: computech-ramadan-kareem-2020.jpg
   description: "May the spirit of Ramadan light up your soul. Happy Ramadan!"
 ---
 

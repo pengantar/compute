@@ -2,8 +2,7 @@
 title = "This is why you should get your Business Connected to the New Cisco Webex"
 date = "2020-04-02"
 [image]
-  name = "cisco-webex-banner"
-  type = "jpg"
+  name = "cisco-webex-banner.jpg"
   description = "This is why you should get your Business Connected to the New Cisco Webex"
 +++
 

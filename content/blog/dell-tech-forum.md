@@ -3,8 +3,7 @@ title: "Dell Tech Forum"
 category: "event"
 date: "2019-04-10"
 image:
-  name: "dell-tech"
-  type: jpg
+  name: "dell-tech.jpg"
   description: ""
 ---
 

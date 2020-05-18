@@ -2,8 +2,7 @@
 title: "Dell Technologies Hyperconverged Infrastructure"
 date: "2020-04-20"
 image:
-  name: dell-blog-content
-  type: jpg
+  name: dell-blog-content.jpg
   description: "Dell Technologies Hyperconverged Infrastructure"
 ---
  

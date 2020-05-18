@@ -3,8 +3,7 @@ title: Computech Profile on Africa Outlook
 category: mentions
 date: "2018-02-05"
 image:
-  name: outlook-0
-  type: jpg
+  name: outlook-0.jpg
   description: "Computech's Staff"
 ---
 

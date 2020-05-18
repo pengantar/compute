@@ -2,8 +2,7 @@
 title: "Learning Never Stops with HP Be Online"
 date: "2020-04-28"
 image:
-  name: hp-be-online-web-banner
-  type: jpg
+  name: hp-be-online-web-banner.jpg
   description: "Learning Never Stops with HP Be Online"
 ---
 

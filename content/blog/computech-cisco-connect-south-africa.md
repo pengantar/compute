@@ -2,8 +2,7 @@
 category: news
 date: "2019-05-16"
 image:
-  name: cisco-connect-1
-  type: jpg
+  name: cisco-connect-1.jpg
   description: We're exhibiting at Cisco Connect from the 19th to 21st of May in South Africa
 title: Join Computech Limited during 2019's Cisco Connect in South Africa
 ---

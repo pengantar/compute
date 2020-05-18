@@ -4,8 +4,7 @@ date: "2017-09-04"
 categories: 
   - cyber security
 image:
-  name: backup-solutions
-  type: jpg
+  name: backup-solutions.jpg
   description: "4 Reasons to plan for a next-generation firewall with Computech"
 ---
 Today’s cyber threat landscape of new threats and sophisticated attacks constantly being directed at your network renders traditional port-based firewalls ineffective.

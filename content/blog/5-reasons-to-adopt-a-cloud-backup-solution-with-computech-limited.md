@@ -5,8 +5,7 @@ categories:
   - cloud computing
   - cyber security
 image:
-  name: backup-solutions
-  type: jpg
+  name: backup-solutions.jpg
   description: "5 Reasons to Adopt a Cloud Backup Solution with Computech Limited"
 ---
 

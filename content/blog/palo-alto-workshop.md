@@ -3,8 +3,7 @@ title: "Palo Alto Breakfast Workshop"
 category: "event"
 date: "2019-07-05"
 image:
-  name: "palo-alto"
-  type: jpg
+  name: "palo-alto.jpg"
   description: ""
 ---
 

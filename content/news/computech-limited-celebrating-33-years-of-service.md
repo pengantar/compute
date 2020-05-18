@@ -2,8 +2,7 @@
 title: "Committed to Service as Your number one Service Centre Since 1987"
 date: "2020-05-13"
 image:
-  name: service-center-mailer-header
-  type: jpg
+  name: service-center-mailer-header.jpg
   description: "Committed to Service as Your number one Service Centre Since 1987"
 ---
  

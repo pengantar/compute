@@ -3,8 +3,7 @@ title: "Huawei Awards"
 category: "event"
 date: "2019-03-30"
 image:
-  name: "huawei-awards"
-  type: jpg
+  name: "huawei-awards.jpg"
   description: ""
 ---
 
