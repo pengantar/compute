@@ -11,8 +11,8 @@ url = "https://www.computechlimited.com"
 author = "Computech Limited"
 
 [permalinks]
-  blog = "/:title/"
-  news = "/:title/"
+  blog = "/:filename/"
+  news = "/:filename/"
 
 [minify]
   minifyOutput = false
