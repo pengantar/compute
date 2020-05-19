@@ -10,12 +10,15 @@ twitter = "@wearecomputech"
 url = "https://www.computechlimited.com"
 author = "Computech Limited"
 
+# default image
+image = "hpe-event-0.jpg" 
+
 [permalinks]
   blog = "/:filename/"
   news = "/:filename/"
 
 [minify]
-  minifyOutput = false
+  minifyOutput = true
   
 [markup]
   [markup.goldmark]

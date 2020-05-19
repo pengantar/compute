@@ -47,7 +47,7 @@ Get started with Microsoft Teams and enable your employees to work from anywhere
 
 ### Contact Us.
 
-[![](/assets/news/microsoft-eams-footer-1.jpg)](tel:+254725290601)
+[![](/news/microsoft-eams-footer-1.jpg)](tel:+254725290601)
 
 Email us on:
 -  [Mandheer.Sehmi@computechlimited.com](mailto:Mandheer.Sehmi@computechlimited.com) 
