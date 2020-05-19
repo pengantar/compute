@@ -108,6 +108,7 @@ a:visited{
     color: $mute;
     display: inline-block;
     padding: 3px 10px;
+    text-transform: capitalize;
     // font-size: 15px;
     &:hover{
       color: $orange;

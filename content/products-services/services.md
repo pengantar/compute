@@ -8,8 +8,8 @@ items:
     thumb: maintenance.jpg
   - card: Outsourcing
     thumb: outi1.jpg
-  - card: Service Centre
-    thumb: workshop.jpg
+  # - card: Service Centre
+  #   thumb: workshop.jpg
 ---
 
 {{< partial "pages/services" >}}

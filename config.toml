@@ -1,6 +1,6 @@
 title = "Computech Limited"
 baseurl = "https://www.computechlimited.com"
-paginate = 13
+paginate = 11
 [params]
 email = "info@computechlimted.com"
 hr = "HRKenya@computechlimited.com"
