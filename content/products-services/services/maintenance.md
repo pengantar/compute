@@ -6,7 +6,7 @@ partners:
   - britam
 ---
 
-## Clients\
+## Clients
 
 {{< partial "pages/maintenance" >}}
 
