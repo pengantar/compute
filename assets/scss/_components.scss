@@ -457,10 +457,10 @@ a:visited{
   min-width: 200px;
   color: $orange;
   cursor: pointer;
-  font-size: 20px;
+  font-size: 17px;
   margin: 15px 0;
   outline: none;
-  padding: 15px;
+  padding: 1rem 2rem;
   text-transform: uppercase;
   border-radius: 30px;
   line-height: 1.25;
@@ -475,16 +475,27 @@ a:visited{
     border: 1px solid $orange;
     box-shadow: 0 0 30px rgba(0,0,0,0.17);
   }
-  &_blue {
-    $blue: rgb(0,117,208);
+  &_blue, &_orange {
     text-decoration: none !important;
-    background-color: $blue;
     color: $light !important;
     border: none !important;
     transition: opacity 0.3s ease-in;
     &:hover {
-      background-color: $blue;
       opacity: 0.8;
+    }
+  }
+  &_blue {
+    $blue: rgb(0,117,208);
+    background-color: $blue;
+    &:hover {
+      background-color: $blue;
+    }
+  }
+  &_orange {
+    background-color: $orange;
+    text-decoration: none !important;
+    &:hover {
+      background-color: $orange;
     }
   }
 }
