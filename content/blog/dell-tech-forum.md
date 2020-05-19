@@ -1,6 +1,7 @@
 ---
 title: "Dell Tech Forum"
-category: "event"
+categories:
+  - "event"
 date: "2019-04-10"
 image:
   name: "dell-tech.jpg"

@@ -1,6 +1,7 @@
 ---
 title: '5 Reasons to Upgrade to Windows 10 Now'
-category: 'microsoft'
+categories: 
+  - 'microsoft'
 date: "2017-07-19"
 image:
   name: windows.jpg

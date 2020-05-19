@@ -1,6 +1,7 @@
 ---
 title: "Cisco Connect"
-category: "event"
+categories:
+  - "event"
 date: "2019-05-21"
 image:
   name: "cisco-connect.jpg"

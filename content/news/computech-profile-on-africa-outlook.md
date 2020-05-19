@@ -1,6 +1,7 @@
 ---
 title: Computech Profile on Africa Outlook
-category: mentions
+categories:
+  - mentions
 date: "2018-02-05"
 image:
   name: outlook-0.jpg

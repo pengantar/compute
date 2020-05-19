@@ -1,6 +1,7 @@
 ---
 title: "Palo Alto Breakfast Workshop"
-category: "event"
+categories:
+  - "event"
 date: "2019-07-05"
 image:
   name: "palo-alto.jpg"

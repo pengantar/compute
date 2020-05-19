@@ -1,6 +1,7 @@
 ---
 title: "World Youth Skills Day"
-category: "event"
+categories:
+  - "event"
 date: "2019-07-15"
 image:
   name: "world-youth-day.jpg"

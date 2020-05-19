@@ -1,6 +1,7 @@
 ---
 title: "Hpe Selectium Koroga"
-category: "event"
+categories:
+  - "event"
 date: "2019-06-21"
 image:
   name: "hpe-selectium.jpg"

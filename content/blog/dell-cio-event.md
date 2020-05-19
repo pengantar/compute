@@ -1,6 +1,7 @@
 ---
 title: "Dell CIO Breakfast"
-category: "event"
+categories: 
+  - "event"
 date: "2019-07-18"
 image:
   name: "dell-cio.jpg"

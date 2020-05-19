@@ -1,6 +1,7 @@
 ---
 title: "Huawei Awards"
-category: "event"
+categories:
+  - "event"
 date: "2019-03-30"
 image:
   name: "huawei-awards.jpg"

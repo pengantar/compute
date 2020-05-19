@@ -1,7 +1,7 @@
 <div class = 'wrap_min pt-3 mt-2 grid-reverse post'>
   <div class = 'blog__posts'>
     <div class = 'editor'>
-      <h5 class = 'article_{{ .Params.categories }}'>{{ .Params.categories }}</h5>
+      <!-- {{ with .Params.categories }}<h5 class = 'article_taxonomy'>{{ upper (index . 0) }}</h5>{{ end }} -->
       <strong><time>{{ dateFormat "02 January, 2006" .Date }}</time></strong>
       <h2>{{ .Title }}</h2>
       {{- partial "share" . -}}

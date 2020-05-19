@@ -1,6 +1,7 @@
 ---
 title: "Stanford Business School: Discovering Your Inner Strategic Leader"
-category: "event"
+categories:
+  - "event"
 date: "2019-02-10"
 image:
   name: "stanford-business.jpg"

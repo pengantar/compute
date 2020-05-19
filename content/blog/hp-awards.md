@@ -1,6 +1,7 @@
 ---
 title: "HP Awards 2019"
-category: "event"
+categories:
+  - "event"
 date: "2019-06-25"
 image:
   name: "hp-awards.jpg"

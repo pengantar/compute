@@ -1,10 +1,11 @@
 ---
-category: news
+title: Join Computech Limited during 2019's Cisco Connect in South Africa
 date: "2019-05-16"
+categories:
+  - news
 image:
   name: cisco-connect-1.jpg
   description: We're exhibiting at Cisco Connect from the 19th to 21st of May in South Africa
-title: Join Computech Limited during 2019's Cisco Connect in South Africa
 ---
 
 Cisco Connect is a global Cisco initiative that delivers inspiration, technical contents and industry insights to technology visionaries. Cisco Connect conference, will explore the opportunities and challenges presented by this dynamic region’s aspirations and how adopting the right technologies can help local businesses succeed regionally and globally.

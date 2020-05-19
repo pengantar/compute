@@ -1,10 +1,11 @@
 ---
-category: news
+title: "Computech awarded with the oracle Field Delivery Partner Status (FDP)"
+categories: 
+  - news
 date: "2019-07-25"
 image:
   name: oracle-field-delivery.jpg
   description: "Computech awarded with the oracle Field Delivery Partner Status (FDP)"
-title: Computech awarded with the oracle Field Delivery Partner Status (FDP)
 ---
 
 Computech Limited, leading IT integrator in East Africa and a Gold member of Oracle Partner Network (OPN) for Oracle products and technology in Kenya, with a presence Tanzania Uganda and Zambia is now officially an authorized Field Delivery Partner (FDP) for Oracle as of July 2019. This partnership is a mark of excellence signifying the company’s in-depth experience working with Oracle’s technology. This partnership serves as an exceptional achievement and signals continuous growth for a company that has established its presence in the tech industry for over 30 years.
