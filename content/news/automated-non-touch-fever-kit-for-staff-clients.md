@@ -30,7 +30,7 @@ After the swift scan, a __LED__ will turn __red__ to indicate a __fever__ or gre
 - 12-hour Battery on a __Single Charge__
 - __Durable and Trustworthy__: Used in the International Space Station
 
-Kindly Click on the Get Started Button below to enable our Technicians to establish a swift way to get you connected.
+Kindly Click on the __Get Started Button__ below to enable our Technicians to establish a swift way to get you connected.
 
 {{< button "https://forms.office.com/Pages/ResponsePage.aspx?id=-xWXcurnFEC7SOs2nD7iJaISfZVdKdZCtI07wOwEbLFUQUlFNFZKWDlLOUs0RFg2WVNPUzRDWkZXOS4u" "Get started with The Non Contact Fever Kit" "orange" >}}
 
