@@ -1,5 +1,5 @@
 ---
-title: "An Automated, Non-Touch Fever Kit Solution from Computech Limited."
+title: "Safeguard the Lives of your Staff and Clients with the Automated, Non-Touch Fever Kit Solution"
 image:
   name: fever-kit-web-banner.jpg
   description: "Safeguard the Lives of your Staff and Clients with the Automated, Non-Touch Fever Kit Solution from Computech Limited."
