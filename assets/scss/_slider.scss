@@ -105,6 +105,8 @@
     &_container{
       background: $dark;
       width: 100%;
+      max-width: 100vw;
+      overflow-x: hidden;
       position: relative;
       &:hover .slide_left,
       &:hover .slide_right {
