@@ -1,17 +1,17 @@
 - image: hpe-event-0.jpg
   description: |
-    Celebrating 30 years as a leading\
-    East African systems integrator
+    East & Central Africa's Leading\
+    Technology System Provider
 
-- image: hp-awards.jpg
-  description: |
-    Cutting edge solutions\
-    in key industries
+# - image: hpe-event-0.jpg
+#   description: |
+#     Celebrating 30 years as a leading\
+#     East African systems integrator
 
 - image: hpe-event-3.jpg
   description: |
-    East & Central Africa's Leading\ 
-    Technology System Provider"
+    Cutting edge solutions\
+    in key industries
 
 - image: dell-tech.jpg
   description: |
