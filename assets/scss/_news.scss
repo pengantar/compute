@@ -99,6 +99,10 @@
   font-size: 15px;
   margin-bottom: 30px;
   border-bottom: 1px solid #f0f0f0;
+  &:empty {
+    border-bottom: none;
+    margin-bottom: 0;
+  }
 }
 
 .pagination {
