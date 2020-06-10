@@ -2,8 +2,9 @@
 
 $light: #fff;
 $dark: #242a33;
+$darker: #000;
 $mute: darken($light, 30%);
-$pale: lighten($dark, 15%);
+$pale: lighten($darker, 15%);
 $orange: #F07444;
 $cafe: $orange;
 $padding: 15px;
