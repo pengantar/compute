@@ -19,8 +19,8 @@ sections:
   label: Data
   create: all
   match: "**/*.{json,yaml,yml}"
-upload_dir: assets/news
-public_path: "/assets/news"
+upload_dir: news
+public_path: "/news"
 front_matter_path: ''
 use_front_matter_path: false
 file_template: ":filename:"
