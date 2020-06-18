@@ -17,7 +17,7 @@ sections:
 - type: directory
   path: 'data '
   label: Data
-  create: all
+  create: documents
   match: "**/*.{json,yaml,yml}"
 upload_dir: news
 public_path: "/news"
