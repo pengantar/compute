@@ -7,8 +7,9 @@ sections:
 - type: directory
   path: content/blog
   label: Blog
-  create: all
+  create: documents
   match: "**/*"
+  new_doc_ext: ".md"
 - type: directory
   path: content/news
   label: News
