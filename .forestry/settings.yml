@@ -9,11 +9,11 @@ sections:
   label: Blog
   create: documents
   match: "**/*"
-  new_doc_ext: ".md"
+  new_doc_ext: md
 - type: directory
   path: content/news
   label: News
-  create: all
+  create: documents
   match: "**/*.{md}"
   templates:
   - news
