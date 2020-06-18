@@ -19,7 +19,7 @@ sections:
   label: Data
   create: all
   match: "**/*.{json,yaml,yml}"
-upload_dir: news
+upload_dir: static/news
 public_path: "/news"
 front_matter_path: ''
 use_front_matter_path: false
