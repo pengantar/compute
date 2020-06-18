@@ -15,9 +15,9 @@ sections:
   label: Posts
   create: all
 - type: directory
-  path: _data
+  path: 'data '
   label: Data
-  create: none
+  create: all
   match: "**/*.{json,yaml,yml}"
 upload_dir: assets/news
 public_path: "/assets/news"
