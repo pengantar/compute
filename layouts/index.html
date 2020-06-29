@@ -1,11 +1,11 @@
 {{- define "main" }}
-{{- $slides := .Site.Data.slides -}}
+{{- $slides := .Params.slides -}}
 <div class = 'slides_container mb-4'>
   <!-- <div id = 'particles-js'></div> -->
   <div class = 'slides' tabindex = '0'>
   {{- range $index, $slide := $slides -}}
-    <div class = 'slide {{ if eq $index 0 }} slide_active {{ end }}' style = 'background-image: url(/news/{{ $slide.image }})'>
-      <h1>{{ markdownify $slide.description }}</h1>
+    <div class = 'slide {{ if eq $index 0 }} slide_active {{ end }}' style = 'background-image: url({{ $slide.image }})'>
+      <!-- <h1>{{ markdownify $slide.description }}</h1> -->
     </div>
   {{- end -}}
   </div>
