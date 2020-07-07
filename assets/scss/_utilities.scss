@@ -4,6 +4,9 @@
 }
 .orange{
   color: $orange;  
+  p {
+    color: $orange;
+  }
 }
 .text{
   &_left{
