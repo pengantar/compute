@@ -2,7 +2,7 @@
 title: "Introducing the Next-Gen Top Security Orchestration and Automation Response Platform for Client Value"
 date: "2020-07-14T19:34:31+03:00"
 image:
-  name: "d3-security-soar.png"
+  name: "d3-security-soar-2.png"
   description: "Figure 1: D3 Security Next-Generation SOAR"
 ---
 
@@ -20,7 +20,7 @@ Key D3 differentiators uncovered by Frost and Sullivan included:
 - __Robust Incident Case Management__ – Incident response, case management, evidence tracking and audit trail generation are made automated and consistent with the D3 solution, with dramatic reductions in response time and resources required.
 
 
-![Figure 2: Enjoy Codeless Playbooks when it comes to this SOAR Solution](/news/d3-security-soar-2.png)
+![Figure 2: Enjoy Codeless Playbooks when it comes to this SOAR Solution](/news/d3-security-soar.png)
 
 ### Get your free SOAR Research e-book & Book a Free Demo Now!
 
