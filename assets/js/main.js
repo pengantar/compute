@@ -353,16 +353,17 @@ function serveNonWebp() {
   return non_webp;
 }
 
-function switchToNonWebp () {
+(function switchToNonWebp () {
   let images = elems('img');
-  Array.from(images).map(function(image, index) {
-    let src = image.src;
-    let webp = '.webp';
-    let jpg = '.jpg';
-    let new_src = src.replace(webp, jpg);
-    image.src = new_src;
+  Array.from(images).forEach(function(image, index) {
+    image.loading = "lazy";
+    // let src = image.src;
+    // let webp = '.webp';
+    // let jpg = '.jpg';
+    // let new_src = src.replace(webp, jpg);
+    // image.src = new_src;
   });
-};
+})();
 
 function createComponent(content, classAttr = false) {
   let div = document.createElement('div');
