@@ -1,10 +1,10 @@
 {{ define "main" }}
 {{- $devices := .Params.items -}}
-{{ $bg := printf "/devices/%s" (urlize (lower .Title))  }}
+{{ $bg := "/images"  }}
 <style>
   {{- range $index, $device := $devices -}}
     .device_{{ $index }} {
-      background-image: url({{ $bg }}/{{ with $device.brand }}{{ . }}/{{ end }}{{ $device.image }});
+      background-image: url({{ $bg }}/{{ $device.image }});
     }
   {{- end -}}
 </style>
@@ -12,7 +12,7 @@
   {{- range $index, $device := $devices -}}
 
   <div class = 'pd' itemscope itemtype = 'http://schema.org/Product'>
-    <div class = 'pd_pic device_{{ $index }}' itemprop = 'image' content = '{{ $.Site.BaseURL }}{{ $bg }}/{{ with $device.brand }}{{ . }}/{{ end }}{{ $device.image }}'>
+    <div class = 'pd_pic device_{{ $index }}' itemprop = 'image' content = '{{ $.Site.BaseURL }}{{ $bg }}/{{ $device.image }}'>
       {{- with $device.brand }}
         <span itemprop = 'brand' content = '{{ . }}' ></span>
       {{- end -}}

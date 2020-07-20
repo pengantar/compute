@@ -8,7 +8,7 @@
       <div class = 'tab_switch'>
         {{ range $index, $contact := $contacts }}
         <div class = 'tab {{ if eq $index 0 }}tab_active{{ end }}'>
-          <img src = '/country/{{ lower $contact.country }}.jpg'>
+          <img src = '/images/{{ lower $contact.country }}.jpg'>
         </div>
         {{ end }}
       </div>

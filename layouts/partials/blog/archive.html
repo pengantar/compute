@@ -5,7 +5,7 @@
   <article class = 'article mb-4'>
     <a href = '{{ $article.Permalink }}' {{ if eq $index 0 }} class = 'grid-reverse article_first' {{ end }}>
       <figure class = 'article_thumb{{ if not (eq $index 0) }} clipped{{ end }}'>
-        <img src = '/news/{{ $article.Params.image.name }}' alt = '{{ replace $article.Params.description "'" "" }}' class = 'blog__thumb'>
+        <img src = '/images/{{ $article.Params.image.name }}' alt = '{{ replace $article.Params.description "'" "" }}' class = 'blog__thumb'>
       </figure>
       <div class = 'article_meta {{ if eq $index 0 }} center_y {{ end }}'>
         {{- with $article.Params.categories }}

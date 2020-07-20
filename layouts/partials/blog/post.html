@@ -8,7 +8,7 @@
     </div>
     {{- $image := .Params.image }}
     <div class = 'post_body'>
-      <img src = '/news/{{ $image.name }}' alt = "{{ replace $image.description "'" "" }}" class = 'blog__thumb'>
+      <img src = '/images/{{ $image.name }}' alt = "{{ replace $image.description "'" "" }}" class = 'blog__thumb'>
       {{ .Content }}
     </div>
   </div>

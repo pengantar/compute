@@ -3,7 +3,7 @@
   <div class = 'grid-4 wrap mt-4'>
     {{- range $index, $item := .Site.Data.about.home -}}
     <a href = '/about-us/{{ $item }}/' class = 'card'>
-      <img src = '/about/{{ $item }}{{ if eq $index 2 }}.png{{ else }}.jpg{{ end }}' alt = '{{ $item }}'>
+      <img src = '/images/{{ $item }}{{ if eq $index 2 }}.png{{ else }}.jpg{{ end }}' alt = '{{ $item }}'>
       <span class = 'overlay'>
         {{ upper $item  }}
       </span>

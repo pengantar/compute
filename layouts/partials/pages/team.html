@@ -3,7 +3,7 @@
 <div class = 'grid-4'> 
   {{- range $.Site.Data.about.team -}}
   <div class = 'member text_center'>
-    <img src = '/team/{{ .picture }}.jpg' alt = 'team member' class = 'img-rounded member_image shade mb-1'>
+    <img src = '/images/{{ .picture }}.jpg' alt = 'team member' class = 'img-rounded member_image shade mb-1'>
     <h5 class = 'member_name'>{{ .name }}</h5>
     <span class = 'orange member_title'>{{ upper .title }}</span> 
     <p class = 'hide member_description'>{{ .description }}</p>  
