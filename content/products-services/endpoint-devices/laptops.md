@@ -5,7 +5,7 @@ items:
     # brand: apple 
   - name: HP ProBook 430 G6
     price: Kshs. 88,297 + VAT
-    image: "probook-430-g6-2.jpg"
+    image: "probook-430-g6-1.jpg"
     brand: hp
     status: Available
     description:
@@ -22,7 +22,7 @@ items:
 
   - name: HP ProBook 430 G6
     price: Kshs. 73,874 + VAT
-    image: "probook-430-g6-2.jpg"
+    image: "probook-430-g6-4.jpg"
     brand: hp
     status: Available
     description:
@@ -39,7 +39,7 @@ items:
 
   - name: HP ProBook 430 G6
     price: Kshs. 94,512 + VAT
-    image: "probook-430-g6-2.jpg"
+    image: "probook-430-g6-5.jpg"
     brand: hp
     status: Available
     description:
@@ -56,7 +56,7 @@ items:
 
   - name: HP ProBook 430 G6
     price: Kshs. 87,710+ VAT
-    image: "probook-430-g6-2.jpg"
+    image: "probook-430-g6-6.jpg"
     brand: hp
     status: Available
     description:
@@ -73,7 +73,7 @@ items:
 
   - name: HP ProBook 430 G6
     price: Kshs. 104,948 + VAT
-    image: "probook-430-g6-2.jpg"
+    image: "probook-430-g6-7.jpg"
     brand: hp
     status: Available
     description:
@@ -91,7 +91,7 @@ items:
   - name: HP ProBook 430 G6
 
     price: Kshs. 108,348+ VAT
-    image: "probook-430-g6-2.jpg"
+    image: "probook-430-g6-3.jpg"
     brand: hp
     status: Available
     description:
