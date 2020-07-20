@@ -34,22 +34,22 @@ Take a look at the results from the study:
 Study participants using Dell Technologies VxRail and VxFlex
 systems reported significant savings and saw:
 
-![](/images/dell/dell-blog-content-3.jpeg)
+![](/images/dell-blog-content-3.jpeg)
  
 ### Hyper-performance. Faster results.
 
 VxRail and VxFlex systems run applications faster and minimize downtime.
 Study participants using these systems saw:
  
-![](/images/dell/dell-blog-content-6.jpeg)
+![](/images/dell-blog-content-6.jpeg)
  
-![](/images/dell/dell-blog-content-1.jpeg)
+![](/images/dell-blog-content-1.jpeg)
 
 ### What Did the Survey Participants Say after using Dell HCI systems?
 
-![](/images/dell/dell-blog-content-4.jpeg)
+![](/images/dell-blog-content-4.jpeg)
  
-![](/images/dell/dell-blog-content-5.jpeg)
+![](/images/dell-blog-content-5.jpeg)
 
 ### What is Needed to be connected to The Dell Technologies Hyperconvereged Infrastructure?
 
@@ -59,15 +59,15 @@ Take a look at a sample our product portfolio:
 
 Get PowerEdge pre-configured for vSAN to reduce project risk and improve storage efficiency.
 
-![](/images/dell/dell-picture-2.png)
+![](/images/dell-picture-2.png)
 
 ### Dell Technologies VxFlex integrated rack Engineered system with integrated rack scale network fabric.
 
 Dell Technologies VxFlex integrated rack systems deliver maximum scalability and business agility, enabling companies to start small and grow in flexible, discrete increments. Based on the industry’s #1 PowerEdge servers1, VxFlex supports: multi-hypervisor and bare metal environments; two-layer, HCI and storage-only architectures; and high-performance applications and databases.
 
-![](/images/dell/dell-picture-1.png)
+![](/images/dell-picture-1.png)
 
-![The #1 provider of hyperconverged systems delivers results](/images/dell/dell-blog-content-2.jpg)
+![The #1 provider of hyperconverged systems delivers results](/images/dell-blog-content-2.jpg)
 
 ### How To get Connected.
 Click on the button below for us to establish a swift way to get your business connected to Dell HCI Systems.
@@ -80,5 +80,5 @@ Email us on:\
 [Gilbert.Okebe@computechlimited.com](gilbert.ek@computechlimited.com)\
 [Job.mutegi@computechlimited.com](job.ek@computechlimited.com])
  
-![For more information please contact us: 0738 786 525 or 0724 247 882](/images/dell/dell-mailer-footer.jpeg)
+![For more information please contact us: 0738 786 525 or 0724 247 882](/images/dell-mailer-footer.jpeg)
 
