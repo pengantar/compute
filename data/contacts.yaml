@@ -11,7 +11,7 @@
 
         Tel: [+254 730 141 000](tel:+254 730 141000)
 
-      directions: "<iframe src = 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.8511981119777!2d36.79291251475377!3d-1.261567599079834!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f17693fefd66f%3A0x9de7207203bcfd82!2sComputech+Limited!5e0!3m2!1sen!2ske!4v1482128087001' width = '600' height = '300' frameborder = '0' style = 'border:0' allowfullscreen></iframe>"
+      directions: "<iframe loading='lazy' src = 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.8511981119777!2d36.79291251475377!3d-1.261567599079834!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f17693fefd66f%3A0x9de7207203bcfd82!2sComputech+Limited!5e0!3m2!1sen!2ske!4v1482128087001' width = '600' height = '300' frameborder = '0' style = 'border:0' allowfullscreen></iframe>"
       name: "Computech Limited – Nairobi"
     - details: |
         Nyali Road Opp. Kongowea Main Entrance, Mombasa, Kenya
@@ -30,7 +30,7 @@
 
         Tel: [+255 222 111 028/22](tel:+255 222 111 028)
 
-      directions: "<iframe width='600' height='300' id='gmap_canvas' src='https://maps.google.com/maps?q=Diamond%20plaza%20tanzania&t=&z=19&ie=UTF8&iwloc=&output=embed' frameborder='0' scrolling='no' marginheight='0' marginwidth='0'></iframe>"
+      directions: "<iframe loading='lazy' width='600' height='300' id='gmap_canvas' src='https://maps.google.com/maps?q=Diamond%20plaza%20tanzania&t=&z=19&ie=UTF8&iwloc=&output=embed' frameborder='0' scrolling='no' marginheight='0' marginwidth='0'></iframe>"
       name: "Computech ICS (TZ) Limited - Tanzania"
 - country: Uganda
   regions: 
@@ -45,7 +45,7 @@
 
         Mobile: [+256 414 346 547](tel:+256414346547)
 
-      directions: "<iframe src = 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.7583969920165!2d32.61375924993323!3d0.3140216997697697!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x177dbb75f56863a7%3A0xd76295d6eb97b948!2sComputech+(Uganda)+Limited!5e0!3m2!1sen!2ske!4v1482129597296' width = '600' height = '300' frameborder = '0' style = 'border:0' allowfullscreen></iframe>"
+      directions: "<iframe loading='lazy' src = 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.7583969920165!2d32.61375924993323!3d0.3140216997697697!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x177dbb75f56863a7%3A0xd76295d6eb97b948!2sComputech+(Uganda)+Limited!5e0!3m2!1sen!2ske!4v1482129597296' width = '600' height = '300' frameborder = '0' style = 'border:0' allowfullscreen></iframe>"
       name: "Computech Limited - Uganda"
 - country: Rwanda
   regions: 
@@ -58,7 +58,7 @@
 
         Tel: [+250 781 575 719](tel:+250781575719)
 
-      directions: "<iframe width='600' height='300' id='gmap_canvas' src='https://maps.google.com/maps?q=Nobiscum%20House%20Rwanda&t=&z=19&ie=UTF8&iwloc=&output=embed' frameborder='0' scrolling='no' marginheight='0' marginwidth='0'></iframe>"
+      directions: "<iframe loading='lazy' width='600' height='300' id='gmap_canvas' src='https://maps.google.com/maps?q=Nobiscum%20House%20Rwanda&t=&z=19&ie=UTF8&iwloc=&output=embed' frameborder='0' scrolling='no' marginheight='0' marginwidth='0'></iframe>"
       name: "Computech Limited - Rwanda"
 - country: Zambia
   regions: 
@@ -71,5 +71,5 @@
 
         Tel: [+260 978 516 789](tel:+260978516789)
         
-      directions: "<iframe width='600' height='300' id='gmap_canvas' src='https://maps.google.com/maps?q=Rhodes%20Park%2C%20Lusaka%2C%20Zambia&t=&z=19&ie=UTF8&iwloc=&output=embed' frameborder='0' scrolling='no' marginheight='0' marginwidth='0'></iframe>"
+      directions: "<iframe loading='lazy' width='600' height='300' id='gmap_canvas' src='https://maps.google.com/maps?q=Rhodes%20Park%2C%20Lusaka%2C%20Zambia&t=&z=19&ie=UTF8&iwloc=&output=embed' frameborder='0' scrolling='no' marginheight='0' marginwidth='0'></iframe>"
       name: "Computech Limited - Zambia"
