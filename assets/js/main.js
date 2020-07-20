@@ -1,3 +1,6 @@
+const page = document;
+const parentURL = "{{ .Site.BaseURL }}";
+
 function elem(selector, parent = document){
   let elem = document.querySelector(selector);
   return elem != false ? elem : false;
@@ -63,6 +66,126 @@ function modifyClass(el, targetClass) {
     });
   }
   
+})();
+
+
+function supportsWebp() {
+  if (navigator.userAgent.indexOf('Safari') != -1 && navigator.userAgent.indexOf('Chrome') == -1) {
+    const docVersion = navigator.appVersion.toLowerCase();
+    const isSafari14 = docVersion.includes("version/14");
+    return isSafari14 ? true : false;
+  }
+  return true
+}
+
+(() => {
+
+  let bgs = elems('.has_bg');
+
+  if (bgs) {
+    bgs.forEach(function name(bg) {
+      let bgStr = bg.style.backgroundImage;
+
+      if (!bgStr.includes("http")) {
+        bgStr = bgStr
+          .replace(".jpg", ".webp")
+          .replace(".png", ".webp")
+          .replace("/images/", "/webp/");
+
+        if (supportsWebp()) {
+          bg.style.backgroundImage = bgStr;
+        }
+      }
+    });
+  }
+  const images = elems('img');
+
+  const replaceableimages = Array.from(images).filter(function (image) {
+    const imageSrc = image.src.toLowerCase();
+    const isJPEG = imageSrc.includes('.jpg')
+    const isPNG = imageSrc.includes('.png')
+    let skipImage = imageSrc.includes("http");
+    if(skipImage) {
+      skipImage = imageSrc.includes(parentURL) ? false : true;
+    }
+    const isReplaceable = isJPEG || isPNG;
+    if(isReplaceable && skipImage == false) {
+      return  image;
+    }
+  });
+
+  function wrapEl(el, wrapper) {
+    el.parentNode.insertBefore(wrapper, el);
+    wrapper.appendChild(el);
+  }
+
+  function swapImageSource(image, src) {
+    supportsWebp() ? (image.src = src) : false;
+  }
+
+  (function imagesWebp() {
+    replaceableimages.forEach(function (image) {
+      let imageSrc = image.src;
+      imageSrc = imageSrc
+        .replace('.jpg', '.webp')
+        .replace('.png', '.webp')
+        .replace('/images/', '/webp/');
+
+      swapImageSource(image, imageSrc);
+    })
+  })();
+
+  function searchResults(results = [], order = []) {
+    let resultsFragment = new DocumentFragment();
+    let showResults = elem('.search_results');
+    emptyEl(showResults);
+    let index = 0
+    results.forEach(function (result) {
+      let item = createEl('a');
+      item.href = result.link;
+      item.className = 'search_result';
+      item.textContent = result.title;
+      item.style.order = order[index];
+      resultsFragment.appendChild(item);
+      index += 1
+    });
+
+    showResults.appendChild(resultsFragment);
+  }
+
+  (function search() {
+    const searchField = elem('.search_field');
+
+    if (searchField) {
+      searchField.addEventListener('input', function () {
+        let rawResults = idx.search(`${this.value}`).slice(0, 6);
+        let refs = rawResults.map(function (ref) {
+          // return id and score in a single string
+          return `${ref.ref}:${ref.score}`;
+        });
+
+        let ids = refs.map(function (id) {
+          let positionOfSeparator = id.indexOf(":");
+          id = id.substring(0, positionOfSeparator)
+          return Number(id);
+        });
+
+        let scores = refs.map(function (score) {
+          let positionOfSeparator = score.indexOf(":");
+          score = score.substring((positionOfSeparator + 1), (score.length - 1));
+          return (parseFloat(score) * 50).toFixed(0);
+        });
+
+        let matchedDocuments = simpleIndex.filter(function (doc) {
+          return ids.includes(doc.id);
+        });
+
+        matchedDocuments.length >= 1 ? searchResults(matchedDocuments, scores) : false;
+      });
+    }
+
+  })();
+
 })();
 
 // function videoMarkUp(id) {
@@ -508,6 +631,9 @@ $(function(){
     fn( elem, c );
   }
   
+
+
+
   var classie = {
     // full names
     hasClass: hasClass,
