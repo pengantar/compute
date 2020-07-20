@@ -15,7 +15,7 @@ One way we are addressing the uncertainty of COVID-19 is encouraging our employe
 
 ## Remote Working Solutions that Actually Work for you.
 
-![](/news/dell-technologies-june-15-1.png)
+![](/images/dell-technologies-june-15-1.png)
  
 As you work to arm more of your teams with the __ability to work remotely__, Computech Limited would like to share some __key elements__ of our __work-from-home program__, many of which organizations of all sizes have also adopted with __Dell Technologies Remote Work Solutions.__
 
@@ -28,7 +28,7 @@ As you work to arm more of your teams with the __ability to work remotely__, Com
 
 ### How to Get Started.
 
-![](/news/dell-technologies-june-15-2.png)
+![](/images/dell-technologies-june-15-2.png)
  
 Computech Limited understands that most organizations don’t typically set aside budget for unforeseen circumstances.
  
@@ -44,5 +44,5 @@ We are here to assist you. The transition might be challenging at first but inev
 
 Feel free to inquire on any further queries, we will be glad to assist you. Kindly call on the contact numbers in the Banner below to get started.
 
-![](/news/dell-technologies-june-15-3.png)
+![](/images/dell-technologies-june-15-3.png)
  

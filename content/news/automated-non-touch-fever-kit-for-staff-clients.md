@@ -20,7 +20,7 @@ This effective Fever Kit is a __no-touch, portable device__ designed to screen p
 
 After the swift scan, a __LED__ will turn __red__ to indicate a __fever__ or green to indicate no __fever__. Therefore, this will indicate who has to take up more measures while entering the Banking, Manufacturing, Work or Mall premises.
 
-![](/news/fever-kit-social-media-post.jpg)
+![](/images/fever-kit-social-media-post.jpg)
 
 ### Screen 500 Employees / Clients for fever in under 30 minutes The Non-Contact Fever Kit
 
@@ -38,4 +38,4 @@ Kindly Click on the __Get Started Button__ below to enable our Technicians to es
 
 Feel free to contact us on any inquiry on our Fever Kit solutions. Stay safe, sanitize, maintain the social distancing measures and together we will flatten the curve.
 
-![](/news/fever-kit-footer.jpg)
+![](/images/fever-kit-footer.jpg)

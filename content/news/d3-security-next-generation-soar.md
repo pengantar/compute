@@ -20,7 +20,7 @@ Key D3 differentiators uncovered by Frost and Sullivan included:
 - __Robust Incident Case Management__ – Incident response, case management, evidence tracking and audit trail generation are made automated and consistent with the D3 solution, with dramatic reductions in response time and resources required.
 
 
-![Figure 2: Enjoy Codeless Playbooks when it comes to this SOAR Solution](/news/d3-security-soar.png)
+![Figure 2: Enjoy Codeless Playbooks when it comes to this SOAR Solution](/images/d3-security-soar.png)
 
 ### Get your free SOAR Research e-book & Book a Free Demo Now!
 
@@ -34,4 +34,4 @@ Let’s Talk Security! __Computech Limited__ is here to walk you through the __T
 
 Fee free to contact us for any further inquiries or security solutions. We are always happy to assist you.
 
-[![](/news/d3-security-soar-footer.png)](/contact-us)
+[![](/images/d3-security-soar-footer.png)](/contact-us)

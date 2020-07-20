@@ -12,19 +12,19 @@ The HP EliteBook 830 is designed for the __modern mobile professional__, the HP 
 
 This specific laptop is suited for your __travel needs__ and enables you to work securely from home during this sensitive period of the Corona virus outbreak. 
 
-![](/news/hp-elitebook-630-G6-3.png)
+![](/images/hp-elitebook-630-G6-3.png)
 
 ### Brilliant design
 
 This __ultra-slim__ distinctively designed aluminum laptop with an optional narrow border __ultra-bright anti-glare display__ adapts to any environment, for an __optimal viewing experience__ wherever you work.
 
-![](/news/hp-elitebook-630-G6-2.png)
+![](/images/hp-elitebook-630-G6-2.png)
 
 ### Built on a secure foundation
 
 Protect your PC against the __evolving malware threats__ of the future, with self-healing and manageable __hardware-enforced security solutions__ from HP. From the BIOS to the browser HP Sure Start Gen5 and HP Sure Click help secure your PC.
 
-![](/news/hp-elitebook-630-G6-mailshot.jpg)
+![](/images/hp-elitebook-630-G6-mailshot.jpg)
  
 ### Crystal-clear collaboration
 
@@ -34,7 +34,7 @@ Calls sound clear and crisp with advanced collaboration features like __HP Noise
 
 Power through your work day with __Windows 10 Pro__ and the __powerful security__, collaboration and connectivity features from HP.
 
-![](/news/hp-elitebook-630-G6-notebook-pc.png)
+![](/images/hp-elitebook-630-G6-notebook-pc.png)
 
 ### Powerful Performance
 
@@ -71,4 +71,4 @@ Advanced malware attacks can destroy your OS and disrupt your business. HP Sure 
 
 ### Get Started with the HP 830 G6 Notebook
 
-![](/news/hp-elitebook-630-G6-footer.jpg) 
+![](/images/hp-elitebook-630-G6-footer.jpg) 

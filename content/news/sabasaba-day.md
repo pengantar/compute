@@ -32,7 +32,7 @@ We will be happy to assist you and contact you for a chat on any further inquiri
 Stay safe, stay home and only travel if necessary. Don’t forget to mask up and sanitize. Together we will flatten the curve and get through this.
 
 
-[![contact us](/news/sabasaba-footer.png)](https://www.computechlimited.com/contact-us/)
+[![contact us](/images/sabasaba-footer.png)](https://www.computechlimited.com/contact-us/)
 
 
 

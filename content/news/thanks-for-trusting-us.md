@@ -15,7 +15,7 @@ That's why here at Computech Limited we believe in One Team focused and tireless
 A dream to become __Africa's__ most respected and trusted provider __of technology for businesses.__
 
 
-![Figure 2: Committed to service as your number one IT Systems Integrator & IT solutions Provider](/news/computech-picture.jpg)
+![Figure 2: Committed to service as your number one IT Systems Integrator & IT solutions Provider](/images/computech-picture.jpg)
 
 We would like to appreciate our staff on the frontline in providing IT solutions & Integration during this sensitive #coronavirus period. You are our true #heroes ✨
 
@@ -39,5 +39,5 @@ We will be happy to assist you and contact you for a chat on any further inquiri
 
 Stay safe, stay home and only travel if necessary. Don’t forget to mask up and sanitize. Together we will flatten the curve and get through this.
 
-[![](/news/computech-picture-footer.jpg)](/contact-us/)
+[![](/images/computech-picture-footer.jpg)](/contact-us/)
 

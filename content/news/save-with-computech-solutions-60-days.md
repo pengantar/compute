@@ -22,7 +22,7 @@ Be assured of the following with Computech’s Cloud Solutions:
 - __Better infrastructure to improve on scalability and reliability__
 - __Hyper Automation with RPA and DevOPS__
 
-![](/news/savings-with-computech-media-post.jpg)
+![](/images/savings-with-computech-media-post.jpg)
 
 ### How to Get Connected?
 
@@ -39,5 +39,5 @@ We are here for you! If you would like to be more conversant with the Presentati
 
 ### Contact Us
 
-![](/news/savings-with-computech-footer.jpg)
+![](/images/savings-with-computech-footer.jpg)
  

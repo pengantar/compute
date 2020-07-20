@@ -10,7 +10,7 @@ image:
 
 We are proud to announce that we are officially a Red Hat Premium Business Partner. Feel free to contact us on any of your Red Hat business needs. We will be happy to assist you.
  
-![](/news/partnership-premium.png)
+![](/images/partnership-premium.png)
 
 ### Do More with Automation.
 
@@ -47,4 +47,4 @@ To learn more on the Ansible Tower, Kindly Click on the Download Button below:
 
 Feel free to contact us on any inquiry and we will be glad to assist you.
  
-![](/news/red-hat-ansible_Mailer-footerfooter_1.jpg)
+![](/images/red-hat-ansible_Mailer-footerfooter_1.jpg)

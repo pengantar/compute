@@ -19,7 +19,7 @@ The __HP Be-Online Program__ offers a wholistic, all-in-one system comprising of
 - __Assessment System, E-Certification and Accreditation Tools__
 - __Student Behaviour Management, Attendance and Tracking System__
 
-![](/news/hp-BeOnline-static-mailler.jpg)
+![](/images/hp-BeOnline-static-mailler.jpg)
  
 Sign up below for a __limited free license period__ for your Institution or Education System:
 
@@ -29,5 +29,5 @@ _“Smart features give you better learning.”_
 
 ### Contact Us
 
-![](/news/hp-be-online-mailler-footer.jpg)
+![](/images/hp-be-online-mailler-footer.jpg)
  

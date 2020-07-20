@@ -27,13 +27,13 @@ _Detect and block malicious apps._
 Cisco Security takes you from overwhelmed to empowered. Simple and secure.
 Cisco Umbrella offers flexible, cloud-delivered security when and how you need it. It combines multiple security functions into one solution, so you can extend protection to devices, remote users, and distributed locations anywhere. Umbrella is the easiest way to effectively protect your users everywhere in minutes.
 
-![](/news/security-infographic-2020-june-18.png)
+![](/images/security-infographic-2020-june-18.png)
 
 ### Experience Frictionless Security with Cisco Umbrella
 
 You don’t have to be an expert in security to protect your business. You just need a simple unified security platform and a partner who puts you first.
 
-![](/news/cisco-umbrella-Q2-communications-social-media.jpg)
+![](/images/cisco-umbrella-Q2-communications-social-media.jpg)
 
 Keeping your employees safe and your business protected, is at the heart of what we do. Computech Limited can help keep your security simple, because reducing complexity can make all the difference.  
 Let’s start the conversation by scheduling a 30-minute call to discuss your business needs. Simply complete the form below and we’ll contact you to find a time that works best for you. 
@@ -45,5 +45,5 @@ As a __Cisco Certified Premier Partner__, we are giving you a 2-week free Cisco 
 ### Any Inquiries?
 We are here to assist you. Feel free to inquire on any __IT__ or __Security solution__ you may need, we will be happy to assist you. Computech limited is here for you, __let’s talk security.__
 
-![](/news/cisco-umbrella-mailer-footer.jpg)
+![](/images/cisco-umbrella-mailer-footer.jpg)
  

@@ -17,7 +17,7 @@ title: Healthcare
   </a>
 </div>
 <div class = 'partner mb-2'>
-  <img src = '/partners/gebig.png' alt = 'partner'>
+  <img src = '/images/gebig.png' alt = 'partner'>
 </div>
 
 In 2015, Computech Limited was appointed Independent Channel Partner (ICP) for General Electric Healthcare. Computech’s portfolio covers Digital Imaging including MRI, CT scanners, and X-Ray machines, and Ultrasound for both Tanzania and Uganda.

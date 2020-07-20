@@ -35,5 +35,5 @@ Feel free to contact us on any:
 We will be happy to assist you and contact you for a chat on any further inquiries.
 Stay safe, stay home and only travel if necessary. Don’t forget to mask up and sanitize. Together we will flatten the curve and get through this.
 
-[![contact us](/news/flatten-curve-with-computech-footer.png)](/contact-us/)
+[![contact us](/images/flatten-curve-with-computech-footer.png)](/contact-us/)
 

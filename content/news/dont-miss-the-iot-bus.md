@@ -10,7 +10,7 @@ We are proud to officially announce that Computech Limited has set foot into the
 
 The IoT managed services market was US$ 30.2Billion in 2018 and is anticipated to grow at a Compound Annual Growth Rate of 18.5% to account for US$ 135 Billion by 2025. 
 
-![Figure 2: Explore the future of IOT with Computech Limited](/news/computech-limited-iot-press-release.jpg)
+![Figure 2: Explore the future of IOT with Computech Limited](/images/computech-limited-iot-press-release.jpg)
 
 Don’t miss the IOT bus. Start your journey today with Computech and grow your future business with new-age technologies.
 

@@ -20,19 +20,19 @@ The HP Elite Dragonfly provides __mobility beyond expectation__ in an ultralight
 
 The Notebook speaker enclosure component is made with __5% ocean bound plastic__ as of August 2019.
  
-![](/news/HP-Elite-Dragonfly-Laptop-i5-social-media-post.jpg)
+![](/images/HP-Elite-Dragonfly-Laptop-i5-social-media-post.jpg)
 
 ### Work where you want
 
 Connect from almost anywhere with optional gigabit-class 4G LTE on the incredibly light, compact, and flexible HP Elite Dragonfly. Collaborate in any environment with crisp, clear Audio by Bang & Olufsen and an ultrabright display.
  
-![](/news/HP-Elite-Dragonfly-Laptop-i7-social-media-post.jpg)
+![](/images/HP-Elite-Dragonfly-Laptop-i7-social-media-post.jpg)
 
 ### Work with peace of mind
 
 Security features from HP work together to create an __always-on__, always-acting, resilient __defence.__ From the __BIOS__ to the __browser__, above and below the OS, these constantly evolving solutions help protect your PC from threats.
 
-![](/news/HP-Elite-Dragonfly-Laptop-i5-16GB-mailer.jpg)
+![](/images/HP-Elite-Dragonfly-Laptop-i5-16GB-mailer.jpg)
  
 ### HP Pure View
 
@@ -64,7 +64,7 @@ Make __health measurable__ and __actionable__ at work with __HP Work Well__. Des
 
 Technologies in the optional UHD HDR 400 panel help improve your 4K viewing experience by increasing the contrast between light and dark images. The result is an image that most resembles the view in a natural state.
  
-![](/news/HP-Elite-Dragonfly-Laptop-i5-8GB-social-media-post.jpg)
+![](/images/HP-Elite-Dragonfly-Laptop-i5-8GB-social-media-post.jpg)
 
 ### How to join the Sustainability Movement with the HP Dragonfly? 
 

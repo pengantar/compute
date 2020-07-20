@@ -10,16 +10,16 @@ Computech Limited would like to take this moment to wish you a happy Eid ul Fitr
 
 Sanitize, maintain social distancing measures and be cautious and eventually we will eventually flatten the curve.
 
-![](/news/eid-mubaraka-media-post.jpg) 
+![](/images/eid-mubaraka-media-post.jpg) 
 
 This is the day when we should pay gratitude to the divine light for all the wonderful things around us. Let this day bring new hope and opportunities in your life. May you welcome them with an open mind and fresh thoughts.
  
-![](/news/eid-mubaraka-media-post2.jpg)
+![](/images/eid-mubaraka-media-post2.jpg)
 
 We are going through tough times but this is just a mere test and we will over come this together. Let us join hands in spreading positivity and caring for our fellow brothers during this period. #togetherasone
  
-![](/news/eid-mubaraka-email-banner.jpg)
+![](/images/eid-mubaraka-email-banner.jpg)
 
 Kindly note that our offices will remain closed on 25th May of 2020. 
  
-![](/news/eid-mubaraka-footer.jpg) 
+![](/images/eid-mubaraka-footer.jpg) 
