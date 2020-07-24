@@ -105,7 +105,7 @@ items:
       - Intel Wi-Fi 6 AX201 ax 2x2 MU-MIMO nvP +BT 5 / 
       - Pike Silver Aluminum / 
   - name: HP Dragonfly i7-8565U 
-    price: Kshs. 242,243 (VAT Inclusive)
+    price: Kshs. 242,243
     image: "hp-elite-dragonfly-laptop-i7-16gb.jpg"
     brand: hp
     status: Available
@@ -115,9 +115,10 @@ items:
       - 512GB SSD/
       - windows 10 pro/ 
       - 3-year warranty.
+      - Price is VAT inclusive
 
   - name: HP Dragonfly i5-8265U
-    price: Kshs. 224,775 (VAT Inclusive)
+    price: Kshs. 224,775
     image: "hp-elite-dragonfly-laptop-i5-16gb- 256-512-gb-ssd.jpg"
     brand: hp
     status: Available
@@ -127,8 +128,9 @@ items:
       - 512GB SSD/
       - windows 10 pro/ 
       - 3-year warranty.
+      - Price is VAT inclusive
   - name: HP Dragonfly i5-8265U
-    price: Kshs. 198,506 (VAT Inclusive)
+    price: Kshs. 198,506
     image: "hp-elite-dragonfly-laptop-i5-8gb- 256-512-gb.jpg"
     brand: hp
     status: Available
@@ -138,5 +140,5 @@ items:
       - 256 - 512GB SSD/
       - windows 10 pro/ 
       - 3-year warranty.
-
+      - Price is VAT inclusive
 ---
