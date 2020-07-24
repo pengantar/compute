@@ -89,7 +89,6 @@ items:
       - Pike Silver Aluminum / 
 
   - name: HP ProBook 430 G6
-
     price: Kshs. 108,348+ VAT
     image: "probook-430-g6-3.jpg"
     brand: hp
@@ -105,4 +104,39 @@ items:
       - Clickpad / 
       - Intel Wi-Fi 6 AX201 ax 2x2 MU-MIMO nvP +BT 5 / 
       - Pike Silver Aluminum / 
+  - name: HP Dragonfly i7-8565U 
+    price: Kshs. 242,243 (VAT Inclusive)
+    image: "hp-elite-dragonfly-laptop-i7-16gb.jpg"
+    brand: hp
+    status: Available
+    description:
+      - 13.3''FHD Screen, 
+      - RAM 16GB/
+      - 512GB SSD/
+      - windows 10 pro/ 
+      - 3-year warranty.
+
+  - name: HP Dragonfly i5-8265U
+    price: Kshs. 224,775 (VAT Inclusive)
+    image: "hp-elite-dragonfly-laptop-i5-16gb- 256-512-gb-ssd.jpg"
+    brand: hp
+    status: Available
+    description:
+      - 13.3''FHD Screen, 
+      - RAM 16GB/
+      - 512GB SSD/
+      - windows 10 pro/ 
+      - 3-year warranty.
+  - name: HP Dragonfly i5-8265U
+    price: Kshs. 198,506 (VAT Inclusive)
+    image: "hp-elite-dragonfly-laptop-i5-8gb- 256-512-gb.jpg"
+    brand: hp
+    status: Available
+    description:
+      - 13.3''FHD Screen, 
+      - RAM 8GB/
+      - 256 - 512GB SSD/
+      - windows 10 pro/ 
+      - 3-year warranty.
+
 ---
