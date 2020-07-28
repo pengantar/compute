@@ -3,7 +3,7 @@
   {{- $size := sub (len (.Paginator .Paginator.PageSize).Pages) 1 }}
   {{- range $index, $article := (.Paginate $pages).Pages }}
   <article class = 'article mb-4'>
-    <a href = '{{ $article.Permalink }}' {{ if eq $index 0 }} class = 'grid-reverse article_first' {{ end }}>
+    <a href = '{{ if .Params.external }}{{ .Params.link }}{{ else }}{{ $article.Permalink }}{{ end }}' {{ if eq $index 0 }} class = 'grid-reverse article_first' {{ end }} {{ if .Params.external }} target="_blank" rel="noopener"{{ end }}>
       <figure class = 'article_thumb{{ if not (eq $index 0) }} clipped{{ end }}'>
         <img src = '/images/{{ $article.Params.image.name }}' alt = '{{ replace $article.Params.description "'" "" }}' class = 'blog__thumb'>
       </figure>
