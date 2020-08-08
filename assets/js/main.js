@@ -476,16 +476,24 @@ function serveNonWebp() {
   return non_webp;
 }
 
-(function switchToNonWebp () {
-  let images = elems('img');
-  Array.from(images).forEach(function(image, index) {
-    image.loading = "lazy";
-    // let src = image.src;
-    // let webp = '.webp';
-    // let jpg = '.jpg';
-    // let new_src = src.replace(webp, jpg);
-    // image.src = new_src;
-  });
+(function lazy() {
+  function lazyLoadMedia(element) {
+    let mediaItems = elems(element);
+    if(mediaItems) {
+      Array.from(mediaItems).forEach(function(item, index) {
+      item.loading = "lazy";
+        // let src = image.src;
+        // let webp = '.webp';
+        // let jpg = '.jpg';
+        // let new_src = src.replace(webp, jpg);
+        // image.src = new_src;
+      });
+    }
+  }
+
+  lazyLoadMedia('iframe');
+  lazyLoadMedia('img');
+
 })();
 
 function createComponent(content, classAttr = false) {
