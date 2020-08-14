@@ -18,6 +18,12 @@ sections:
   templates:
   - news
 - type: directory
+  path: content/products-services
+  label: Products
+  create: all
+  match: "**/*"
+  new_doc_ext: ''
+- type: directory
   path: data
   label: Data
   create: all
