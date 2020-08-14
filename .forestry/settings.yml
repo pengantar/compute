@@ -22,7 +22,7 @@ sections:
   label: Products
   create: all
   match: "**/*"
-  new_doc_ext: ''
+  new_doc_ext: app
 - type: directory
   path: data
   label: Data
