@@ -686,3 +686,10 @@ a:visited{
     border: none;
   }
 }
+
+.image {
+  &_inline {
+    display: inline-block;
+    width: initial !important;
+  }
+}

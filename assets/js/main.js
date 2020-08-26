@@ -482,11 +482,6 @@ function serveNonWebp() {
     if(mediaItems) {
       Array.from(mediaItems).forEach(function(item, index) {
       item.loading = "lazy";
-        // let src = image.src;
-        // let webp = '.webp';
-        // let jpg = '.jpg';
-        // let new_src = src.replace(webp, jpg);
-        // image.src = new_src;
       });
     }
   }
@@ -709,7 +704,13 @@ $(function(){
     postImages.forEach((image) => {
       let desc = document.createElement('p');
       desc.classList.add('thumb_alt');
-      desc.textContent = image.alt;
+      let caption = image.alt;
+      const inline = ":inline";
+      if(caption.includes(inline)) {
+        caption = caption.replace(inline, "");
+        pushClass(image, 'image_inline');
+      }
+      desc.textContent = caption;
       image.insertAdjacentHTML('afterend', desc.outerHTML);
     });
   }
