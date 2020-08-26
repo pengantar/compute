@@ -25,9 +25,10 @@ Take a look at some notable reviews from our happy clients.
 > “Computech are a multifaceted Service Delivery provider, ranging from PC, Servers, PC Accessories and support. This comes in handy as typically having a one stop shop for service delivery is advantageous and provides opportunities for significant partnerships.” __- GlaxoSmithKline Limited__
 
 > “Computech Ltd has been supplying laptops to TMEA since 2010, initially through outright purchase, but since 2016 through lease. The technical support team through has been excellent in handling all our laptop issues. Their helpdesk system is easy to use and the professionalism of the team exemplary. The Team will always look to resolve any issue as quickly as possible (including for our staff in all other Eastern Africa countries) and will make follow up calls to track progress and feedback from our end. Since the lease project started, TMEA's ICT team can breathe easy because of the top-notch service and support we receive from Computech. I would recommend that team to anybody - they are an excellent, high-performing team to learn from and to work with. Kudos! __– Trademark East Africa ICT manager__
-__“Excellent Service”__ _-NCBA_
 
 {{< block "center" >}}
+__“Excellent Service”__ _-NCBA_
+
 __Average Client Rating__
 
 ![:inline](/images/outsource-rating.png)
