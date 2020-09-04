@@ -500,43 +500,6 @@ function createComponent(content, classAttr = false) {
 
 function fuzu () {
   let board = document.querySelector('.job_board');
-  function callFuzu() {
-    $.get('https://www.fuzu.com/api/company/computech-limited/all_jobs',
-    function(data, status) {
-      let fuzuData = data.fuzu_api;
-      if (data.fuzu_api.length >= 1) {
-        fuzuData.forEach(function(jobItem) {
-          let jobTitle = createComponent(jobItem.title, 'job_title');
-          let jobLocation = createComponent(jobItem.location, 'job_location');
-          let icon = document.createElement('img');
-          icon.src = '/assets/icons/location.svg';
-          icon.classList.add('job_icon');
-          icon.alt = 'icon';
-          jobLocation.insertBefore(icon, jobLocation.firstChild);
-          let jobApply = createComponent('Apply', 'snip');
-          let job = document.createElement('a');
-          job.classList.add('job');
-          job.setAttribute('href', jobItem.styled_flow_url);
-          job.setAttribute('target', '_blank');
-          job.appendChild(jobTitle);
-          job.appendChild(jobLocation);
-          job.appendChild(jobApply);
-          board.appendChild(job);
-        });
-      } else {
-        let message = `
-        <h2>Thanks for checking!</h2>
-        <p>There are no vacancies at the moment. We shall list new positions as they become available.</p>
-        <a href = 'mailto:HRKenya@computechlimited.com' class='simple_button snip'>Contact HR</a>
-        `
-        let errorContainer = document.createElement('div');
-        pushClass(errorContainer, "pt-3 pb-3 center");
-        errorContainer.innerHTML = message;
-        board.appendChild(errorContainer);
-      }
-    });
-  }
-  board ? callFuzu() : false;
 }
 
 $(window).resize(function() {
