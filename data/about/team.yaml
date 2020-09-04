@@ -63,10 +63,10 @@
   title: Head of Cyber Security
   picture: anand-puthankalam
   description: ''
-- name: Meshack Olando
-  title: Head of Software
-  picture: meshack-olando
-  description: ''
+# - name: Meshack Olando
+#   title: Head of Software
+#   picture: meshack-olando
+#   description: ''
 - name: James Muchiri Kariuki
   title: Finance Manager
   picture: james-kariuki
