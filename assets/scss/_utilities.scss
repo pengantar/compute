@@ -3,7 +3,10 @@
   color: $light;
 }
 .orange{
-  color: $orange;  
+  color: $orange;
+  &_link a {
+    color: $orange;
+  }
   p {
     color: $orange;
   }
