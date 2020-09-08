@@ -1,4 +1,5 @@
 {{- $link := .Get 0 }}
 {{- $label := .Get 1 }}
 {{- $modifiers := .Get 2 }}
-<a href="{{ $link }}" class="snip snip_{{ $modifiers }}" target="_blank" rel="noopener">{{ $label }}</a>
+{{ $attributes := .Get 3 }}
+<a href="{{ $link }}" class="snip snip_{{ $modifiers }}"{{ with $attributes }} {{ . }}{{ else }} target="_blank" rel="noopener"{{ end }}>{{ $label }}</a>
