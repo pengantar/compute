@@ -78,7 +78,27 @@ function supportsWebp() {
   return true
 }
 
+function markTappableImages() {
+  const postContent = elem('.post_content');
+  if(postContent) {
+    const links = elems('a', postContent);
+    if(links.length) {
+      links.forEach(function(link){
+        const linkChildren = link.firstElementChild;
+        if(linkChildren) {
+          const isImageWrapper = linkChildren.tagName.toLowerCase() === 'img' ? true : false;
+          if(isImageWrapper) {
+            pushClass(link, 'nounderline');
+          }
+        }
+      })
+    }
+  }
+}
+
 (() => {
+
+
 
   let bgs = elems('.has_bg');
 
@@ -674,6 +694,8 @@ $(function(){
       }
       desc.textContent = caption;
       image.insertAdjacentHTML('afterend', desc.outerHTML);
+
+      markTappableImages();
     });
   }
 })();

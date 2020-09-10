@@ -10,9 +10,11 @@
 	}
 }
 .post{
-	a:not(.snip){
+	a:not(.snip) {
 		color: $orange;
-		text-decoration: underline !important;
+		&:not(.nounderline) {
+			text-decoration: underline !important;
+		}
 	}
 	img{
 		width: 100%;
