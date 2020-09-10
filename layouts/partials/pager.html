@@ -1,0 +1,21 @@
+<div class="pager{{ if .Prev }}{{ else }} pager_lean{{ end }}">
+  {{ with .Prev }}
+  <div class="pager_item">
+    <span class="pager_meta prev">RETURN</span>
+    <a href="{{ .Permalink }}" class="pager_link snip snip_norm" title="{{ .Title }}">
+      {{ partial "icon-back.svg" . }}
+      <span class="pager_label">{{ .Title }}</span>
+    </a>
+  </div>
+  {{ end }}
+  
+  {{ with .Next }}
+  <div class="pager_item">
+    <span class="pager_meta next">READ NEXT</span>
+    <a href="{{ .Permalink }}" class="pager_link snip snip_orange snip_norm" title="{{ .Title }}">
+      <span class="pager_label">{{ .Title }}</span>
+      {{ partial "icon-back.svg" . }}
+    </a>
+  </div>
+  {{ end }}
+</div>

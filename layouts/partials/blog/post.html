@@ -10,6 +10,7 @@
     <div class = 'post_body'>
       <img src = '/images/{{ $image.name }}' alt = "{{ replace $image.description "'" "" }}" class = 'blog__thumb'>
       {{ .Content }}
+      {{ partial "pager" . }}
     </div>
   </div>
 </div>
