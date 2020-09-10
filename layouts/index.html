@@ -4,7 +4,7 @@
   <!-- <div id = 'particles-js'></div> -->
   <div class = 'slides' tabindex = '0'>
   {{- range $index, $slide := $slides -}}
-    <div class = 'slide {{ if eq $index 0 }} slide_active {{ end }}' style = 'background-image: url({{ $slide.image }})'>
+    <div class = 'slide has_bg{{ if eq $index 0 }} slide_active{{ end }}' style = 'background-image: url({{ $slide.image }})'>
       <h1>{{ markdownify $slide.description }}</h1>
     </div>
   {{- end -}}
