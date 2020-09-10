@@ -1,5 +1,4 @@
-<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
-
+<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous" defer async></script>
 {{- $bootstrapPath := "js/bootstrap.min.js" }}
 {{- $bootstrap := resources.Get $bootstrapPath | resources.ExecuteAsTemplate $bootstrapPath . }}
 
@@ -16,4 +15,4 @@
 {{- $main := resources.Get $mainScriptPath | resources.ExecuteAsTemplate $mainScriptPath . }}
 
 {{- $bundle := slice $bootstrap $index $particles $particlesjson $main | resources.Concat "js/bundle.js" | resources.Fingerprint "sha512" }}
-<script src = '{{ $bundle.Permalink }}'></script>
+<script src = '{{ $bundle.Permalink }}' defer async></script>

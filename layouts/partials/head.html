@@ -12,8 +12,3 @@
 <meta name = 'msapplication-TileColor' content = '#da532c'>
 <meta name = 'theme-color' content = '#fff'>
 <link rel = 'canonical' href = '{{ .Permalink }}'>
-
-{{- $options := (dict "targetPath" "css/styles.css" "outputStyle" "compressed" "enableSourceMap" "true") -}}
-{{ $stylesheet := "scss/main.scss" }}
-{{- $styles := resources.Get $stylesheet | resources.ExecuteAsTemplate $stylesheet . | resources.ToCSS $options | resources.Fingerprint "sha512" }}
-<link rel = 'stylesheet' href = '{{ $styles.RelPermalink }}' integrity = '{{ $styles.Data.Integrity }}'>

@@ -1,15 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    {{ partial "head" . }}
-  </head>
-  <body {{ with .Params.id }}id="{{ . }}"{{ end }}>
-    {{ partial "nav" . }}
-    <main>
-      {{ block "main" . }}{{ end }}
-    </main>
-    {{ partial "footer" . }}
-    {{ partial "scripts" . }}
-    {{ partial "crisp" . }}
-  </body>
+<head>
+  {{ partial "head" . }}
+  {{- $options := (dict "targetPath" "css/styles.css" "outputStyle" "compressed" "enableSourceMap" "true") -}}
+  {{ $stylesheet := "scss/main.scss" }}
+  {{- $styles := resources.Get $stylesheet | resources.ExecuteAsTemplate $stylesheet . | resources.ToCSS $options | resources.Fingerprint "sha512" }}
+
+  {{ $cp := "js/custom.js" }}
+  {{ $build := resources.Get $cp | resources.ExecuteAsTemplate $cp . | resources.Minify | resources.Fingerprint "sha512" }}
+
+  <!-- preload assets declaration -->
+  <link rel="preload" href="{{ $styles.Permalink }}" integrity = "{{ $styles.Data.Integrity }}" as="style" crossorigin="anonymous">
+  <link rel="preload" href="{{ $build.Permalink }}" as="script" integrity=
+  "{{ $build.Data.Integrity }}" crossorigin="anonymous">
+
+  <link rel = 'stylesheet' href = '{{ $styles.Permalink }}' integrity = '{{ $styles.Data.Integrity }}' crossorigin="anonymous">
+
+</head>
+<body {{ with .Params.id }}id="{{ . }}"{{ end }}>
+  {{ partial "nav" . }}
+  <main>
+    {{ block "main" . }}{{ end }}
+  </main>
+  {{ partial "footer" . }}
+
+  <script type="text/javascript" src="{{ $build.Permalink }}" crossorigin="anonymous"></script>
+  {{ partial "scripts" . }}
+  {{- if (ne hugo.Environment "development") -}}
+  {{ partial "crisp" . }}
+  {{- end }}
+</body>
 </html>
