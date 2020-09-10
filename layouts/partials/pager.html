@@ -1,7 +1,7 @@
 <div class="pager{{ if .Next }}{{ else }} pager_lean{{ end }}">
   {{ with .Next }}
   <div class="pager_item">
-    <span class="pager_meta prev">RETURN</span>
+    <span class="pager_meta prev">NEWER POST</span>
     <a href="{{ .Permalink }}" class="pager_link snip snip_norm" title="{{ .Title }}">
       {{ partial "icon-back.svg" . }}
       <span class="pager_label">{{ .Title }}</span>

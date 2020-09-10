@@ -171,11 +171,13 @@
   &_item {
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
     max-width: 48%;
     &:first-child {
       filter: opacity(0.75);
       align-items: flex-start;
+    }
+    &:last-child {
+      align-items: flex-end;
     }
     svg {
       fill: $light !important;
