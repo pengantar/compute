@@ -150,10 +150,9 @@ function swapImageSource(image, src) {
 
 (function imagesWebp() {
   const replaceableimages = filterReplaceableImages();
+  console.log(replaceableimages);
   if(replaceableimages) {
-    console.log(replaceableimages);
     replaceableimages.forEach(function (image) {
-      console.log(image);
       let imageSrc = image.src;
       imageSrc = imageSrc
       .replace('.jpg', '.webp')
