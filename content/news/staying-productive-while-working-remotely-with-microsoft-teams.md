@@ -94,4 +94,4 @@ Feel free to contact us on any of your IT Solution queries, we will be glad to a
 1. [job.mutegi@computechlimited.com](mailto:job.mutegi@computechlimited.com)
 2. [Zulfiquar.husain@computechlimited.com](mailto:Zulfiquar.husain@computechlimited.com)
 
-![Figure 9: Microsoft Gold Partner in Kenya](/images/microsoft-gold-partner-badge.png)
+![:inlineFigure 9: Microsoft Gold Partner in Kenya](/images/microsoft-gold-partner-badge.png)
