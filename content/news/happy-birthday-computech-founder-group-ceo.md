@@ -1,7 +1,7 @@
 ---
 title: "Happy Birthday to Computech’s Founder and Group CEO."
 date: "2020-09-16T03:16:22-04:00"
-greeting: "Happy Birthday Sir"
+greeting: "Happy Birthday Hassan"
 image:
   name: "hassan-popat-birthday.jpg"
   description: "Figure 1: Happy Birthday to Computech's CEO Mr. Hassan Popat"
