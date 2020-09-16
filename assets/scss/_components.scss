@@ -743,3 +743,29 @@ a:visited{
     }
   }
 }
+
+.canvas {
+  position: relative;
+  overflow: hidden;
+  max-width: 100%;
+  border-radius: 0.25rem;
+  margin: 1.5rem auto;
+  &_board {
+    display:block;
+    max-width: 100%;
+    background: $dark;
+  }
+  &_title {
+    position: absolute;
+    top: 84%;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    font-size: 2.5rem;
+    -webkit-user-select: none;
+    user-select: none;
+    text-transform: uppercase;
+  }
+}
