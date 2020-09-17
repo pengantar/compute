@@ -72,7 +72,7 @@ function modifyClass(el, targetClass) {
 function supportsWebp() {
   if (navigator.userAgent.indexOf('Safari') != -1 && navigator.userAgent.indexOf('Chrome') == -1) {
     const docVersion = navigator.appVersion.toLowerCase();
-    const isSafari14 = docVersion.includes("version/14");
+    const isSafari14 = docVersion.includes("version/15");
     return isSafari14 ? true : false;
   }
   return true
