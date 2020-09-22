@@ -43,13 +43,13 @@ Well, instead of providing a tail of answers, we saw that it would be better to 
 Computech Limited strives to find IT solutions for your company and enable you to connect with your staff in a secure and easy way.
 Get started with Microsoft Teams and enable your employees to work from anywhere, at any time, with maximum ease.
 
-[Get Started:bluebutton](https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAANAAeDJVYhUMU1aVjYwOTlSTUtCQTg3M0xDOFY3TEVQUS4u&fbclid=IwAR0rd4N2UG-nnVfhXL0LzdyhMEtgS_YgZgW1-hTggwGnBQoAb_wqYBfpI9s)
+[Get Started:bluebutton](https://forms.office.com/Pages/ResponsePage.aspx?id=-xWXcurnFEC7SOs2nD7iJaISfZVdKdZCtI07wOwEbLFUNlowMzI3S0NXTkc3U0g5SkdHSUY3M0xNWi4u)
 
 ### Contact Us.
 
 [![](/images/microsoft-eams-footer-1.jpg)](tel:+254725290601)
 
 Email us on:
--  [Mandheer.Sehmi@computechlimited.com](mailto:Mandheer.Sehmi@computechlimited.com) 
-- [Meshack.olando@computechlimited.com](mailto:Meshack.olando@computechlimited.com)
 
+- [Job.mutegi@computechlimited.com](mailto:Job.mutegi@computechlimited.com)
+- [Zulfiquar.husain@computechlimited.com](mailto:Zulfiquar.husain@computechlimited.com)

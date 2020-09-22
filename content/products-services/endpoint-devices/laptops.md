@@ -2,6 +2,95 @@
 title: Laptops
 type: device
 items:
+  - name: HP Elitebook 840 G6
+    status: available
+    price: $ 1416.8 + VAT
+    brand: HP
+    image: hp-elitebook-840-g6-11.png
+    description:
+      - UMA i7-8565U 840 G6
+      - /14 FHD AG UWVA 400 HD + IR ALSensor /
+      - 8GB 1D DDR4 2400 /
+      - 512GB PCIe NVMe TLC /
+      -  W10p64 /3yw /
+      - 720p IR TripleMic Webcam /
+      - kbd DP Backlit /
+      - Intel Wi-Fi 6 AX200 ax 2x2 MU-MIMO nvP 160MHz +BT 5 /
+      - Active SmartCard /
+      - FS /
+      - No NFC
+
+  - name: HP Elitebook 840 G6
+    status: available
+    price: $ 1489.6 +VAT
+    brand: HP
+    image: hp-elitebook-840-g6-12.png
+    description:
+      - UA i7-8565U 840 G6 /
+      - 14 FHD AG UWVA 250 WWAN HD + IR /
+      -  16GB (1x16GB) DDR4 2400 /
+      - 1TB PCIe NVMe TLC /
+      - W10p64 /
+      -  3yw /
+      - 720p IR TripleMic Webcam /
+      - kbd DP Backlit /
+      - Intel Wi-Fi 6 AX200 ax 2x2 MU-MIMO nvP 160MHz +BT 5 /
+      - Active SmartCard /
+      - FS /
+      - No NFC
+
+  - name: HP Elitebook 840 G6
+    status: available
+    price: $ 1503.4 + VAT
+    brand: HP
+    image: hp-elitebook-840-g6-13.png
+    description:
+      - UA i7-8565U 840 G6
+      - 14 FHD AG UWVA 250 WWAN HD + IR /
+      - 16GB (1x16GB) DDR4 2400 /
+      -  1TB PCIe NVMe TLC /W10p64 /3yw /
+      - 720p IR TripleMic Webcam /
+      -  kbd DP Backlit /
+      - Intel Wi-Fi 6 AX200 ax 2x2 MU-MIMO nvP 160MHz +BT 5 /
+      - Active SmartCard /
+      - FS /
+      - No NFC
+
+  - name: HP Elitebook 840 G6
+    status: available
+    price: $ 1142+ VAT
+    brand: HP
+    image: hp-elitebook-840-g6-14.png
+    description:
+      - i5-8365U 840 G6 |
+      - 14 FHD AG UWVA 250 |
+      - 8GB 1D DDR4 2400 |
+      - 512GB PCIe NVMe TLC |
+      - W10p64 |
+      - 3yw |
+      - No Webcam |
+      - kbd DP Backlit |
+      - Intel 9560 AC 2x2 MU-MIMO nvP 160MHz +BT 5 | Active SmartCard |
+      - FPS |
+      - DIB |
+      - No NFC
+
+  - name: HP Elitebook 840 G6
+    status: available
+    price: $ 1652
+    brand: HP
+    image: hp-elitebook-840-g6-15.png
+    description:
+      - DC i7-8565U 840 G6 /
+      - 14 FHD AG UWVA 1000 WWAN HD + IR Sure View ALSensor / NrwBzl /
+      - 16GB (1x16GB) DDR4 2400 /
+      - 1TB PCIe NVMe TLC /
+      - W10p64 /
+      - 3yw /
+      - 720p IR TripleMic Webcam /
+      - kbd DP Backlit   Privacy /
+      - Itel Wi-Fi 6 AX200 ax 2x2 MU-MIMO nvP 160MHz +BT 5 / Act
+
   - name: HP ProBook 430 G6
     price: Kshs. 88,297 + VAT
     image: probook-430-g6-1.jpg
