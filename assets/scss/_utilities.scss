@@ -198,3 +198,21 @@ $sites: (
 .nounderline {
   text-decoration: none !important;
 }
+
+.bricks {
+  column-count: 1;
+  column-gap: 1em;
+  @media screen and (min-width: 667px) {
+    column-count: 2;
+  }
+  @media screen and (min-width: 1024px) {
+    column-count: 3;
+  }
+  &_item {
+    margin: 0 0 1em;
+  }
+  &_image {
+    width: 100%;
+    height: auto;
+  }
+}
