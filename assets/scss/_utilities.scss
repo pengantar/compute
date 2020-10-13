@@ -202,6 +202,7 @@ $sites: (
 .bricks {
   column-count: 1;
   column-gap: 1em;
+  overflow: visible;
   @media screen and (min-width: 667px) {
     column-count: 2;
   }
@@ -210,9 +211,19 @@ $sites: (
   }
   &_item {
     margin: 0 0 1em;
+    overflow: visible;
   }
   &_image {
     width: 100%;
     height: auto;
+    transform-origin: 50% 50%;
+    transition: transform 0.3s ease-in;
+    position: relative;
+    &:hover {
+      cursor: pointer;
+      z-index: 5;
+      box-shadow: 0 0.25rem 1rem rgba(0,0,0,0.17);
+      // filter: drop-shadow(0 1rem 4rem #eee);
+    }
   }
 }

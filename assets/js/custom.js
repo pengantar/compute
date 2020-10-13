@@ -150,7 +150,6 @@ function swapImageSource(image, src) {
 
 (function imagesWebp() {
   const replaceableimages = filterReplaceableImages();
-  console.log(replaceableimages);
   if(replaceableimages) {
     replaceableimages.forEach(function (image) {
       let imageSrc = image.src;
@@ -526,6 +525,26 @@ function serveNonWebp() {
   const year = date.getFullYear();
   const yearEl = elem('.year');
   yearEl ? (yearEl.innerHTML = `${year} `) : false;
+})();
+
+(function bricks(){
+  const bricks = elems('.bricks_image');
+  if(bricks.length) {
+    const viewport = bricks[0].closest('.post').offsetWidth;
+    bricks.forEach(function(brick){
+      const brickWidth = brick.offsetWidth;
+      const scaler = (viewport / brickWidth).toPrecision(2);
+      // brick.addEventListener('mouseenter', function(event){
+      //   const target = event.target;
+      //   target.style.transform = `scale(${scaler})`;
+      // });
+      // brick.addEventListener('mouseleave', function(event){
+      //   const target = event.target;
+      //   target.style.transform = `scale(1)`;
+      // });
+    });
+
+  }
 })();
 
 (function autoResizeTextField() {
