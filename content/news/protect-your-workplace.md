@@ -33,9 +33,7 @@ There’s no easier way to use multi-factor authentication. Designed for the mod
 
 Multi-factor authentication from Cisco Duo protects your applications by using a __second source of validation__, like a phone or token, to __verify__ user identity before granting access. Cisco Duo is engineered to provide a simple, streamlined login experience for every user and application, and as a cloud-based solution, it integrates easily with your existing technology.
 
-![Figure 6: Cisco Duo: Simple, streamlined login experience for every user and application as a cloud-based solution.](/images/tajco-customer-story.png)
-
-(Embed the following link onto the image, so that when they click customer story it redirects them there: https://duo.com/use-cases/case-studies/tajco )
+[![Figure 6: Cisco Duo: Simple, streamlined login experience for every user and application as a cloud-based solution.](/images/tajco-customer-story.png)](https://duo.com/use-cases/case-studies/tajco )
 
 ### User-Friendly, Super-Secure Authentication
 
@@ -77,7 +75,7 @@ As a __Cisco Premier Certified Partner__, Computech Limited has the right expert
 
 Simply click on the link below, complete the form and we’ll contact you to find a time that works best for you.
 
-{{< button "Get Your Free Demo" "https://forms.office.com/Pages/ResponsePage.aspx?id=-xWXcurnFEC7SOs2nD7iJaISfZVdKdZCtI07wOwEbLFUODUwUE5OTVRDSUI5NDZNQTZLV05MNEpXSC4u" >}}
+{{< button "https://forms.office.com/Pages/ResponsePage.aspx?id=-xWXcurnFEC7SOs2nD7iJaISfZVdKdZCtI07wOwEbLFUODUwUE5OTVRDSUI5NDZNQTZLV05MNEpXSC4u" "Get Your Free Demo" "orange" >}}
 
 ### Contact Us
 
