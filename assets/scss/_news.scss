@@ -141,10 +141,16 @@
 }
 
 .pager {
-  display: flex;
+  display: grid;
   justify-content: space-between;
   align-items: center;
+  grid-gap: 1rem;
   margin: 1.25rem 0;
+  max-width: calc(100% -3rem);
+  overflow: hidden;
+  @media screen and (min-width: 667px) {
+    grid-template-columns: 1fr 1fr;
+  }
   svg {
     filter: opacity(0.75);
     width: 1.25rem;
@@ -155,7 +161,8 @@
     justify-content: flex-end;
   }
   &_label {
-    max-width: 100%;
+    display: inline-block;
+    max-width: 25rem;
     overflow: hidden;
     white-space:nowrap;
     text-overflow: ellipsis;
@@ -163,15 +170,15 @@
   &_link {
     padding: 0.5rem 1rem;
     border-radius: 0.25rem;
-    display: grid;
+    display: inline-flex;
+    width: 100%;
     align-items: center;
-    grid-template-columns: 1.5rem 1fr;
-    grid-gap: 0.25rem;
+    justify-content: center;
   }
   &_item {
     display: flex;
     flex-direction: column;
-    max-width: 48%;
+    // max-width: 48%;
     &:first-child {
       filter: opacity(0.75);
       align-items: flex-start;
@@ -180,8 +187,8 @@
       align-items: flex-end;
     }
     svg {
-      fill: $light !important;
-      stroke: $light !important;
+      fill: $orange !important;
+      stroke: $orange !important;
     }
   }
   &_item:last-child &_link {

@@ -1,18 +1,16 @@
 <div class="pager{{ if .Next }}{{ else }} pager_lean{{ end }}">
   {{ with .Next }}
   <div class="pager_item">
-    <span class="pager_meta prev">NEWER POST</span>
-    <a href="{{ .Permalink }}" class="pager_link snip snip_norm" title="{{ .Title }}">
+    <a href="{{ .Permalink }}" class="pager_link nounderline" title="{{ .Title }}">
       {{ partial "icon-back.svg" . }}
       <span class="pager_label">{{ .Title }}</span>
     </a>
   </div>
   {{ end }}
-  
+
   {{ with .Prev }}
   <div class="pager_item">
-    <span class="pager_meta next">READ NEXT</span>
-    <a href="{{ .Permalink }}" class="pager_link snip snip_orange snip_norm" title="{{ .Title }}">
+    <a href="{{ .Permalink }}" class="pager_link nounderline" title="{{ .Title }}">
       <span class="pager_label">{{ .Title }}</span>
       {{ partial "icon-back.svg" . }}
     </a>

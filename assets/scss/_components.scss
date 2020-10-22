@@ -181,20 +181,27 @@ a:visited{
 }
 .wrap{
   max-width: 1250px;
-  &,&_min {
+  &,&_min, &_small {
     width: 100%;
     margin: 0 auto;
     padding-left: 25px;
     padding-right: 25px;
   }
-  &_min{
+  &_min {
     max-width: 1024px;
+  }
+  &_small {
+    max-width: 768px;
+    img, .thumb_alt {
+      max-width: 480px;
+      margin: 0 auto;
+    }
   }
 }
 
 .fa-angle-down{
   text-align: center;
-  color: $orange; 
+  color: $orange;
 }
 
 .center{
