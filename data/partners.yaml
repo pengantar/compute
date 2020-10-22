@@ -1,5 +1,7 @@
 - url: http://www.apc.com/site/home/index.cfm?
   logo: apc-logo.png
+- url: https://www.freshworks.com/
+  logo: freshworks-logo.png
 - url: https://www.cisco.com/
   logo: cisco.png
 - url: https://www.emc.com

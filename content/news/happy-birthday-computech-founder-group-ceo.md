@@ -7,10 +7,7 @@ image:
   description: "Figure 1: Happy Birthday to Computech's CEO Mr. Hassan Popat"
 ---
 
-{{< partial "confetti" >}}
-
-We take this moment to wish Computech's Founder and Group CEO a Happy Birthday 🎉🎂.  With a vision to be Africa's most respected and trusted technology provider for businesses; Hassan has been a key contributor in the East African IT industry since the inception of Computech in 1987. 
-
+We take this moment to wish Computech's Founder and Group CEO a Happy Birthday 🎉🎂.  With a vision to be Africa's most respected and trusted technology provider for businesses; Hassan has been a key contributor in the East African IT industry since the inception of Computech in 1987.
 
 ![Figure 2: Hassan Popat Computech CEO in AMREF's Flying Doctors Charity Evacuation](/images/hassan-popat-ceo-golf.jpg)
 
