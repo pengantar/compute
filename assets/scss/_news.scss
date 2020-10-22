@@ -162,10 +162,13 @@
   }
   &_label {
     display: inline-block;
-    max-width: 25rem;
     overflow: hidden;
     white-space:nowrap;
     text-overflow: ellipsis;
+    max-width: 13.5rem;
+    @media screen and (min-width: 20rem) {
+      max-width: 20.5rem;
+    }
   }
   &_link {
     padding: 0.5rem 1rem;
