@@ -6,15 +6,19 @@ image:
   description: "Dipak Galaiya, group chief commercial officer, computech limited, gives an overview of how the leading systems integrator supported university of nairobi in creating a comprehensive customer experience center."
 ---
 
-The University of Nairobi (UON), one of the largest educational institutions based in Nairobi, Kenya, was seeking to centralize disjointed operations of its numerous departments. The students were following up with each department independently for different services, resulting in inefficiencies and delays. The collegiate research university needed to have a single point of contact for all the processes for students. Besides this, UON also required to automate its call center floor and identify agents
+[The University of Nairobi (UON)](https://uonbi.ac.ke/), one of the largest educational institutions based in Nairobi, Kenya, was seeking to centralize disjointed operations of its numerous departments. The students were following up with each department independently for different services, resulting in inefficiencies and delays. The collegiate research university needed to have a single point of contact for all the processes for students. Besides this, UON also required to automate its call center floor and identify agents
 who best serve a query.
 
 The customer expected the solution to benefit all key functional service areas of the University, such as, Student Admission Center, Student Advising and Retention, Examination Center, Registrars’ Offices, IT Service Desk, Corporate Affair, Advancement, Procurement and all University Campuses and Extra-Mural Centers spread across all over the country.
 
-UON selected Computech Limited, a leading East African systems integrator, well-known for providing pioneering technology solutions to solve businesses’ challenges over the past 30 years. The solutions provider evaluated the customer requirements and identified the offerings available within the broad Cisco portfolio and specifically within Cisco Solution Partners available under the vendor’s SolutionPlus Program to come up with an end-to-end solution to address
+__UON selected [Computech Limited](/)__, a leading East African systems integrator, well-known for providing pioneering technology solutions to solve businesses’ challenges over the past 30 years. The solutions provider evaluated the customer requirements and identified the offerings available within the broad Cisco portfolio and specifically within Cisco Solution Partners available under the vendor’s SolutionPlus Program to come up with an end-to-end solution to address
 the customer’s challenge.
 
-Dipak Galaiya, Group Chief Commercial Officer, Computech Limited, says,“With the help of Cisco Unified Contact Center Express solution, we created a comprehensive Customer Experience Center that will facilitate and improve services delivery and customer satisfaction.”
+Dipak Galaiya, Group Chief Commercial Officer, Computech Limited, says,
+
+{{< block "banner_theme" >}}
+“With the help of Cisco Unified Contact Center Express solution, we created a comprehensive Customer Experience Center that will facilitate and improve services delivery and customer satisfaction.”
+{{< /block >}}
 
 Cisco Unified Contact Center Express provides a secure, available, and sophisticated contact center software solution and interactive voice response (IVR) ports that is easy to deploy and manage.
 
@@ -26,7 +30,7 @@ Post the implementation, which took six months to complete, UON was able to enjo
 
 Computech has significant experience across industry sectors, products and services, with substantial work done in providing professional services, infrastructure solutions, technical support, and technology outsourcing to all sectors.
 
-Galaiya adds, “We also provided continuous training to both the technical team and the call center agents as value addition and a part of our post sales customer experience strategy."
-
-> "with the help of cisco unified contact center express solution, we created a comprehensive customer experience center that will facilitate and improve services delivery and customer satisfaction.” <br><br>
+{{< block "banner_theme" >}}
+ Galaiya adds, “We also provided continuous training to both the technical team and the call center agents as value addition and a part of our post sales customer experience strategy." <br><br>
 \- DIPAK GALAIYA, COMPUTECH LIMITED
+{{< /block >}}
