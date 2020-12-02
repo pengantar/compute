@@ -11,6 +11,8 @@ who best serve a query.
 
 The customer expected the solution to benefit all key functional service areas of the University, such as, Student Admission Center, Student Advising and Retention, Examination Center, Registrars’ Offices, IT Service Desk, Corporate Affair, Advancement, Procurement and all University Campuses and Extra-Mural Centers spread across all over the country.
 
+![](/images/value-stories-sc.png)
+
 __UON selected [Computech Limited](/)__, a leading East African systems integrator, well-known for providing pioneering technology solutions to solve businesses’ challenges over the past 30 years. The solutions provider evaluated the customer requirements and identified the offerings available within the broad Cisco portfolio and specifically within Cisco Solution Partners available under the vendor’s SolutionPlus Program to come up with an end-to-end solution to address
 the customer’s challenge.
 
