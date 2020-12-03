@@ -1,10 +1,12 @@
 ---
-title: "A Class Apart"
+title: "A Class Apart: Stories that Made a difference."
 date: "2020-12-02T08:45:06-05:00"
 image:
-  name: "dipak-2.jpg"
-  description: "Dipak Galaiya, group chief commercial officer, computech limited, gives an overview of how the leading systems integrator supported university of nairobi in creating a comprehensive customer experience center."
+  name: "redington-value-stories-web-banner.jpg"
+  description: "Computech Limited: Cisco Reseller, Distributer and Solution provider in Kenya, Uganda and Tanzania."
 ---
+
+_Dipak Galaiya, group chief commercial officer, computech limited, gives an overview of how the leading systems integrator supported university of nairobi in creating a comprehensive customer experience center._
 
 [The University of Nairobi (UON)](https://uonbi.ac.ke/), one of the largest educational institutions based in Nairobi, Kenya, was seeking to centralize disjointed operations of its numerous departments. The students were following up with each department independently for different services, resulting in inefficiencies and delays. The collegiate research university needed to have a single point of contact for all the processes for students. Besides this, UON also required to automate its call center floor and identify agents
 who best serve a query.
