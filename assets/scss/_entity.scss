@@ -12,16 +12,12 @@ body {
   font-size: 0.6rem;
 }
 .entity {
-  background: $theme;
+  background: $light;
   border-radius: 0.5rem;
-  // border: 1px solid $e-haze;
+  border: 1px solid $e-gray;
   padding: 0.5rem 1rem;
   text-align: center;
-  box-shadow: 0 1.5rem 2.5rem -1.5rem rgba(0,0,0,0.12);
-  a {
-    color: $e-light !important;
-    opacity: 0.87;
-  }
+  box-shadow: 0 1rem 1.5rem -1rem rgba(0,0,0,0.06);
   &_wrap {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
