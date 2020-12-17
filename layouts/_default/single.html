@@ -1,5 +1,9 @@
 {{ define "main" }}
-{{- partial "banner" . -}}
+{{- if ne .Params.banner false }}
+  {{- partial "banner" . -}}
+{{- else }}
+<br><br><br>
+{{- end }}
 <div class = 'mb-2 animated zoomIn'>
   <div class = 'wrap{{ if .Params.full -}}{{ else }} grid-fibonacci{{ end }}'>
     <div>
