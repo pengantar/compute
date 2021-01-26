@@ -3,6 +3,7 @@
   box-shadow: 0 0 15px rgba(0,0,0,0.17);
   border-radius: 0.5rem;
   overflow: hidden;
+  background: $light;
   &_first {
     @media screen and (max-width: 768px) {
       grid-gap: 0 !important;

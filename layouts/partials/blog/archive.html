@@ -11,7 +11,7 @@
         {{- with $article.Params.categories }}
         <h5 class = 'article_taxonomy'>{{ upper (index . 0) }}</h5>
         {{- end }}
-        <h3>{{ $article.Title }}</h3>
+        <h3>{{ if eq $index 0 }}{{ truncate 80 $article.Title }}{{ else }}{{ $article.Title }}{{ end }}</h3>
         <time>{{ dateFormat "02 January, 2006" $article.Date  }}</time>
         <div class = 'article_excerpt {{ if eq $index 0 }} visible {{ end }}'>
           <p>{{ $article.Plain | truncate 100 }}</p>
