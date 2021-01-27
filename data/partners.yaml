@@ -1,46 +1,71 @@
 - url: http://www.apc.com/site/home/index.cfm?
   logo: apc-logo.png
+  name: APC
 - url: https://www.freshworks.com/
   logo: freshworks-logo.png
+  name: freshworks
 - url: https://www.cisco.com/
   logo: cisco.png
+  name: Cisco
+- url: https://spiresolutions.com
+  logo: spire-logo-original.png
+  name: Spire Solutions
 - url: https://www.emc.com
   logo: dell-emc-logo.png
+  name: Dell EMC
 - url: https://www.dieboldnixdorf.com
   logo: diebold.jpg
+  name: Diebold
 - url: https://f5.com/
   logo: f5.png
+  name: f5
 - url: www.ge.com
   logo: gebig.png
+  name: GE
 - url: https://www.hpe.com
   logo: hewlett-packard-enterprise-logo.png
 - url: http://www.hp.com/
   logo: hp-logo.png
+  name: HP
 - url: https://www.huawei.com/us/
   logo: huawei.jpg
+  name: Huawei
 - url: www.lenovo.com
   logo: lenovo.png
+  name: Lenovo
 - url: https://www.microsoft.com/en-us/
   logo: mgp.png
+  name: Microsoft
 - url: https://www.oracle.com/
   logo: oracle.jpg
+  name: Oracle
 - url: https://www.sophos.com
   logo: sophos.jpg
+  name: Sophos
 - url: https://www.symantec.com/
   logo: symantec.jpg
+  name: symantec
 - url: https://www.veeam.com/
   logo: veeam.jpg
+  name: Veeam
 - url: https://www.vmware.com/
   logo: vmware.jpg
+  name: Vmware
 - url: https://www.arista.com/en/
   logo: logo_arista_blue.png
+  name: Arista
 - url: https://www.juniper.net/us/en/
   logo: juniper.png
+  name: Juniper
 - url: https://www.avaya.com/en/
   logo: avaya.png
+  name: Avaya
 - url: https://www.arubanetworks.com/
   logo: aruba.png
+  name: Aruba
 - url: https://d3security.com/
   logo: d3-security.png
+  name: D3 security
 - url: https://powell-software.com/en/
   logo: powell-software.png
+  name: Powell Software
