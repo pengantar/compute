@@ -23,7 +23,7 @@
 - name: GE
   url: www.ge.com
   logo: gebig.png
-- name: ''
+- name: Hewlett Packard
   url: https://www.hpe.com
   logo: hewlett-packard-enterprise-logo.png
 - name: HP
