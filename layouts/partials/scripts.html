@@ -15,4 +15,22 @@
 {{- $main := resources.Get $mainScriptPath | resources.ExecuteAsTemplate $mainScriptPath . }}
 
 {{- $bundle := slice $bootstrap $index $particles $particlesjson $main | resources.Concat "js/bundle.js" | resources.Fingerprint "sha512" }}
+
+{{- $resizePath := "js/autoresize.js" }}
+{{- $resize := resources.Get $resizePath | resources.ExecuteAsTemplate $resizePath . }}
+
+{{- $countries := "js/countries.js" }}
+{{- $countries = resources.Get $countries | resources.ExecuteAsTemplate $countries . }}
+
+{{- $mainScriptPath := "js/index.js" }}
+{{- $main := resources.Get $mainScriptPath | resources.ExecuteAsTemplate $mainScriptPath . }}
+
+{{- $formScriptPath := "js/form.js" }}
+{{- $form := resources.Get $formScriptPath | resources.ExecuteAsTemplate $formScriptPath . }}
+
+<!-- | resources.Minify -->
+{{- $bundle2 := slice $main $resize $countries $form | resources.Concat "js/bundle2.js" | resources.Fingerprint "sha512" }}
+
 <script src = '{{ $bundle.Permalink }}' defer async></script>
+
+<script src = '{{ $bundle2.Permalink }}'></script>

@@ -384,6 +384,23 @@ a:visited{
   &_name{
     margin: 0;
   }
+  &_form {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    z-index: 99;
+    background: $light;
+  }
+  &_icon {
+    width: 4rem;
+  }
 }
 .definition{
   background-color: $orange;
@@ -530,6 +547,8 @@ a:visited{
     border: 1px solid #ccc;
     border-radius: 6px;
     transition: all ease-in-out .15s;
+    appearance: none;
+    -webkit-appearance: none;
     &:focus {
       border-color: #66afe9;
       box-shadow: 0 0 8px rgba(102, 175, 233, .6)

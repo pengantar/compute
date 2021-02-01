@@ -1,44 +1,3 @@
-
-const page = document;
-const parentURL = "{{ .Site.BaseURL }}";
-
-function elem(selector, parent = document){
-  let elem = parent.querySelector(selector);
-  return elem != false ? elem : false;
-}
-
-function elems(selector) {
-  let elems = document.querySelectorAll(selector);
-  return elems.length ? elems : false; 
-}
-
-function pushClass(el, targetClasses) {
-  // equivalent to addClass
-  if (el && typeof el == 'object' && targetClasses) {
-    let targets = targetClasses.split(" ");
-    targets.forEach(function(targetClass) {
-      elClass = el.classList;
-      elClass.contains(targetClass) ? false : elClass.add(targetClass);
-    });
-  }
-}
-
-function deleteClass(el, targetClass) {
-  // equivalent to removeClass
-  if (el && typeof el == 'object' && targetClass) {
-    elClass = el.classList;
-    elClass.contains(targetClass) ? elClass.remove(targetClass) : false;
-  }
-}
-
-function modifyClass(el, targetClass) {
-  // equivalent to toggleClass
-  if (el && typeof el == 'object' && targetClass) {
-    elClass = el.classList;
-    elClass.contains(targetClass) ? elClass.remove(targetClass) : elClass.add(targetClass);
-  }
-}
-
 (function highlightLinks() {
   'use strict';
   const marker = ':bluebutton';
@@ -95,12 +54,6 @@ function markTappableImages() {
     }
   }
 }
-
-function wrapEl(el, wrapper) {
-  el.parentNode.insertBefore(wrapper, el);
-  wrapper.appendChild(el);
-}
-
 
 let bgs = elems('.has_bg');
 
@@ -547,10 +500,10 @@ function serveNonWebp() {
   }
 })();
 
-(function autoResizeTextField() {
-  let textarea = document.querySelector('textarea');
-  textarea ? autosize(textarea) : false;
-})();
+// (function autoResizeTextField() {
+//   let textarea = document.querySelector('textarea');
+//   textarea ? autosize(textarea) : false;
+// })();
 
 (function tabs() {
   let dfn = elem('.definition_modal');
