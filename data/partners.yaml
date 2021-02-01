@@ -1,3 +1,4 @@
+---
 - url: http://www.apc.com/site/home/index.cfm?
   logo: apc-logo.png
   name: APC
@@ -24,6 +25,7 @@
   name: GE
 - url: https://www.hpe.com
   logo: hewlett-packard-enterprise-logo.png
+  name: ''
 - url: http://www.hp.com/
   logo: hp-logo.png
   name: HP
