@@ -91,8 +91,10 @@ function formValues(form) {
         data[element.name] = element.value;
       }
     }
+    const currentPage = window.location.href;
     let referrer = document.referrer;
-    referrer ? data.from = referrer : "self";
+    referrer ? data.previousPage = referrer : "self";
+    data.currentPage = currentPage;
     return data;
   }, {});
 
