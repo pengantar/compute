@@ -18,9 +18,9 @@ Driven by a strong dedication to customer success and solving problems without c
 
 ### Solution Portfolio
 
-![Figure 2: Spire Solutions Cyber Security Portfolio](/images/spire-solutions-3.png)
+![Figure 2: Spire Solutions Cyber Security Portfolio](/images/spire-solutions-3.jpg)
 
-![Figure 3: Cyber Security Solution Seller, Distributor, Reseller and Partner in Kenya, Tanzania, Uganda and Rwanda.](/images/spire-solutions-2.png)
+![Figure 3: Cyber Security Solution Seller, Distributor, Reseller and Partner in Kenya, Tanzania, Uganda and Rwanda.](/images/spire-solutions-2.jpg)
 
 ### Contact Us
 
