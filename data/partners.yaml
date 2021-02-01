@@ -1,88 +1,88 @@
 ---
-- url: http://www.apc.com/site/home/index.cfm?
+- name: APC
+  url: http://www.apc.com/site/home/index.cfm?
   logo: apc-logo.png
-  name: APC
-- url: https://www.freshworks.com/
+- name: freshworks
+  url: https://www.freshworks.com/
   logo: freshworks-logo.png
-  name: freshworks
-- url: https://www.cisco.com/
+- name: Cisco
+  url: https://www.cisco.com/
   logo: cisco.png
-  name: Cisco
-- url: https://spiresolutions.com
+- name: Spire Solutions
+  url: https://spiresolutions.com
   logo: spire-logo-original.png
-  name: Spire Solutions
-- url: https://www.emc.com
+- name: Dell EMC
+  url: https://www.emc.com
   logo: dell-emc-logo.png
-  name: Dell EMC
-- url: https://www.dieboldnixdorf.com
+- name: Diebold
+  url: https://www.dieboldnixdorf.com
   logo: diebold.jpg
-  name: Diebold
-- url: https://f5.com/
+- name: f5
+  url: https://f5.com/
   logo: f5.png
-  name: f5
-- url: www.ge.com
+- name: GE
+  url: www.ge.com
   logo: gebig.png
-  name: GE
-- url: https://www.hpe.com
+- name: ''
+  url: https://www.hpe.com
   logo: hewlett-packard-enterprise-logo.png
-  name: ''
-- url: http://www.hp.com/
+- name: HP
+  url: http://www.hp.com/
   logo: hp-logo.png
-  name: HP
-- url: https://www.huawei.com/us/
+- name: Huawei
+  url: https://www.huawei.com/us/
   logo: huawei.jpg
-  name: Huawei
-- url: www.lenovo.com
+- name: Lenovo
+  url: www.lenovo.com
   logo: lenovo.png
-  name: Lenovo
-- url: https://www.microsoft.com/en-us/
+- name: Microsoft
+  url: https://www.microsoft.com/en-us/
   logo: mgp.png
-  name: Microsoft
-- url: https://www.oracle.com/
+- name: Oracle
+  url: https://www.oracle.com/
   logo: oracle.jpg
-  name: Oracle
-- url: https://www.sophos.com
+- name: Sophos
+  url: https://www.sophos.com
   logo: sophos.jpg
-  name: Sophos
-- url: https://www.symantec.com/
+- name: symantec
+  url: https://www.symantec.com/
   logo: symantec.jpg
-  name: symantec
-- url: https://www.veeam.com/
+- name: Veeam
+  url: https://www.veeam.com/
   logo: veeam.jpg
-  name: Veeam
-- url: https://www.vmware.com/
+- name: Vmware
+  url: https://www.vmware.com/
   logo: vmware.jpg
-  name: Vmware
-- url: https://www.arista.com/en/
+- name: Arista
+  url: https://www.arista.com/en/
   logo: logo_arista_blue.png
-  name: Arista
-- url: https://www.juniper.net/us/en/
+- name: Juniper
+  url: https://www.juniper.net/us/en/
   logo: juniper.png
-  name: Juniper
-- url: https://www.avaya.com/en/
+- name: Avaya
+  url: https://www.avaya.com/en/
   logo: avaya.png
-  name: Avaya
-- url: https://www.arubanetworks.com/
+- name: Aruba
+  url: https://www.arubanetworks.com/
   logo: aruba.png
-  name: Aruba
-- url: https://d3security.com/
+- name: D3 security
+  url: https://d3security.com/
   logo: d3-security.png
-  name: D3 security
-- url: https://powell-software.com/en/
+- name: Powell Software
+  url: https://powell-software.com/en/
   logo: powell-software.png
-  name: Powell Software
-- url: https://www.delltechnologies.com/en-ke/index.htm
+- name: Dell Technologies
+  url: https://www.delltechnologies.com/en-ke/index.htm
   logo: dell-technologies-logo.wine.png
-  name: Dell Technologies
-- url: https://www.checkpoint.com/
+- name: Checkpoinnt
+  url: https://www.checkpoint.com/
   logo: check-point.png
-  name: Checkpoinnt
-- url: https://www.savictech.com/
+- name: Savictech
+  url: https://www.savictech.com/
   logo: savic-logo.png
-  name: Savictech
-- url: https://www.redhat.com/en
+- name: Redhat
+  url: https://www.redhat.com/en
   logo: red-hat-logo.png
-  name: Redhat
-- url: https://www.commvault.com/
+- name: Commvault
+  url: https://www.commvault.com/
   logo: commvault-logo.png
-  name: Commvault
