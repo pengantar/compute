@@ -1,0 +1,19 @@
+---
+label: Partners
+hide_body: true
+fields:
+- type: field_group_list
+  name: Partners
+  label: Partners
+  fields:
+  - type: text
+    name: url
+    label: url
+  - type: file
+    name: logo
+    label: logo
+  - type: text
+    name: name
+    label: name
+  config:
+    labelField: name
