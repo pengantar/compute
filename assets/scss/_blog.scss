@@ -24,4 +24,15 @@
     padding: 30px 15px;
 		margin-bottom: 50px;
 	}
+	&_body {
+		li {
+			font-size: 16.4px;
+			&::marker {
+				color: $orange;
+			}
+		}
+		ul {
+			margin-left: 0.25rem;
+		}
+	}
 }
