@@ -21,7 +21,7 @@ jobs:
 
     # If build succeeds, store the public/ dir as an artifact to be used in subsequent phases.
     - name: Upload output public dir as artifact
-      uses: actions/upload-artifact@v1
+      uses: actions/upload-artifact@v2
       with:
         name: public
         path: public/
