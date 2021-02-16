@@ -27,12 +27,17 @@
 	&_body {
 		li {
 			font-size: 16.4px;
+			line-height: 1.75;
+			margin-bottom: 0.5rem;
 			&::marker {
 				color: $orange;
 			}
 		}
 		ul {
 			margin-left: 0.25rem;
+		}
+		ol {
+			margin-left: 0;
 		}
 	}
 }
