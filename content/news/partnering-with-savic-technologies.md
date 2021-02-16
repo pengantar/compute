@@ -2,7 +2,7 @@
 title = "We’re Happy to Announce our Strategic Partnership with Savic Technologies."
 date = "2021-02-16T21:48:37+03:00"
 [image]
-  # name = "savic-press-release-announcement_web.jpg"
+  main = "savic-press-release-announcement_web.jpg"
   name = "savic-press-release-announcement_sm.jpg"
   description = "We’re Happy to Announce our Strategic Partnership with Savic Technologies."
 +++
