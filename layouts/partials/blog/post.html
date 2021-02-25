@@ -2,7 +2,8 @@
   <div class = 'post_content'>
     <div class = 'editor'>
       <!-- {{ with .Params.categories }}<h5 class = 'article_taxonomy'>{{ upper (index . 0) }}</h5>{{ end }} -->
-      <strong><time>{{ dateFormat "02 January, 2006" .Date }}</time></strong>
+      <div>
+        Posted on <u>{{ dateFormat "02 January, 2006" .Date }}</u>{{ with .Params.author }} by <u>{{ . }}</u>{{ end }}</div>
       <h2>{{ .Title }}</h2>
       {{- partial "share" . -}}
     </div>

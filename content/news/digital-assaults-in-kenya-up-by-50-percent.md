@@ -1,6 +1,7 @@
 +++
 title = "Digital Assaults in Kenya up by 50 % considerably to hit 56m in a quarter of a year. Are You Protected?"
 date = "2021-02-23T02:30:19+03:00"
+author = "Job Mutegi"
 [image]
   name = "digital-assaults-cyber-security.jpg"
   description = "Figure 1: Cyber Security Solution Partner, Distributor and Reseller in Nairobi, Kampala , Dar es salaam, Kigali and Lusaka:"
