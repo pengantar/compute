@@ -2,6 +2,9 @@
 - name: APC
   url: http://www.apc.com/site/home/index.cfm?
   logo: apc-logo.png
+- name: Paradiso
+  url: https://www.paradisosolutions.com/
+  logo: paradiso.png
 - name: freshworks
   url: https://www.freshworks.com/
   logo: freshworks-logo.png
