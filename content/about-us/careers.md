@@ -12,39 +12,28 @@ full: true
 1. __No fee is required__ when applying for a position
 2. __Only shortlisted__ candidates will be contacted.
 3. Incomplete applications will not be considered
-4. The closing date for all applications is __20th February 2021__
+4. The closing date for all applications is __20th June 2021__
 {{< /block >}}
 
 {{< job "1" >}}
 
-### Sales Executive – Computech Healthcare Tanzania
+### Business Manager
 
-Looking to grow your expertise and skills in the world of __Healthcare Sales?__ Computech Limited is giving you the grand opportunity to delve into the world of Healthcare Sales while presenting you a chance to interact with notable Healthcare Brands such as __GE, Elekta, Medtronic__ and many more.
+__#WeAreHiring__ The world of IT is changing. Information Technology is the future. Moreover, we all need to adapt to the new Tech Trends and upskill ourselves.
+
+We are presenting you with the grand opportunity to work with Computech Limited, a Leading System Integrator in East & Southern Africa which is trusted & inspired for over 34 years in the Tech Scene. Get ready to interact with leading OEMs & Brands such as Cisco, HP, Dell, Red Hat, Oracle, Huawei, Checkpoint, and many more as you soar to higher business development heights. 
+
+Kindly apply below. All the Best!
 
 ### How to Apply
 
 The Job Application __MUST__ include an application letter highlighting suitability for the position and a curriculum vitae with a telephone number; email; and names with contact addresses for three professional references.
 
-Applications should be sent to [hr@computechlimited.com](mailto:hr@computechlimited.com?Subject=Sales%20Executive-Computech%20Healthcare%20Tanzania) and must-read __Sales Executive-Computech Healthcare Tanzania__  as the email subject.
+Applications should be sent to __[hr@computechlimited.com](mailto:hr@computechlimited.com?Subject=Business%20Manager)__ and must-read __Business Manager__  as the email subject.
 
-{{< button "/pdf/sales-executive-jd-computech-healthcare.pdf" "Job Description" "orange" "download" >}}
+Use the __Job Description Button__ to download the JD.
+<!-- Use the __Job Description Button__: I will attach the C.V.  -->
+
+{{< button "/pdf/business-manager-job-description.pdf" "Job Description" "orange" "download" >}}
 
 {{< /job >}}
-
-{{< job "2" >}}
-
-### Cisco Engineer - Kenya
-
-Looking to grow your expertise and skills in the world of Cisco Networking? Computech Limited is giving you the opportunity to experience first-hand Cisco Engineering with a Cisco Premier Partner.
-
-### How to Apply
-
-Application MUST include an application letter highlighting suitability for the position and a curriculum vitae with a telephone number; email; and names with contact addresses for three professional references.
-
-Applications should be sent to [hr@computechlimited.com](mailto:hr@computechlimited.com) and must-read CISCO ENGINEER KENYA as the email subject.
-
-
-{{< button "/pdf/cisco-engineer-jd.pdf" "Job Description" "orange" "download" >}}
-{{< /job >}}
-
-<section class = 'job_board'></section>
