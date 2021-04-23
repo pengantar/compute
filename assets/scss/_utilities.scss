@@ -246,3 +246,18 @@ $sites: (
     }
   }
 }
+
+.prose {
+  position: relative;
+  &::after {
+    @media screen and (min-width: 667px) {
+      content: "";
+    }
+    position: absolute;
+    padding: 0.5px;
+    background: linear-gradient(transparent, #dedede, transparent);
+    top: 0;
+    bottom: 0;
+    right: -1rem;
+  }
+}
