@@ -261,3 +261,8 @@ $sites: (
     right: -1rem;
   }
 }
+
+.africa {
+  filter: drop-shadow(0 0.25rem 1rem var(--text-color));
+  // filter: drop-shadow(0 0.1rem 0.4rem rgb(158, 174, 221));
+}
