@@ -16,3 +16,10 @@ Diebold Nixdorf is a world leader in driving connected commerce, bridging the ga
 ## Introducing DN Series™ - Built to Connect. Built for More.™
 
 {{< partial "pages/banking" >}}
+
+<br>
+
+Download the DN Series family brochure below
+
+
+{{< button "/pdf/dn-series-family-brochure.pdf" "DN Series Brochure" "orange" "download" >}}
