@@ -26,8 +26,9 @@
 	}
 	&_body {
 		li {
-			font-size: 16.4px;
-			line-height: 1.75;
+			font-size: var(--text-font);
+			color: var(--text-color);
+			line-height: var(--lineheight);
 			margin-bottom: 0.5rem;
 			&::marker {
 				color: $orange;

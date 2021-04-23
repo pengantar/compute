@@ -22,15 +22,15 @@
               {{ range . }}
               <li>
                 {{- $s_url := urlize .sublink -}}
-                <a href = '/{{ $l_url }}/{{ $s_url }}/'><span class = 'menu-link'> {{ upper .sublink }}</span>{{ if .children }}<span class = 'caret'></span>{{ end }}</a>
+                <a href = '/{{ $l_url }}/{{ $s_url }}/' class="nav_sublink"><span class = 'menu-link'> {{ upper .sublink }}</span>{{ if .children }}<span class = 'caret'></span>{{ end }}</a>
                   {{ with .children }}
                   <ul class = 'dropdown-menu animated fadeIn'>
                     {{ range . }}
                     {{- $c_url := replace (urlize .) "--" "-" -}}
                     {{ if eq . "Cloud Services"}}
-                    <li><a href = '/cloud/'>{{ upper . }}</a></li>
+                    <li><a href = '/cloud/' class="nav_sublink">{{ upper . }}</a></li>
                     {{ else }}
-                    <li><a href = '/{{ $l_url }}/{{ $s_url }}/{{ $c_url }}/'>{{ upper . }}</a></li>
+                    <li><a href = '/{{ $l_url }}/{{ $s_url }}/{{ $c_url }}/' class="nav_sublink">{{ upper . }}</a></li>
                     {{ end }}
                     {{ end }}
                   </ul>

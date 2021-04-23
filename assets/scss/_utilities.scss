@@ -227,3 +227,22 @@ $sites: (
     }
   }
 }
+
+.grid {
+  &_figure {
+    display: grid;
+    grid-gap: 1.5rem 2.5rem;
+    align-items: center;
+    @media screen and (min-width: 667px) {
+      grid-template-columns: 12.5rem 1fr;
+    }
+    p {
+      order: -1;
+    }
+    img {
+      display: block;
+      width: 100%;
+      filter: drop-shadow(0.5rem 1rem 3rem #aaa);
+    }
+  }
+}

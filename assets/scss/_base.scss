@@ -37,8 +37,9 @@ ol {
 
 a {
 	outline: none;
-	text-decoration: none !important;
-	color: rgba(39,48,57,.85);
+	// text-decoration: none !important;
+	color: inherit;
+  text-decoration: underline;
 }
 
 a:hover {
@@ -121,8 +122,9 @@ aside{
 }
 p{
   padding: 12.5px 0;
-  color: $pale;
-  font-size: 16.4px;
+  color: var(--text-color);
+  font-size: var(--text-font);
+  line-height: var(--lineheight);
   margin: 0;
 }
 hr{
