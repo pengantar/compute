@@ -11,7 +11,7 @@ Computech Limited’s partnership with [Diebold Nixdorf](https://www.dieboldnixd
 
 {{< video "oNQWIec_OK0" >}}
 
-Diebold Nixdorf is a world leader in driving connected commerce, bridging the gap between the physical and digital worlds of cash. A partner of the majority of the worlds Top 100 financial institutions and Top 25 global retailers, Diebold Nixdorf’s comprehensive range of solutions for finance and retail is incomparable.
+Diebold Nixdorf is a world leader in driving connected commerce, bridging the gap between the physical and digital worlds of cash. A partner of the majority of the worlds __Top 100 financial institutions__ and __Top 25 global retailers__, Diebold Nixdorf’s comprehensive range of solutions for finance and retail is incomparable.
 
 ## Introducing DN Series™ - Built to Connect. Built for More.™
 
