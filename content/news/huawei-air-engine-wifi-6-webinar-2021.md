@@ -3,7 +3,7 @@ title = "The Future of Fast Internet Connectivity is Here!"
 date = "2021-03-12T14:31:17+03:00"
 author = "Job Marangu"
 [image]
-  name = "huawei-air-engine-wifi-6-sm.jpg"
+  name = "huawei-air-engine-wifi-cio.jpg"
   description = "Figure 1: Huawei Gold Partner, Reseller, Distributor and Solution provider in Kenya, Tanzania, Uganda, Zambia and Rwanda"
 +++
 
