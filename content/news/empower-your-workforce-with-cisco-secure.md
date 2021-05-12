@@ -19,7 +19,9 @@ However, with all this said, this culture leaves the __remote worker vulnerable_
 <iframe src='//players.brightcove.net/1384193102001/NJgI8K0ie_default/index.html?videoId=6151377669001' allowfullscreen frameborder=0></iframe> 
 {{< /block >}}
 
+{{< caption >}}
 _[Cisco Security provider in Kenya, Uganda, Tanzania, Rwanda and Zambia.](https://www.cisco.com/c/en_uk/products/security/secure-remote-workers-offer.html?socialshare=video4)_
+{{< /caption >}}
 
 More people are working remotely, and it's up to your security team to make sure they are protected on __any device, anywhere__ they choose to work. Fast-track your business success by empowering employees with __secure access__ to the applications and critical resources they need, whether in the __public cloud__ or __on-premises__.
 
