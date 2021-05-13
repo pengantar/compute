@@ -61,7 +61,6 @@
   align-items: center;
   justify-content: center;
   width: 100%;
-  min-height: 540px;
   color: $mute;
   opacity: 0;
   position: absolute;
@@ -72,27 +71,91 @@
   transform: translateX(105vw);
   transition: opacity 1s ease-out;
   background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  &::after {
+  background-size: contain;
+  background-position: center top;
+  text-decoration: none !important;
+  min-height: 480px;
+  overflow: hidden;
+  @media screen and (min-width: 992px) {
+    min-height: 540px;
+    background-size: 84%;
+    background-position: center left;
+  }
+  &::after, &::before {
     content: "";
     position: absolute;
-    top: 0;
-    left: 0;
     bottom: 0;
-    right: 0;
+  }
+  &::after {
     z-index: 100;
+    top: 0;
+    right: 0;
+    left: 0;
     background-color: rgba(0,0,0,0.5);
+  }
+  &::before {
+    @media screen and (max-width: 991px) {
+      width: 100%;
+      left: 0;
+      right: 0;
+      height: 20rem;
+      background: linear-gradient($dark, $theme);
+      transform: skewY(-15deg) translateY(5rem);
+    }
+    @media screen and (min-width: 992px) {
+      width: 30rem;
+      height: 100%;
+      top: 0;
+      right: 0;
+      transform: skew(-15deg) translateX(5rem);
+      z-index: 101;
+      background: linear-gradient($dark, $theme);
+    }
   }
   h1{
     color: $light;
     text-align: center;
-    padding: 25px;
+    text-transform: uppercase;
+    padding-bottom: 5rem;
     position: relative;
     z-index: 101;
     font-weight: 400;
-    text-transform: uppercase;
-    letter-spacing: 4px;
+    letter-spacing: 2px;
+    font-size: 1rem;
+    position: absolute;
+    bottom: 0;
+    height: 10rem;
+    line-height: 1.5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    max-width: 30rem;
+    margin: 0 auto;
+    &::after {
+      position: relative;
+      content: "Learn More";
+      width: 10rem;
+      font-size: 1rem;
+      display: inline-flex;
+      padding: 0.5rem 1.5rem;
+      border-radius: 2rem;
+      justify-content: center;
+      transform: translateY(1rem);
+      background: $light;
+      color: $theme;
+      font-weight: 500;
+    }
+    @media screen and (min-width: 992px) {
+      right: 0;
+      top: 0;
+      width: 20rem;
+      bottom: 0;
+      padding: 1.5rem;
+      font-size: 1.5rem;
+      height: 100%;
+      transform: translateX(-2.5rem);
+    }
   }
   img{
     width: 100%;

@@ -3,10 +3,10 @@
 <div class = 'slides_container mb-4'>
   <!-- <div id = 'particles-js'></div> -->
   <div class = 'slides' tabindex = '0'>
-  {{- range $index, $slide := $slides -}}
-    <div class = 'slide has_bg{{ if eq $index 0 }} slide_active{{ end }}' style = 'background-image: url({{ $slide.image }})'>
-      <h1>{{ markdownify $slide.description }}</h1>
-    </div>
+  {{- range $index, $article := first 5 (where site.RegularPages "Section" "news") -}}
+    <a class = 'slide has_bg{{ if eq $index 0 }} slide_active{{ end }}' style = 'background-image: url(/images/{{ .Params.image.name }})' href="{{ .Permalink }}">
+      <h1>{{ .Title }}</h1>
+    </a>
   {{- end -}}
   </div>
   <div class = 'dots'>
