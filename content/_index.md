@@ -9,4 +9,3 @@ slides = [
   #, {image = "/images/committed-to-service-and-safety-awareness-campaign.jpg", description = "Trusted by over 5,000 clients\\\nin 5 different countries\n"}
 ]
 +++
-

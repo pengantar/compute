@@ -815,7 +815,14 @@ a:visited{
 }
 
 .card {
-  img {
-    transform: scale(1.1);
+  &_tile {
+    height: 13rem;
+    background-size: cover;
+    background-position: center;
+    transform-origin: 50% 50%;
+    transition: transform 0.33s ease-in;
+    &:hover {
+      transform: scale(1.05);
+    }
   }
 }
