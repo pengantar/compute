@@ -46,4 +46,3 @@ As a __Cisco Certified Premier Partner__, we are giving you a 2-week free Cisco 
 We are here to assist you. Feel free to inquire on any __IT__ or __Security solution__ you may need, we will be happy to assist you. Computech limited is here for you, __let’s talk security.__
 
 ![](/images/cisco-umbrella-mailer-footer.jpg)
- 
