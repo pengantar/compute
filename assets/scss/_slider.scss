@@ -48,6 +48,10 @@
     @media screen and (max-width: 557px) {
       transform: translateY(1rem)
     }
+    @media screen and (min-width: 992px) {
+      right: 0;
+      width: 33%;
+    }
   }
   &_active{
     &::after {
@@ -60,11 +64,7 @@
 
 .slide{
   background: transparent;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   width: 100%;
-  color: $mute;
   opacity: 0;
   position: absolute;
   top: 0;
@@ -73,119 +73,94 @@
   z-index: 10;
   transform: translateX(105vw);
   transition: opacity 1s ease-out;
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center top;
   text-decoration: none !important;
   min-height: 480px;
-  overflow: hidden;
-  @media screen and (min-width: 992px) {
-    min-height: 540px;
-    background-size: 84%;
-    background-position: center left;
+  // overflow: hidden;
+  display: grid;
+  @media screen and (min-width: 769px) {
+    display: flex;
+    justify-content: space-between;
   }
-  &::after, &::before {
-    content: "";
-    position: absolute;
-    bottom: 0;
+  &_content {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    min-width: 25rem;
+    padding: 1.5rem;
   }
-  &::after {
-    z-index: 100;
-    top: 0;
-    right: 0;
-    left: 0;
-    background-color: rgba(0,0,0,0.5);
+  &_slide, &_figure {
+    position: relative;
+    display: block;
+    width: 100%;
+    max-width: 100%;
   }
-  &::before {
-    @media screen and (max-width: 991px) {
-      width: 100%;
-      left: 0;
-      right: 0;
-      height: 20rem;
-      background: linear-gradient($dark, $theme);
-      transform: skewY(-15deg) translateY(5rem);
-    }
-    @media screen and (max-width: 557px) {
-      transform: translateY(4.5rem);
-      background: linear-gradient($light, $theme);
-    }
+  &_image {
+    filter: drop-shadow(0 1.25rem 6rem #444);
+    display: block;
+    width: 100%;
+    height: auto;
     @media screen and (min-width: 992px) {
-      width: 30rem;
-      height: 100%;
-      top: 0;
-      right: 0;
-      transform: skew(-15deg) translateX(5rem);
-      z-index: 101;
-      background: linear-gradient($dark, $theme);
+      object-fit: cover;
+      height: 480px;
     }
   }
   h1{
-    color: $light;
     text-align: center;
     text-transform: uppercase;
-    padding: 0 1rem 5rem;
+    padding: 0;
     position: relative;
     z-index: 101;
     font-weight: 400;
     letter-spacing: 2px;
-    font-size: 1rem;
-    position: absolute;
-    bottom: 0;
-    height: 10rem;
+    font-size: 1.33rem;
     line-height: 1.5;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-flow: column;
-    max-width: 30rem;
     margin: 0 auto;
-    &::after {
-      position: relative;
-      content: "Learn More";
-      width: 10rem;
-      font-size: 1rem;
-      display: inline-flex;
-      padding: 0.5rem 1.5rem;
-      border-radius: 2rem;
-      justify-content: center;
-      transform: translateY(1rem);
-      background: $light;
-      color: $theme;
-      font-weight: 500;
-    }
     @media screen and (min-width: 992px) {
-      right: 0;
-      top: 0;
-      width: 20rem;
-      bottom: 0;
-      padding: 1.5rem;
-      font-size: 1.5rem;
-      height: 100%;
-      transform: translateX(-2.5rem);
+      font-size: 1.67rem;
     }
   }
+  .snip {
+    width: 10rem;
+    font-size: 1rem;
+    display: inline-flex;
+    padding: 0.5rem 1.5rem;
+    border-radius: 2rem;
+    justify-content: center;
+    transform: translateY(1rem);
+    background: $light;
+    color: $theme;
+    font-weight: 500;
+    border: none !important;
+    margin-bottom: 2rem;
+  }
   img{
-    width: 100%;
+    width: auto !important;
   }
   &s {
     display: block;
     width: 100%;
-    overflow: hidden;
-    box-shadow: 0 0 130px rgba(0,0,0,0.2);
+    // overflow: hidden;
+    // box-shadow: 0 0 130px rgba(0,0,0,0.2);
     &:focus{
       outline: none;
     }
     &_container{
-      // background: $dark;
       width: 100%;
       max-width: 100vw;
-      overflow-x: hidden;
+      // overflow-x: hidden;
       position: relative;
+      background: linear-gradient(to right, $theme, $light);
       &:hover .slide_left,
       &:hover .slide_right {
         opacity: 1;
       }
-      box-shadow: 0 5rem 3rem -2.5rem rgba(0, 0, 0, 0.33);
+      // box-shadow: 0 5rem 3rem -2.5rem rgba(0, 0, 0, 0.17);
     }
   }
   &_active {

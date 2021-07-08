@@ -579,18 +579,6 @@ a:visited{
   }
   &_active {
     box-shadow: 0 2rem 1.5rem -1rem rgba($dark,0.5);
-    // &::after {
-    //   content: '';
-    //   position: absolute;
-    //   top: 0;
-    //   bottom: 0;
-    //   left: 0;
-    //   width: 5px;
-    //   border-radius: 1px;
-    //   background: $orange;
-    //   color: $orange;
-    //   z-index: 2;
-    // }
   }  
   &_item { 
     display: none; 
@@ -599,6 +587,8 @@ a:visited{
     }
     &_active {
       display: block;
+      width: 100vw;
+      position: relative;
     }
   }
   &_switch { 
@@ -728,6 +718,9 @@ a:visited{
   &_inline {
     display: inline-block;
     width: initial !important;
+  }
+  &_shadow {
+    filter: drop-shadow(0 0.25rem 2rem #eef);
   }
 }
 
