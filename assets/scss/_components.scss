@@ -814,6 +814,10 @@ a:visited{
   }
 }
 
+.navbar-fixed-top .navbar-collapse {
+    max-height: 450px;
+}
+
 .card {
   &_tile {
     height: 13rem;
