@@ -805,6 +805,13 @@ a:visited{
   &_sublink {
     text-decoration: none;
   }
+  &_toggle {
+    position: absolute;
+    right: 0.67rem;
+    &_icon {
+      height: 1.75rem;
+    }
+  }
 }
 
 .card {

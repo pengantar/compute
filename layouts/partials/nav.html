@@ -2,8 +2,10 @@
   <div class = 'wrap'>
     <div class = 'navbar-header'>
       <a class = 'logo' href = '/'><img src = '{{ .Site.Params.logo }}' alt = '{{ .Site.Title }}'></a>
-      <button type = 'button' class = 'navbar-toggle' data-toggle = 'collapse' data-target = '.navbar-collapse'>
-        <span class = 'sr-only'>Toggle navigation</span>&#9776;
+      <button type = 'button' class = 'navbar-toggle nav_toggle' data-toggle = 'collapse' data-target = '.navbar-collapse'>
+        <svg xmlns="http://www.w3.org/2000/svg" class="nav_toggle_icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+        </svg>
       </button>
     </div>
     <div class = 'navbar-collapse collapse'>
