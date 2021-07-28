@@ -153,9 +153,11 @@
     &_container{
       width: 100%;
       max-width: 100vw;
-      // overflow-x: hidden;
       position: relative;
       background: linear-gradient(to right, $theme, $light);
+      @media screen and (max-width: 667px) {
+        overflow-x: hidden;
+      }
       &:hover .slide_left,
       &:hover .slide_right {
         opacity: 1;
