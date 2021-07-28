@@ -1,15 +1,17 @@
-<div class = 'navbar navbar-default navbar-fixed-top' role = 'navigation'>
-  <div class = 'wrap'>
-    <div class = 'navbar-header'>
-      <a class = 'logo' href = '/'><img src = '{{ .Site.Params.logo }}' alt = '{{ .Site.Title }}'></a>
-      <button type = 'button' class = 'navbar-toggle nav_toggle' data-toggle = 'collapse' data-target = '.navbar-collapse'>
+<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <div class="wrap nav_wrap">
+    <div class="navbar-header">
+      <a class="logo" href="/">
+        <img src="{{ .Site.Params.logo }}" alt="{{ .Site.Title }}">
+      </a>
+      <button type="button" class="navbar-toggle nav_toggle" data-toggle="collapse" data-target=".navbar-collapse">
         <svg xmlns="http://www.w3.org/2000/svg" class="nav_toggle_icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
         </svg>
       </button>
     </div>
-    <div class = 'navbar-collapse collapse'>
-      <ul class = 'nav navbar-nav navbar-right'>
+    <div class="navbar-collapse collapse">
+      <ul class="nav navbar-nav navbar-right">
         {{- $section := .Section }}
         {{- $permalink := .RelPermalink }}
         {{- range .Site.Data.nav }}
@@ -18,23 +20,37 @@
           {{- $url_len := add (len $l_url) 2 -}}
           {{- $t := $permalink -}}
           {{- $root_link := replace $t "/" "" -}}
-          <a href = '/{{ $l_url }}/' class = 'nav_link {{ if eq $l_url $root_link }} nav_link-active {{ end }}'>{{ upper .link  }}{{ if .sublinks }}<span class = 'caret'></span>{{ end }}</a>
+          <a href="/{{ $l_url }}/" class="nav_link {{ if eq $l_url $root_link }} nav_link-active {{ end }}">
+            {{ upper .link  }}
+            {{- if .sublinks }}
+            &nbsp;<span class="caret"></span>
+            {{- end }}
+          </a>
             {{ with .sublinks }}
-            <ul class = 'dropdown-menu animated fadeIn'>
+            <ul class="dropdown-menu animated fadeIn">
               {{ range . }}
               <li>
                 {{- $s_url := urlize .sublink -}}
-                <a href = '/{{ $l_url }}/{{ $s_url }}/' class="nav_sublink"><span class = 'menu-link'> {{ upper .sublink }}</span>{{ if .children }}<span class = 'caret'></span>{{ end }}</a>
+                <a href="/{{ $l_url }}/{{ $s_url }}/" class="nav_sublink">
+                  <span class="menu-link"> {{ upper .sublink }}</span>
+                  {{ if .children }}
+                  <span class = 'caret'></span>
+                  {{ end }}
+                </a>
                   {{ with .children }}
-                  <ul class = 'dropdown-menu animated fadeIn'>
-                    {{ range . }}
+                  <ul class="dropdown-menu animated fadeIn">
+                  {{ range . }}
                     {{- $c_url := replace (urlize .) "--" "-" -}}
                     {{ if eq . "Cloud Services"}}
-                    <li><a href = '/cloud/' class="nav_sublink">{{ upper . }}</a></li>
+                    <li>
+                      <a href="/cloud/" class="nav_sublink">{{ upper . }}</a>
+                    </li>
                     {{ else }}
-                    <li><a href = '/{{ $l_url }}/{{ $s_url }}/{{ $c_url }}/' class="nav_sublink">{{ upper . }}</a></li>
+                    <li>
+                      <a href="/{{ $l_url }}/{{ $s_url }}/{{ $c_url }}/" class="nav_sublink">{{ upper . }}</a>
+                    </li>
                     {{ end }}
-                    {{ end }}
+                  {{ end }}
                   </ul>
                   {{ end }}
               </li>

@@ -97,7 +97,6 @@
     max-width: 100%;
   }
   &_image {
-    filter: drop-shadow(0 1.25rem 6rem #444);
     display: block;
     width: 100%;
     height: auto;
@@ -168,6 +167,9 @@
   &_active {
     position: relative;
     animation: showSlide 0.33s var(--ease) forwards;
+  }
+  &_active &_image {
+    filter: drop-shadow(0 1.25rem 6rem #444);
   }
   &_left,&_right{
     cursor: pointer;

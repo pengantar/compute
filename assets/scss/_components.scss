@@ -812,6 +812,16 @@ a:visited{
       height: 1.75rem;
     }
   }
+  &_wrap {
+    @media screen and (min-width: 1025px) {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .nav {
+        margin-top: 0;
+      }
+    }
+  }
 }
 
 .navbar-fixed-top .navbar-collapse {

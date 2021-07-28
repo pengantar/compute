@@ -972,10 +972,15 @@ address {
   text-decoration: none;
 }
 .dropdown-menu{
-  background-color: $dark;
+  background-color: var(--light);
+  border: none !important;
+  box-shadow: 0 1rem 6rem rgba(0,0,0,0.33);
+}
+.navbar-right > li > ul.dropdown-menu {
+  top: calc(100% + 15px) !important;
 }
 .dropdown-menu li a{
-  color: white;
+  color: inherit;
 }
 .navbar-default .navbar-nav > .active{
   color: $dark;
@@ -998,7 +1003,7 @@ address {
 }
 
 .dropdown-menu li{
-  border-bottom: 1px solid $light;
+  border-bottom: 1px solid rgba($orange, 0.2);
 }
 .dropdown-menu li a{   
   padding-bottom: 10px;
