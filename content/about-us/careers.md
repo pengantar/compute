@@ -12,7 +12,7 @@ full: true
 1. __No fee is required__ when applying for a position
 2. __Only shortlisted__ candidates will be contacted.
 3. Incomplete applications will not be considered
-4. The closing date for all applications is __20th June 2021__
+4. The closing date for all applications is __20th September 2021__
 {{< /block >}}
 
 {{< job "1" >}}
@@ -29,7 +29,7 @@ Kindly apply below. All the Best!
 
 The Job Application __MUST__ include an application letter highlighting suitability for the position and a curriculum vitae with a telephone number; email; and names with contact addresses for three professional references.
 
-Applications should be sent to __[hr@computechlimited.com](mailto:hr@computechlimited.com?Subject=Business%20Manager)__ and must-read __Business Manager__  as the email subject.
+Applications should be sent to __[hr@computechlimited.com](mailto:hr@computechlimited.com?Subject=BDM-%20Cloud%20&%20Digital%20Solutions)__ and must-read __BDM- Cloud & Digital Solutions__  as the email subject.
 
 Use the __Job Description Button__ to download the JD.
 <!-- Use the __Job Description Button__: I will attach the C.V.  -->
