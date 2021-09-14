@@ -2,8 +2,18 @@
 {{- $slides := .Params.slides -}}
 <div class = 'slides_container mb-4 mt-2'>
   <div class = 'slides' tabindex = '0'>
+    <a class="slide has_bg slide_active" href="/about-us/careers/">
+      <div class="slide_figure">
+        <img src="/images/business-development-manager–cloud-banner.jpg" alt="We're hiring" class="slide_image" />
+      </div>
+      <section class="slide_content pt-2 pb-2">
+        <h1>We're hiring a BDM- Cloud & Digital Solutions</h1>
+        <div class="snip">Learn More</div>
+      </section>
+    </a>
   {{- range $index, $article := first 5 (where site.RegularPages "Section" "news") -}}
-    <a class="slide has_bg{{ if eq $index 0 }} slide_active{{ end }}" href="{{ .Permalink }}">
+    <!-- <a class="slide has_bg{{ if eq $index 0 }} slide_active{{ end }}" href="{{ .Permalink }}"> -->
+    <a class="slide has_bg" href="{{ .Permalink }}">
       <div class="slide_figure">
         <img src="{{ with .Params.featured }}{{ . }}{{ else }}/images/{{ .Params.image.name }}{{ end }}" alt="{{ .Title}}" class="slide_image" />
       </div>
@@ -15,8 +25,10 @@
   {{- end -}}
   </div>
   <div class = 'dots'>
+    <div class = 'dot dot_active'></div>
   {{- range $index, $s := $slides -}}
-    <div class = 'dot {{ if eq $index 0 }} dot_active {{ end }}'></div>
+    <!-- <div class = 'dot{{ if eq $index 0 }} dot_active{{ end }}'></div> -->
+    <div class = 'dot'></div>
   {{- end -}}
   </div>
   <div class = 'direction'>
