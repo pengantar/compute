@@ -1,5 +1,5 @@
 <div class = 'wrap_min pt-3 mt-2 post'>
-  <div class = 'post_content'>
+  <div class = 'post_content{{ with .Params.class }} {{ . }}{{ end }}'>
     <div class = 'editor'>
       <!-- {{ with .Params.categories }}<h5 class = 'article_taxonomy'>{{ upper (index . 0) }}</h5>{{ end }} -->
       <div>

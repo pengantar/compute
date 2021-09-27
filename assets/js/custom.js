@@ -101,19 +101,19 @@ function swapImageSource(image, src) {
   supportsWebp() ? (image.src = src) : false;
 }
 
-(function imagesWebp() {
-  const replaceableimages = filterReplaceableImages();
-  if(replaceableimages) {
-    replaceableimages.forEach(function (image) {
-      let imageSrc = image.src;
-      imageSrc = imageSrc
-      .replace('.jpg', '.webp')
-      .replace('.png', '.webp')
-      .replace('/images/', '/webp/');
-      swapImageSource(image, imageSrc);
-    })
-  }
-})();
+// (function imagesWebp() {
+//   const replaceableimages = filterReplaceableImages();
+//   if(replaceableimages) {
+//     replaceableimages.forEach(function (image) {
+//       let imageSrc = image.src;
+//       imageSrc = imageSrc
+//       .replace('.jpg', '.webp')
+//       .replace('.png', '.webp')
+//       .replace('/images/', '/webp/');
+//       swapImageSource(image, imageSrc);
+//     })
+//   }
+// })();
 
 function searchResults(results = [], order = []) {
   let resultsFragment = new DocumentFragment();

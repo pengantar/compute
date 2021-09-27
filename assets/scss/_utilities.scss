@@ -266,3 +266,11 @@ $sites: (
   filter: drop-shadow(0 0.25rem 1rem var(--text-color));
   // filter: drop-shadow(0 0.1rem 0.4rem rgb(158, 174, 221));
 }
+
+.inline-images {
+  // background-color: #fff;
+  img {
+    width: auto !important;
+    margin: 0 auto;
+  }
+}
