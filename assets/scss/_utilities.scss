@@ -269,7 +269,7 @@ $sites: (
 
 .inline-images {
   // background-color: #fff;
-  img {
+  img:not(.share_image) {
     width: auto !important;
     margin: 0 auto;
   }

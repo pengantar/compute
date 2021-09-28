@@ -1,11 +1,11 @@
 <div class = 'share mb-2'>
   <a class = 'share_item facebook' href="https://www.facebook.com/sharer/sharer.php?u={{ .Permalink }}" title="Share on Facebook"
     >
-    <img src = '/images/facebook.svg' alt = 'share'>
+    <img src = '/images/facebook.svg' alt = 'share' class="share_image">
   </a>
   <a class = 'share_item twitter' href="https://twitter.com/intent/tweet?text={{ .Title }}&url={{ .Permalink }}" title="Share on Twitter"
   >
-    <img src = '/images/twitter.svg' alt = 'share'>
+    <img src = '/images/twitter.svg' alt = 'share' class="share_image">
   </a>
   
   <script>
@@ -14,8 +14,10 @@
     }
   </script>
   
-  <a rel='nofollow' class = 'share_item linkedin'  title="Share on LinkedIn" target='_blank' href='#linkidenshare' onclick="shareViaLinkedin()"><img src ='/images/linkedin.svg' alt = 'icon'/></a>
+  <a rel='nofollow' class = 'share_item linkedin'  title="Share on LinkedIn" target='_blank' href='#linkidenshare' onclick="shareViaLinkedin()">
+    <img src ='/images/linkedin.svg' alt = 'icon'  class="share_image"/>
+  </a>
   <a class = 'share_item copy' href = '{{ .Permalink }}'>
-    <img src ='/images/copy.svg' alt = 'icon'/>
+    <img src ='/images/copy.svg' alt = 'icon' class="share_image" />
   </a>
 </div>
