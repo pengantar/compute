@@ -10,7 +10,7 @@
 	}
 }
 .post{
-	a:not(.snip) {
+	a:not(.snip):not(.contain) {
 		color: $orange;
 		&:not(.nounderline) {
 			text-decoration: underline !important;

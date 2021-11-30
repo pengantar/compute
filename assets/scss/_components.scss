@@ -18,7 +18,7 @@
   color: $light;
 }
 
-// Particles for the not homepage 
+// Particles for the not homepage
 #particles-js {
   position: absolute;
   width: 100%;
@@ -70,8 +70,8 @@
   margin: 0;
   padding: 3.1px;
   display: inline-block;
-  font-size: 15px; 
-  text-align: center; 
+  font-size: 15px;
+  text-align: center;
 }
 .line {
   border-bottom: 4px solid $orange;
@@ -79,7 +79,7 @@
   width: 60px;
   text-align: center;
   margin: 0 auto;
-  margin-bottom: 15px;  
+  margin-bottom: 15px;
 }
 .move{
   margin-left: 100px;
@@ -92,9 +92,9 @@ a:visited{
   padding: 8px 0;
   margin: 0;
 }
-// Footer section 
+// Footer section
 .footer{
-  padding: 20px 0;   
+  padding: 20px 0;
   height: auto;
   background-color: $dark;
   color: $light;
@@ -103,7 +103,7 @@ a:visited{
     color: inherit;
     text-transform: uppercase;
     font-size: 1.05rem;
-  }  
+  }
   a:not(.contain){
     color: $mute;
     display: inline-block;
@@ -125,6 +125,9 @@ a:visited{
   &_share{
     display: inline-flex;
     margin: 0;
+    p {
+      display: none;
+    }
     a {
       width: 40px;
       height: 40px;
@@ -139,9 +142,9 @@ a:visited{
       }
     }
     img {
-      width: 40%;
+      width: 40% !important;
     }
-  }    
+  }
   p{
     margin: 0;
     padding: 0;
@@ -167,14 +170,14 @@ a:visited{
   transition:  2s;
 }
 
-// ....button styling........ 
+// ....button styling........
 
 .button {
   display: inline-block;
   border-radius: 2px;
   border: none;
   height: 45px;
-  z-index: 999;  
+  z-index: 999;
 }
 
 .black{
@@ -278,7 +281,7 @@ a:visited{
 }
 
 
-// For the team page  
+// For the team page
 .member{
   cursor: pointer;
   img{
@@ -458,13 +461,13 @@ a:visited{
   }
 }
 
-// End of End point 
+// End of End point
 
 .region-title{
   text-decoration: underline;
 }
 
-// End of client section 
+// End of client section
 .banner {
   position: relative;
   margin-top: 25px;
@@ -481,7 +484,7 @@ a:visited{
   }
 }
 
-// pdf buttons 
+// pdf buttons
 .snip {
   background-color: $dark;
   border: 1px solid $dark;
@@ -579,9 +582,9 @@ a:visited{
   }
   &_active {
     box-shadow: 0 2rem 1.5rem -1rem rgba($dark,0.5);
-  }  
-  &_item { 
-    display: none; 
+  }
+  &_item {
+    display: none;
     a{
       color: #F68E35;
     }
@@ -591,7 +594,7 @@ a:visited{
       position: relative;
     }
   }
-  &_switch { 
+  &_switch {
     // overflow: hidden;
     width: 100%;
     display: flex;
