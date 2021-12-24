@@ -6,7 +6,7 @@ date = "2021-12-24T13:44:49+03:00"
   description = "Happy Holidays From Computech Limited 2021"
 +++
 
-The holiday season is here ! As we take a look back, the past two year have been a rollercoaster. Thank you for sticking with us through thick and thin. We truly appreciate your business, and we’re so grateful for the trust you’ve placed in us.
+The holiday season is here ! As we take a look back, the past two years have been a rollercoaster. Thank you for sticking with us through thick and thin. We truly appreciate your business, and we’re so grateful for the trust you’ve placed in us.
 
 May your Christmas be as cheerful and full of happiness just the way you make us! You are the reason why we are still operational. We look forward to serving you in the coming New Year. Merry Christmas to you and your family!
 
@@ -26,6 +26,6 @@ Working with you has been a pleasure for our company… With another year all se
 
 ### Contact Us.
 
-We are here for you ! Part of our team will be in the offices from 28th December to 31st December, feel free to reach out for any IT inquiries, we will be glad to assist you.
+We are here for you! Part of our team will be in the offices from 28th December to 31st December, feel free to reach out for any IT inquiries, we will be glad to assist you.
 
 [![](/images/computech-main-mage.jpg)](tel:+254730141000)
