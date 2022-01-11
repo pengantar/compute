@@ -17,7 +17,7 @@ jobs:
       uses: actions/checkout@v2
 
     - name: Build site with Hugo
-      uses: lowply/build-hugo@v0.85.0
+      uses: lowply/build-hugo@v0.88.1
 
     # If build succeeds, store the public/ dir as an artifact to be used in subsequent phases.
     - name: Upload output public dir as artifact
