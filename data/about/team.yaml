@@ -1,6 +1,6 @@
 ---
 - name: Hassan Popat
-  title: Group Chief Executive Officer
+  title: Group Chief Executive Officer (GCEO)
   picture: hassan
   description: The founder of Computech Limited, Hassan has led the Group to 7 offices
     and 250 staff, while continuing to grow the business from strength to strength.
@@ -9,16 +9,16 @@
     from Imperial College London and an MBA from Carnegie Mellon. A volunteer at heart,
     Hassan is heavily involved in community work, a member of YPO / WPO, an avid golfer
     and sports fan.
-- name: Hanif Popat
-  title: Director
-  picture: hanif
-  description: Since joining Computech Group in 1990, Hanif has been involved in most
-    aspects of the business, from managing operations to distribution. With significant
-    experience managing the business and previous experience in the healthcare industry,
-    Hanif’s focus is on the recently established Healthcare division, managing the
-    partnership with GE in Tanzania and Uganda. Hanif holds a BDS from Bristol University.
+# - name: Hanif Popat
+#   title: Director
+#   picture: hanif
+#   description: Since joining Computech Group in 1990, Hanif has been involved in most
+#     aspects of the business, from managing operations to distribution. With significant
+#     experience managing the business and previous experience in the healthcare industry,
+#     Hanif’s focus is on the recently established Healthcare division, managing the
+#     partnership with GE in Tanzania and Uganda. Hanif holds a BDS from Bristol University.
 - name: Dipak Galaiya
-  title: Group Chief Commercial Officer
+  title: Group Chief Commercial Officer (GCCO)
   picture: dipak
   description: A fellow of the Chartered Association of the Certified Accountants
     (FCCA), Dipak joined Computech as Chief Accountant in 1992 after stints with Abercrombie
@@ -27,7 +27,7 @@
     levels. Dipak has a keen interest in ICT emerging trends, world affairs, community
     service and keeping fit through cycling and working out.
 - name: Elahe Anjarwalla
-  title: Director
+  title: Board Member
   picture: elahe
   description: Elahe has worked across several industries including aviation, real
     estate, banking, hospitality, and manufacturing. Previously with Bain & Company
@@ -35,30 +35,29 @@
     consulting to drive Computech Limited’s Transformation Program. Elahe holds a
     BA from Stanford University.
 - name: Sushin Kurunnantavida
-  title: Head of Enterprise
+  title: Chief Technology Officer-Platform
   picture: sushin
   description: ''
-- name: Jay Venugopal
-  title: GM TANZANIA
-  picture: jay
-  description: Jay has over 30 years of ICT experience in Africa (Kenya, Tanzania,
-    Nigeria and Ghana), Middle East and India. In particular, Jay has sold medium
-    to large projects in over 15 countries and has significant experience with BFSI
-    and eGovernment software. Jay offers support to the regional offices on some of
-    the larger software projects.
+- name: Santhosh Kumar
+  title: CEO - System Integration
+  picture: santhosh
+- name: Saurin Shah
+  title: Head of UX Division
+  picture: saurin
+  description: ""
+- name: Binukuttan VM
+  title: GM-Technology & Business Transformation - TZ
+  picture: binukuttan
 - name: Arghya Sinha
   title: GM Zambia
   picture: arghya
   description: ''
-- name: Saurin Shah
-  title: Head of volume
-  picture: saurin
-  description: Saurin has significant experience in the IT industry, having worked
-    with both vendors and distributors. Saurin has successfully led the Volume department,
-    responsible for selling high-volume products such as laptops, PCs and printers,
-    by streamlining the team and processes and developing strong relationships with
-    key vendors. Saurin holds a Diploma in Electronics & Telecommunication from the
-    Bombay Technical Education Board.
+- name: Faith Muyoyo
+  title: Country Head Rwanda
+  picture: muyoyo
+- name: Jacob Sijo
+  title: Country Head Uganda
+  picture: sijo-jacob
 - name: James Muchiri Kariuki
   title: Finance Manager
   picture: james-kariuki
