@@ -4,11 +4,14 @@
       <!-- {{ with .Params.categories }}<h5 class = 'article_taxonomy'>{{ upper (index . 0) }}</h5>{{ end }} -->
       <div>
         Posted on <u>{{ dateFormat "02 January, 2006" .Date }}</u>{{ with .Params.author }} by <u>{{ . }}</u>{{ end }}</div>
-      <h2>{{ .Title }}</h2>
+      <h1>{{ .Title }}</h1>
       {{- partial "share" . -}}
     </div>
     {{- $image := .Params.image }}
     <div class = 'post_body'>
+      {{ with .Params.headline }}
+      <h2 id="post-headline">{{ . }}</h2>
+      {{ end }}
       <img src = '/images/{{ with $image.main }}{{ . }}{{ else }}{{ $image.name }}{{ end }}' alt = "{{ replace $image.description "'" "" }}" class = 'blog__thumb'>
       {{ .Content }}
       <!-- {{ partial "pager" . }} -->
