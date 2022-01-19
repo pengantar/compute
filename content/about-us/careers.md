@@ -12,7 +12,7 @@ full: true
 1. __No fee is required__ when applying for a position
 2. __Only shortlisted__ candidates will be contacted.
 3. Incomplete applications will not be considered
-4. The closing date for all applications is __25th February 2022__
+4. The closing date for all applications is __21st January 2022__
 {{< /block >}}
 
 {{< job "1" >}}
