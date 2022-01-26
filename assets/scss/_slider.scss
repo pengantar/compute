@@ -125,7 +125,7 @@
     }
   }
   .snip {
-    width: 10rem;
+    width: 14.5rem;
     font-size: 1rem;
     display: inline-flex;
     padding: 0.5rem 1.5rem;
@@ -137,6 +137,7 @@
     font-weight: 500;
     border: none !important;
     margin-bottom: 2rem;
+    white-space: nowrap;
   }
   img{
     width: auto !important;

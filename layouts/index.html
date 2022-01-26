@@ -10,7 +10,7 @@
       </div>
       <section class="slide_content pt-2 pb-2">
         <h1>{{ .Title }}</h1>
-        <div class="snip">Learn More</div>
+        <div class="snip">{{ default "Learn More" .Params.button }}</div>
       </section>
     </a>
     {{ if eq $index 0 }}
