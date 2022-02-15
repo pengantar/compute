@@ -31,7 +31,7 @@
               {{ range . }}
               <li>
                 {{- $s_url := urlize .sublink -}}
-                <a href="/{{ $l_url }}/{{ $s_url }}/" class="nav_sublink">
+                <a href='{{ with .url }}{{ . }}{{ else }}/{{ $l_url }}/{{ $s_url }}/{{ end }}' class="nav_sublink"{{ with .url }} target="_blank" rel="noopener"{{ end }}>
                   <span class="menu-link"> {{ upper .sublink }}</span>
                   {{ if .children }}
                   <span class = 'caret'></span>
