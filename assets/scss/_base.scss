@@ -139,3 +139,24 @@ label{
   max-width: 100%;
   margin-bottom: 5px;
 }
+
+th, td {
+  text-align: left;
+  padding: 0.25rem 0.5rem;
+  min-width: 6rem;
+}
+
+th {
+  background: $orange;
+  color: $light;
+}
+
+tr {
+  &:nth-child(odd) {
+    background: rgba($orange, 0.05);
+  }
+}
+
+table {
+  box-shadow: 0 0.5rem 2rem rgba($dark, 0.05);
+}

@@ -1,6 +1,7 @@
 +++
 title = "Happy Holidays!"
 date = "2021-12-24T13:44:49+03:00"
+draft = true
 [image]
   name = "xmas-web-hero-banner.jpg"
   description = "Happy Holidays From Computech Limited 2021"
