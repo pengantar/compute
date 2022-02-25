@@ -2,6 +2,23 @@
   {{- $pages := where .Site.RegularPages "Section" .Section }}
   {{- $size := sub (len (.Paginator .Paginator.PageSize).Pages) 1 }}
   {{- range $index, $article := (.Paginate $pages).Pages }}
+  <!-- start remove later -->
+  {{ if and (eq $index 1) (eq $.Paginator.PageNumber 1) }}
+  <article class = 'article mb-4'>
+    <a class='article_tile' href = 'https://keydata.netlify.app/' target="_blank" rel="noopener">
+      <figure class = 'article_thumb{{ if not (eq $index 0) }} clipped{{ end }}'>
+        <img src = '/images/about-key-data.jpg' alt = '{{ replace $article.Params.description "'" "" }}' class = 'blog__thumb'>
+      </figure>
+      <div class = 'article_meta'>
+        <h3>TIM Solutions</h3>
+        <div class = 'article_excerpt'>
+          <p>Need a KRA TIMs ETR?</p>
+        </div>
+      </div>
+    </a>
+  </article>
+  {{ end }}
+  <!-- end remove later -->
   <article class = 'article mb-4'>
     <a href = '{{ if .Params.external }}{{ .Params.link }}{{ else }}{{ $article.Permalink }}{{ end }}' class = 'article_tile {{ if eq $index 0 }} grid-reverse article_first{{ end }}' {{ if .Params.external }} target="_blank" rel="noopener"{{ end }}>
       <figure class = 'article_thumb{{ if not (eq $index 0) }} clipped{{ end }}'>
