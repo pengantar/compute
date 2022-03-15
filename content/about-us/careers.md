@@ -16,26 +16,6 @@ full: true
 5. The closing date for all applications is __25st January 2022__
 {{< /block >}}
 
-{{< job "1" >}}
-### Pre-Sales Lead
-
-__#WeAreHiring:__ Looking forward to growing your expertise in network and security sales? Look no further,  Computech limited is presenting you with an opportunity to interact with notable SI brands such as Cisco, Checkpoint, Fortinet, HP, and many more while diving into a fun and rewarding role.
-Think you’ve got what it takes? Apply now.
-
-Kindly apply below. All the Best!
-
-### How to Apply
-
-The Job Application MUST include an application letter highlighting suitability for the position and a curriculum vitae with a telephone number; email; and names with contact addresses for three professional references.
-
-Applications should be sent to [hr@computechlimited.com](mailto:hr@computechlimited.com?Subject=Pre%20Sales%20%20Lead%20%20) and must-read __Pre-Sales Lead__ as the email subject.
-
-Use the __Job Description Button__ to download the JD.
-
-{{< button "/pdf/presales-lead-2022-jd.pdf" "Job Description" "orange" "download" >}}
-
-{{< /job >}}
-
 {{< job "2" >}}
 ### Sales Executive – ETR solutions
 
