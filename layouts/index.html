@@ -13,18 +13,6 @@
         <div class="snip">{{ default "Learn More" .Params.button }}</div>
       </section>
     </a>
-    {{ if eq $index 0 }}
-    <a class="slide has_bg" href="/about-us/careers/">
-      <div class="slide_figure">
-        <img src="/images/presales-lead-2022-banner.jpg" alt="We're hiring" class="slide_image" />
-      </div>
-      <section class="slide_content pt-2 pb-2">
-        <h1>We're hiring a Pre-Sales Lead & Sales Executive – ETR solutions</h1>
-        <p>Applications for Sales Executive – ETR solutions close on 21st. All applications close on 25th</p>
-        <div class="snip">Learn More</div>
-      </section>
-    </a>
-    {{ end }}
   {{- end -}}
 
   </div>
@@ -33,7 +21,7 @@
   {{- range $index, $s := $slides -}}
     <div class = 'dot{{ if eq $index 0 }} dot_active{{ end }}'></div>
   {{- end -}}
-    <div class = 'dot'></div>
+    <!-- <div class = 'dot'></div> -->
   </div>
   <div class = 'direction'>
     <div class = 'slide_left'><span class = 'angle__left'></span></div>
