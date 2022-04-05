@@ -266,7 +266,7 @@ function searchResults(results = [], order = []) {
       }
     }, speed);
   }
-  autoPlaySlide(3300);
+  autoPlaySlide(5000);
 })();
 
 (function() {

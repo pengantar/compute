@@ -3,25 +3,37 @@
 <div class = 'slides_container mb-4 mt-2'>
   <div class = 'slides' tabindex = '0'>
   {{- range $index, $article := first 5 (where site.RegularPages "Section" "news") -}}
-    <a class="slide has_bg{{ if eq $index 0 }} slide_active{{ end }}" href="{{ .Permalink }}">
-    <!-- <a class="slide has_bg" href="{{ .Permalink }}"> -->
+    {{ if eq $index 0 }}
+    <a class="slide has_bg slide_active" href="/about-us/careers/">
+      <div class="slide_figure">
+        <img src="/images/l1-or-l2-security-engineer-web banner.jpg" alt="We're hiring" class="slide_image" />
+      </div>
+      <section class="slide_content pt-2 pb-2">
+        <h1>We're hiring a L1 – L2 Security Engineer</h1>
+        <div class="snip">Apply Now</div>
+      </section>
+    </a>
+    {{ end }}
+    <!-- {{ if eq $index 0 }} slide_active{{ end }} -->
+    <a class="slide has_bg" href="{{ .Permalink }}">
+      <!-- <a class="slide has_bg" href="{{ .Permalink }}"> -->
       <div class="slide_figure">
         <img src="{{ with .Params.featured }}{{ . }}{{ else }}/images/{{ .Params.image.name }}{{ end }}" alt="{{ .Title}}" class="slide_image" />
       </div>
       <section class="slide_content pt-2 pb-2">
         <h1>{{ .Title }}</h1>
-        <div class="snip">{{ default "Learn More" .Params.button }}</div>
+        <div class="snip">Learn More</div>
       </section>
     </a>
   {{- end -}}
 
   </div>
   <div class = 'dots'>
-    <!-- <div class = 'dot dot_active'></div> -->
+    <div class = 'dot dot_active'></div>
+    <!-- <div class = 'dot{ if eq $index 0 }} dot_active{ end }'></div> -->
   {{- range $index, $s := $slides -}}
-    <div class = 'dot{{ if eq $index 0 }} dot_active{{ end }}'></div>
+    <div class = 'dot'></div>
   {{- end -}}
-    <!-- <div class = 'dot'></div> -->
   </div>
   <div class = 'direction'>
     <div class = 'slide_left'><span class = 'angle__left'></span></div>
