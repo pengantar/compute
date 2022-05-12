@@ -5,7 +5,7 @@
   {{- range $index, $article := first 5 (where site.RegularPages "Section" "news") -}}
     {{ if eq $index 1 }}
     <!-- <a class="slide has_bg slide_active" href="/about-us/careers/"> -->
-    <a class="slide has_bg" href="/about-us/careers/">
+    <!-- <a class="slide has_bg" href="/about-us/careers/">
       <div class="slide_figure">
         <img src="/images/team-leader-web-banner.jpg" alt="We're hiring" class="slide_image" />
       </div>
@@ -22,7 +22,7 @@
         <h1>We're hiring a L1 – L2 Security Engineer</h1>
         <div class="snip">Apply Now</div>
       </section>
-    </a>
+    </a> -->
     {{ end }}
     <!-- {{ if eq $index 0 }} slide_active{{ end }} -->
     <a class="slide has_bg {{ if eq $index 0 }} slide_active{{ end }}" href="{{ .Permalink }}">
@@ -39,12 +39,12 @@
 
   </div>
   <div class = 'dots'>
-    <div class = 'dot dot_active'></div>
-    <!-- <div class = 'dot{ if eq $index 0 }} dot_active{ end }'></div> -->
-    <div class = 'dot'></div>
-  {{- range $index, $s := $slides -}}
-    <div class = 'dot'></div>
-  {{- end -}}
+    <!-- <div class = 'dot dot_active'></div>
+    <div class = 'dot'></div> -->
+    {{- range $index, $s := $slides -}}
+    <div class = 'dot{{ if eq $index 0 }} dot_active{{ end }}'></div>
+    <!-- <div class = 'dot'></div> -->
+    {{- end -}}
   </div>
   <div class = 'direction'>
     <div class = 'slide_left'><span class = 'angle__left'></span></div>

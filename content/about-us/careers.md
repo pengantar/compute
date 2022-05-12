@@ -4,18 +4,20 @@ noindex: true
 full: true
 ---
 
-<!-- ## Welcome to Computech Limited Careers -->
+## Welcome to Computech Limited Careers
 
-{{< block "job_footer" >}}
+We do not have an open position(s) currently. [Follow us](https://www.linkedin.com/company/computech-limited/ "Follow on Linkedin") to get notified when vacancies open.
+
+<!-- {{< block "job_footer" >}}
 ## Please Note
 
 1. __No fee is required__ when applying for a position
 2. __Only shortlisted__ candidates will be contacted.
 3. Incomplete applications will not be considered
 5. The closing date for all applications is __20th April 2022__
-{{< /block >}}
+{{< /block >}} -->
 
-{{< job "1" >}}
+<!-- {{< job "1" >}}
 ### Team leader
 #### Duties and Responsibilities:
 - Monitoring the performance of the team
@@ -71,4 +73,4 @@ The Job Application __MUST__ include an application letter highlighting suitabil
 
 Applications should be sent to __[hr@computechlimited.com](mailto:hr@computechlimited.com?Subject=L1%20L2%20Security%20Engineer)__ and must-read __Security Engineer__ as the email subject. The closing date for this application is __April 13th 2022__.
 
-{{< /job >}}
+{{< /job >}} -->
