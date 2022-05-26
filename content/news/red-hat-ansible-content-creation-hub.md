@@ -1,5 +1,5 @@
 +++
-title = "Red Hat Ansible Content Creation Hub"
+title = "Red Hat Ansible"
 date = "2022-04-21T21:02:41+03:00"
 [image]
   name = "red-hat-ansible-web-banner.jpg"
