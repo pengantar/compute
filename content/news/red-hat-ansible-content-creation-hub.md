@@ -3,7 +3,7 @@ title = "Red Hat Ansible"
 date = "2022-04-21T21:02:41+03:00"
 [image]
   name = "red-hat-ansible-web-banner.jpg"
-  description = "Figure 1: Red Hat Partner, Reseller, Distributor, Solution Provider in Kenya, Nairobi Uganda, Kampala Rwanda, Kigali and Zambia, Lusaka ."
+  description = "Figure 1: Red Hat Partner, Reseller, Distributor, Solution Provider in Kenya, Nairobi Uganda, Kampala Rwanda, Kigali and Zambia, Lusaka."
 +++
 
 ### Smart Scalable & Sharable Automation
